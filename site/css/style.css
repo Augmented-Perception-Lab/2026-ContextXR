@@ -283,9 +283,3 @@ button.chip:focus-visible { outline: 2px solid var(--edge); outline-offset: 2px;
 .fg-open:hover { background: var(--nav); border-color: var(--nav); color: #fff; }
 .fg-open svg { width: 13px; height: 13px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .fg-tip .tip-open { display: inline-block; padding: 0 4px; border-radius: 4px; background: var(--nav); color: #fff; }
-
-/* Embedded in another page (js/embed.js): only the viewers, sized to their content. */
-.embed body { background: transparent; }
-.embed .side, .embed .hero, .embed .foot { display: none; }
-.embed .page { display: block; }
-.embed .section:first-of-type { border-top: 0; padding-top: 8px; }

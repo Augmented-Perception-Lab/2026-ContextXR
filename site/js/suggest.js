@@ -547,8 +547,7 @@
     const y0 = xr.querySelector(".sg-bar").getBoundingClientRect().top;
     renderBar();
     render();
-    const dy = xr.querySelector(".sg-bar").getBoundingClientRect().top - y0;
-    if (window.ContextXREmbed) ContextXREmbed.scrollBy(dy); else window.scrollBy(0, dy);
+    window.scrollBy(0, xr.querySelector(".sg-bar").getBoundingClientRect().top - y0);
   });
 
   window.ContextXRSuggest = { update, redraw: () => drawLinks(), detail: openDetail };
