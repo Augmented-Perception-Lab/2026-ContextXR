@@ -95,8 +95,7 @@ html { scroll-behavior: smooth; }
 .side a:hover { color: var(--ink); }
 .side a.on { color: var(--nav); font-weight: 600; border-left-color: var(--nav); }
 .side a.on span { color: var(--nav); }
-.side .side-home { margin-bottom: 14px; border-left: 0; padding-left: 12px; font: 800 17px var(--sans); letter-spacing: -0.02em; color: var(--ink); }
-.side-group { margin: 16px 0 4px 12px; font: 600 10.5px var(--sans); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); }
+.side .side-home { margin-bottom: 18px; border-left: 0; padding-left: 12px; font: 800 17px var(--sans); letter-spacing: -0.02em; color: var(--ink); }
 @media (max-width: 1099px) {
   .page { display: block; }
   .side {
@@ -108,7 +107,6 @@ html { scroll-behavior: smooth; }
   .side a { flex: none; white-space: nowrap; border-left: 0; border-bottom: 2px solid transparent; padding: 6px 8px; }
   .side a.on { border-bottom-color: var(--nav); }
   .side .side-home { margin: 0 6px 0 0; font-size: 15px; }
-  .side-group { display: none; }
   .section, .hero { scroll-margin-top: 50px; }
 }
 .section h2 { margin: 0; font-size: 28px; letter-spacing: -0.02em; font-weight: 700; }
@@ -285,3 +283,9 @@ button.chip:focus-visible { outline: 2px solid var(--edge); outline-offset: 2px;
 .fg-open:hover { background: var(--nav); border-color: var(--nav); color: #fff; }
 .fg-open svg { width: 13px; height: 13px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .fg-tip .tip-open { display: inline-block; padding: 0 4px; border-radius: 4px; background: var(--nav); color: #fff; }
+
+/* Embedded in another page (js/embed.js): only the viewers, sized to their content. */
+.embed body { background: transparent; }
+.embed .side, .embed .hero, .embed .foot { display: none; }
+.embed .page { display: block; }
+.embed .section:first-of-type { border-top: 0; padding-top: 8px; }
