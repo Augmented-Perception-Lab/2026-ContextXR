@@ -1,0 +1,48 @@
+{
+  "app": "reddit",
+  "icon": "message-circle",
+  "color": "#ff4500",
+  "facets": {
+    "reddit.open_section": {
+      "blocks": [
+        {"type": "tabs", "selected": 0, "items": [
+          {"cap": "open_browse_feed", "label": "Home", "icon": "house"},
+          {"cap": "open_search_content", "label": "Search", "icon": "search"}
+        ]}
+      ]
+    },
+    "reddit.browse_feed": {
+      "blocks": [
+        {"type": "list", "cap": "view_post_list", "items": [
+          {"title": "First snow this weekend?", "meta": "r/pittsburgh · 4h · 312 ↑ · 88 comments", "hue": 200, "icon": "snowflake"},
+          {"title": "Finally finished my 65% build", "meta": "r/MechanicalKeyboards · 6h · 2.1k ↑", "hue": 280, "icon": "keyboard"},
+          {"title": "Best dumplings in Squirrel Hill?", "meta": "r/pittsburgh · 9h · 145 ↑", "hue": 20, "icon": "utensils"}
+        ]},
+        {"type": "link", "cap": "open_view_post", "label": "Open post", "meta": "88 comments"}
+      ]
+    },
+    "reddit.view_post": {
+      "blocks": [
+        {"type": "group", "cap": "view_post_content", "blocks": [
+          {"type": "header", "title": "First snow this weekend?", "subtitle": "r/pittsburgh · u/steelcityjen · 4h"},
+          {"type": "text", "size": "sm", "text": "Forecast says flurries Saturday night. Is it worth swapping to winter tires already?"}
+        ]},
+        {"type": "list", "cap": "view_comment_thread", "label": "88 comments", "items": [
+          {"title": "u/wxnerd · 142 ↑", "meta": "Models show 1–2 in. Roads should stay wet, not icy.", "avatar": true},
+          {"title": "u/burghbiker · 57 ↑", "meta": "Swap before Thanksgiving, shops get slammed.", "avatar": true}
+        ]}
+      ]
+    },
+    "reddit.search_content": {
+      "blocks": [
+        {"type": "input", "cap": "enter_search_query", "icon": "search", "value": "mechanical keyboards"},
+        {"type": "list", "cap": "view_search_result", "items": [
+          {"title": "r/MechanicalKeyboards", "meta": "Community · 1.4M members", "hue": 280, "icon": "users"},
+          {"title": "Finally finished my 65% build", "meta": "Post · 2.1k ↑ · 6h", "hue": 280, "icon": "keyboard"},
+          {"title": "Quietest switches for an office?", "meta": "Post · 384 ↑ · 2d", "hue": 160, "icon": "message-square"}
+        ]},
+        {"type": "link", "cap": "open_view_post", "label": "Open post"}
+      ]
+    }
+  }
+}

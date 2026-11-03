@@ -1,0 +1,55 @@
+{
+  "app": "news",
+  "icon": "newspaper",
+  "color": "#e03131",
+  "facets": {
+    "news.open_section": {
+      "blocks": [
+        {"type": "tabs", "selected": 0, "items": [
+          {"cap": "open_browse_news_feed", "label": "Today", "icon": "newspaper"},
+          {"cap": "open_search_news", "label": "Search", "icon": "search"}
+        ]}
+      ]
+    },
+    "news.browse_news_feed": {
+      "blocks": [
+        {"type": "chips", "cap": "switch_news_category", "items": ["Top", "World", "Tech", "Sports"], "selected": 0},
+        {"type": "media", "cap": "view_featured_stories", "kind": "photo", "hue": 190, "icon": "bike", "aspect": "wide",
+         "caption": "Pittsburgh approves 40-mile riverfront bike network"},
+        {"type": "list", "cap": "view_headline_list", "style": "thumbs", "items": [
+          {"title": "Fed holds rates steady, signals cut in December", "meta": "Reuters · 1 h", "hue": 120},
+          {"title": "Steelers edge Ravens 24–21 in overtime", "meta": "ESPN · 3 h", "hue": 45},
+          {"title": "New battery chemistry doubles EV range", "meta": "The Verge · 5 h", "hue": 260}
+        ]},
+        {"type": "link", "cap": "open_read_article", "label": "Read full story"}
+      ]
+    },
+    "news.read_article": {
+      "blocks": [
+        {"type": "media", "cap": "view_article_media", "kind": "photo", "hue": 190, "icon": "bike", "aspect": "wide", "caption": "The Three Rivers Heritage Trail near the Point"},
+        {"type": "group", "cap": "view_article_content", "blocks": [
+          {"type": "header", "title": "Pittsburgh approves 40-mile riverfront bike network", "subtitle": "Post-Gazette · 6 min read"},
+          {"type": "text", "size": "sm", "text": "City council voted 7–2 on Tuesday to fund protected lanes linking all three rivers, with the first segments opening next spring."}
+        ]},
+        {"type": "list", "cap": "view_comments", "label": "Comments (128)", "items": [
+          {"title": "Finally! My commute just got safer.", "meta": "Dana K. · 42 likes", "avatar": "DK", "hue": 330},
+          {"title": "What about the Liberty Ave stretch?", "meta": "Marco T. · 17 likes", "avatar": "MT", "hue": 60}
+        ]}
+      ]
+    },
+    "news.search_news": {
+      "blocks": [
+        {"type": "input", "cap": "enter_search_query", "icon": "search", "value": "bike lanes"},
+        {"type": "row", "widths": [1.6, 1], "blocks": [
+          {"type": "chips", "cap": "filter_search_results", "items": ["Past week", "Local"], "selected": [0, 1]},
+          {"type": "select", "cap": "sort_search_results", "label": "Sort", "value": "Newest"}
+        ]},
+        {"type": "list", "cap": "view_search_results", "items": [
+          {"title": "Pittsburgh approves 40-mile riverfront bike network", "meta": "Post-Gazette · 2 h"},
+          {"title": "Protected bike lanes cut crashes by 30%, study finds", "meta": "NPR · 3 d"}
+        ]},
+        {"type": "link", "cap": "open_read_article", "label": "Read top result"}
+      ]
+    }
+  }
+}

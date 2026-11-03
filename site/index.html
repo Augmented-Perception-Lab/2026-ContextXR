@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ContextXR</title>
+  <meta name="description" content="ContextXR: a benchmarking framework for context-aware XR interfaces, and the MineXR++ functional facet dataset (UIST '26).">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mockups.css">
+  <link rel="stylesheet" href="css/compare.css">
+  <link rel="stylesheet" href="css/factors.css">
+</head>
+<body>
+  <div class="page">
+  <nav class="side" aria-label="Sections">
+    <a class="side-home" href="#top">ContextXR</a>
+    <p class="side-group">MineXR++</p>
+    <a href="#facet-graphs">Facet graphs</a>
+    <a href="#layouts">Contextual layouts</a>
+    <p class="side-group">Using ContextXR</p>
+    <a href="#factors">Context factor analysis</a>
+    <p class="side-group">Paper</p>
+    <a href="#cite">Citation</a>
+  </nav>
+  <div class="page-main">
+  <header class="hero" id="top">
+    <p class="venue">UIST '26 · Detroit</p>
+    <h1>ContextXR</h1>
+    <p class="lede">A benchmarking framework for context-aware XR interfaces, built on <strong>functional facets</strong>: groups of capabilities that together serve one user intent.</p>
+    <p class="authors">Hyunsung Cho, Sarah Yewon Yun, Nancy Ruonan Sun, Ben Lafreniere, Mark Parent, Kashyap Todi, Tanya R. Jonker, Hrvoje Benko, Tongshuang Wu, David Lindlbauer</p>
+    <p class="affils">Carnegie Mellon University · Reality Labs Research, Meta</p>
+    <nav class="links" aria-label="Paper, code and data">
+      <a href="https://doi.org/10.1145/3830398.3830675">Paper</a>
+      <a href="https://arxiv.org/abs/2609.30466">arXiv</a>
+      <a href="https://github.com/Augmented-Perception-Lab/2026-ContextXR">Code</a>
+      <a href="https://github.com/Augmented-Perception-Lab/2026-ContextXR/tree/main/data/minexrpp">MineXR++ data</a>
+      <a href="#cite">BibTeX</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="facet-graphs" class="section">
+      <div class="section-head">
+        <h2>MineXR++ Facet Graphs</h2>
+        <p class="section-sub">Each app's functionality is a graph of facets. Edges are <span class="mono nav-ink">open_&lt;facet&gt;</span> capabilities that move from one facet to another. Click an app to expand its graph, and click a facet to see its capabilities. Hover a facet to preview its panel, and open the panel to see where each capability sits.</p>
+        <p class="stats" id="fg-stats"></p>
+      </div>
+
+      <div class="fg-toolbar">
+        <label class="fg-search">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="M13 13l4 4"/></svg>
+          <input id="fg-query" type="search" placeholder="Search apps, facets, capabilities" autocomplete="off" spellcheck="false">
+        </label>
+        <div class="fg-seg" role="group" aria-label="Sort apps">
+          <button data-sort="uses" class="on" title="Apps placed in the most scenarios first">Most used</button>
+          <button data-sort="facets" title="Apps with the most facets first">Most facets</button>
+          <button data-sort="name">A–Z</button>
+        </div>
+        <div class="fg-actions">
+          <button id="fg-caps" class="fg-btn" aria-pressed="false">Show capabilities</button>
+          <button id="fg-expand" class="fg-btn">Expand all</button>
+          <button id="fg-collapse" class="fg-btn">Collapse all</button>
+        </div>
+      </div>
+
+      <div class="fg-frame">
+        <aside class="fg-legend" aria-label="Legend">
+          <span class="chip app on">App</span>
+          <span class="chip facet">Facet</span>
+          <span class="chip cap">Capability</span>
+          <span class="chip cap nav">navigational<br>capability</span>
+          <span class="legend-edge"><svg viewBox="0 0 40 10"><path d="M2 5h30"/><path class="head" d="M30 1.5l6 3.5-6 3.5z"/></svg>opens</span>
+          <span class="legend-edge back"><svg viewBox="0 0 40 10"><path d="M2 5h30"/><path class="head" d="M30 1.5l6 3.5-6 3.5z"/></svg><span>opens back<br><small>on hover</small></span></span>
+        </aside>
+        <div class="fg-scroll" id="fg-scroll">
+          <div class="fg-canvas" id="fg-canvas">
+            <svg class="fg-edges" id="fg-edges" aria-hidden="true"></svg>
+          </div>
+        </div>
+      </div>
+      <div class="fg-tip" id="fg-tip" role="tooltip"></div>
+    </section>
+
+    <section id="layouts" class="section">
+      <div class="section-head">
+        <h2>MineXR++ Contextual Layouts</h2>
+        <p class="section-sub">Each MineXR scenario is one participant's XR layout for one task in one environment. Pick an environment, then one of its layouts, grouped by the kind of task. Drag a widget to rearrange it, and click it to see which of its capabilities the participant's widgets showed. Below the view, test a functionality suggestion method on the same layout.</p>
+      </div>
+
+      <div class="cx-wrap">
+        <div class="ly-rooms" id="ly-rooms" role="tablist" aria-label="Environment"></div>
+        <div class="ly-groups" id="ly-groups" aria-label="Layouts in this environment, by task"></div>
+        <div class="cx-stage">
+          <div class="xr" id="ly-xr" aria-label="The participant's view of the environment with the facets of their layout. Drag a widget, or focus it and use the arrow keys, to move it."></div>
+        </div>
+        <div class="ly-more"><button type="button" class="fg-btn" id="ly-reset">Reset layout</button></div>
+        <details class="cx-details" id="sg-details" hidden>
+          <summary>Step-by-step breakdown</summary>
+          <div class="cx-summary">
+            <div class="cx-cost" id="cx-cost"></div>
+            <div class="cx-takeaways" id="cx-takeaways"></div>
+          </div>
+          <div class="cx-cols" aria-hidden="true"><span>Suggested by the method</span><span>How the simulated user gets there</span><span>Needed (ground truth)</span></div>
+          <div id="cx-body"></div>
+        </details>
+        <details class="gt-raw" id="ly-raw"></details>
+      </div>
+      <dialog class="cx-dialog" id="cx-dialog"></dialog>
+    </section>
+
+
+    <section id="factors" class="section">
+      <div class="section-head">
+        <h2>Context Factor Analysis</h2>
+        <p class="section-sub">Which part of the context predicts a facet: who the user is, what they are doing, or where they are? For each facet, <em>lift</em> compares how often it appears in both layouts of a pair that share the same user (or task, or environment) with how often it appears in both layouts of any pair. Above 1, that factor makes the facet more likely. A facet's dominant factor has the highest lift; it is <em>mixed</em> when the top two are within 1.2× of each other, and has <em>no lift</em> when none is above 1.</p>
+      </div>
+
+      <div class="fa-wrap">
+        <div class="fa-head">
+          <div class="fa-counts" id="fa-counts" role="group" aria-label="Dominant factor: click to filter"></div>
+          <p class="fa-total"><span id="fa-total"></span> · click a group to filter</p>
+        </div>
+        <div class="fa-grid">
+          <figure class="fa-tri">
+            <div id="fa-tri"></div>
+            <figcaption>Each dot is a facet, pulled toward the factors with more lift and sized by how many layouts it appears in. Dots are nudged apart so none hides another. Labelled: the paper's examples (Fig. 4).</figcaption>
+          </figure>
+          <div class="fa-side">
+            <label class="fg-search fa-search">
+              <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="M13 13l4 4"/></svg>
+              <input id="fa-q" type="search" placeholder="Search facets" autocomplete="off" spellcheck="false">
+            </label>
+            <p class="fa-legend">Lift by factor, scaled to each facet's highest · tick: lift 1 (no effect) · number: placed in N layouts</p>
+            <div class="fa-list" id="fa-list"></div>
+          </div>
+        </div>
+      </div>
+      <div class="fa-tip" id="fa-tip" role="tooltip"></div>
+    </section>
+  </main>
+
+  <footer class="foot" id="cite">
+    <div class="cite-head">
+      <h2>Citation</h2>
+      <button type="button" class="fg-btn" id="cite-copy">Copy BibTeX</button>
+    </div>
+    <pre class="bibtex" id="cite-bib">@inproceedings{cho2026contextxr,
+  title     = {A Benchmarking Framework for Context-aware XR Interfaces},
+  author    = {Cho, Hyunsung and Yun, Sarah Yewon and Sun, Nancy Ruonan and Lafreniere, Ben and Parent, Mark and
+               Todi, Kashyap and Jonker, Tanya R. and Benko, Hrvoje and Wu, Tongshuang and Lindlbauer, David},
+  booktitle = {Proceedings of the 39th Annual ACM Symposium on User Interface Software and Technology},
+  series    = {UIST '26},
+  year      = {2026},
+  numpages  = {16},
+  location  = {Detroit, MI, USA},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  doi       = {10.1145/3830398.3830675}
+}</pre>
+    <p>Code: Apache-2.0. MineXR++ data, splits and cached LLM outputs: CC BY 4.0. MineXR++ benchmark <span id="fg-version"></span>. Raw MineXR images are not included.</p>
+  </footer>
+  </div>
+  </div>
+
+  <script src="data/minexrpp.js"></script>
+  <script src="data/mockups.js"></script>
+  <script src="data/results.js"></script>
+  <script src="js/mockups.js"></script>
+  <script src="js/scenes.js"></script>
+  <script src="js/facet-graph.js"></script>
+  <script src="js/suggest.js"></script>
+  <script src="js/layouts.js"></script>
+  <script src="js/factors.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>

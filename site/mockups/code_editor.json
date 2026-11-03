@@ -1,0 +1,60 @@
+{
+  "app": "code_editor",
+  "icon": "code",
+  "color": "#007acc",
+  "facets": {
+    "code_editor.open_section": {
+      "blocks": [
+        {"type": "tabs", "selected": 0, "items": [
+          {"cap": "open_browse_files", "label": "Explorer", "icon": "files"},
+          {"cap": "open_run_code", "label": "Terminal", "icon": "square-terminal"}
+        ]}
+      ]
+    },
+    "code_editor.browse_files": {
+      "blocks": [
+        {"type": "list", "cap": "view_file_tree", "label": "weather-app", "items": [
+          {"title": "src", "icon": "folder-open"},
+          {"title": "api.ts", "meta": "src", "icon": "file-code", "action": {"cap": "rename_file", "icon": "pencil"}},
+          {"title": "App.tsx", "meta": "src", "icon": "file-code", "action": {"cap": "delete_file", "icon": "trash-2"}},
+          {"title": "package.json", "icon": "file-json"}
+        ]},
+        {"type": "row", "blocks": [
+          {"type": "button", "cap": "create_file", "label": "New file", "icon": "file-plus", "style": "secondary"},
+          {"type": "link", "cap": "open_edit_code", "label": "Open api.ts"}
+        ]}
+      ]
+    },
+    "code_editor.edit_code": {
+      "blocks": [
+        {"type": "code", "cap": "view_code_content", "lines": [
+          "export async function getForecast(city: string) {",
+          "  const url = `${BASE}/forecast?q=${city}`;",
+          "  const res = await fetch(url);",
+          "  return res.json();",
+          "}"
+        ]},
+        {"type": "input", "cap": "edit_code", "icon": "text-cursor", "value": "  if (!res.ok) throw new Error(res.statusText);"},
+        {"type": "buttons", "items": [
+          {"cap": "insert_code", "label": "Insert line", "icon": "plus", "style": "secondary"},
+          {"cap": "delete_code", "label": "Delete line", "icon": "delete", "style": "ghost"}
+        ]}
+      ]
+    },
+    "code_editor.run_code": {
+      "blocks": [
+        {"type": "row", "widths": [3, 1], "blocks": [
+          {"type": "input", "cap": "enter_command", "icon": "terminal", "value": "npm test"},
+          {"type": "button", "cap": "run_command", "label": "Run", "icon": "play", "style": "primary"}
+        ]},
+        {"type": "code", "cap": "view_terminal_output", "lines": [
+          "PASS  src/api.test.ts",
+          "  ✓ fetches forecast (42 ms)",
+          "  ✓ throws on 404 (8 ms)",
+          "Tests: 2 passed, 2 total"
+        ]},
+        {"type": "link", "cap": "open_edit_code", "label": "Open src/api.ts", "icon": "file-code"}
+      ]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+Current scenario:
+Task: {task_id}
+Environment: {environment_id}
+{details_block}
+Available facet catalog:
+{catalog_text}
+
+Instructions:
+- Predict the {top_k} facets most likely to be useful.
+- Cover primary, secondary, and ambient support when plausible.
+- Use linked_facets and entry facets when they help explain likely navigation paths or adjacent utilities.
+- Use exact facet_id values from the catalog.
+- Return JSON only.

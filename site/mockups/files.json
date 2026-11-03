@@ -1,0 +1,384 @@
+{
+  "app": "files",
+  "icon": "folder",
+  "color": "#1a7cf5",
+  "facets": {
+    "files.open_section": {
+      "blocks": [
+        {
+          "type": "tabs",
+          "selected": 0,
+          "items": [
+            {
+              "cap": "open_browse_files",
+              "label": "Browse",
+              "icon": "folder"
+            },
+            {
+              "cap": "open_search_files",
+              "label": "Search",
+              "icon": "search"
+            }
+          ]
+        }
+      ]
+    },
+    "files.browse_files": {
+      "blocks": [
+        {
+          "type": "list",
+          "cap": "view_location_list",
+          "label": "Locations",
+          "items": [
+            {
+              "title": "iCloud Drive",
+              "meta": "42 GB free",
+              "icon": "cloud",
+              "trailing": "Current"
+            },
+            {
+              "title": "On My iPhone",
+              "icon": "smartphone",
+              "action": {
+                "cap": "select_location",
+                "icon": "chevron-right"
+              }
+            },
+            {
+              "title": "Google Drive",
+              "icon": "hard-drive"
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "widths": [
+            1.4,
+            1
+          ],
+          "blocks": [
+            {
+              "type": "button",
+              "cap": "navigate_folder",
+              "label": "Documents",
+              "icon": "chevron-left",
+              "style": "ghost"
+            },
+            {
+              "type": "button",
+              "cap": "open_manage_files",
+              "label": "Select",
+              "style": "ghost"
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "widths": [
+            1,
+            1
+          ],
+          "blocks": [
+            {
+              "type": "segmented",
+              "cap": "switch_view_mode",
+              "items": [
+                "Icons",
+                "List"
+              ],
+              "selected": 1
+            },
+            {
+              "type": "select",
+              "cap": "sort_files",
+              "label": "Sort",
+              "value": "Date"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "cap": "view_file_list",
+          "label": "Work",
+          "items": [
+            {
+              "title": "Q3 Report.pdf",
+              "meta": "Oct 20 · 2.4 MB",
+              "icon": "file-text"
+            },
+            {
+              "title": "Budget 2027.xlsx",
+              "meta": "Oct 17 · 860 KB",
+              "icon": "file-spreadsheet"
+            },
+            {
+              "title": "Offsite photos",
+              "meta": "24 items",
+              "icon": "folder"
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "cap": "open_view_file",
+          "label": "Open Q3 Report.pdf"
+        }
+      ]
+    },
+    "files.search_files": {
+      "blocks": [
+        {
+          "type": "row",
+          "widths": [
+            3.2,
+            1
+          ],
+          "blocks": [
+            {
+              "type": "input",
+              "cap": "enter_search_query",
+              "icon": "search",
+              "value": "report"
+            },
+            {
+              "type": "button",
+              "cap": "clear_search_query",
+              "label": "Clear",
+              "icon": "x",
+              "style": "ghost"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "cap": "view_search_results",
+          "items": [
+            {
+              "title": "Q3 Report.pdf",
+              "meta": "iCloud Drive › Work",
+              "icon": "file-text"
+            },
+            {
+              "title": "Expense Report Sept.pdf",
+              "meta": "iCloud Drive › Finance",
+              "icon": "file-text"
+            },
+            {
+              "title": "Field Study Report.docx",
+              "meta": "On My iPhone",
+              "icon": "file-type"
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "cap": "open_view_file",
+          "label": "Open Q3 Report.pdf"
+        }
+      ]
+    },
+    "files.view_file": {
+      "blocks": [
+        {
+          "type": "button",
+          "cap": "dismiss_viewer",
+          "label": "Done",
+          "icon": "x",
+          "style": "ghost"
+        },
+        {
+          "type": "media",
+          "cap": "view_file_content",
+          "kind": "doc",
+          "hue": 215,
+          "icon": "file-text",
+          "aspect": "tall",
+          "caption": "Q3 Report.pdf · page 2 of 14"
+        },
+        {
+          "type": "slider",
+          "cap": "zoom",
+          "label": "Zoom",
+          "value": 0.4,
+          "icon": "zoom-in",
+          "display": "125%"
+        },
+        {
+          "type": "kv",
+          "cap": "view_file_metadata",
+          "items": [
+            [
+              "Size",
+              "2.4 MB"
+            ],
+            [
+              "Modified",
+              "Oct 20, 4:12 PM"
+            ],
+            [
+              "Where",
+              "iCloud Drive › Work"
+            ]
+          ]
+        },
+        {
+          "type": "controls",
+          "items": [
+            {
+              "cap": "open_annotate_file",
+              "icon": "pen-tool",
+              "label": "Markup"
+            },
+            {
+              "cap": "open_share_file",
+              "icon": "share",
+              "label": "Share"
+            },
+            {
+              "cap": "open_manage_files",
+              "icon": "folder-input",
+              "label": "Organize"
+            }
+          ]
+        }
+      ]
+    },
+    "files.manage_files": {
+      "blocks": [
+        {
+          "type": "list",
+          "cap": "select_files",
+          "style": "check",
+          "label": "2 selected",
+          "items": [
+            {
+              "title": "Q3 Report.pdf",
+              "meta": "Oct 20 · 2.4 MB",
+              "done": true
+            },
+            {
+              "title": "Budget 2027.xlsx",
+              "meta": "Oct 17 · 860 KB",
+              "done": true
+            },
+            {
+              "title": "Offsite photos",
+              "meta": "24 items"
+            }
+          ]
+        },
+        {
+          "type": "controls",
+          "items": [
+            {
+              "cap": "move_file",
+              "icon": "folder-input",
+              "label": "Move"
+            },
+            {
+              "cap": "duplicate_file",
+              "icon": "copy",
+              "label": "Duplicate"
+            },
+            {
+              "cap": "rename_file",
+              "icon": "pencil",
+              "label": "Rename"
+            },
+            {
+              "cap": "delete_item",
+              "icon": "trash-2",
+              "label": "Delete"
+            }
+          ]
+        }
+      ]
+    },
+    "files.share_file": {
+      "blocks": [
+        {
+          "type": "grid",
+          "cap": "share_file",
+          "label": "Share Q3 Report.pdf",
+          "cols": 4,
+          "items": [
+            {
+              "label": "AirDrop",
+              "icon": "radio-tower",
+              "hue": 210
+            },
+            {
+              "label": "Messages",
+              "icon": "message-circle",
+              "hue": 130
+            },
+            {
+              "label": "Mail",
+              "icon": "mail",
+              "hue": 205
+            },
+            {
+              "label": "Priya",
+              "icon": "user",
+              "hue": 330
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "cap": "export_file",
+          "label": "Export as PDF",
+          "icon": "file-down",
+          "style": "secondary"
+        }
+      ]
+    },
+    "files.annotate_file": {
+      "blocks": [
+        {
+          "type": "group",
+          "cap": "draw_markup",
+          "blocks": [
+            {
+              "type": "media",
+              "kind": "doc",
+              "hue": 215,
+              "icon": "pen-tool",
+              "aspect": "wide",
+              "caption": "Q3 Report.pdf · page 2"
+            },
+            {
+              "type": "chips",
+              "items": [
+                "Pen",
+                "Highlighter",
+                "Eraser"
+              ],
+              "selected": 1
+            }
+          ]
+        },
+        {
+          "type": "controls",
+          "items": [
+            {
+              "cap": "undo_redo",
+              "icon": "undo-2",
+              "label": "Undo"
+            },
+            {
+              "cap": "undo_redo",
+              "icon": "redo-2",
+              "label": "Redo"
+            },
+            {
+              "cap": "add_annotation",
+              "icon": "message-square-plus",
+              "label": "Note"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

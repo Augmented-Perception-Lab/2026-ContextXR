@@ -1,0 +1,13 @@
+# Zero-shot LLM (paper §4.2.2, Appendix A). Replays cache/llm/ unless run with --live.
+name: zero_shot_llm
+class: contextxr.methods.llm.LLMSuggester
+params:
+  condition: null
+  model: gemini-3-flash-preview
+  temperature: 0.2
+tasks:
+  next:
+    # The paper's LLM runs also queried the model after the last target was placed when some
+    # exposed capability belonged to no single facet (affects retrieval averages only).
+    protocol:
+      final_step_query: if_uncovered_capabilities

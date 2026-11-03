@@ -1,0 +1,4 @@
+Existing user-placed facets in the XR layout:
+{placed_facet_lines}
+
+Use these already placed facets as prior context, avoid repeating them, and recommend what should come next for the remaining needs.

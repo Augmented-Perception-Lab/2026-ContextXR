@@ -1,0 +1,139 @@
+{
+  "app": "google_calendar",
+  "icon": "calendar-days",
+  "color": "#1a73e8",
+  "facets": {
+    "google_calendar.open_section": {
+      "blocks": [
+        {"type": "tabs", "selected": 0, "items": [
+          {"cap": "open_view_calendar", "label": "Calendar", "icon": "calendar-days"},
+          {"cap": "open_view_event_detail", "label": "Event", "icon": "calendar-clock"},
+          {"cap": "open_view_task_detail", "label": "Task", "icon": "circle-check"},
+          {"cap": "open_create_edit_event", "label": "New event", "icon": "calendar-plus"},
+          {"cap": "open_create_edit_task", "label": "New task", "icon": "list-plus"}
+        ]}
+      ]
+    },
+    "google_calendar.view_calendar": {
+      "blocks": [
+        {"type": "tabs", "selected": 2, "items": [
+          {"cap": "set_view_day", "label": "Day", "icon": "calendar-1"},
+          {"cap": "set_view_3_day", "label": "3 days", "icon": "calendar-range"},
+          {"cap": "set_view_week", "label": "Week", "icon": "calendar-days"},
+          {"cap": "set_view_month", "label": "Month", "icon": "calendar"}
+        ]},
+        {"type": "row", "widths": [1, 1.4], "blocks": [
+          {"type": "button", "cap": "navigate_to_today", "label": "Today", "icon": "calendar-check", "style": "secondary"},
+          {"type": "button", "cap": "open_create_edit_event", "label": "Create", "icon": "plus"}
+        ]},
+        {"type": "calendar", "cap": "view_calendar", "kind": "week", "items": [
+          {"time": "Mon 10:00", "title": "Lab meeting", "hue": 140},
+          {"time": "Thu 14:00", "title": "Design Review", "hue": 210},
+          {"time": "Fri 17:00", "title": "CHI camera-ready due", "hue": 30}
+        ]},
+        {"type": "header", "caps": ["view_title", "view_time_duration"], "title": "Design Review", "subtitle": "Thu, Oct 23 · 2:00 – 3:00 PM"},
+        {"type": "text", "cap": "view_location", "size": "sm", "muted": true, "text": "Gates Hall 4F, Room 4405"},
+        {"type": "link", "cap": "open_view_event_detail", "label": "Event details"},
+        {"type": "link", "cap": "open_configure_calendar_visibility", "label": "My calendars", "icon": "layers", "meta": "4 shown"}
+      ]
+    },
+    "google_calendar.view_event_detail": {
+      "blocks": [
+        {"type": "header", "caps": ["view_title", "view_time_duration"], "title": "Design Review", "subtitle": "Thu, Oct 23 · 2:00 – 3:00 PM", "thumb": {"icon": "calendar-clock", "hue": 210}},
+        {"type": "kv", "caps": ["view_location", "view_reminder_alert"], "items": [["Where", "Gates Hall 4F, Room 4405"], ["Reminder", "10 min before"]]},
+        {"type": "button", "cap": "join_conference_link", "label": "Join with Google Meet", "icon": "video"},
+        {"type": "list", "cap": "view_attendees", "label": "3 guests · 2 yes", "items": [
+          {"title": "Hyunsung Cho", "meta": "Organizer", "avatar": true},
+          {"title": "Maya Lin", "meta": "Yes", "avatar": true},
+          {"title": "Jordan Park", "meta": "Awaiting", "avatar": true}
+        ]},
+        {"type": "text", "cap": "view_description", "size": "sm", "text": "Walk through onboarding flow v3 and agree on the copy before Friday's handoff."},
+        {"type": "list", "cap": "view_attachments", "items": [
+          {"title": "Onboarding v3.fig", "meta": "Figma", "icon": "paperclip"}
+        ]},
+        {"type": "buttons", "items": [
+          {"cap": "message_event_attendees", "label": "Email guests", "icon": "mail", "style": "secondary"},
+          {"cap": "open_create_edit_event", "label": "Edit", "icon": "pencil", "style": "secondary"},
+          {"cap": "open_respond_to_invitation", "label": "RSVP", "icon": "chevron-right"}
+        ]}
+      ]
+    },
+    "google_calendar.create_edit_event": {
+      "blocks": [
+        {"type": "input", "cap": "set_title", "value": "Design Review", "icon": "type"},
+        {"type": "select", "cap": "set_time_duration", "label": "Thu, Oct 23", "value": "2:00 – 3:00 PM"},
+        {"type": "select", "cap": "set_recurrence", "label": "Repeat", "value": "Weekly on Thu"},
+        {"type": "input", "cap": "set_location", "value": "Gates Hall 4F, Room 4405", "icon": "map-pin"},
+        {"type": "input", "cap": "add_invitees", "value": "Maya Lin, Jordan Park", "icon": "user-plus"},
+        {"type": "row", "blocks": [
+          {"type": "button", "cap": "add_video_conferencing", "label": "Add Meet", "icon": "video", "style": "secondary"},
+          {"type": "button", "cap": "attach_files", "label": "Attach", "icon": "paperclip", "style": "secondary"}
+        ]},
+        {"type": "input", "cap": "add_description", "placeholder": "Add description", "icon": "align-left", "multiline": true},
+        {"type": "select", "cap": "set_reminder_alert", "label": "Notification", "value": "10 min before"},
+        {"type": "row", "blocks": [
+          {"type": "select", "cap": "set_calendar", "label": "Calendar", "value": "Work"},
+          {"type": "select", "cap": "set_color", "label": "Color", "value": "Peacock"}
+        ]},
+        {"type": "row", "blocks": [
+          {"type": "select", "cap": "set_account", "label": "Account", "value": "CMU"},
+          {"type": "select", "cap": "set_visibility", "label": "Visibility", "value": "Default"}
+        ]},
+        {"type": "link", "cap": "open_schedule_find_time", "label": "Find a time", "icon": "users"}
+      ]
+    },
+    "google_calendar.schedule_find_time": {
+      "blocks": [
+        {"type": "list", "cap": "view_others_free_busy", "label": "Thu, Oct 23", "items": [
+          {"title": "Maya Lin", "meta": "Busy 1:00 – 2:30 PM", "avatar": true},
+          {"title": "Jordan Park", "meta": "Busy 11:00 AM – 12:00 PM", "avatar": true},
+          {"title": "Hyunsung Cho", "meta": "Free after 1:00 PM", "avatar": true}
+        ]},
+        {"type": "chips", "cap": "suggest_times", "label": "Suggested times", "items": ["Thu 3:00 PM", "Fri 10:30 AM", "Fri 2:00 PM"], "selected": 0}
+      ]
+    },
+    "google_calendar.respond_to_invitation": {
+      "blocks": [
+        {"type": "buttons", "items": [
+          {"cap": "accept_invitation", "label": "Yes", "icon": "check", "style": "primary"},
+          {"cap": "decline_invitation", "label": "No", "icon": "x", "style": "secondary"},
+          {"cap": "maybe_invitation", "label": "Maybe", "icon": "circle-help", "style": "secondary"}
+        ]},
+        {"type": "input", "cap": "add_note_to_response", "value": "Might be 5 min late", "icon": "message-square"},
+        {"type": "button", "cap": "propose_new_time", "label": "Propose a new time", "icon": "clock", "style": "ghost"}
+      ]
+    },
+    "google_calendar.view_task_detail": {
+      "blocks": [
+        {"type": "header", "cap": "view_title", "title": "Submit CHI camera-ready", "thumb": {"icon": "circle-check", "hue": 30}},
+        {"type": "kv", "caps": ["view_due_date", "view_time_duration"], "items": [["Due", "Fri, Oct 24"], ["Time", "5:00 PM"]]},
+        {"type": "text", "cap": "view_description", "size": "sm", "text": "Upload final PDF and ACM copyright form to PCS."},
+        {"type": "row", "widths": [1.4, 1], "blocks": [
+          {"type": "button", "cap": "mark_completed", "label": "Mark completed", "icon": "check"},
+          {"type": "button", "cap": "open_create_edit_task", "label": "Edit", "icon": "pencil", "style": "secondary"}
+        ]}
+      ]
+    },
+    "google_calendar.configure_calendar_visibility": {
+      "blocks": [
+        {"type": "list", "caps": ["view_calendar_list", "toggle_calendar_visibility"], "style": "check", "items": [
+          {"title": "Hyunsung Cho", "done": true},
+          {"title": "Work", "done": true, "action": {"cap": "share_calendar", "icon": "share-2"}},
+          {"title": "Holidays in United States", "done": true},
+          {"title": "Birthdays", "done": false}
+        ]},
+        {"type": "buttons", "items": [
+          {"cap": "subscribe_to_calendar", "label": "Subscribe", "icon": "rss", "style": "secondary"},
+          {"cap": "create_new_calendar", "label": "New calendar", "icon": "plus", "style": "secondary"}
+        ]}
+      ]
+    },
+    "google_calendar.create_edit_task": {
+      "blocks": [
+        {"type": "input", "cap": "set_title", "value": "Submit CHI camera-ready", "icon": "type"},
+        {"type": "select", "cap": "set_time_duration", "label": "Fri, Oct 24", "value": "5:00 PM"},
+        {"type": "select", "cap": "set_recurrence", "label": "Repeat", "value": "Does not repeat"}
+      ]
+    }
+  }
+}

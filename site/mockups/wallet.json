@@ -1,0 +1,36 @@
+{
+  "app": "wallet",
+  "icon": "wallet",
+  "color": "#1c1c1e",
+  "facets": {
+    "wallet.open_section": {
+      "blocks": [
+        {"type": "tabs", "selected": 0, "items": [
+          {"cap": "open_make_payment", "label": "Pay", "icon": "nfc"},
+          {"cap": "open_view_balance", "label": "Balance", "icon": "receipt"}
+        ]}
+      ]
+    },
+    "wallet.make_payment": {
+      "blocks": [
+        {"type": "media", "cap": "view_selected_card", "kind": "art", "hue": 210, "icon": "credit-card", "aspect": "wide", "caption": "Apple Card ···· 4821"},
+        {"type": "list", "cap": "select_payment_card", "items": [
+          {"title": "Chase Sapphire", "meta": "···· 0937", "hue": 220, "icon": "credit-card"},
+          {"title": "PNC Debit", "meta": "···· 2215", "hue": 25, "icon": "credit-card"}
+        ]},
+        {"type": "button", "cap": "confirm_payment", "label": "Confirm with Face ID", "icon": "scan-face"},
+        {"type": "notice", "cap": "view_payment_status", "title": "Hold Near Reader", "text": "Coffee Tree Roasters · $6.45", "icon": "nfc", "tone": "blue"}
+      ]
+    },
+    "wallet.view_balance": {
+      "blocks": [
+        {"type": "stat", "cap": "view_current_balance", "value": "$1,248.30", "label": "Apple Card balance · $8,751.70 available", "icon": "credit-card"},
+        {"type": "list", "cap": "view_recent_transactions", "label": "Latest transactions", "items": [
+          {"title": "Coffee Tree Roasters", "meta": "Today · Pittsburgh", "trailing": "$6.45", "icon": "coffee"},
+          {"title": "Giant Eagle", "meta": "Yesterday", "trailing": "$54.12", "icon": "shopping-basket"},
+          {"title": "Lyft", "meta": "Tuesday", "trailing": "$18.40", "icon": "car"}
+        ]}
+      ]
+    }
+  }
+}

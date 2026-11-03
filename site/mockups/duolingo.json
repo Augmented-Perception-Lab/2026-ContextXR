@@ -1,0 +1,87 @@
+{
+  "app": "duolingo",
+  "icon": "bird",
+  "color": "#58cc02",
+  "facets": {
+    "duolingo.open_section": {
+      "blocks": [
+        {"type": "tabs", "selected": 0, "items": [
+          {"cap": "open_browse_learning_path", "label": "Learn", "icon": "house"},
+          {"cap": "open_complete_lesson", "label": "Lesson", "icon": "book-open"},
+          {"cap": "open_browse_social_feed", "label": "Friends", "icon": "users"},
+          {"cap": "open_view_profile", "label": "Profile", "icon": "user"}
+        ]}
+      ]
+    },
+    "duolingo.browse_learning_path": {
+      "blocks": [
+        {"type": "chips", "cap": "select_unit", "items": ["Unit 1", "Unit 2", "Unit 3", "Unit 4"], "selected": 2},
+        {"type": "header", "cap": "view_unit_details", "title": "Unit 3 · Order at a café", "subtitle": "Section 1 · Lesson 3 of 5", "thumb": {"icon": "coffee", "hue": 95}},
+        {"type": "list", "cap": "view_course_map", "style": "check", "items": [
+          {"title": "Order drinks", "meta": "+10 XP", "done": true},
+          {"title": "Ask for the bill", "meta": "+10 XP", "done": true},
+          {"title": "Talk about food", "meta": "Up next"},
+          {"title": "Unit review", "meta": "Trophy"}
+        ]},
+        {"type": "button", "cap": "open_complete_lesson", "label": "Start lesson · +10 XP", "icon": "play"}
+      ]
+    },
+    "duolingo.complete_lesson": {
+      "blocks": [
+        {"type": "header", "cap": "view_prompt", "title": "Me gustaría un café, por favor.", "subtitle": "Translate this sentence"},
+        {"type": "input", "cap": "type_answer", "multiline": true, "value": "I would like a coffee, please"},
+        {"type": "button", "cap": "check_answer", "label": "Check", "style": "primary"},
+        {"type": "row", "blocks": [
+          {"type": "link", "cap": "open_view_lesson_progress", "label": "Progress", "meta": "7/12"},
+          {"type": "link", "cap": "open_view_lesson_summary", "label": "Finish"}
+        ]}
+      ]
+    },
+    "duolingo.view_lesson_progress": {
+      "blocks": [
+        {"type": "row", "widths": [2.2, 1], "blocks": [
+          {"type": "progress", "cap": "view_progress_bar", "label": "Order at a café", "value": 0.58, "display": "7/12"},
+          {"type": "stat", "cap": "view_remaining_energy", "value": "18", "unit": "/25", "label": "Energy", "icon": "zap"}
+        ]}
+      ]
+    },
+    "duolingo.view_lesson_summary": {
+      "blocks": [
+        {"type": "row", "blocks": [
+          {"type": "stat", "cap": "view_xp_gained", "value": "+15", "unit": "XP", "label": "Total XP", "icon": "zap"},
+          {"type": "stat", "cap": "view_accuracy_score", "value": "92", "unit": "%", "label": "Great", "icon": "target"},
+          {"type": "stat", "cap": "view_time_taken", "value": "3:48", "label": "Speedy", "icon": "timer"}
+        ]},
+        {"type": "button", "cap": "claim_xp_reward", "label": "Claim XP", "style": "primary"}
+      ]
+    },
+    "duolingo.view_profile": {
+      "blocks": [
+        {"type": "row", "blocks": [
+          {"type": "stat", "cap": "view_current_streak", "value": "128", "label": "Day streak", "icon": "flame"},
+          {"type": "stat", "cap": "view_total_xp", "value": "14,302", "label": "Total XP", "icon": "zap"}
+        ]},
+        {"type": "stat", "cap": "view_league_rank", "value": "#3", "label": "Gold League · 2 days left", "icon": "trophy"},
+        {"type": "grid", "cap": "view_badges", "label": "Achievements", "cols": 4, "items": [
+          {"label": "Wildfire", "icon": "flame", "hue": 20},
+          {"label": "Sage", "icon": "sparkles", "hue": 140},
+          {"label": "Scholar", "icon": "graduation-cap", "hue": 270},
+          {"label": "Champion", "icon": "medal", "hue": 45}
+        ]}
+      ]
+    },
+    "duolingo.browse_social_feed": {
+      "blocks": [
+        {"type": "list", "cap": "view_social_feed_items", "items": [
+          {"title": "Mina hit a 100-day streak!", "meta": "Spanish · 2 h ago", "avatar": "MP", "hue": 200, "action": {"cap": "celebrate_achievement", "icon": "party-popper"}},
+          {"title": "Alex finished Unit 4", "meta": "Japanese · 5 h ago", "avatar": "AC", "hue": 30}
+        ]},
+        {"type": "list", "cap": "view_leaderboard", "label": "Gold League", "style": "numbered", "items": [
+          {"title": "Mina Park", "trailing": "1,240 XP"},
+          {"title": "Alex Chen", "trailing": "1,105 XP"},
+          {"title": "You", "trailing": "980 XP"}
+        ]}
+      ]
+    }
+  }
+}

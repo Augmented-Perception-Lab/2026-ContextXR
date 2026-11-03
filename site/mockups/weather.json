@@ -1,0 +1,93 @@
+{
+  "app": "weather",
+  "icon": "cloud-sun",
+  "color": "#1c7ed6",
+  "facets": {
+    "weather.open_section": {
+      "blocks": [
+        {"type": "tabs", "selected": 0, "items": [
+          {"cap": "open_view_current_weather", "label": "Weather", "icon": "cloud-sun"},
+          {"cap": "open_manage_saved_locations", "label": "Locations", "icon": "list"}
+        ]}
+      ]
+    },
+    "weather.view_current_weather": {
+      "blocks": [
+        {"type": "row", "widths": [1, 1.3], "blocks": [
+          {"type": "stat", "cap": "view_current_temperature", "value": "58°", "label": "Pittsburgh", "icon": "cloud-sun"},
+          {"type": "text", "cap": "view_current_conditions_summary", "size": "sm", "text": "Partly cloudy · H:63° L:47°. Showers expected after 6 PM."}
+        ]},
+        {"type": "grid", "cap": "view_hourly_forecast_summary", "cols": 4, "items": [
+          {"label": "Now 58°", "icon": "cloud-sun"},
+          {"label": "3 PM 61°", "icon": "sun"},
+          {"label": "6 PM 57°", "icon": "cloud-drizzle"},
+          {"label": "9 PM 52°", "icon": "cloud-rain"}
+        ]},
+        {"type": "list", "cap": "view_daily_forecast_summary", "label": "10-day forecast", "items": [
+          {"title": "Today", "icon": "cloud-sun", "trailing": "47° / 63°"},
+          {"title": "Fri", "icon": "cloud-rain", "meta": "70%", "trailing": "44° / 55°"},
+          {"title": "Sat", "icon": "sun", "trailing": "41° / 59°"}
+        ]},
+        {"type": "row", "widths": [1, 1], "blocks": [
+          {"type": "link", "cap": "open_view_detailed_daily_forecast", "label": "Hourly detail"},
+          {"type": "link", "cap": "open_view_extended_weather_metrics", "label": "More details"}
+        ]}
+      ]
+    },
+    "weather.view_detailed_daily_forecast": {
+      "blocks": [
+        {"type": "segmented", "cap": "select_day_for_detail", "items": ["Today", "Fri", "Sat", "Sun"], "selected": 1},
+        {"type": "chart", "cap": "view_hourly_temperature_graph", "kind": "line", "label": "Temperature · Fri", "values": [44, 46, 49, 52, 55, 54, 50, 47]},
+        {"type": "chart", "cap": "view_precipitation_chance_graph", "kind": "bars", "label": "Chance of rain", "values": [20, 35, 60, 70, 65, 40, 25, 10]},
+        {"type": "link", "cap": "open_view_precipitation_map", "label": "Precipitation map", "icon": "map"}
+      ]
+    },
+    "weather.view_extended_weather_metrics": {
+      "blocks": [
+        {"type": "row", "widths": [1, 1], "blocks": [
+          {"type": "stat", "cap": "view_feels_like", "value": "55°", "label": "Feels like", "icon": "thermometer"},
+          {"type": "stat", "cap": "view_wind_details", "value": "12", "unit": "mph", "label": "Wind · NW, gusts 20", "icon": "wind"}
+        ]},
+        {"type": "row", "widths": [1, 1], "blocks": [
+          {"type": "stat", "cap": "view_uv_index", "value": "3", "label": "UV index · Moderate", "icon": "sun"},
+          {"type": "stat", "cap": "view_humidity", "value": "62", "unit": "%", "label": "Humidity · Dew pt 45°", "icon": "droplets"}
+        ]},
+        {"type": "row", "widths": [1, 1], "blocks": [
+          {"type": "stat", "cap": "view_sunrise_sunset", "value": "6:31", "unit": "PM", "label": "Sunset · Sunrise 7:44", "icon": "sunset"},
+          {"type": "stat", "cap": "view_visibility", "value": "10", "unit": "mi", "label": "Visibility · Clear", "icon": "eye"}
+        ]}
+      ]
+    },
+    "weather.view_precipitation_map": {
+      "blocks": [
+        {"type": "segmented", "cap": "select_map_layer", "items": ["Precipitation", "Temp", "Wind"], "selected": 0},
+        {"type": "map", "cap": "view_precipitation_map", "kind": "area", "label": "Rain band approaching Pittsburgh"},
+        {"type": "player", "cap": "seek_precipitation_timeline", "progress": 0.35, "elapsed": "Now", "total": "+12 h"},
+        {"type": "controls", "items": [
+          {"cap": "play_precipitation_forecast", "icon": "play", "label": "Play", "primary": true},
+          {"cap": "pause_precipitation_forecast", "icon": "pause", "label": "Pause"},
+          {"cap": "zoom_map", "icon": "zoom-in", "label": "Zoom in"},
+          {"cap": "zoom_map", "icon": "zoom-out", "label": "Zoom out"},
+          {"cap": "pan_map", "icon": "move", "label": "Pan"}
+        ]}
+      ]
+    },
+    "weather.manage_saved_locations": {
+      "blocks": [
+        {"type": "row", "widths": [3, 1.4], "blocks": [
+          {"type": "input", "cap": "search_location", "icon": "search", "value": "Boston"},
+          {"type": "button", "cap": "add_location", "label": "Add", "icon": "plus", "style": "primary"}
+        ]},
+        {"type": "list", "cap": "view_location_list_with_weather_summary", "items": [
+          {"title": "Pittsburgh", "meta": "Partly cloudy · 47°/63°", "icon": "cloud-sun", "trailing": "58°", "action": {"cap": "select_location_from_list", "icon": "chevron-right"}},
+          {"title": "New York", "meta": "Sunny · 52°/66°", "icon": "sun", "trailing": "61°"},
+          {"title": "Seoul", "meta": "Clear · 41°/60°", "icon": "moon", "trailing": "49°"}
+        ]},
+        {"type": "row", "widths": [1, 1.4], "blocks": [
+          {"type": "button", "cap": "edit_location_list", "label": "Edit list", "icon": "pencil", "style": "secondary"},
+          {"type": "button", "cap": "open_view_current_weather", "label": "Show Pittsburgh", "icon": "chevron-right"}
+        ]}
+      ]
+    }
+  }
+}

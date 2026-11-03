@@ -1,0 +1,7 @@
+scenario_id,participant_id,task,environment,widget_id,app_id,facet_id,capabilities,widget_desc,screen_desc
+S1,U1,Cooking,Kitchen,1,recipes,recipes.cook_recipe,"{""recipes.view_step"": ""primary""}",current step,
+S1,U1,Cooking,Kitchen,2,music,music.now_playing,"{""music.view_title"": ""ambient""}",song title,
+S2,U1,Relaxing,LivingRoom,1,music,music.browse_music,"{""music.play_track"": ""primary""}",track list,
+S3,U2,Cooking,Kitchen,1,recipes,recipes.view_recipe,"{""recipes.view_ingredients"": ""primary""}",ingredients,
+S3,U2,Cooking,Kitchen,2,recipes,recipes.browse_recipes,"{""recipes.view_list"": ""peripheral""}",recipe list,
+S4,U2,Relaxing,LivingRoom,1,music,music.now_playing,"{""music.view_title"": ""primary"", ""music.pause"": ""primary""}",player,

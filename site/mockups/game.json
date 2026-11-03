@@ -1,0 +1,20 @@
+{
+  "app": "game",
+  "icon": "gamepad-2",
+  "color": "#7048e8",
+  "facets": {
+    "game.open_section": {
+      "blocks": [
+        {"type": "button", "cap": "open_play_game", "label": "Continue · Level 12", "icon": "play", "style": "primary"}
+      ]
+    },
+    "game.play_game": {
+      "blocks": [
+        {"type": "group", "cap": "play_game", "blocks": [
+          {"type": "media", "kind": "photo", "hue": 265, "icon": "gamepad-2", "aspect": "wide", "caption": "Level 12 · Crystal Caves"},
+          {"type": "stat", "value": "12,480", "label": "Score · 3 lives left", "icon": "trophy"}
+        ]}
+      ]
+    }
+  }
+}

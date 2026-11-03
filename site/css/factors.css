@@ -1,0 +1,107 @@
+/* Context factor analysis (js/factors.js). Factor colours are validated as a categorical set
+   (dataviz validate_palette.js) in both modes; they match the user / environment / task chips
+   of the participant's view. */
+:root {
+  --fa-user: #20c997; --fa-task: #4dabf7; --fa-environment: #f06595; --fa-mixed: #8b6fd6;
+  --fa-none: color-mix(in srgb, var(--ink) 28%, var(--bg));
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --fa-user: #199e70; --fa-task: #3987e5; --fa-environment: #d55181; --fa-mixed: #8a75e0; }
+}
+:root[data-theme="dark"] { --fa-user: #199e70; --fa-task: #3987e5; --fa-environment: #d55181; --fa-mixed: #8a75e0; }
+
+.fa-wrap { max-width: 1360px; margin: 24px auto 0; padding: 0 24px; }
+
+/* counts (Fig. 4 left) as one proportional bar that also filters */
+.fa-counts { display: flex; gap: 2px; }
+.fa-seg { display: flex; flex-direction: column; gap: 6px; min-width: 64px; padding: 0; border: 0; background: none; color: var(--ink-2); text-align: left; cursor: pointer; }
+.fa-seg i { display: block; height: 12px; border-radius: 3px; background: var(--c); transition: opacity .15s; }
+.fa-seg span { font: 500 13px var(--sans); white-space: nowrap; }
+.fa-seg b { font: 700 15px var(--mono); color: var(--ink); margin-right: 2px; }
+.fa-seg em { font-style: normal; }
+.fa-seg em.sm { display: none; }
+.fa-seg:hover span { color: var(--ink); }
+.fa-filtered .fa-seg:not(.on) i { opacity: .25; }
+.fa-seg.on span { color: var(--ink); font-weight: 600; }
+.fa-total { margin: 8px 0 0; font-size: 12.5px; color: var(--ink-3); }
+.fa-seg.user, .fa-dot.user, .fa-region.user, i.user { --c: var(--fa-user); }
+.fa-seg.task, .fa-dot.task, .fa-region.task, i.task { --c: var(--fa-task); }
+.fa-seg.environment, .fa-dot.environment, .fa-region.environment, i.environment { --c: var(--fa-environment); }
+.fa-seg.mixed, .fa-dot.mixed, i.mixed { --c: var(--fa-mixed); }
+.fa-seg.none, .fa-dot.none, i.none { --c: var(--fa-none); }
+
+.fa-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 28px; margin-top: 22px; align-items: start; }
+
+/* triangle */
+.fa-tri { margin: 0; }
+.fa-tri svg { display: block; width: 100%; height: auto; overflow: visible; }
+.fa-tri figcaption { margin-top: 8px; font-size: 12.5px; color: var(--ink-3); max-width: 560px; }
+.fa-frame { fill: none; stroke: var(--rule); stroke-width: 1.5; }
+.fa-region { fill: var(--c); fill-opacity: .07; stroke: var(--c); stroke-opacity: .3; stroke-width: 1; stroke-dasharray: 3 3; }
+.fa-corner { font: 700 14px var(--sans); fill: var(--ink); }
+.fa-mid, .fa-strip { font: 600 11px var(--sans); letter-spacing: .06em; text-transform: uppercase; fill: var(--ink-3); }
+.fa-ex { font: 600 11.5px var(--mono); fill: var(--ink-2); paint-order: stroke; stroke: var(--bg); stroke-width: 4px; stroke-linejoin: round; pointer-events: none; }
+.fa-dot { fill: var(--c); stroke: var(--bg); stroke-width: 1.5; cursor: pointer; transition: opacity .15s; }
+.fa-dot.hot { stroke: var(--ink); stroke-width: 2; }
+.fa-dot.dim { opacity: .12; }
+
+/* list of lift profiles (Fig. 4 right, for every facet) */
+.fa-side { min-width: 0; }
+.fa-search { max-width: none; }
+.fa-legend { margin: 8px 0 6px; font-size: 12px; color: var(--ink-3); }
+.fa-list { max-height: 560px; overflow-y: auto; border: 1px solid var(--rule); border-radius: 12px; }
+.fa-group h4 {
+  position: sticky; top: 0; z-index: 1; display: flex; align-items: center; gap: 8px; margin: 0; padding: 8px 12px;
+  background: var(--panel); border-bottom: 1px solid var(--rule); font: 600 12px var(--sans); letter-spacing: .04em; text-transform: uppercase; color: var(--ink-2);
+}
+.fa-group h4 i, .fa-tip-k i { width: 10px; height: 10px; border-radius: 3px; background: var(--c); }
+.fa-group h4 span { font: 500 11px var(--mono); color: var(--ink-3); }
+.fa-row {
+  display: grid; grid-template-columns: minmax(0, 1fr) 26px minmax(200px, 1.2fr); align-items: center; gap: 10px; width: 100%;
+  padding: 6px 12px; border: 0; border-bottom: 1px solid color-mix(in srgb, var(--rule) 60%, transparent); background: none; color: var(--ink); text-align: left; cursor: pointer;
+}
+.fa-row:hover, .fa-row.hot { background: var(--nav-bg); }
+.fa-name { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font: 600 12.5px var(--mono); }
+.fa-name small { font: 500 11px var(--sans); color: var(--ink-3); margin-right: 6px; }
+.fa-n { font: 500 11px var(--mono); color: var(--ink-3); text-align: right; }
+/* in the list the three factors sit side by side; the hover card stacks them */
+.fa-row .fa-bars { grid-template-columns: repeat(3, 10px minmax(0, 1fr) 30px); gap: 0 4px; }
+.fa-row .fa-bars b { font-size: 10.5px; }
+.fa-empty { padding: 16px; color: var(--ink-3); font-size: 13px; }
+
+.fa-bars { display: grid; grid-template-columns: 12px minmax(0, 1fr) 40px; align-items: center; gap: 2px 6px; }
+.fa-d { font: 600 10.5px var(--mono); color: var(--ink-3); }
+.fa-track { position: relative; height: 6px; border-radius: 3px; background: color-mix(in srgb, var(--ink) 7%, transparent); }
+.fa-track i { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 3px; background: var(--c); }
+.fa-track s { position: absolute; top: -2px; bottom: -2px; width: 1px; margin-left: -.5px; background: var(--ink-3); }
+.fa-bars b { font: 500 11px var(--mono); color: var(--ink-3); text-align: right; }
+.fa-bars b.top { color: var(--ink); font-weight: 700; }
+
+/* hover card */
+.fa-tip {
+  position: fixed; z-index: 30; width: 280px; padding: 12px; border-radius: 12px; pointer-events: none;
+  background: var(--bg); color: var(--ink); border: 1px solid var(--rule); box-shadow: 0 12px 32px rgb(0 0 0 / .16);
+  opacity: 0; transform: translateY(4px); transition: opacity .12s, transform .12s;
+}
+.fa-tip.show { opacity: 1; transform: none; }
+.fa-tip-mk { max-height: 150px; overflow: hidden; margin-bottom: 10px; border-radius: 8px; box-shadow: 0 0 0 1px var(--rule); }
+.fa-tip-mk .mk { zoom: .75; border: 0; box-shadow: none; }
+.fa-tip-h { font: 700 13px var(--mono); }
+.fa-tip-h small { font: 500 11px var(--sans); color: var(--ink-3); }
+.fa-tip-k { display: flex; align-items: center; gap: 6px; margin: 4px 0 8px; font-size: 12px; color: var(--ink-2); }
+.fa-tip-m { margin-top: 8px; font-size: 11.5px; color: var(--ink-3); }
+
+@media (max-width: 960px) {
+  .fa-grid { grid-template-columns: minmax(0, 1fr); }
+  .fa-list { max-height: 480px; }
+}
+@media (max-width: 760px) {
+  .fa-wrap { padding: 0 16px; }
+  .fa-seg { min-width: 0; }
+  .fa-seg span { font-size: 11.5px; }
+  .fa-seg b { display: block; }
+  .fa-seg em.lg { display: none; }
+  .fa-seg em.sm { display: inline; }
+  .fa-row { grid-template-columns: minmax(0, 1fr) 22px; }
+  .fa-row .fa-bars { grid-column: 1 / -1; }
+}

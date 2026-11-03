@@ -1,0 +1,124 @@
+{
+  "app": "gmail",
+  "icon": "mail",
+  "color": "#ea4335",
+  "facets": {
+    "gmail.open_section": {
+      "blocks": [
+        {"type": "tabs", "selected": 0, "items": [
+          {"cap": "open_browse_mailbox", "label": "Inbox", "icon": "inbox"},
+          {"cap": "open_search_mail", "label": "Search", "icon": "search"},
+          {"cap": "open_compose_email", "label": "Compose", "icon": "pencil"},
+          {"cap": "open_navigate_mailboxes_and_accounts", "label": "Folders", "icon": "folders"},
+          {"cap": "open_user_presence_status", "label": "Status", "icon": "circle-user"}
+        ]}
+      ]
+    },
+    "gmail.browse_mailbox": {
+      "blocks": [
+        {"type": "list", "cap": "view_email_list", "items": [
+          {"title": "Priya Shah", "meta": "Q4 offsite — venue options", "trailing": "9:12 AM", "avatar": true, "action": {"cap": "star_email", "icon": "star"}},
+          {"title": "Delta Air Lines", "meta": "Your boarding pass · PIT → SFO", "trailing": "8:03 AM", "avatar": true},
+          {"title": "GitHub", "meta": "[weather-app] PR #42 approved", "trailing": "Yesterday", "avatar": true}
+        ]},
+        {"type": "link", "cap": "open_view_email_contents_actions", "label": "Open “Q4 offsite — venue options”"}
+      ]
+    },
+    "gmail.search_mail": {
+      "blocks": [
+        {"type": "row", "widths": [5, 1], "blocks": [
+          {"type": "input", "cap": "enter_search_query", "icon": "search", "value": "offsite"},
+          {"type": "controls", "items": [
+            {"cap": "enter_search_query_voice", "icon": "mic"}
+          ]}
+        ]},
+        {"type": "list", "cap": "view_recent_mail_searches", "label": "Recent", "items": [
+          {"title": "from:priya", "icon": "history"},
+          {"title": "boarding pass", "icon": "history"}
+        ]},
+        {"type": "row", "widths": [1.6, 1], "blocks": [
+          {"type": "chips", "cap": "filter_search_results", "items": ["Has attachment", "Last 7 days"], "selected": 0},
+          {"type": "select", "cap": "sort_search_results", "label": "Sort", "value": "Newest"}
+        ]},
+        {"type": "list", "cap": "view_search_results", "items": [
+          {"title": "Priya Shah", "meta": "Q4 offsite — venue options", "trailing": "9:12 AM", "avatar": true},
+          {"title": "Dev Patel", "meta": "Re: offsite agenda draft", "trailing": "Oct 20", "avatar": true}
+        ]},
+        {"type": "link", "cap": "open_view_email_contents_actions", "label": "Open top result"}
+      ]
+    },
+    "gmail.view_email_contents_actions": {
+      "blocks": [
+        {"type": "header", "cap": "view_email_title", "title": "Q4 offsite — venue options"},
+        {"type": "row", "widths": [4, 1], "blocks": [
+          {"type": "avatar", "cap": "view_email_sender", "name": "Priya Shah", "status": "to me · 9:12 AM"},
+          {"type": "controls", "items": [
+            {"cap": "star_email", "icon": "star"}
+          ]}
+        ]},
+        {"type": "text", "cap": "read_email_body", "size": "sm", "text": "Hi all — I narrowed it down to Lakeview Lodge and The Foundry. Shortlist attached; can everyone make the walkthrough on the 13th?"},
+        {"type": "calendar", "cap": "view_embedded_calendar_event", "kind": "agenda", "items": [
+          {"time": "Thu, Nov 13 · 2 PM", "title": "Venue walkthrough", "hue": 210}
+        ]},
+        {"type": "list", "cap": "view_attachments", "items": [
+          {"title": "venue_shortlist.pdf", "meta": "1.2 MB", "icon": "file-text"}
+        ]},
+        {"type": "controls", "items": [
+          {"cap": "archive_email", "icon": "archive", "label": "Archive"},
+          {"cap": "delete_email", "icon": "trash-2", "label": "Delete"},
+          {"cap": "mark_email_unread", "icon": "mail", "label": "Unread"},
+          {"cap": "snooze_email", "icon": "clock", "label": "Snooze"},
+          {"cap": "move_email_to_folder", "icon": "folder-input", "label": "Move"}
+        ]},
+        {"type": "buttons", "items": [
+          {"cap": "reply_email", "label": "Reply", "icon": "reply", "style": "primary"},
+          {"cap": "forward_email", "label": "Forward", "icon": "forward", "style": "secondary"},
+          {"cap": "open_compose_email", "label": "Compose", "icon": "pencil", "style": "ghost"}
+        ]}
+      ]
+    },
+    "gmail.compose_email": {
+      "blocks": [
+        {"type": "controls", "items": [
+          {"cap": "close_compose_screen", "icon": "x", "label": "Close"},
+          {"cap": "attach_files", "icon": "paperclip", "label": "Attach"},
+          {"cap": "save_draft", "icon": "save", "label": "Save draft"},
+          {"cap": "discard_draft", "icon": "trash-2", "label": "Discard"}
+        ]},
+        {"type": "input", "cap": "add_recipients", "icon": "user", "value": "Priya Shah, Dev Patel"},
+        {"type": "input", "cap": "add_subject", "value": "Re: Q4 offsite — venue options"},
+        {"type": "input", "cap": "compose_message_body", "multiline": true, "value": "Lakeview Lodge works for me. Count me in for the walkthrough on the 13th."},
+        {"type": "button", "cap": "send_email", "label": "Send", "icon": "send", "style": "primary"}
+      ]
+    },
+    "gmail.navigate_mailboxes_and_accounts": {
+      "blocks": [
+        {"type": "select", "cap": "switch_account", "label": "Account", "value": "alex.kim@example.com"},
+        {"type": "link", "cap": "open_browse_mailbox", "label": "Inbox", "icon": "inbox", "meta": "12 unread"},
+        {"type": "link", "cap": "open_browse_drafts", "label": "Drafts", "icon": "file", "meta": "3"},
+        {"type": "list", "cap": "view_mailbox_list", "label": "All mailboxes", "items": [
+          {"title": "Starred", "icon": "star", "trailing": "4"},
+          {"title": "Snoozed", "icon": "clock", "trailing": "2"},
+          {"title": "Sent", "icon": "send"}
+        ]}
+      ]
+    },
+    "gmail.user_presence_status": {
+      "blocks": [
+        {"type": "avatar", "cap": "view_current_status", "name": "Hyun Cho", "status": "● Active"},
+        {"type": "segmented", "cap": "set_status_active_inactive", "items": ["Automatic", "Do not disturb", "Away"], "selected": 0},
+        {"type": "input", "cap": "add_custom_status", "icon": "smile", "value": "In meetings until 3 PM"}
+      ]
+    },
+    "gmail.browse_drafts": {
+      "blocks": [
+        {"type": "list", "cap": "view_draft_list", "items": [
+          {"title": "Re: Q4 offsite — venue options", "meta": "To Priya Shah · Lakeview Lodge works…", "icon": "file", "action": {"cap": "star_draft", "icon": "star"}},
+          {"title": "Thank you note", "meta": "To Prof. Kim · Thanks again for…", "icon": "file"},
+          {"title": "Landlord — radiator", "meta": "To Mark · The radiator in the…", "icon": "file"}
+        ]},
+        {"type": "button", "cap": "open_compose_email", "label": "Compose", "icon": "pencil", "style": "secondary"}
+      ]
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "app": "translate",
+  "icon": "languages",
+  "color": "#1a73e8",
+  "facets": {
+    "translate.open_section": {
+      "blocks": [
+        {"type": "tabs", "selected": 0, "items": [
+          {"cap": "open_translate_text", "label": "Text", "icon": "languages"},
+          {"cap": "open_camera_translation", "label": "Camera", "icon": "camera"}
+        ]}
+      ]
+    },
+    "translate.translate_text": {
+      "blocks": [
+        {"type": "row", "widths": [2, 1, 2], "blocks": [
+          {"type": "select", "cap": "select_source_language", "label": "From", "value": "English"},
+          {"type": "controls", "items": [{"cap": "switch_languages", "icon": "arrow-left-right", "label": "Swap"}]},
+          {"type": "select", "cap": "select_target_language", "label": "To", "value": "Korean"}
+        ]},
+        {"type": "input", "cap": "edit_input_text", "multiline": true, "value": "Where is the nearest subway station?"},
+        {"type": "text", "cap": "view_translation", "size": "lg", "text": "가장 가까운 지하철역이 어디예요?"}
+      ]
+    },
+    "translate.camera_translation": {
+      "blocks": [
+        {"type": "media", "cap": "view_image_translation", "kind": "camera", "hue": 210, "icon": "scan-text", "aspect": "wide", "caption": "출구 3번 → Exit 3 · 시청역 → City Hall Stn."},
+        {"type": "controls", "items": [{"cap": "capture_text_image", "icon": "camera", "label": "Capture", "primary": true}]}
+      ]
+    }
+  }
+}

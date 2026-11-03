@@ -1,0 +1,73 @@
+{
+  "app": "books",
+  "icon": "book-open",
+  "color": "#ff9f0a",
+  "facets": {
+    "books.open_section": {
+      "blocks": [
+        {"type": "tabs", "selected": 0, "items": [
+          {"cap": "open_browse_library", "label": "Library", "icon": "library"},
+          {"cap": "open_discover_books", "label": "Book Store", "icon": "store"},
+          {"cap": "open_manage_library", "label": "Manage", "icon": "pencil"}
+        ]}
+      ]
+    },
+    "books.browse_library": {
+      "blocks": [
+        {"type": "row", "widths": [2, 1.2], "blocks": [
+          {"type": "chips", "cap": "filter_books", "items": ["All", "Reading", "Finished"], "selected": 0},
+          {"type": "select", "cap": "sort_books", "label": "Sort", "value": "Recent"}
+        ]},
+        {"type": "list", "cap": "view_book_list", "style": "thumbs", "items": [
+          {"title": "Pride and Prejudice", "meta": "Jane Austen · 34%", "hue": 340},
+          {"title": "Project Hail Mary", "meta": "Andy Weir · Sample", "hue": 190},
+          {"title": "The Midnight Library", "meta": "Matt Haig · Finished", "hue": 250}
+        ]},
+        {"type": "button", "cap": "open_read_book", "label": "Continue Pride and Prejudice", "icon": "book-open", "style": "primary"},
+        {"type": "link", "cap": "open_discover_books", "label": "Browse the Book Store", "icon": "store"}
+      ]
+    },
+    "books.read_book": {
+      "blocks": [
+        {"type": "select", "cap": "navigate_to_chapter", "label": "Contents", "value": "Chapter 1"},
+        {"type": "text", "cap": "view_book_page", "size": "md", "text": "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife. However little known the feelings or views of such a man may be on his first entering a neighbourhood…"},
+        {"type": "controls", "items": [
+          {"cap": "turn_page", "icon": "chevron-left", "label": "Page 3"},
+          {"cap": "adjust_text_settings", "icon": "a-large-small", "label": "Themes & Settings"},
+          {"cap": "turn_page", "icon": "chevron-right", "label": "Page 5"}
+        ]}
+      ]
+    },
+    "books.discover_books": {
+      "blocks": [
+        {"type": "cards", "cap": "browse_recommended_books", "label": "For You", "items": [
+          {"title": "Project Hail Mary", "meta": "Andy Weir", "hue": 190},
+          {"title": "Klara and the Sun", "meta": "Kazuo Ishiguro", "hue": 40},
+          {"title": "The Martian", "meta": "Andy Weir", "hue": 15}
+        ]},
+        {"type": "group", "cap": "view_book_details", "blocks": [
+          {"type": "header", "title": "Project Hail Mary", "subtitle": "Andy Weir · Sci-Fi · 496 pages", "thumb": {"icon": "book-open", "hue": 190}},
+          {"type": "rating", "value": 4.8, "count": "12K ratings"},
+          {"type": "text", "size": "sm", "text": "A lone astronaut wakes up on a spaceship with no memory, and must save Earth from an extinction-level threat."}
+        ]},
+        {"type": "row", "blocks": [
+          {"type": "button", "cap": "open_read_book", "label": "Read Sample", "icon": "book-open", "style": "primary"},
+          {"type": "link", "cap": "open_discover_books", "label": "More Sci-Fi"}
+        ]}
+      ]
+    },
+    "books.manage_library": {
+      "blocks": [
+        {"type": "list", "cap": "add_book_to_collection", "label": "Add Project Hail Mary to…", "style": "check", "items": [
+          {"title": "Want to Read", "done": true},
+          {"title": "Sci-Fi Favorites", "done": false},
+          {"title": "Book Club", "done": false}
+        ]},
+        {"type": "buttons", "items": [
+          {"cap": "download_book", "label": "Download", "icon": "download", "style": "secondary"},
+          {"cap": "remove_book", "label": "Remove", "icon": "trash-2", "style": "danger"}
+        ]}
+      ]
+    }
+  }
+}

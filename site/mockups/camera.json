@@ -1,0 +1,91 @@
+{
+  "app": "camera",
+  "icon": "camera",
+  "color": "#f5b301",
+  "facets": {
+    "camera.open_section": {
+      "blocks": [
+        {"type": "tabs", "selected": 0, "items": [
+          {"cap": "open_capture_photo", "label": "Photo", "icon": "camera"},
+          {"cap": "open_record_video", "label": "Video", "icon": "video"},
+          {"cap": "open_browse_captured_media", "label": "Gallery", "icon": "images"}
+        ]}
+      ]
+    },
+    "camera.capture_photo": {
+      "blocks": [
+        {"type": "media", "caps": ["view_frame", "view_grid_overlay", "tap_to_focus"], "kind": "camera", "aspect": "wide", "icon": "focus", "caption": "Grid on · tap to focus"},
+        {"type": "slider", "cap": "adjust_exposure", "label": "Exposure", "icon": "sun", "value": 0.6, "display": "+0.3"},
+        {"type": "controls", "items": [
+          {"cap": "zoom_out", "icon": "zoom-out", "label": "0.5×"},
+          {"cap": "open_scan_qr", "icon": "scan-qr-code", "label": "Scan QR"},
+          {"cap": "capture_photo", "icon": "circle", "label": "Shutter", "primary": true},
+          {"cap": "switch_front_back_camera", "icon": "switch-camera", "label": "Flip camera"},
+          {"cap": "zoom_in", "icon": "zoom-in", "label": "2×"}
+        ]},
+        {"type": "buttons", "items": [
+          {"cap": "open_select_capture_mode", "label": "Photo", "icon": "chevron-down", "style": "ghost"},
+          {"cap": "open_configure_capture_parameters", "label": "Settings", "icon": "settings-2", "style": "ghost"}
+        ]}
+      ]
+    },
+    "camera.record_video": {
+      "blocks": [
+        {"type": "media", "caps": ["view_frame", "view_grid_overlay"], "kind": "camera", "aspect": "wide", "caption": "● REC 00:42 · grid on"},
+        {"type": "segmented", "cap": "frame_rate_selection", "items": ["24 fps", "30 fps", "60 fps"], "selected": 1},
+        {"type": "controls", "items": [
+          {"cap": "control_flash", "icon": "zap", "label": "Torch"},
+          {"cap": "zoom_out", "icon": "zoom-out", "label": "0.5×"},
+          {"cap": "start_stop_recording", "icon": "square", "label": "Stop recording", "primary": true},
+          {"cap": "zoom_in", "icon": "zoom-in", "label": "2×"}
+        ]},
+        {"type": "buttons", "items": [
+          {"cap": "open_select_capture_mode", "label": "Video", "icon": "chevron-down", "style": "ghost"},
+          {"cap": "open_configure_capture_parameters", "label": "Settings", "icon": "settings-2", "style": "ghost"}
+        ]}
+      ]
+    },
+    "camera.select_capture_mode": {
+      "blocks": [
+        {"type": "buttons", "items": [
+          {"cap": "set_photo_mode", "label": "Photo", "style": "primary"},
+          {"cap": "set_portrait_mode", "label": "Portrait", "style": "secondary"},
+          {"cap": "set_panorama_mode", "label": "Pano", "style": "secondary"}
+        ]},
+        {"type": "buttons", "items": [
+          {"cap": "set_time_lapse_mode", "label": "Time-lapse", "icon": "hourglass", "style": "secondary"},
+          {"cap": "set_slow_motion_mode", "label": "Slo-mo", "icon": "snail", "style": "secondary"}
+        ]}
+      ]
+    },
+    "camera.configure_capture_parameters": {
+      "blocks": [
+        {"type": "segmented", "cap": "set_aspect_ratio", "label": "Aspect ratio", "items": ["4:3", "16:9", "1:1"], "selected": 0},
+        {"type": "select", "cap": "control_flash", "label": "Flash", "value": "Auto"},
+        {"type": "select", "cap": "self_timer", "label": "Timer", "value": "3 s"},
+        {"type": "toggle", "cap": "toggle_grid", "label": "Grid", "on": true},
+        {"type": "toggle", "cap": "tag_location", "label": "Location tags", "on": true, "desc": "Saves where each photo was taken"}
+      ]
+    },
+    "camera.browse_captured_media": {
+      "blocks": [
+        {"type": "media", "caps": ["view_media", "swipe_media"], "kind": "photo", "hue": 28, "icon": "trees", "aspect": "wide", "caption": "12 of 148 · swipe for more"},
+        {"type": "kv", "cap": "view_media_metadata", "items": [["Taken", "Thu, Oct 23 · 4:12 PM"], ["Place", "Schenley Park"], ["Lens", "26 mm f/1.8 · 24 MP"]]},
+        {"type": "controls", "items": [
+          {"cap": "share_media", "icon": "share", "label": "Share"},
+          {"cap": "save_unsave_media", "icon": "heart", "label": "Favorite"},
+          {"cap": "edit_media", "icon": "sliders-horizontal", "label": "Edit"},
+          {"cap": "delete_media", "icon": "trash-2", "label": "Delete"}
+        ]}
+      ]
+    },
+    "camera.scan_qr": {
+      "blocks": [
+        {"type": "group", "cap": "scan_qr", "blocks": [
+          {"type": "media", "kind": "camera", "aspect": "wide", "icon": "scan-qr-code"},
+          {"type": "notice", "title": "menu.cafeamante.com", "text": "Open in browser", "icon": "qr-code", "tone": "blue"}
+        ]}
+      ]
+    }
+  }
+}

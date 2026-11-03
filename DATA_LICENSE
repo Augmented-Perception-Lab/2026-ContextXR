@@ -1,0 +1,24 @@
+MineXR++ data and benchmark artifacts — Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+The following parts of this repository are licensed under CC BY 4.0
+(https://creativecommons.org/licenses/by/4.0/; full legal code:
+https://creativecommons.org/licenses/by/4.0/legalcode):
+
+  data/                 MineXR++ facet database and event annotations
+  configs/splits/       cross-validation folds and next-facet step orders
+  cache/llm/            LLM prompt/response pairs from the paper's experiments
+
+All source code (including the prompt templates in contextxr/methods/prompts/) is
+licensed under the Apache License 2.0; see LICENSE.
+
+Attribution: when you use these materials, cite
+
+  Hyunsung Cho, Sarah Yewon Yun, Nancy Ruonan Sun, Ben Lafreniere, Mark Parent,
+  Kashyap Todi, Tanya R. Jonker, Hrvoje Benko, Tongshuang Wu, and David Lindlbauer.
+  2026. A Benchmarking Framework for Context-aware XR Interfaces. In The 39th Annual
+  ACM Symposium on User Interface Software and Technology (UIST '26).
+  https://doi.org/10.1145/3830398.3830675
+
+MineXR++ augments the MineXR dataset (Cho et al., "MineXR: Mining Personalized Extended
+Reality Interfaces", CHI 2024) with functional-facet annotations. Raw MineXR
+widget images and screenshots are not included.

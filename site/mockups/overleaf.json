@@ -1,0 +1,84 @@
+{
+  "app": "overleaf",
+  "icon": "leaf",
+  "color": "#138a36",
+  "facets": {
+    "overleaf.open_section": {
+      "blocks": [
+        {"type": "link", "cap": "open_browse_projects", "label": "All projects", "icon": "folder", "meta": "12"}
+      ]
+    },
+    "overleaf.browse_projects": {
+      "blocks": [
+        {"type": "row", "widths": [3, 1.2], "blocks": [
+          {"type": "input", "cap": "search_projects", "icon": "search", "placeholder": "Search in all projects…"},
+          {"type": "button", "cap": "create_new_project", "label": "New", "icon": "plus", "style": "primary"}
+        ]},
+        {"type": "link", "cap": "open_browse_projects", "label": "All projects", "icon": "folder", "meta": "12"},
+        {"type": "list", "cap": "view_project_list", "items": [
+          {"title": "ContextXR — CHI 2027", "meta": "You · edited 5 min ago", "icon": "file-text"},
+          {"title": "Thesis Proposal", "meta": "You · edited 2 days ago", "icon": "file-text"},
+          {"title": "UIST Poster", "meta": "Ana Ruiz · edited last week", "icon": "file-text"}
+        ]},
+        {"type": "buttons", "items": [
+          {"cap": "duplicate_project", "label": "Copy", "icon": "copy", "style": "secondary"},
+          {"cap": "delete_project", "label": "Trash", "icon": "trash-2", "style": "danger"}
+        ]},
+        {"type": "buttons", "items": [
+          {"cap": "open_edit_document", "label": "Open", "icon": "file-pen-line", "style": "secondary"},
+          {"cap": "open_preview_document", "label": "PDF", "icon": "file-text", "style": "secondary"},
+          {"cap": "open_manage_project_settings", "label": "Share", "icon": "users", "style": "secondary"}
+        ]}
+      ]
+    },
+    "overleaf.preview_document": {
+      "blocks": [
+        {"type": "media", "cap": "view_pdf", "kind": "doc", "icon": "file-text", "aspect": "square", "caption": "ContextXR: Functional Facets for XR"},
+        {"type": "row", "widths": [1.3, 1], "blocks": [
+          {"type": "slider", "cap": "zoom_pdf", "label": "Zoom", "value": 0.5, "icon": "zoom-in", "display": "100%"},
+          {"type": "stepper", "cap": "jump_to_page", "label": "Page", "value": "3 / 10"}
+        ]}
+      ]
+    },
+    "overleaf.edit_document": {
+      "blocks": [
+        {"type": "controls", "items": [
+          {"cap": "add_new_file", "icon": "file-plus", "label": "New file"},
+          {"cap": "upload_file", "icon": "upload", "label": "Upload"},
+          {"cap": "rename_file", "icon": "pencil", "label": "Rename"},
+          {"cap": "delete_file", "icon": "trash-2", "label": "Delete"}
+        ]},
+        {"type": "code", "cap": "edit_source_code", "lines": [
+          "\\section{Introduction}",
+          "XR headsets surface apps as",
+          "\\emph{functional facets}~\\cite{cho2024minexr}",
+          "rather than whole windows."
+        ]},
+        {"type": "group", "cap": "resolve_comment", "blocks": [
+          {"type": "text", "size": "sm", "text": "Ana Ruiz: Add a figure reference here?"},
+          {"type": "button", "label": "Resolve", "icon": "check", "style": "secondary"}
+        ]},
+        {"type": "input", "cap": "add_comment", "placeholder": "Add comment…", "trailing": "message-square-plus"},
+        {"type": "buttons", "items": [
+          {"cap": "compile_project", "label": "Recompile", "icon": "refresh-cw", "style": "primary"},
+          {"cap": "view_version_history", "label": "History", "icon": "history", "style": "secondary"},
+          {"cap": "open_manage_project_settings", "label": "Share", "icon": "users", "style": "secondary"}
+        ]}
+      ]
+    },
+    "overleaf.manage_project_settings": {
+      "blocks": [
+        {"type": "group", "cap": "share_project", "blocks": [
+          {"type": "input", "icon": "mail", "value": "m.park@example.com"},
+          {"type": "select", "label": "Permission", "value": "Can edit"},
+          {"type": "button", "label": "Invite", "icon": "send", "style": "primary"}
+        ]},
+        {"type": "list", "cap": "manage_collaborators", "label": "Who has access", "items": [
+          {"title": "You", "meta": "Created Sep 12", "avatar": "H", "hue": 140, "trailing": "Owner"},
+          {"title": "Ana Ruiz", "meta": "ana.ruiz@example.com", "avatar": "A", "hue": 280, "trailing": "Can edit"},
+          {"title": "Jin Lee", "meta": "jin.lee@example.com", "avatar": "J", "hue": 210, "trailing": "Can view"}
+        ]}
+      ]
+    }
+  }
+}

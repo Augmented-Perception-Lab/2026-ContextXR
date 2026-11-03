@@ -1,0 +1,36 @@
+{
+  "app": "stock",
+  "icon": "chart-line",
+  "color": "#0a84ff",
+  "facets": {
+    "stock.open_section": {
+      "blocks": [
+        {"type": "tabs", "selected": 0, "items": [
+          {"cap": "open_view_stock_list", "label": "Watchlist", "icon": "list"},
+          {"cap": "open_view_stock_price", "label": "AAPL", "icon": "chart-candlestick"}
+        ]}
+      ]
+    },
+    "stock.view_stock_list": {
+      "blocks": [
+        {"type": "list", "cap": "view_stock_summary", "label": "My Symbols", "items": [
+          {"title": "AAPL", "meta": "Apple Inc.", "trailing": "$262.82 · +1.21%"},
+          {"title": "NVDA", "meta": "NVIDIA Corp.", "trailing": "$181.16 · −0.84%"},
+          {"title": "MSFT", "meta": "Microsoft Corp.", "trailing": "$517.03 · +0.46%"},
+          {"title": "TSLA", "meta": "Tesla, Inc.", "trailing": "$438.97 · +2.15%"}
+        ]},
+        {"type": "link", "cap": "open_view_stock_price", "label": "Apple Inc. (AAPL)", "meta": "Chart"}
+      ]
+    },
+    "stock.view_stock_price": {
+      "blocks": [
+        {"type": "stat", "cap": "view_stock_price", "value": "$262.82", "label": "Apple Inc. · AAPL · NASDAQ"},
+        {"type": "row", "blocks": [
+          {"type": "badge", "cap": "view_price_change", "label": "▲ +$3.14 (+1.21%) today", "tone": "green"},
+          {"type": "badge", "cap": "view_market_status", "label": "Market open", "tone": "blue"}
+        ]},
+        {"type": "chart", "cap": "view_price_chart", "kind": "line", "label": "1D", "values": [259.7, 260.4, 259.9, 261.2, 261.8, 261.1, 262.0, 262.5, 262.1, 262.82]}
+      ]
+    }
+  }
+}

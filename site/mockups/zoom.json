@@ -1,0 +1,301 @@
+{
+  "app": "zoom",
+  "icon": "video",
+  "color": "#0b5cff",
+  "facets": {
+    "zoom.open_section": {
+      "blocks": [
+        {
+          "type": "tabs",
+          "selected": 0,
+          "items": [
+            {
+              "cap": "open_browse_meetings",
+              "label": "Meetings",
+              "icon": "calendar-days"
+            },
+            {
+              "cap": "open_join_meeting",
+              "label": "Join",
+              "icon": "circle-plus"
+            },
+            {
+              "cap": "open_schedule_meeting",
+              "label": "Schedule",
+              "icon": "calendar-plus"
+            }
+          ]
+        }
+      ]
+    },
+    "zoom.browse_meetings": {
+      "blocks": [
+        {
+          "type": "controls",
+          "items": [
+            {
+              "cap": "start_meeting_now",
+              "icon": "video",
+              "label": "New Meeting",
+              "primary": true
+            },
+            {
+              "cap": "open_join_meeting",
+              "icon": "plus",
+              "label": "Join"
+            },
+            {
+              "cap": "open_schedule_meeting",
+              "icon": "calendar-plus",
+              "label": "Schedule"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "cap": "view_meetings_list",
+          "label": "Today",
+          "items": [
+            {
+              "title": "Weekly Design Sync",
+              "meta": "10:00 – 10:45 AM · 845 2093 6611",
+              "icon": "video"
+            },
+            {
+              "title": "1:1 with Maya",
+              "meta": "2:30 – 3:00 PM",
+              "icon": "video"
+            },
+            {
+              "title": "Lab Meeting",
+              "meta": "4:00 – 5:00 PM · Recurring",
+              "icon": "video"
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "cap": "refresh_meetings_list",
+          "label": "Refresh",
+          "icon": "refresh-cw",
+          "style": "ghost"
+        }
+      ]
+    },
+    "zoom.join_meeting": {
+      "blocks": [
+        {
+          "type": "input",
+          "cap": "input_meeting_id",
+          "icon": "hash",
+          "value": "845 2093 6611"
+        },
+        {
+          "type": "input",
+          "cap": "input_event_email",
+          "icon": "mail",
+          "placeholder": "Or join with event email"
+        },
+        {
+          "type": "segmented",
+          "cap": "select_join_type",
+          "items": [
+            "Video on",
+            "Audio only"
+          ],
+          "selected": 0
+        },
+        {
+          "type": "button",
+          "cap": "confirm_join",
+          "label": "Join"
+        },
+        {
+          "type": "link",
+          "cap": "open_participate_in_meeting",
+          "label": "Return to meeting",
+          "meta": "Weekly Design Sync"
+        }
+      ]
+    },
+    "zoom.schedule_meeting": {
+      "blocks": [
+        {
+          "type": "input",
+          "cap": "set_meeting_topic",
+          "icon": "type",
+          "value": "Weekly Design Sync"
+        },
+        {
+          "type": "group",
+          "cap": "set_meeting_time_details",
+          "blocks": [
+            {
+              "type": "select",
+              "label": "Thu, Oct 30",
+              "value": "10:00 AM"
+            },
+            {
+              "type": "select",
+              "label": "Duration",
+              "value": "45 min"
+            },
+            {
+              "type": "select",
+              "label": "Repeat",
+              "value": "Weekly"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "cap": "set_meeting_entry_details",
+          "blocks": [
+            {
+              "type": "select",
+              "label": "Meeting ID",
+              "value": "Auto-generate"
+            },
+            {
+              "type": "toggle",
+              "label": "Passcode",
+              "on": true,
+              "desc": "a8Kq2x"
+            },
+            {
+              "type": "toggle",
+              "label": "Waiting room",
+              "on": false
+            }
+          ]
+        },
+        {
+          "type": "buttons",
+          "items": [
+            {
+              "cap": "cancel_scheduling",
+              "label": "Cancel",
+              "style": "secondary"
+            },
+            {
+              "cap": "save_scheduled_meeting",
+              "label": "Save",
+              "style": "primary"
+            }
+          ]
+        }
+      ]
+    },
+    "zoom.participate_in_meeting": {
+      "blocks": [
+        {
+          "type": "media",
+          "cap": "view_shared_screen",
+          "kind": "doc",
+          "aspect": "wide",
+          "caption": "Maya is sharing · Onboarding v3"
+        },
+        {
+          "type": "grid",
+          "cap": "view_participants_video",
+          "cols": 3,
+          "items": [
+            {
+              "label": "Maya",
+              "hue": 330
+            },
+            {
+              "label": "Jordan",
+              "hue": 160
+            },
+            {
+              "label": "You",
+              "hue": 210
+            }
+          ]
+        },
+        {
+          "type": "controls",
+          "items": [
+            {
+              "cap": "mute_unmute_audio",
+              "icon": "mic",
+              "label": "Mute"
+            },
+            {
+              "cap": "toggle_video_on",
+              "icon": "video",
+              "label": "Stop video"
+            },
+            {
+              "cap": "share_screen",
+              "icon": "screen-share",
+              "label": "Share"
+            },
+            {
+              "cap": "view_participants_list",
+              "icon": "users",
+              "label": "Participants"
+            },
+            {
+              "cap": "open_chat_in_meeting",
+              "icon": "message-circle",
+              "label": "Chat"
+            },
+            {
+              "cap": "send_emoji_reaction",
+              "icon": "smile-plus",
+              "label": "React"
+            }
+          ]
+        },
+        {
+          "type": "buttons",
+          "items": [
+            {
+              "cap": "invite_participants",
+              "label": "Invite",
+              "icon": "user-plus",
+              "style": "secondary"
+            },
+            {
+              "cap": "end_meeting",
+              "label": "End",
+              "style": "danger"
+            }
+          ]
+        }
+      ]
+    },
+    "zoom.chat_in_meeting": {
+      "blocks": [
+        {
+          "type": "chat",
+          "cap": "read_chat_history",
+          "items": [
+            {
+              "from": "them",
+              "name": "Maya Lin",
+              "text": "Link to the file is in the invite"
+            },
+            {
+              "from": "them",
+              "name": "Jordan Park",
+              "text": "Can you zoom into the sign-up step?"
+            },
+            {
+              "from": "me",
+              "text": "Sure, one sec"
+            }
+          ]
+        },
+        {
+          "type": "input",
+          "cap": "compose_send_message",
+          "placeholder": "Message everyone",
+          "trailing": "send"
+        }
+      ]
+    }
+  }
+}

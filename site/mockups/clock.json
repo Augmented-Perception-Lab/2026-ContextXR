@@ -1,0 +1,120 @@
+{
+  "app": "clock",
+  "icon": "alarm-clock",
+  "color": "#f08c00",
+  "facets": {
+    "clock.open_section": {
+      "blocks": [
+        {"type": "tabs", "selected": 3, "items": [
+          {"cap": "open_view_world_clock", "label": "World", "icon": "globe"},
+          {"cap": "open_manage_alarm_list", "label": "Alarms", "icon": "alarm-clock"},
+          {"cap": "open_configure_alarm", "label": "New alarm", "icon": "alarm-clock-plus"},
+          {"cap": "open_configure_timer", "label": "Timer", "icon": "timer"},
+          {"cap": "open_monitor_timer_countdown", "label": "Running", "icon": "hourglass"},
+          {"cap": "open_use_stopwatch", "label": "Stopwatch", "icon": "watch"}
+        ]}
+      ]
+    },
+    "clock.view_world_clock": {
+      "blocks": [
+        {"type": "header", "cap": "view_current_local_time", "title": "9:41 AM", "subtitle": "Pittsburgh · Thu, Oct 23"},
+        {"type": "list", "cap": "show_saved_city_times", "items": [
+          {"title": "London", "trailing": "2:41 PM", "icon": "globe"},
+          {"title": "Seoul", "trailing": "10:41 PM", "icon": "globe"},
+          {"title": "San Francisco", "trailing": "6:41 AM", "icon": "globe"}
+        ]},
+        {"type": "text", "cap": "time_difference_from_local", "size": "sm", "muted": true,
+         "text": "London +5 h · Seoul +13 h · San Francisco −3 h"}
+      ]
+    },
+    "clock.manage_world_clock_list": {
+      "blocks": [
+        {"type": "list", "cap": "reorder_cities", "items": [
+          {"title": "London", "meta": "+5 h", "icon": "grip-vertical", "action": {"cap": "remove_saved_city", "icon": "circle-minus"}},
+          {"title": "Seoul", "meta": "+13 h", "icon": "grip-vertical"},
+          {"title": "San Francisco", "meta": "−3 h", "icon": "grip-vertical"}
+        ]},
+        {"type": "button", "cap": "add_new_city", "label": "Add city", "icon": "plus", "style": "secondary"}
+      ]
+    },
+    "clock.manage_alarm_list": {
+      "blocks": [
+        {"type": "list", "cap": "view_all_alarms", "items": [
+          {"title": "6:30 AM", "meta": "Weekdays · Wake up", "action": {"cap": "toggle_alarm", "icon": "toggle-right"}},
+          {"title": "7:15 AM", "meta": "Sat, Sun · Gym", "action": {"cap": "delete_alarm", "icon": "trash-2"}},
+          {"title": "10:00 PM", "meta": "Every day · Wind down"}
+        ]},
+        {"type": "link", "cap": "open_configure_alarm", "label": "Add alarm", "icon": "plus"}
+      ]
+    },
+    "clock.configure_alarm": {
+      "blocks": [
+        {"type": "timer", "cap": "set_time", "display": "6:30 AM"},
+        {"type": "chips", "cap": "set_repeat_days", "label": "Repeat", "items": ["M", "T", "W", "T", "F", "S", "S"], "selected": [0, 1, 2, 3, 4]},
+        {"type": "input", "cap": "set_alarm_label", "value": "Wake up", "icon": "tag"},
+        {"type": "select", "cap": "choose_sound", "label": "Sound", "value": "Sunrise"},
+        {"type": "select", "cap": "set_snooze_duration", "label": "Snooze", "value": "9 min"},
+        {"type": "link", "cap": "open_respond_to_alarm", "label": "Preview alarm"}
+      ]
+    },
+    "clock.respond_to_alarm": {
+      "blocks": [
+        {"type": "timer", "cap": "view_current_time", "display": "6:30"},
+        {"type": "notice", "cap": "view_alarm_label", "title": "Wake up", "icon": "alarm-clock", "tone": "amber"},
+        {"type": "buttons", "items": [
+          {"cap": "snooze_alarm", "label": "Snooze", "icon": "bell-off", "style": "secondary"},
+          {"cap": "dismiss", "label": "Stop", "style": "primary"}
+        ]},
+        {"type": "link", "cap": "open_manage_world_clock_list", "label": "World clock"}
+      ]
+    },
+    "clock.use_stopwatch": {
+      "blocks": [
+        {"type": "timer", "cap": "view_elapsed_time", "display": "02:14.37"},
+        {"type": "controls", "items": [
+          {"cap": "reset_stopwatch", "icon": "rotate-ccw", "label": "Reset"},
+          {"cap": "mark_lap", "icon": "flag", "label": "Lap"},
+          {"cap": "start_stopwatch", "icon": "play", "label": "Start", "primary": true},
+          {"cap": "pause", "icon": "pause", "label": "Pause"},
+          {"cap": "resume", "icon": "step-forward", "label": "Resume"},
+          {"cap": "stop_stopwatch", "icon": "square", "label": "Stop"}
+        ]},
+        {"type": "list", "cap": "view_lap_list", "style": "numbered", "items": [
+          {"title": "Lap 2", "trailing": "01:02.11"},
+          {"title": "Lap 1", "trailing": "01:12.26"}
+        ]}
+      ]
+    },
+    "clock.configure_timer": {
+      "blocks": [
+        {"type": "timer", "cap": "set_time_hours_minutes_seconds", "display": "00:15:00", "label": "hr · min · sec"},
+        {"type": "input", "cap": "set_alarm_label", "value": "Pasta", "icon": "tag"},
+        {"type": "select", "cap": "choose_sound", "label": "When done", "value": "Chimes"},
+        {"type": "chips", "cap": "view_preset_timers", "label": "Presets", "items": ["3 min", "5 min", "10 min", "25 min"]},
+        {"type": "list", "cap": "view_recent_timers", "label": "Recent", "items": [
+          {"title": "Tea", "meta": "4 min", "icon": "history"}
+        ]},
+        {"type": "button", "cap": "start_timer", "label": "Start", "icon": "play"}
+      ]
+    },
+    "clock.monitor_timer_countdown": {
+      "blocks": [
+        {"type": "header", "cap": "view_timer_label", "title": "Pasta"},
+        {"type": "timer", "cap": "view_remaining_time", "display": "08:42"},
+        {"type": "progress", "cap": "progress_indicator", "label": "of 15 min", "value": 0.42},
+        {"type": "controls", "items": [
+          {"cap": "cancel_timer", "icon": "x", "label": "Cancel"},
+          {"cap": "pause", "icon": "pause", "label": "Pause", "primary": true},
+          {"cap": "resume", "icon": "play", "label": "Resume"}
+        ]},
+        {"type": "link", "cap": "open_respond_to_timer", "label": "When it rings"}
+      ]
+    },
+    "clock.respond_to_timer": {
+      "blocks": [
+        {"type": "notice", "cap": "dismiss", "title": "Pasta · Time's up", "text": "Tap to stop", "icon": "bell-ring", "tone": "amber"},
+        {"type": "button", "cap": "restart_same_duration", "label": "Restart 15 min", "icon": "rotate-ccw", "style": "secondary"}
+      ]
+    }
+  }
+}

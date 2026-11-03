@@ -1,0 +1,134 @@
+{
+  "app": "messaging",
+  "icon": "message-circle",
+  "color": "#34c759",
+  "facets": {
+    "messaging.open_section": {
+      "blocks": [
+        {"type": "tabs", "selected": 0, "items": [
+          {"cap": "open_browse_conversation_list", "label": "Chats", "icon": "message-circle"},
+          {"cap": "open_search_messages", "label": "Search", "icon": "search"},
+          {"cap": "open_compose_message", "label": "New", "icon": "square-pen"}
+        ]}
+      ]
+    },
+    "messaging.browse_conversation_list": {
+      "blocks": [
+        {"type": "chips", "cap": "filter_conversations", "items": ["All", "Unread", "Groups"], "selected": 0},
+        {"type": "notice", "cap": "read_summary", "title": "Summary", "text": "Mina confirmed dinner at 7. Lab Group shared the demo slides.", "icon": "sparkles", "tone": "blue"},
+        {"type": "list", "cap": "view_conversation_list", "items": [
+          {"title": "Mina Park", "meta": "See you at Gaucho at 7!", "trailing": "6:12 PM", "avatar": "M", "hue": 330},
+          {"title": "Lab Group", "meta": "Jun: Demo slides are up", "trailing": "5:40 PM", "avatar": "L", "hue": 200},
+          {"title": "Mom", "meta": "Call me when you're free", "trailing": "Tue", "avatar": "M", "hue": 30}
+        ]},
+        {"type": "link", "cap": "open_view_conversation", "label": "Open chat with Mina"},
+        {"type": "buttons", "items": [
+          {"cap": "start_new_message", "label": "New Message", "icon": "square-pen", "style": "primary"},
+          {"cap": "create_new_group", "label": "New Group", "icon": "users", "style": "secondary"},
+          {"cap": "open_manage_conversation_list", "label": "Edit", "icon": "pencil", "style": "secondary"}
+        ]}
+      ]
+    },
+    "messaging.search_messages": {
+      "blocks": [
+        {"type": "input", "caps": ["enter_search_query", "clear_search_query"], "icon": "search", "value": "dinner", "trailing": "x"},
+        {"type": "list", "cap": "view_search_results", "items": [
+          {"title": "Mina Park", "meta": "Dinner at Gaucho at 7?", "trailing": "6:02 PM", "avatar": "M", "hue": 330},
+          {"title": "Lab Group", "meta": "Team dinner after the demo Friday", "trailing": "Mon", "avatar": "L", "hue": 200}
+        ]},
+        {"type": "link", "cap": "open_view_conversation", "label": "Show in chat with Mina"}
+      ]
+    },
+    "messaging.compose_message": {
+      "blocks": [
+        {"type": "input", "cap": "type_text", "placeholder": "iMessage", "value": "Running 5 min late, can you grab a table?", "multiline": true},
+        {"type": "controls", "items": [
+          {"cap": "open_select_attachment", "icon": "plus", "label": "Attach"},
+          {"cap": "insert_emoji", "icon": "smile", "label": "Emoji"},
+          {"cap": "record_audio_message", "icon": "mic", "label": "Audio"},
+          {"cap": "send_message", "icon": "arrow-up", "label": "Send", "primary": true}
+        ]}
+      ]
+    },
+    "messaging.view_conversation": {
+      "blocks": [
+        {"type": "row", "widths": [3, 1], "blocks": [
+          {"type": "avatar", "cap": "view_contact_info", "name": "Mina Park", "status": "iMessage · Contact info", "hue": 330},
+          {"type": "controls", "items": [
+            {"cap": "open_call", "icon": "video"}
+          ]}
+        ]},
+        {"type": "chat", "cap": "read_messages", "items": [
+          {"from": "them", "text": "Dinner at Gaucho at 7?"},
+          {"from": "me", "text": "Yes! I'll book a table for 2"},
+          {"from": "them", "text": "See you at Gaucho at 7!"}
+        ]},
+        {"type": "buttons", "items": [
+          {"cap": "open_engage_with_message", "label": "React", "icon": "heart", "style": "secondary"},
+          {"cap": "open_compose_message", "label": "Message", "icon": "square-pen", "style": "primary"}
+        ]}
+      ]
+    },
+    "messaging.manage_conversation_list": {
+      "blocks": [
+        {"type": "controls", "label": "Lab Group", "items": [
+          {"cap": "pin_conversation", "icon": "pin", "label": "Pin"},
+          {"cap": "mark_as_read_unread", "icon": "mail-open", "label": "Unread"},
+          {"cap": "mute_conversation", "icon": "bell-off", "label": "Hide Alerts"},
+          {"cap": "delete_conversation", "icon": "trash-2", "label": "Delete"}
+        ]},
+        {"type": "buttons", "items": [
+          {"cap": "leave_group", "label": "Leave Group", "style": "danger"},
+          {"cap": "block_contact", "label": "Block Contact", "style": "danger"}
+        ]}
+      ]
+    },
+    "messaging.call": {
+      "blocks": [
+        {"type": "media", "cap": "view_speaker", "kind": "camera", "hue": 330, "aspect": "wide", "caption": "Mina Park · speaking"},
+        {"type": "timer", "cap": "view_call_duration", "display": "04:12", "label": "FaceTime"},
+        {"type": "controls", "items": [
+          {"cap": "mute_unmute_microphone", "icon": "mic-off", "label": "Mute"},
+          {"cap": "enable_disable_video", "icon": "video", "label": "Camera"},
+          {"cap": "switch_camera", "icon": "switch-camera", "label": "Flip"},
+          {"cap": "share_screen", "icon": "screen-share", "label": "Share"},
+          {"cap": "end_call", "icon": "phone-off", "label": "End", "primary": true}
+        ]}
+      ]
+    },
+    "messaging.select_attachment": {
+      "blocks": [
+        {"type": "group", "cap": "select_photo_video", "blocks": [
+          {"type": "grid", "label": "Photos", "cols": 3, "items": [
+            {"label": "Strip District", "icon": "image", "hue": 25},
+            {"label": "Penn Ave", "icon": "image", "hue": 200},
+            {"label": "Sunset", "icon": "image", "hue": 340}
+          ]}
+        ]},
+        {"type": "controls", "items": [
+          {"cap": "select_sticker", "icon": "sticker", "label": "Stickers"},
+          {"cap": "select_audio", "icon": "audio-lines", "label": "Audio"},
+          {"cap": "send_apple_cash", "icon": "dollar-sign", "label": "Apple Cash"}
+        ]}
+      ]
+    },
+    "messaging.engage_with_message": {
+      "blocks": [
+        {"type": "chat", "cap": "open_engage_with_message", "items": [
+          {"from": "them", "text": "See you at Gaucho at 7!", "name": "Mina"}
+        ]},
+        {"type": "controls", "items": [
+          {"cap": "react_to_message", "icon": "heart"},
+          {"cap": "react_to_message", "icon": "thumbs-up"},
+          {"cap": "react_to_message", "icon": "thumbs-down"},
+          {"cap": "react_to_message", "icon": "laugh"},
+          {"cap": "react_to_message", "icon": "circle-help"}
+        ]},
+        {"type": "buttons", "items": [
+          {"cap": "reply_to_message", "label": "Reply", "icon": "reply", "style": "secondary"},
+          {"cap": "open_compose_message", "label": "New Message", "icon": "square-pen", "style": "secondary"}
+        ]}
+      ]
+    }
+  }
+}

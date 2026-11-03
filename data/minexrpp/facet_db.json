@@ -1,0 +1,7259 @@
+{
+ "format": "contextxr.facet_db",
+ "format_version": "1.0",
+ "benchmark_version": "1.0.0",
+ "name": "MineXR++",
+ "description": "Functional facet database of MineXR++ (Cho et al., UIST '26).",
+ "apps": [
+  {
+   "app_id": "gmail",
+   "app_name": "Gmail",
+   "app_domain": "productivity",
+   "entry_facet_id": "gmail.open_section",
+   "capabilities": [
+    "view_email_list",
+    "enter_search_query",
+    "view_search_results",
+    "filter_search_results",
+    "read_email_body",
+    "reply_email",
+    "delete_email",
+    "archive_email",
+    "forward_email",
+    "mark_email_unread",
+    "snooze_email",
+    "move_email_to_folder",
+    "view_embedded_calendar_event",
+    "view_attachments",
+    "add_recipients",
+    "add_subject",
+    "compose_message_body",
+    "send_email",
+    "attach_files",
+    "save_draft",
+    "discard_draft",
+    "close_compose_screen",
+    "switch_account",
+    "view_current_status",
+    "set_status_active_inactive",
+    "add_custom_status",
+    "open_browse_mailbox",
+    "open_search_mail",
+    "open_compose_email",
+    "open_navigate_mailboxes_and_accounts",
+    "open_user_presence_status",
+    "view_email_title",
+    "view_email_sender",
+    "star_email",
+    "view_draft_list",
+    "star_draft",
+    "open_browse_drafts",
+    "open_view_email_contents_actions",
+    "enter_search_query_voice",
+    "view_recent_mail_searches",
+    "sort_search_results",
+    "view_mailbox_list"
+   ]
+  },
+  {
+   "app_id": "spotify",
+   "app_name": "Spotify",
+   "app_domain": "music",
+   "entry_facet_id": "spotify.open_section",
+   "capabilities": [
+    "view_recommendations",
+    "explore_genres",
+    "view_new_releases",
+    "view_charts",
+    "view_curated_playlists",
+    "enter_search_query",
+    "filter_search_results_by_type",
+    "view_recent_searches",
+    "view_search_autocompletion",
+    "play",
+    "pause",
+    "skip_next",
+    "skip_previous",
+    "seek",
+    "shuffle_toggle",
+    "repeat_toggle",
+    "add_to_queue",
+    "view_title_artist",
+    "view_album_art",
+    "view_lyrics",
+    "view_credits",
+    "view_track_animation",
+    "view_track_progress",
+    "adjust_volume",
+    "select_output_device",
+    "crossfade_setting",
+    "equalizer",
+    "connect_to_speaker",
+    "save_unsave",
+    "create_playlist",
+    "edit_playlist",
+    "delete_playlist",
+    "follow_unfollow_artist",
+    "sort_library",
+    "filter_library",
+    "share_track",
+    "share_collection",
+    "adjust_playback_speed",
+    "set_sleep_timer",
+    "view_queue",
+    "reorder_queue",
+    "remove_from_queue",
+    "clear_queue",
+    "open_browse_music",
+    "open_search_content",
+    "open_control_playback",
+    "open_view_now_playing",
+    "open_control_volume_output",
+    "open_manage_library",
+    "open_control_podcast_audiobook",
+    "open_view_manage_queue",
+    "view_search_results",
+    "delete_recent_search_result",
+    "view_playlist_tracks",
+    "play_collection",
+    "shuffle_collection",
+    "view_playlist_title",
+    "view_playlist_description",
+    "save_collection",
+    "open_manage_track",
+    "add_to_playlist",
+    "add_to_liked_songs",
+    "hide_in_playlist",
+    "view_related_artists",
+    "view_artist_bio",
+    "view_track_list",
+    "view_song_credits",
+    "open_view_artist",
+    "open_view_album",
+    "open_view_playlist",
+    "view_event_list",
+    "view_artist_discography",
+    "view_music_videos",
+    "share_artist",
+    "block_artist",
+    "view_audiobook_metadata",
+    "view_chapters",
+    "see_audiobook_progress",
+    "play_track",
+    "open_browse_audiobooks",
+    "open_view_audiobook"
+   ]
+  },
+  {
+   "app_id": "google_calendar",
+   "app_name": "Google Calendar",
+   "app_domain": "productivity",
+   "entry_facet_id": "google_calendar.open_section",
+   "capabilities": [
+    "set_view_day",
+    "set_view_week",
+    "set_view_month",
+    "set_view_3_day",
+    "view_time_duration",
+    "view_location",
+    "view_attendees",
+    "view_description",
+    "view_attachments",
+    "join_conference_link",
+    "set_title",
+    "set_time_duration",
+    "set_location",
+    "add_invitees",
+    "set_recurrence",
+    "add_description",
+    "attach_files",
+    "set_reminder_alert",
+    "set_calendar",
+    "view_others_free_busy",
+    "suggest_times",
+    "accept_invitation",
+    "decline_invitation",
+    "maybe_invitation",
+    "propose_new_time",
+    "add_note_to_response",
+    "mark_completed",
+    "toggle_calendar_visibility",
+    "subscribe_to_calendar",
+    "share_calendar",
+    "create_new_calendar",
+    "open_view_event_detail",
+    "open_create_edit_event",
+    "open_schedule_find_time",
+    "open_respond_to_invitation",
+    "open_configure_calendar_visibility",
+    "navigate_to_today",
+    "view_calendar",
+    "view_title",
+    "message_event_attendees",
+    "view_reminder_alert",
+    "add_video_conferencing",
+    "set_color",
+    "set_account",
+    "set_visibility",
+    "view_calendar_list",
+    "view_due_date",
+    "open_create_edit_task",
+    "open_view_calendar",
+    "open_view_task_detail"
+   ]
+  },
+  {
+   "app_id": "google_maps",
+   "app_name": "Google Maps",
+   "app_domain": "navigation",
+   "entry_facet_id": "google_maps.open_section",
+   "capabilities": [
+    "pan_map",
+    "zoom_map",
+    "toggle_map_layer",
+    "enter_search_query",
+    "view_open_hours",
+    "view_reviews",
+    "view_photos",
+    "call_place",
+    "view_price_level",
+    "view_busy_times",
+    "view_menu",
+    "view_lane_guidance",
+    "view_eta",
+    "reroute",
+    "view_speed",
+    "view_hazard_alerts",
+    "add_stops",
+    "view_fare_estimate",
+    "save_place",
+    "create_list",
+    "share_list",
+    "view_saved_places",
+    "share_realtime_location",
+    "share_eta",
+    "share_place",
+    "select_region",
+    "open_view_place",
+    "open_view_directions",
+    "recenter_to_location",
+    "filter_search_results",
+    "view_search_results",
+    "start_navigation",
+    "stop_navigation",
+    "select_arrival_time",
+    "remove_saved_place",
+    "search_category",
+    "view_search_autocomplete",
+    "reserve_table",
+    "view_place_details",
+    "set_driving_mode",
+    "set_walking_mode",
+    "set_transit_mode",
+    "set_bike_mode",
+    "view_route_options",
+    "view_route_detail",
+    "view_transit_schedule",
+    "set_origin",
+    "set_destination",
+    "view_next_turn",
+    "report_incident",
+    "mute_unmute_voice",
+    "toggle_route_overview",
+    "add_place_to_list",
+    "invite_collaborators",
+    "view_saved_lists",
+    "open_view_saved_places",
+    "open_manage_saved_list",
+    "open_explore_map",
+    "open_search_places",
+    "open_navigate_route",
+    "open_share_realtime_location",
+    "open_browse_saved_lists"
+   ]
+  },
+  {
+   "app_id": "amazon",
+   "app_name": "Amazon",
+   "app_domain": "shopping",
+   "entry_facet_id": "amazon.open_section",
+   "capabilities": [
+    "view_deals",
+    "view_departments",
+    "view_personalized_recommendations",
+    "view_trending",
+    "enter_search_query",
+    "filter_results",
+    "sort_results",
+    "show_search_results",
+    "view_product_images",
+    "view_price",
+    "view_reviews_summary",
+    "view_qa",
+    "view_specifications",
+    "check_availability",
+    "view_seller_info",
+    "add_item_to_cart",
+    "remove_item_from_cart",
+    "adjust_quantity",
+    "save_for_later",
+    "view_total",
+    "apply_coupon",
+    "select_address",
+    "choose_shipping_speed",
+    "select_payment_method",
+    "apply_gift_card",
+    "review_order",
+    "place_order",
+    "view_order_status",
+    "view_estimated_delivery",
+    "view_delivery_photo",
+    "view_past_orders",
+    "initiate_return",
+    "request_refund",
+    "leave_review",
+    "download_invoice",
+    "open_browse_products",
+    "open_search_product",
+    "open_view_product_detail",
+    "open_manage_cart",
+    "open_checkout_purchase",
+    "open_track_delivery",
+    "open_view_order_history_returns",
+    "view_product_name",
+    "select_product_options"
+   ]
+  },
+  {
+   "app_id": "clock",
+   "app_name": "Clock",
+   "app_domain": "utilities",
+   "entry_facet_id": "clock.open_section",
+   "capabilities": [
+    "view_current_local_time",
+    "show_saved_city_times",
+    "time_difference_from_local",
+    "set_time",
+    "set_repeat_days",
+    "choose_sound",
+    "set_alarm_label",
+    "set_snooze_duration",
+    "view_all_alarms",
+    "toggle_alarm",
+    "delete_alarm",
+    "dismiss",
+    "snooze_alarm",
+    "view_current_time",
+    "view_alarm_label",
+    "start_stopwatch",
+    "stop_stopwatch",
+    "pause",
+    "resume",
+    "reset_stopwatch",
+    "view_elapsed_time",
+    "mark_lap",
+    "view_lap_list",
+    "set_time_hours_minutes_seconds",
+    "view_remaining_time",
+    "progress_indicator",
+    "cancel_timer",
+    "restart_same_duration",
+    "open_view_world_clock",
+    "open_configure_alarm",
+    "open_manage_alarm_list",
+    "open_respond_to_alarm",
+    "open_use_stopwatch",
+    "open_configure_timer",
+    "open_monitor_timer_countdown",
+    "open_respond_to_timer",
+    "add_new_city",
+    "remove_saved_city",
+    "reorder_cities",
+    "open_manage_world_clock_list",
+    "start_timer",
+    "view_recent_timers",
+    "view_preset_timers",
+    "view_timer_label"
+   ]
+  },
+  {
+   "app_id": "calculator",
+   "app_name": "Calculator",
+   "app_domain": "utilities",
+   "entry_facet_id": "calculator.open_section",
+   "capabilities": [
+    "add",
+    "subtract",
+    "multiply",
+    "divide",
+    "convert_to_percentage",
+    "toggle_sign",
+    "add_decimal",
+    "apply_trigonometric_function",
+    "apply_logarithm",
+    "apply_exponents",
+    "apply_square_root",
+    "put_parentheses",
+    "clear",
+    "view_recent_calculations",
+    "reuse_previous_result",
+    "clear_history",
+    "set_conversion_unit",
+    "view_converted_result",
+    "switch_conversion_units",
+    "open_perform_calculation",
+    "open_view_recent_calculations",
+    "open_convert_unit_currency",
+    "enter_number",
+    "calculate_result",
+    "view_current_result"
+   ]
+  },
+  {
+   "app_id": "weather",
+   "app_name": "Weather",
+   "app_domain": "weather",
+   "entry_facet_id": "weather.open_section",
+   "capabilities": [
+    "view_current_temperature",
+    "view_current_conditions_summary",
+    "view_hourly_forecast_summary",
+    "view_daily_forecast_summary",
+    "view_hourly_temperature_graph",
+    "view_precipitation_chance_graph",
+    "select_day_for_detail",
+    "view_wind_details",
+    "view_uv_index",
+    "view_sunrise_sunset",
+    "view_humidity",
+    "view_visibility",
+    "view_feels_like",
+    "view_precipitation_map",
+    "play_precipitation_forecast",
+    "pause_precipitation_forecast",
+    "seek_precipitation_timeline",
+    "select_map_layer",
+    "zoom_map",
+    "pan_map",
+    "search_location",
+    "add_location",
+    "view_location_list_with_weather_summary",
+    "select_location_from_list",
+    "edit_location_list",
+    "open_view_current_weather",
+    "open_view_detailed_daily_forecast",
+    "open_view_extended_weather_metrics",
+    "open_view_precipitation_map",
+    "open_manage_saved_locations"
+   ]
+  },
+  {
+   "app_id": "camera",
+   "app_name": "Camera",
+   "app_domain": "photo_and_video",
+   "entry_facet_id": "camera.open_section",
+   "capabilities": [
+    "capture_photo",
+    "tap_to_focus",
+    "adjust_exposure",
+    "zoom_in",
+    "view_grid_overlay",
+    "start_stop_recording",
+    "frame_rate_selection",
+    "set_time_lapse_mode",
+    "set_slow_motion_mode",
+    "set_portrait_mode",
+    "set_panorama_mode",
+    "set_aspect_ratio",
+    "control_flash",
+    "self_timer",
+    "toggle_grid",
+    "tag_location",
+    "view_media",
+    "swipe_media",
+    "delete_media",
+    "share_media",
+    "edit_media",
+    "scan_qr",
+    "open_capture_photo",
+    "open_record_video",
+    "open_select_capture_mode",
+    "open_configure_capture_parameters",
+    "open_scan_qr",
+    "view_frame",
+    "zoom_out",
+    "set_photo_mode",
+    "switch_front_back_camera",
+    "save_unsave_media",
+    "view_media_metadata",
+    "open_browse_captured_media"
+   ]
+  },
+  {
+   "app_id": "uber_eats",
+   "app_name": "Uber Eats",
+   "app_domain": "food_and_drink",
+   "entry_facet_id": "uber_eats.open_section",
+   "capabilities": [
+    "browse_by_cuisine",
+    "browse_by_delivery_time",
+    "view_promotions",
+    "enter_search_query",
+    "view_search_results",
+    "filter_search_results",
+    "sort_search_results",
+    "view_item_description",
+    "view_item_photo",
+    "view_item_price",
+    "customize_item",
+    "add_special_instructions",
+    "view_dietary_info",
+    "add_item_to_cart",
+    "remove_item",
+    "adjust_quantity",
+    "view_subtotal",
+    "apply_promo_code",
+    "select_delivery_address",
+    "choose_delivery_or_pickup",
+    "set_tip",
+    "select_payment_method",
+    "schedule_order",
+    "place_order",
+    "view_order_status",
+    "view_driver_location",
+    "view_eta",
+    "contact_driver",
+    "contact_restaurant",
+    "view_past_orders",
+    "reorder",
+    "rate_order",
+    "rate_driver",
+    "report_issue",
+    "request_refund",
+    "open_browse_stores",
+    "open_search_stores",
+    "open_view_item",
+    "open_manage_cart",
+    "open_checkout_order",
+    "open_track_order",
+    "open_view_order_history_reorder",
+    "view_store_list",
+    "open_view_store",
+    "view_store_details",
+    "view_store_rating",
+    "view_delivery_fee",
+    "view_estimated_delivery_time",
+    "browse_menu_categories",
+    "review_order_summary"
+   ]
+  },
+  {
+   "app_id": "youtube",
+   "app_name": "YouTube",
+   "app_domain": "photo_and_video",
+   "entry_facet_id": "youtube.open_section",
+   "capabilities": [
+    "view_home_feed",
+    "view_subscriptions_feed",
+    "view_trending_feed",
+    "filter_by_topic",
+    "enter_search_query",
+    "filter_search_results",
+    "view_search_autocomplete",
+    "view_video_content",
+    "play_pause",
+    "control_volume",
+    "toggle_picture_in_picture",
+    "cast_to_device",
+    "change_playback_speed",
+    "change_quality",
+    "toggle_captions",
+    "enter_exit_fullscreen",
+    "like_video",
+    "view_comments",
+    "write_comment",
+    "view_description",
+    "subscribe_to_channel",
+    "share_video",
+    "save_to_playlist",
+    "view_channel_videos",
+    "view_channel_playlists",
+    "view_channel_community_posts",
+    "view_channel_about",
+    "create_playlist",
+    "edit_playlist",
+    "delete_playlist",
+    "add_remove_videos",
+    "view_watch_later",
+    "view_history",
+    "manage_downloads",
+    "browse_saved_playlists",
+    "open_browse_feed",
+    "open_search_content",
+    "open_watch_video",
+    "open_engage_with_video",
+    "open_view_channel",
+    "open_manage_video_library",
+    "swipe_shorts",
+    "mute_unmute",
+    "seek_video",
+    "dislike_video",
+    "skip_forward",
+    "skip_backward",
+    "replay",
+    "view_title",
+    "open_view_video_info",
+    "view_channel_info",
+    "view_search_results",
+    "sort_search_results",
+    "create_short",
+    "upload_video",
+    "go_live",
+    "create_post",
+    "view_channel_description",
+    "view_channel_subscriber_count",
+    "clear_history",
+    "open_browse_shorts",
+    "open_create_content"
+   ]
+  },
+  {
+   "app_id": "instagram",
+   "app_name": "Instagram",
+   "app_domain": "photo_and_video",
+   "entry_facet_id": "instagram.open_section",
+   "capabilities": [
+    "view_feed_posts",
+    "view_story_content",
+    "tap_to_advance_story",
+    "swipe_to_next_story",
+    "like_content",
+    "comment_on_content",
+    "share_content",
+    "save_content",
+    "view_likes_list",
+    "view_all_comments",
+    "view_profile_details",
+    "view_user_posts",
+    "follow_unfollow_user",
+    "view_followers_following_lists",
+    "enter_search_query",
+    "view_search_suggestions",
+    "view_search_results",
+    "clear_search_query",
+    "browse_grid_content",
+    "view_message_list",
+    "open_engage_in_conversation",
+    "send_text_message",
+    "send_photo_video_message",
+    "create_new_message",
+    "edit_media",
+    "add_post_caption",
+    "tag_people",
+    "add_location",
+    "capture_new_media",
+    "select_media_from_file",
+    "add_text_stickers_filters_to_story",
+    "mute_unmute_audio",
+    "control_volume",
+    "play_pause_video",
+    "seek_video",
+    "open_browse_feed",
+    "open_view_story",
+    "open_engage_with_content",
+    "open_view_user_profile",
+    "open_search_content",
+    "open_browse_explore",
+    "open_browse_message_conversations",
+    "open_create_post",
+    "open_create_story",
+    "view_content_caption",
+    "view_content_metadata",
+    "refresh_feed",
+    "open_view_post",
+    "set_feed_source",
+    "view_hashtags",
+    "view_post_content",
+    "open_browse_reels",
+    "view_recent_searches",
+    "upload_content",
+    "search_conversations",
+    "read_messages",
+    "view_media_in_chat",
+    "share_content_in_chat",
+    "send_reaction",
+    "view_story_unread_indicator",
+    "open_call",
+    "end_call",
+    "mute_unmute_microphone",
+    "view_speaker",
+    "enable_disable_video",
+    "switch_camera",
+    "share_screen",
+    "view_call_duration",
+    "view_video_content",
+    "open_browse_story_previews"
+   ]
+  },
+  {
+   "app_id": "slack",
+   "app_name": "Slack",
+   "app_domain": "business",
+   "entry_facet_id": "slack.open_section",
+   "capabilities": [
+    "view_workspaces",
+    "switch_workspace",
+    "add_workspace",
+    "view_channel_list",
+    "create_channel",
+    "view_threads",
+    "view_drafts_sent",
+    "view_dm_list",
+    "start_new_dm",
+    "type_message",
+    "send_message",
+    "attach_file",
+    "mention_user",
+    "format_text",
+    "view_all_activity",
+    "view_mentions",
+    "clear_unreads",
+    "enter_search_query",
+    "view_search_results",
+    "filter_search_results",
+    "jump_to_search_result",
+    "read_message_content",
+    "reply_to_message",
+    "share_message",
+    "react_to_message",
+    "open_browse_workspaces",
+    "open_browse_channels",
+    "open_browse_direct_messages",
+    "open_compose_message",
+    "open_browse_activity",
+    "open_search_workspace",
+    "open_view_conversation",
+    "open_view_channel",
+    "view_messages",
+    "view_channel_pins",
+    "view_message_replies",
+    "open_engage_with_message",
+    "open_call",
+    "mute_unmute_microphone",
+    "enable_disable_video",
+    "switch_camera",
+    "view_speaker",
+    "end_call",
+    "view_call_duration",
+    "share_screen"
+   ]
+  },
+  {
+   "app_id": "messaging",
+   "app_name": "messaging",
+   "app_domain": "social_networking",
+   "entry_facet_id": "messaging.open_section",
+   "capabilities": [
+    "read_summary",
+    "open_view_conversation",
+    "filter_conversations",
+    "start_new_message",
+    "create_new_group",
+    "enter_search_query",
+    "view_search_results",
+    "clear_search_query",
+    "type_text",
+    "send_message",
+    "insert_emoji",
+    "record_audio_message",
+    "read_messages",
+    "react_to_message",
+    "view_contact_info",
+    "reply_to_message",
+    "delete_conversation",
+    "mark_as_read_unread",
+    "pin_conversation",
+    "select_photo_video",
+    "select_sticker",
+    "send_apple_cash",
+    "select_audio",
+    "open_browse_conversation_list",
+    "open_search_messages",
+    "open_compose_message",
+    "open_manage_conversation_list",
+    "open_select_attachment",
+    "view_conversation_list",
+    "mute_conversation",
+    "block_contact",
+    "leave_group",
+    "open_call",
+    "mute_unmute_microphone",
+    "enable_disable_video",
+    "switch_camera",
+    "view_call_duration",
+    "end_call",
+    "view_speaker",
+    "share_screen",
+    "open_engage_with_message"
+   ]
+  },
+  {
+   "app_id": "notes",
+   "app_name": "Notes",
+   "app_domain": "productivity",
+   "entry_facet_id": "notes.open_section",
+   "capabilities": [
+    "create_new_note",
+    "edit_text",
+    "save_note_changes",
+    "mark_checklist_item_done",
+    "format_text",
+    "add_drawing",
+    "undo_action",
+    "add_table",
+    "view_note_list",
+    "view_note_content",
+    "enter_search_query",
+    "view_search_results",
+    "clear_search_query",
+    "view_search_suggestions",
+    "share_note",
+    "add_collaborator",
+    "open_browse_notes",
+    "open_view_note",
+    "open_search_notes",
+    "open_share_note",
+    "delete_note",
+    "pin_note",
+    "insert_media",
+    "add_checklist_item",
+    "open_create_note"
+   ]
+  },
+  {
+   "app_id": "netflix",
+   "app_name": "Netflix",
+   "app_domain": "entertainment",
+   "entry_facet_id": "netflix.open_section",
+   "capabilities": [
+    "select_category",
+    "view_top_10",
+    "continue_watching",
+    "enter_search_query",
+    "clear_search_query",
+    "filter_results",
+    "read_synopsis",
+    "view_metadata",
+    "play_trailer",
+    "download_content",
+    "play_pause",
+    "seek_timeline",
+    "skip_10s_back",
+    "skip_10s_forward",
+    "skip_next_episode",
+    "adjust_speed",
+    "select_audio_subtitles",
+    "adjust_brightness",
+    "lock_screen",
+    "adjust_volume",
+    "view_watchlist",
+    "view_downloaded_items",
+    "play_downloaded_item",
+    "delete_downloaded_item",
+    "pause_resume_download",
+    "set_reminder",
+    "select_device",
+    "start_cast",
+    "stop_cast",
+    "view_profile",
+    "switch_profile",
+    "access_account_settings",
+    "open_browse_content",
+    "open_search_content",
+    "open_view_content_details",
+    "open_watch_content",
+    "open_manage_watchlist",
+    "open_manage_downloads",
+    "open_manage_account",
+    "view_content_rows",
+    "view_search_results",
+    "view_cast",
+    "add_to_watchlist",
+    "remove_from_watchlist",
+    "view_video_content"
+   ]
+  },
+  {
+   "app_id": "notion",
+   "app_name": "Notion",
+   "app_domain": "productivity",
+   "entry_facet_id": "notion.open_section",
+   "capabilities": [
+    "browse_recent_pages",
+    "browse_favorite_pages",
+    "switch_workspace",
+    "edit_page_content",
+    "add_new_block",
+    "view_page_content",
+    "add_change_page_icon",
+    "add_change_page_cover",
+    "add_page_comment",
+    "enter_search_query",
+    "view_search_results",
+    "ask_ai_question",
+    "view_ai_response",
+    "share_page",
+    "duplicate_page",
+    "move_page",
+    "move_to_trash",
+    "lock_unlock_page",
+    "export_page",
+    "view_page_updates_history",
+    "view_notification_list",
+    "dismiss_notification",
+    "open_browse_pages",
+    "open_compose_page",
+    "open_search_workspace",
+    "open_browse_notifications",
+    "delete_block",
+    "reorder_block",
+    "format_text",
+    "browse_page_hierarchy",
+    "open_configure_page"
+   ]
+  },
+  {
+   "app_id": "duolingo",
+   "app_name": "Duolingo",
+   "app_domain": "education",
+   "entry_facet_id": "duolingo.open_section",
+   "capabilities": [
+    "view_prompt",
+    "type_answer",
+    "check_answer",
+    "view_progress_bar",
+    "view_remaining_energy",
+    "view_xp_gained",
+    "view_accuracy_score",
+    "view_time_taken",
+    "claim_xp_reward",
+    "view_current_streak",
+    "view_total_xp",
+    "view_league_rank",
+    "view_badges",
+    "view_social_feed_items",
+    "celebrate_achievement",
+    "view_leaderboard",
+    "open_complete_lesson",
+    "open_view_lesson_progress",
+    "open_view_lesson_summary",
+    "open_browse_learning_path",
+    "open_view_profile",
+    "open_browse_social_feed",
+    "view_course_map",
+    "select_unit",
+    "view_unit_details"
+   ]
+  },
+  {
+   "app_id": "zoom",
+   "app_name": "zoom",
+   "app_domain": "business",
+   "entry_facet_id": "zoom.open_section",
+   "capabilities": [
+    "share_screen",
+    "view_meetings_list",
+    "refresh_meetings_list",
+    "input_meeting_id",
+    "input_event_email",
+    "select_join_type",
+    "confirm_join",
+    "set_meeting_topic",
+    "set_meeting_time_details",
+    "set_meeting_entry_details",
+    "save_scheduled_meeting",
+    "cancel_scheduling",
+    "toggle_video_on",
+    "start_meeting_now",
+    "mute_unmute_audio",
+    "end_meeting",
+    "view_participants_list",
+    "invite_participants",
+    "compose_send_message",
+    "read_chat_history",
+    "send_emoji_reaction",
+    "open_browse_meetings",
+    "open_join_meeting",
+    "open_schedule_meeting",
+    "open_participate_in_meeting",
+    "open_chat_in_meeting",
+    "view_shared_screen",
+    "view_participants_video"
+   ]
+  },
+  {
+   "app_id": "files",
+   "app_name": "Files",
+   "app_domain": "utilities",
+   "entry_facet_id": "files.open_section",
+   "capabilities": [
+    "navigate_folder",
+    "view_file_list",
+    "switch_view_mode",
+    "sort_files",
+    "select_location",
+    "enter_search_query",
+    "view_search_results",
+    "clear_search_query",
+    "view_file_content",
+    "dismiss_viewer",
+    "zoom",
+    "view_file_metadata",
+    "select_files",
+    "move_file",
+    "duplicate_file",
+    "rename_file",
+    "export_file",
+    "delete_item",
+    "share_file",
+    "draw_markup",
+    "undo_redo",
+    "add_annotation",
+    "open_browse_files",
+    "open_search_files",
+    "open_view_file",
+    "open_manage_files",
+    "open_share_file",
+    "open_annotate_file",
+    "view_location_list"
+   ]
+  },
+  {
+   "app_id": "reminders",
+   "app_name": "reminders",
+   "app_domain": "productivity",
+   "entry_facet_id": "reminders.open_section",
+   "capabilities": [
+    "view_task_lists",
+    "enter_search_query",
+    "clear_search_query",
+    "view_search_results",
+    "set_task_title",
+    "add_task_notes",
+    "set_details",
+    "assign_to_list",
+    "save_task",
+    "view_tasks",
+    "mark_task_complete",
+    "open_browse_task_lists",
+    "open_search_tasks",
+    "open_compose_task",
+    "open_view_task_list",
+    "set_due_date",
+    "set_due_time",
+    "set_recurrence",
+    "set_location_trigger",
+    "remove_schedule",
+    "open_schedule_reminder",
+    "add_subtask",
+    "remove_subtask",
+    "delete_task",
+    "view_due_date",
+    "view_due_time"
+   ]
+  },
+  {
+   "app_id": "starbucks",
+   "app_name": "starbucks",
+   "app_domain": "food_and_drink",
+   "entry_facet_id": "starbucks.open_section",
+   "capabilities": [
+    "view_offer_list",
+    "view_offer_details",
+    "activate_offer",
+    "view_offer_progress",
+    "view_categories",
+    "view_items_in_category",
+    "view_featured_items",
+    "view_previous_orders",
+    "view_favorite_items",
+    "view_item_info",
+    "add_to_order",
+    "customize_item",
+    "view_cart_contents",
+    "modify_item_quantity",
+    "remove_item",
+    "proceed_to_checkout",
+    "enter_search_query",
+    "view_search_results",
+    "view_map",
+    "view_store_list",
+    "filter_stores",
+    "select_store_for_order",
+    "view_store_details",
+    "toggle_pickup_delivery",
+    "view_star_balance",
+    "view_rewards_options",
+    "view_star_details",
+    "setup_auto_reload",
+    "add_gift_card",
+    "send_egift",
+    "display_qr_code",
+    "open_browse_offers",
+    "open_browse_menu",
+    "open_customize_item",
+    "open_manage_order",
+    "open_search_menu",
+    "open_select_store_location",
+    "open_manage_rewards",
+    "open_manage_gift_cards",
+    "view_gift_cards",
+    "clear_search_query"
+   ]
+  },
+  {
+   "app_id": "recipes",
+   "app_name": "Recipes",
+   "app_domain": "food_and_drink",
+   "entry_facet_id": "recipes.open_section",
+   "capabilities": [
+    "view_recommendations",
+    "browse_by_category",
+    "view_featured_recipes",
+    "enter_search_query",
+    "filter_search_results",
+    "view_search_results",
+    "view_ingredients",
+    "view_preparation_steps",
+    "adjust_serving_size",
+    "view_cooking_time",
+    "view_recipe_media",
+    "view_saved_recipes",
+    "open_cook_recipe",
+    "view_current_step",
+    "navigate_steps",
+    "open_browse_recipes",
+    "open_search_recipes",
+    "open_view_recipe",
+    "save_recipe"
+   ]
+  },
+  {
+   "app_id": "google_scholar",
+   "app_name": "Google Scholar",
+   "app_domain": "productivity",
+   "entry_facet_id": "google_scholar.open_section",
+   "capabilities": [
+    "enter_search_query",
+    "view_search_results",
+    "filter_search_results",
+    "sort_search_results",
+    "view_recommended_articles",
+    "view_article_title",
+    "view_article_authors",
+    "open_view_article_content",
+    "open_view_article",
+    "open_view_recommended_articles",
+    "open_search_articles",
+    "view_article_content",
+    "view_article_abstract"
+   ]
+  },
+  {
+   "app_id": "overleaf",
+   "app_name": "Overleaf",
+   "app_domain": "productivity",
+   "entry_facet_id": "overleaf.open_section",
+   "capabilities": [
+    "view_project_list",
+    "create_new_project",
+    "duplicate_project",
+    "delete_project",
+    "search_projects",
+    "open_edit_document",
+    "open_browse_projects",
+    "open_preview_document",
+    "view_pdf",
+    "zoom_pdf",
+    "jump_to_page",
+    "edit_source_code",
+    "add_new_file",
+    "rename_file",
+    "delete_file",
+    "upload_file",
+    "add_comment",
+    "resolve_comment",
+    "view_version_history",
+    "compile_project",
+    "share_project",
+    "manage_collaborators",
+    "open_manage_project_settings"
+   ]
+  },
+  {
+   "app_id": "webtoon",
+   "app_name": "Webtoon",
+   "app_domain": "entertainment",
+   "entry_facet_id": "webtoon.open_section",
+   "capabilities": [
+    "view_episode_list",
+    "view_episode_thumbnail",
+    "open_view_episode",
+    "view_episode_metadata",
+    "view_episode_content",
+    "open_view_episode_comments",
+    "view_comment_list",
+    "view_comment_replies",
+    "open_browse_episode_list"
+   ]
+  },
+  {
+   "app_id": "thermometer",
+   "app_name": "Thermometer",
+   "app_domain": "utilities",
+   "entry_facet_id": "thermometer.open_section",
+   "capabilities": [
+    "view_current_temperature",
+    "open_view_current_temperature"
+   ]
+  },
+  {
+   "app_id": "game",
+   "app_name": "Game",
+   "app_domain": "game",
+   "entry_facet_id": "game.open_section",
+   "capabilities": [
+    "open_play_game",
+    "play_game"
+   ]
+  },
+  {
+   "app_id": "google_search",
+   "app_name": "Google Search",
+   "app_domain": "utilities",
+   "entry_facet_id": "google_search.open_section",
+   "capabilities": [
+    "enter_search_query",
+    "open_search",
+    "view_search_results",
+    "filter_results",
+    "view_trending_searches"
+   ]
+  },
+  {
+   "app_id": "stock",
+   "app_name": "Stock",
+   "app_domain": "finance",
+   "entry_facet_id": "stock.open_section",
+   "capabilities": [
+    "open_view_stock_price",
+    "open_view_stock_list",
+    "view_stock_summary",
+    "view_stock_price",
+    "view_price_chart",
+    "view_price_change",
+    "view_market_status"
+   ]
+  },
+  {
+   "app_id": "health",
+   "app_name": "Health",
+   "app_domain": "health_and_fitness",
+   "entry_facet_id": "health.open_section",
+   "capabilities": [
+    "start_activity_tracking",
+    "select_activity_preset",
+    "view_realtime_activity_metrics",
+    "pause_resume_activity",
+    "stop_activity_tracking",
+    "view_activity_history",
+    "view_activity_details",
+    "view_health_dashboard",
+    "view_daily_activity_summary",
+    "view_trend_charts",
+    "open_start_activity_tracking",
+    "open_view_activity_history",
+    "open_view_health_summary"
+   ]
+  },
+  {
+   "app_id": "linkedin",
+   "app_name": "LinkedIn",
+   "app_domain": "business",
+   "entry_facet_id": "linkedin.open_section",
+   "capabilities": [
+    "view_feed_posts",
+    "open_view_post",
+    "open_view_profile",
+    "open_view_notifications",
+    "view_notification_list",
+    "view_post_content",
+    "view_post_comments",
+    "enter_search_query",
+    "view_search_results",
+    "open_search_content",
+    "filter_search_results",
+    "view_profile_details",
+    "view_profile_posts",
+    "send_connection_request",
+    "send_message",
+    "open_browse_feed"
+   ]
+  },
+  {
+   "app_id": "reddit",
+   "app_name": "Reddit",
+   "app_domain": "news",
+   "entry_facet_id": "reddit.open_section",
+   "capabilities": [
+    "view_post_list",
+    "open_view_post",
+    "view_post_content",
+    "view_comment_thread",
+    "enter_search_query",
+    "view_search_result",
+    "open_browse_feed",
+    "open_search_content"
+   ]
+  },
+  {
+   "app_id": "translate",
+   "app_name": "Translate",
+   "app_domain": "reference",
+   "entry_facet_id": "translate.open_section",
+   "capabilities": [
+    "edit_input_text",
+    "view_translation",
+    "select_source_language",
+    "select_target_language",
+    "switch_languages",
+    "open_translate_text",
+    "open_camera_translation",
+    "capture_text_image",
+    "view_image_translation"
+   ]
+  },
+  {
+   "app_id": "books",
+   "app_name": "Books",
+   "app_domain": "books",
+   "entry_facet_id": "books.open_section",
+   "capabilities": [
+    "view_book_list",
+    "open_read_book",
+    "sort_books",
+    "filter_books",
+    "view_book_page",
+    "turn_page",
+    "adjust_text_settings",
+    "navigate_to_chapter",
+    "browse_recommended_books",
+    "view_book_details",
+    "open_discover_books",
+    "download_book",
+    "remove_book",
+    "add_book_to_collection",
+    "open_browse_library",
+    "open_manage_library"
+   ]
+  },
+  {
+   "app_id": "news",
+   "app_name": "News",
+   "app_domain": "news",
+   "entry_facet_id": "news.open_section",
+   "capabilities": [
+    "view_headline_list",
+    "open_read_article",
+    "switch_news_category",
+    "view_featured_stories",
+    "view_article_content",
+    "view_article_media",
+    "view_comments",
+    "enter_search_query",
+    "view_search_results",
+    "filter_search_results",
+    "sort_search_results",
+    "open_search_news",
+    "open_browse_news_feed"
+   ]
+  },
+  {
+   "app_id": "wallet",
+   "app_name": "Wallet",
+   "app_domain": "finance",
+   "entry_facet_id": "wallet.open_section",
+   "capabilities": [
+    "select_payment_card",
+    "confirm_payment",
+    "view_payment_status",
+    "view_selected_card",
+    "open_make_payment",
+    "view_current_balance",
+    "view_recent_transactions",
+    "open_view_balance"
+   ]
+  },
+  {
+   "app_id": "contacts",
+   "app_name": "Contacts",
+   "app_domain": "utilities",
+   "entry_facet_id": "contacts.open_section",
+   "capabilities": [
+    "view_contact_list",
+    "open_view_contact",
+    "view_contact_details",
+    "view_contact_phone",
+    "view_contact_email",
+    "input_contact_details",
+    "save_contact",
+    "open_create_contact",
+    "enter_search_query",
+    "view_search_results",
+    "open_browse_contacts",
+    "open_search_contacts",
+    "view_recent_calls",
+    "open_view_recent_calls"
+   ]
+  },
+  {
+   "app_id": "venmo",
+   "app_name": "Venmo",
+   "app_domain": "finance",
+   "entry_facet_id": "venmo.open_section",
+   "capabilities": [
+    "view_payment_feed",
+    "open_browse_activity_feed",
+    "select_recipient",
+    "enter_payment_amount",
+    "add_payment_note",
+    "confirm_payment",
+    "request_payment",
+    "open_send_request_payment",
+    "enter_search_query",
+    "view_user_search_results",
+    "view_account_balance",
+    "view_transaction_list",
+    "view_my_account_info",
+    "open_search_users",
+    "open_view_account"
+   ]
+  },
+  {
+   "app_id": "figma",
+   "app_name": "Figma",
+   "app_domain": "graphics_and_design",
+   "entry_facet_id": "figma.open_section",
+   "capabilities": [
+    "view_file_list",
+    "create_new_file",
+    "search_files",
+    "open_edit_design",
+    "select_element",
+    "add_shape",
+    "add_text",
+    "draw_vector",
+    "move_resize_element",
+    "delete_element",
+    "open_browse_design",
+    "view_layers",
+    "view_assets",
+    "view_pages",
+    "preview_prototype",
+    "navigate_prototype",
+    "open_preview_prototype",
+    "open_browse_files",
+    "view_current_design"
+   ]
+  },
+  {
+   "app_id": "code_editor",
+   "app_name": "Code Editor",
+   "app_domain": "developer_tools",
+   "entry_facet_id": "code_editor.open_section",
+   "capabilities": [
+    "view_file_tree",
+    "open_edit_code",
+    "create_file",
+    "rename_file",
+    "delete_file",
+    "open_browse_files",
+    "view_code_content",
+    "edit_code",
+    "insert_code",
+    "delete_code",
+    "enter_command",
+    "run_command",
+    "view_terminal_output",
+    "open_run_code"
+   ]
+  },
+  {
+   "app_id": "facebook",
+   "app_name": "Facebook",
+   "app_domain": "social_networking",
+   "entry_facet_id": "facebook.open_section",
+   "capabilities": [
+    "view_feed_posts",
+    "open_view_post",
+    "open_view_user_profile",
+    "view_post_content",
+    "view_comment_thread",
+    "react_to_post",
+    "comment_on_post",
+    "share_post",
+    "save_post",
+    "view_profile_photo",
+    "view_profile_details",
+    "view_user_posts",
+    "send_friend_request",
+    "send_message",
+    "enter_search_query",
+    "view_search_results",
+    "view_story_previews",
+    "open_view_story",
+    "view_story_content",
+    "tap_to_advance_story",
+    "swipe_to_next_story",
+    "open_browse_feed",
+    "open_engage_with_post",
+    "open_search_content",
+    "open_browse_stories",
+    "open_create_post",
+    "tag_people",
+    "add_location",
+    "edit_media",
+    "select_media_from_file",
+    "capture_new_media",
+    "add_text_stickers_filters_to_story",
+    "upload_content",
+    "open_create_story"
+   ]
+  }
+ ],
+ "facets": [
+  {
+   "facet_id": "gmail.browse_mailbox",
+   "app_id": "gmail",
+   "name": "Browse Mailbox",
+   "description": "View and navigate through a list of emails in a selected mailbox, with options to quickly manage them.",
+   "capabilities": [
+    "view_email_list",
+    "star_email",
+    "open_view_email_contents_actions"
+   ]
+  },
+  {
+   "facet_id": "gmail.search_mail",
+   "app_id": "gmail",
+   "name": "Search Mail",
+   "description": "Find specific emails by entering a search query and viewing results.",
+   "capabilities": [
+    "enter_search_query",
+    "view_search_results",
+    "filter_search_results",
+    "open_view_email_contents_actions",
+    "enter_search_query_voice",
+    "view_recent_mail_searches",
+    "sort_search_results"
+   ]
+  },
+  {
+   "facet_id": "gmail.view_email_contents_actions",
+   "app_id": "gmail",
+   "name": "View Email Content & Actions",
+   "description": "Read a specific email, view its details, and perform actions like reply, delete, or archive.",
+   "capabilities": [
+    "read_email_body",
+    "reply_email",
+    "delete_email",
+    "archive_email",
+    "forward_email",
+    "mark_email_unread",
+    "snooze_email",
+    "move_email_to_folder",
+    "view_embedded_calendar_event",
+    "view_attachments",
+    "view_email_title",
+    "view_email_sender",
+    "star_email",
+    "open_compose_email"
+   ],
+   "legacy_ids": [
+    "gmail.view_email_content_actions"
+   ]
+  },
+  {
+   "facet_id": "gmail.compose_email",
+   "app_id": "gmail",
+   "name": "Compose Email",
+   "description": "Create a new email or reply/forward an existing one, add recipients, subject, body, and attachments.",
+   "capabilities": [
+    "add_recipients",
+    "add_subject",
+    "compose_message_body",
+    "send_email",
+    "attach_files",
+    "save_draft",
+    "discard_draft",
+    "close_compose_screen"
+   ]
+  },
+  {
+   "facet_id": "gmail.navigate_mailboxes_and_accounts",
+   "app_id": "gmail",
+   "name": "Navigate Mailboxes and Accounts",
+   "description": "View and navigate through a list of mailboxes (Inbox, Starred, Drafts, etc.) and logged-in accounts.",
+   "capabilities": [
+    "switch_account",
+    "open_browse_mailbox",
+    "open_browse_drafts",
+    "view_mailbox_list"
+   ],
+   "legacy_ids": [
+    "gmail.navigate_mailboxes_accounts"
+   ]
+  },
+  {
+   "facet_id": "gmail.user_presence_status",
+   "app_id": "gmail",
+   "name": "User Presence & Status",
+   "description": "View and manage your online status and set a custom status message.",
+   "capabilities": [
+    "view_current_status",
+    "set_status_active_inactive",
+    "add_custom_status"
+   ]
+  },
+  {
+   "facet_id": "gmail.browse_drafts",
+   "app_id": "gmail",
+   "name": "Browse Drafts",
+   "description": "Allows users to view and manage their email drafts.",
+   "capabilities": [
+    "star_draft",
+    "view_draft_list",
+    "open_compose_email"
+   ]
+  },
+  {
+   "facet_id": "gmail.open_section",
+   "app_id": "gmail",
+   "name": "Open Section",
+   "description": "Navigate to a primary section of the app, such as Search, Library, Playback Control, or Now Playing",
+   "capabilities": [
+    "open_search_mail",
+    "open_navigate_mailboxes_and_accounts",
+    "open_user_presence_status",
+    "open_browse_mailbox",
+    "open_compose_email"
+   ]
+  },
+  {
+   "facet_id": "spotify.browse_music",
+   "app_id": "spotify",
+   "name": "Browse Music",
+   "description": "Explore music content through curated recommendations, charts, and categories",
+   "capabilities": [
+    "view_recommendations",
+    "explore_genres",
+    "view_new_releases",
+    "view_charts",
+    "view_curated_playlists",
+    "open_view_playlist"
+   ]
+  },
+  {
+   "facet_id": "spotify.search_content",
+   "app_id": "spotify",
+   "name": "Search Content",
+   "description": "Find specific content by query",
+   "capabilities": [
+    "enter_search_query",
+    "filter_search_results_by_type",
+    "view_recent_searches",
+    "view_search_autocompletion",
+    "view_search_results",
+    "delete_recent_search_result"
+   ]
+  },
+  {
+   "facet_id": "spotify.control_playback",
+   "app_id": "spotify",
+   "name": "Control Playback",
+   "description": "Control currently playing audio",
+   "capabilities": [
+    "play",
+    "pause",
+    "skip_next",
+    "skip_previous",
+    "seek",
+    "shuffle_toggle",
+    "repeat_toggle",
+    "view_track_progress"
+   ]
+  },
+  {
+   "facet_id": "spotify.view_now_playing",
+   "app_id": "spotify",
+   "name": "View Now Playing",
+   "description": "View information about current track or episode",
+   "capabilities": [
+    "view_title_artist",
+    "view_album_art",
+    "view_lyrics",
+    "view_credits",
+    "view_track_animation",
+    "view_track_progress",
+    "save_unsave",
+    "open_view_artist",
+    "open_view_album",
+    "hide_in_playlist",
+    "open_view_manage_queue",
+    "open_control_volume_output",
+    "share_track",
+    "open_manage_track"
+   ]
+  },
+  {
+   "facet_id": "spotify.control_volume_output",
+   "app_id": "spotify",
+   "name": "Control Volume / Output",
+   "description": "Manage audio routing and volume level",
+   "capabilities": [
+    "adjust_volume",
+    "select_output_device",
+    "crossfade_setting",
+    "equalizer",
+    "connect_to_speaker"
+   ]
+  },
+  {
+   "facet_id": "spotify.manage_library",
+   "app_id": "spotify",
+   "name": "Manage Library",
+   "description": "Curate personal audio collection",
+   "capabilities": [
+    "save_unsave",
+    "create_playlist",
+    "edit_playlist",
+    "delete_playlist",
+    "sort_library",
+    "filter_library",
+    "open_view_playlist",
+    "open_view_artist",
+    "open_view_album",
+    "view_curated_playlists"
+   ]
+  },
+  {
+   "facet_id": "spotify.control_podcast_audiobook",
+   "app_id": "spotify",
+   "name": "Control Podcast / Audiobook",
+   "description": "Control currently playing long-form audio content (podcast and audiobook)",
+   "capabilities": [
+    "adjust_playback_speed",
+    "set_sleep_timer",
+    "open_view_manage_queue",
+    "play",
+    "pause",
+    "skip_next",
+    "skip_previous",
+    "seek",
+    "view_track_progress",
+    "open_control_volume_output"
+   ]
+  },
+  {
+   "facet_id": "spotify.view_manage_queue",
+   "app_id": "spotify",
+   "name": "View / Manage Queue",
+   "description": "View and manage the sequence of upcoming playback",
+   "capabilities": [
+    "view_queue",
+    "add_to_queue",
+    "reorder_queue",
+    "remove_from_queue",
+    "clear_queue",
+    "play",
+    "pause"
+   ]
+  },
+  {
+   "facet_id": "spotify.view_playlist",
+   "app_id": "spotify",
+   "name": "View Playlist",
+   "description": "Displays the contents of a selected playlist, allowing playback and basic management.",
+   "capabilities": [
+    "view_playlist_tracks",
+    "shuffle_collection",
+    "view_playlist_title",
+    "play_collection",
+    "view_playlist_description",
+    "save_collection",
+    "open_manage_track",
+    "share_collection"
+   ]
+  },
+  {
+   "facet_id": "spotify.manage_track",
+   "app_id": "spotify",
+   "name": "Manage Track",
+   "description": "Allows users to perform actions on a currently playing or selected track, such as adding to a playlist, liking, or sharing.",
+   "capabilities": [
+    "add_to_playlist",
+    "add_to_liked_songs",
+    "hide_in_playlist",
+    "add_to_queue",
+    "view_song_credits",
+    "open_view_artist",
+    "open_view_album",
+    "open_view_playlist",
+    "share_track"
+   ]
+  },
+  {
+   "facet_id": "spotify.view_artist",
+   "app_id": "spotify",
+   "name": "View Artist",
+   "description": "Allows users to explore an artist's profile, discography, and related content.",
+   "capabilities": [
+    "view_related_artists",
+    "view_artist_bio",
+    "follow_unfollow_artist",
+    "open_view_album",
+    "view_track_list",
+    "shuffle_collection",
+    "play_collection",
+    "view_event_list",
+    "view_artist_discography",
+    "view_music_videos",
+    "share_artist",
+    "block_artist",
+    "save_collection",
+    "open_manage_track",
+    "add_to_playlist"
+   ]
+  },
+  {
+   "facet_id": "spotify.view_album",
+   "app_id": "spotify",
+   "name": "View Album",
+   "description": "Allows users to explore the details of a specific music album, including tracks, artist, and related content.",
+   "capabilities": [
+    "view_track_list",
+    "open_view_artist",
+    "play_collection",
+    "shuffle_collection",
+    "add_to_playlist",
+    "save_collection",
+    "open_manage_track"
+   ]
+  },
+  {
+   "facet_id": "spotify.browse_audiobooks",
+   "app_id": "spotify",
+   "name": "Browse Audiobooks",
+   "description": "Allows users to explore and discover audiobooks within the Spotify catalog.",
+   "capabilities": [
+    "view_new_releases",
+    "view_charts",
+    "view_recommendations",
+    "explore_genres",
+    "open_view_audiobook"
+   ]
+  },
+  {
+   "facet_id": "spotify.view_audiobook",
+   "app_id": "spotify",
+   "name": "View Audiobook",
+   "description": "Displays detailed information about a specific audiobook, including chapters, synopsis, and listening progress.",
+   "capabilities": [
+    "view_audiobook_metadata",
+    "view_chapters",
+    "see_audiobook_progress",
+    "play_collection",
+    "play_track",
+    "save_collection",
+    "open_view_artist",
+    "share_collection",
+    "share_track",
+    "view_track_list"
+   ]
+  },
+  {
+   "facet_id": "spotify.open_section",
+   "app_id": "spotify",
+   "name": "Open Section",
+   "description": "Navigate to a primary section of the app, such as Search, Library, Playback Control, or Now Playing.",
+   "capabilities": [
+    "open_search_content",
+    "open_browse_music",
+    "open_view_now_playing",
+    "open_control_playback",
+    "open_control_podcast_audiobook",
+    "open_manage_library",
+    "open_browse_audiobooks"
+   ]
+  },
+  {
+   "facet_id": "google_calendar.view_calendar",
+   "app_id": "google_calendar",
+   "name": "View Calendar",
+   "description": "View calendar across different time scopes",
+   "capabilities": [
+    "set_view_day",
+    "set_view_week",
+    "set_view_month",
+    "set_view_3_day",
+    "open_view_event_detail",
+    "navigate_to_today",
+    "view_calendar",
+    "view_time_duration",
+    "view_location",
+    "view_title",
+    "open_create_edit_event",
+    "open_configure_calendar_visibility"
+   ]
+  },
+  {
+   "facet_id": "google_calendar.view_event_detail",
+   "app_id": "google_calendar",
+   "name": "View Event Detail",
+   "description": "View full information about a single event",
+   "capabilities": [
+    "view_time_duration",
+    "view_location",
+    "view_attendees",
+    "view_description",
+    "view_attachments",
+    "join_conference_link",
+    "view_title",
+    "message_event_attendees",
+    "open_create_edit_event",
+    "view_reminder_alert",
+    "open_respond_to_invitation"
+   ]
+  },
+  {
+   "facet_id": "google_calendar.create_edit_event",
+   "app_id": "google_calendar",
+   "name": "Create / Edit Event",
+   "description": "Create or modify calendar entries",
+   "capabilities": [
+    "set_title",
+    "set_time_duration",
+    "set_location",
+    "add_invitees",
+    "set_recurrence",
+    "add_description",
+    "attach_files",
+    "set_reminder_alert",
+    "set_calendar",
+    "add_video_conferencing",
+    "set_color",
+    "set_account",
+    "set_visibility",
+    "open_schedule_find_time"
+   ]
+  },
+  {
+   "facet_id": "google_calendar.schedule_find_time",
+   "app_id": "google_calendar",
+   "name": "Schedule / Find Time",
+   "description": "Coordinate mutual availability across participants",
+   "capabilities": [
+    "view_others_free_busy",
+    "suggest_times"
+   ]
+  },
+  {
+   "facet_id": "google_calendar.respond_to_invitation",
+   "app_id": "google_calendar",
+   "name": "Respond to Invitation",
+   "description": "Respond to event invitations",
+   "capabilities": [
+    "accept_invitation",
+    "decline_invitation",
+    "maybe_invitation",
+    "propose_new_time",
+    "add_note_to_response"
+   ]
+  },
+  {
+   "facet_id": "google_calendar.view_task_detail",
+   "app_id": "google_calendar",
+   "name": "View Task Detail",
+   "description": "View full information about a single task",
+   "capabilities": [
+    "mark_completed",
+    "view_title",
+    "view_time_duration",
+    "view_description",
+    "view_due_date",
+    "open_create_edit_task"
+   ]
+  },
+  {
+   "facet_id": "google_calendar.configure_calendar_visibility",
+   "app_id": "google_calendar",
+   "name": "Configure Calendar Visibility",
+   "description": "Select which calendars are displayed in the main calendar and adjust their visibility settings.",
+   "capabilities": [
+    "toggle_calendar_visibility",
+    "subscribe_to_calendar",
+    "share_calendar",
+    "create_new_calendar",
+    "view_calendar_list"
+   ]
+  },
+  {
+   "facet_id": "google_calendar.create_edit_task",
+   "app_id": "google_calendar",
+   "name": "Create / Edit Task",
+   "description": "Create or modify task entries",
+   "capabilities": [
+    "set_title",
+    "set_recurrence",
+    "set_time_duration"
+   ]
+  },
+  {
+   "facet_id": "google_calendar.open_section",
+   "app_id": "google_calendar",
+   "name": "Open Section",
+   "description": "Navigate to a primary section of the app, such View Calendar, Create / Edit Event, Create / Edit Task.",
+   "capabilities": [
+    "open_view_calendar",
+    "open_create_edit_task",
+    "open_create_edit_event",
+    "open_view_event_detail",
+    "open_view_task_detail"
+   ]
+  },
+  {
+   "facet_id": "google_maps.explore_map",
+   "app_id": "google_maps",
+   "name": "Explore Map",
+   "description": "Explore geographic areas and discover places through direct map interaction.",
+   "capabilities": [
+    "pan_map",
+    "zoom_map",
+    "toggle_map_layer",
+    "select_region",
+    "recenter_to_location",
+    "view_saved_places"
+   ]
+  },
+  {
+   "facet_id": "google_maps.search_places",
+   "app_id": "google_maps",
+   "name": "Search Places",
+   "description": "Search for locations, businesses, or categories of places.",
+   "capabilities": [
+    "enter_search_query",
+    "filter_search_results",
+    "view_search_results",
+    "search_category",
+    "view_search_autocomplete",
+    "open_view_place"
+   ]
+  },
+  {
+   "facet_id": "google_maps.view_place",
+   "app_id": "google_maps",
+   "name": "View Place",
+   "description": "View detailed information about a selected place.",
+   "capabilities": [
+    "view_open_hours",
+    "view_reviews",
+    "view_photos",
+    "call_place",
+    "view_price_level",
+    "view_busy_times",
+    "view_menu",
+    "share_place",
+    "save_place",
+    "open_view_directions",
+    "reserve_table",
+    "view_place_details",
+    "open_navigate_route"
+   ]
+  },
+  {
+   "facet_id": "google_maps.navigate_route",
+   "app_id": "google_maps",
+   "name": "Navigate Route",
+   "description": "Follow real-time navigation guidance along a selected route.",
+   "capabilities": [
+    "view_eta",
+    "reroute",
+    "view_speed",
+    "start_navigation",
+    "stop_navigation",
+    "view_hazard_alerts",
+    "view_lane_guidance",
+    "view_next_turn",
+    "report_incident",
+    "mute_unmute_voice",
+    "toggle_route_overview"
+   ]
+  },
+  {
+   "facet_id": "google_maps.view_directions",
+   "app_id": "google_maps",
+   "name": "View Directions",
+   "description": "View and compare routes to a destination across travel modes.",
+   "capabilities": [
+    "add_stops",
+    "select_arrival_time",
+    "view_fare_estimate",
+    "set_driving_mode",
+    "set_walking_mode",
+    "set_transit_mode",
+    "set_bike_mode",
+    "view_route_options",
+    "view_route_detail",
+    "view_transit_schedule",
+    "set_origin",
+    "set_destination"
+   ]
+  },
+  {
+   "facet_id": "google_maps.manage_saved_list",
+   "app_id": "google_maps",
+   "name": "Manage Saved List",
+   "description": "Create and manage custome place collections.",
+   "capabilities": [
+    "create_list",
+    "share_list",
+    "remove_saved_place",
+    "add_place_to_list",
+    "invite_collaborators"
+   ]
+  },
+  {
+   "facet_id": "google_maps.share_realtime_location",
+   "app_id": "google_maps",
+   "name": "Share Realtime location",
+   "description": "Communicate position or arrival time with others",
+   "capabilities": [
+    "share_realtime_location",
+    "share_eta"
+   ]
+  },
+  {
+   "facet_id": "google_maps.browse_saved_lists",
+   "app_id": "google_maps",
+   "name": "Browse Saved Lists",
+   "description": "View and access saved lists of places.",
+   "capabilities": [
+    "view_saved_lists",
+    "open_view_saved_places",
+    "open_manage_saved_list"
+   ]
+  },
+  {
+   "facet_id": "google_maps.view_saved_places",
+   "app_id": "google_maps",
+   "name": "View Saved Places",
+   "description": "View and access saved places in a custom list.",
+   "capabilities": [
+    "view_saved_places",
+    "open_view_place",
+    "open_manage_saved_list"
+   ]
+  },
+  {
+   "facet_id": "google_maps.open_section",
+   "app_id": "google_maps",
+   "name": "Open Section",
+   "description": "Navigate to a primary section of the app, such Explore Map, Search Places, Browse Saved Lists, and View Saved Places",
+   "capabilities": [
+    "open_explore_map",
+    "open_search_places",
+    "open_browse_saved_lists",
+    "open_share_realtime_location"
+   ]
+  },
+  {
+   "facet_id": "amazon.browse_products",
+   "app_id": "amazon",
+   "name": "Browse Products",
+   "description": "Explore products through recommendations and categories",
+   "capabilities": [
+    "view_deals",
+    "view_departments",
+    "view_personalized_recommendations",
+    "view_trending",
+    "open_view_product_detail"
+   ]
+  },
+  {
+   "facet_id": "amazon.search_product",
+   "app_id": "amazon",
+   "name": "Search Product",
+   "description": "Find specific products by query",
+   "capabilities": [
+    "enter_search_query",
+    "filter_results",
+    "sort_results",
+    "show_search_results",
+    "open_view_product_detail",
+    "open_checkout_purchase"
+   ]
+  },
+  {
+   "facet_id": "amazon.view_product_detail",
+   "app_id": "amazon",
+   "name": "View Product Detail",
+   "description": "View comprehensive product information",
+   "capabilities": [
+    "view_product_images",
+    "view_price",
+    "view_reviews_summary",
+    "view_qa",
+    "view_specifications",
+    "check_availability",
+    "view_seller_info",
+    "view_product_name",
+    "select_product_options",
+    "open_checkout_purchase",
+    "view_estimated_delivery",
+    "open_manage_cart"
+   ]
+  },
+  {
+   "facet_id": "amazon.manage_cart",
+   "app_id": "amazon",
+   "name": "Manage Cart",
+   "description": "Manage items selected for purchase",
+   "capabilities": [
+    "add_item_to_cart",
+    "remove_item_from_cart",
+    "adjust_quantity",
+    "save_for_later",
+    "view_total",
+    "apply_coupon",
+    "view_estimated_delivery",
+    "open_checkout_purchase"
+   ]
+  },
+  {
+   "facet_id": "amazon.checkout_purchase",
+   "app_id": "amazon",
+   "name": "Checkout / Purchase",
+   "description": "Complete a transaction",
+   "capabilities": [
+    "select_address",
+    "choose_shipping_speed",
+    "select_payment_method",
+    "apply_gift_card",
+    "review_order",
+    "place_order"
+   ],
+   "legacy_ids": [
+    "amazon.checkout"
+   ]
+  },
+  {
+   "facet_id": "amazon.track_delivery",
+   "app_id": "amazon",
+   "name": "Track Delivery",
+   "description": "Monitor purchase delivery status",
+   "capabilities": [
+    "view_order_status",
+    "view_estimated_delivery",
+    "view_delivery_photo",
+    "open_view_product_detail"
+   ]
+  },
+  {
+   "facet_id": "amazon.view_order_history_returns",
+   "app_id": "amazon",
+   "name": "View Order History / Returns",
+   "description": "Manage past purchases and returns",
+   "capabilities": [
+    "view_past_orders",
+    "initiate_return",
+    "request_refund",
+    "leave_review",
+    "download_invoice",
+    "open_view_product_detail"
+   ]
+  },
+  {
+   "facet_id": "amazon.open_section",
+   "app_id": "amazon",
+   "name": "Open Section",
+   "description": "Navigate to a primary section of the app, such as Browse Products, Search Product, and Track Delivry",
+   "capabilities": [
+    "open_track_delivery",
+    "open_view_order_history_returns",
+    "open_manage_cart",
+    "open_browse_products",
+    "open_search_product"
+   ]
+  },
+  {
+   "facet_id": "clock.view_world_clock",
+   "app_id": "clock",
+   "name": "View World Clock",
+   "description": "View current time across multiple time zones",
+   "capabilities": [
+    "view_current_local_time",
+    "show_saved_city_times",
+    "time_difference_from_local"
+   ]
+  },
+  {
+   "facet_id": "clock.configure_alarm",
+   "app_id": "clock",
+   "name": "Configure Alarm",
+   "description": "Set up alarm schedules",
+   "capabilities": [
+    "set_time",
+    "set_repeat_days",
+    "choose_sound",
+    "set_alarm_label",
+    "set_snooze_duration",
+    "open_respond_to_alarm"
+   ]
+  },
+  {
+   "facet_id": "clock.manage_alarm_list",
+   "app_id": "clock",
+   "name": "Manage Alarm List",
+   "description": "Manage multiple alarms",
+   "capabilities": [
+    "view_all_alarms",
+    "toggle_alarm",
+    "delete_alarm",
+    "open_configure_alarm"
+   ],
+   "legacy_ids": [
+    "clock.mange_alarm_list"
+   ]
+  },
+  {
+   "facet_id": "clock.respond_to_alarm",
+   "app_id": "clock",
+   "name": "Respond to Alarm",
+   "description": "Respond to firing alarm",
+   "capabilities": [
+    "dismiss",
+    "snooze_alarm",
+    "view_current_time",
+    "view_alarm_label",
+    "open_manage_world_clock_list"
+   ],
+   "legacy_ids": [
+    "clock.responsd_to_alarm"
+   ]
+  },
+  {
+   "facet_id": "clock.use_stopwatch",
+   "app_id": "clock",
+   "name": "Use Stopwatch",
+   "description": "Time an ongoing activity with count-up display",
+   "capabilities": [
+    "start_stopwatch",
+    "stop_stopwatch",
+    "pause",
+    "resume",
+    "reset_stopwatch",
+    "view_elapsed_time",
+    "mark_lap",
+    "view_lap_list"
+   ]
+  },
+  {
+   "facet_id": "clock.configure_timer",
+   "app_id": "clock",
+   "name": "Configure Timer",
+   "description": "Set a timer",
+   "capabilities": [
+    "set_time_hours_minutes_seconds",
+    "set_alarm_label",
+    "choose_sound",
+    "start_timer",
+    "view_recent_timers",
+    "view_preset_timers"
+   ]
+  },
+  {
+   "facet_id": "clock.monitor_timer_countdown",
+   "app_id": "clock",
+   "name": "Monitor Timer Countdown",
+   "description": "Monitor active timer progress",
+   "capabilities": [
+    "view_remaining_time",
+    "progress_indicator",
+    "cancel_timer",
+    "view_timer_label",
+    "resume",
+    "pause",
+    "open_respond_to_timer"
+   ]
+  },
+  {
+   "facet_id": "clock.respond_to_timer",
+   "app_id": "clock",
+   "name": "Respond to Timer",
+   "description": "Respond to completed timer",
+   "capabilities": [
+    "dismiss",
+    "restart_same_duration"
+   ]
+  },
+  {
+   "facet_id": "clock.open_section",
+   "app_id": "clock",
+   "name": "Open Section",
+   "description": "Navigate to a primary section of the app, such as alarms, world clock, stopwatch, and timers",
+   "capabilities": [
+    "open_view_world_clock",
+    "open_configure_alarm",
+    "open_use_stopwatch",
+    "open_configure_timer",
+    "open_manage_alarm_list",
+    "open_monitor_timer_countdown"
+   ]
+  },
+  {
+   "facet_id": "clock.manage_world_clock_list",
+   "app_id": "clock",
+   "name": "Manage World Clock List",
+   "description": "Allows users to add, remove, and reorder cities in their world clock list.",
+   "capabilities": [
+    "add_new_city",
+    "remove_saved_city",
+    "reorder_cities"
+   ]
+  },
+  {
+   "facet_id": "calculator.perform_calculation",
+   "app_id": "calculator",
+   "name": "Perform Calculation",
+   "description": "Perform arithmetic and scientific calculations",
+   "capabilities": [
+    "add",
+    "subtract",
+    "multiply",
+    "divide",
+    "convert_to_percentage",
+    "toggle_sign",
+    "add_decimal",
+    "enter_number",
+    "view_current_result",
+    "apply_logarithm",
+    "calculate_result",
+    "apply_square_root",
+    "apply_exponents",
+    "clear",
+    "apply_trigonometric_function",
+    "put_parentheses"
+   ]
+  },
+  {
+   "facet_id": "calculator.view_recent_calculations",
+   "app_id": "calculator",
+   "name": "View Recent Calculations",
+   "description": "Review past computations",
+   "capabilities": [
+    "view_recent_calculations",
+    "reuse_previous_result",
+    "clear_history",
+    "open_perform_calculation"
+   ]
+  },
+  {
+   "facet_id": "calculator.convert_unit_currency",
+   "app_id": "calculator",
+   "name": "Convert Unit / Currency",
+   "description": "Convert between measurement units and currencies",
+   "capabilities": [
+    "set_conversion_unit",
+    "view_converted_result",
+    "switch_conversion_units",
+    "enter_number"
+   ]
+  },
+  {
+   "facet_id": "calculator.open_section",
+   "app_id": "calculator",
+   "name": "Open Section",
+   "description": "Navigate to a primary section of the app, such as Perform Calculation, View Recent Calculations, Convert Unit / Currency",
+   "capabilities": [
+    "open_perform_calculation",
+    "open_view_recent_calculations",
+    "open_convert_unit_currency"
+   ]
+  },
+  {
+   "facet_id": "weather.view_current_weather",
+   "app_id": "weather",
+   "name": "View Current Weather",
+   "description": "Displays the current weather conditions, a brief hourly forecast, and a summary of the 10-day forecast for the selected location.",
+   "capabilities": [
+    "view_current_temperature",
+    "view_current_conditions_summary",
+    "view_hourly_forecast_summary",
+    "view_daily_forecast_summary",
+    "open_view_detailed_daily_forecast",
+    "open_view_extended_weather_metrics"
+   ]
+  },
+  {
+   "facet_id": "weather.view_detailed_daily_forecast",
+   "app_id": "weather",
+   "name": "View Detailed Daily Forecast",
+   "description": "Provides an in-depth hourly breakdown, temperature graphs, and precipitation chances for a specific day.",
+   "capabilities": [
+    "view_hourly_temperature_graph",
+    "view_precipitation_chance_graph",
+    "select_day_for_detail",
+    "open_view_precipitation_map"
+   ]
+  },
+  {
+   "facet_id": "weather.view_extended_weather_metrics",
+   "app_id": "weather",
+   "name": "View Extended Weather Metrics",
+   "description": "Presents a comprehensive set of current and forecast weather metrics like wind, UV index, sunrise/sunset, humidity, visibility, moon phase, and atmospheric pressure.",
+   "capabilities": [
+    "view_wind_details",
+    "view_uv_index",
+    "view_sunrise_sunset",
+    "view_humidity",
+    "view_visibility",
+    "view_feels_like"
+   ]
+  },
+  {
+   "facet_id": "weather.view_precipitation_map",
+   "app_id": "weather",
+   "name": "View Precipitation Map",
+   "description": "Displays a geographical map showing current and forecasted precipitation, with a timeline to animate future conditions.",
+   "capabilities": [
+    "view_precipitation_map",
+    "play_precipitation_forecast",
+    "pause_precipitation_forecast",
+    "seek_precipitation_timeline",
+    "select_map_layer",
+    "zoom_map",
+    "pan_map"
+   ]
+  },
+  {
+   "facet_id": "weather.manage_saved_locations",
+   "app_id": "weather",
+   "name": "Manage Saved Locations",
+   "description": "Allows users to search for new cities, add them to a personalized list, and organize or remove existing locations.",
+   "capabilities": [
+    "search_location",
+    "add_location",
+    "view_location_list_with_weather_summary",
+    "select_location_from_list",
+    "edit_location_list",
+    "open_view_current_weather"
+   ]
+  },
+  {
+   "facet_id": "weather.open_section",
+   "app_id": "weather",
+   "name": "Open Section",
+   "description": "Navigate to a primary section of the app, such as View Current Weather, Manage Saved Locations",
+   "capabilities": [
+    "open_view_current_weather",
+    "open_manage_saved_locations"
+   ]
+  },
+  {
+   "facet_id": "camera.capture_photo",
+   "app_id": "camera",
+   "name": "Capture Photo",
+   "description": "Basic controls for photo capture",
+   "capabilities": [
+    "capture_photo",
+    "tap_to_focus",
+    "adjust_exposure",
+    "zoom_in",
+    "zoom_out",
+    "switch_front_back_camera",
+    "open_scan_qr",
+    "open_configure_capture_parameters",
+    "open_select_capture_mode",
+    "view_frame",
+    "view_grid_overlay"
+   ]
+  },
+  {
+   "facet_id": "camera.record_video",
+   "app_id": "camera",
+   "name": "Record Video",
+   "description": "Frame and capture video",
+   "capabilities": [
+    "start_stop_recording",
+    "frame_rate_selection",
+    "zoom_in",
+    "view_grid_overlay",
+    "zoom_out",
+    "view_frame",
+    "control_flash",
+    "open_select_capture_mode",
+    "open_configure_capture_parameters"
+   ]
+  },
+  {
+   "facet_id": "camera.select_capture_mode",
+   "app_id": "camera",
+   "name": "Select Capture Mode",
+   "description": "Switch between capture modes",
+   "capabilities": [
+    "set_portrait_mode",
+    "set_panorama_mode",
+    "set_time_lapse_mode",
+    "set_slow_motion_mode",
+    "set_photo_mode"
+   ],
+   "legacy_ids": [
+    "camera.select_mode"
+   ]
+  },
+  {
+   "facet_id": "camera.configure_capture_parameters",
+   "app_id": "camera",
+   "name": "Configure Capture Parameters",
+   "description": "Configure capture parameters",
+   "capabilities": [
+    "set_aspect_ratio",
+    "control_flash",
+    "self_timer",
+    "toggle_grid",
+    "tag_location"
+   ]
+  },
+  {
+   "facet_id": "camera.browse_captured_media",
+   "app_id": "camera",
+   "name": "Browse Captured Media",
+   "description": "Browse the captured media collection.",
+   "capabilities": [
+    "view_media",
+    "swipe_media",
+    "delete_media",
+    "share_media",
+    "edit_media",
+    "save_unsave_media",
+    "view_media_metadata"
+   ]
+  },
+  {
+   "facet_id": "camera.scan_qr",
+   "app_id": "camera",
+   "name": "Scan QR",
+   "description": "Detect and act on QR codes",
+   "capabilities": [
+    "scan_qr"
+   ]
+  },
+  {
+   "facet_id": "camera.open_section",
+   "app_id": "camera",
+   "name": "Open Section",
+   "description": "Navigate to a primary section of the app, such as Capture Photo, Record Video, and View Frame",
+   "capabilities": [
+    "open_capture_photo",
+    "open_record_video",
+    "open_browse_captured_media"
+   ]
+  },
+  {
+   "facet_id": "uber_eats.browse_stores",
+   "app_id": "uber_eats",
+   "name": "Browse Stores",
+   "description": "Explore available restaurants and grocery stores",
+   "capabilities": [
+    "browse_by_cuisine",
+    "browse_by_delivery_time",
+    "view_promotions",
+    "view_store_list",
+    "open_view_store"
+   ]
+  },
+  {
+   "facet_id": "uber_eats.search_stores",
+   "app_id": "uber_eats",
+   "name": "Search Stores",
+   "description": "Find specific food, restaurants, or grocery stores by query",
+   "capabilities": [
+    "enter_search_query",
+    "view_search_results",
+    "filter_search_results",
+    "sort_search_results",
+    "open_view_store"
+   ]
+  },
+  {
+   "facet_id": "uber_eats.view_item",
+   "app_id": "uber_eats",
+   "name": "View Item",
+   "description": "View restaurant menu or grocery item details",
+   "capabilities": [
+    "view_item_description",
+    "view_item_photo",
+    "view_item_price",
+    "customize_item",
+    "add_special_instructions",
+    "view_dietary_info",
+    "add_item_to_cart"
+   ]
+  },
+  {
+   "facet_id": "uber_eats.manage_cart",
+   "app_id": "uber_eats",
+   "name": "Manage Cart",
+   "description": "Review and modify selected items before checkout",
+   "capabilities": [
+    "remove_item",
+    "adjust_quantity",
+    "view_subtotal",
+    "apply_promo_code",
+    "select_delivery_address",
+    "choose_delivery_or_pickup",
+    "open_checkout_order"
+   ]
+  },
+  {
+   "facet_id": "uber_eats.checkout_order",
+   "app_id": "uber_eats",
+   "name": "Checkout Order",
+   "description": "Checkout and place an order",
+   "capabilities": [
+    "set_tip",
+    "select_payment_method",
+    "schedule_order",
+    "place_order",
+    "review_order_summary",
+    "open_track_order"
+   ]
+  },
+  {
+   "facet_id": "uber_eats.track_order",
+   "app_id": "uber_eats",
+   "name": "Track Order",
+   "description": "Monitor active food order progress",
+   "capabilities": [
+    "view_order_status",
+    "view_driver_location",
+    "view_eta",
+    "contact_driver",
+    "contact_restaurant"
+   ],
+   "legacy_ids": [
+    "uber_eats.track_oder"
+   ]
+  },
+  {
+   "facet_id": "uber_eats.view_order_history_reorder",
+   "app_id": "uber_eats",
+   "name": "View Order History / Reorder",
+   "description": "Access past orders and reorder",
+   "capabilities": [
+    "view_past_orders",
+    "reorder",
+    "rate_order",
+    "rate_driver",
+    "report_issue",
+    "request_refund"
+   ],
+   "legacy_ids": [
+    "uber_eats.view_order_history"
+   ]
+  },
+  {
+   "facet_id": "uber_eats.open_section",
+   "app_id": "uber_eats",
+   "name": "Open Section",
+   "description": "Navigate to a primary section of the app, such as Browse Stores, Track Order",
+   "capabilities": [
+    "open_browse_stores",
+    "open_track_order",
+    "open_search_stores",
+    "open_manage_cart",
+    "open_view_order_history_reorder"
+   ]
+  },
+  {
+   "facet_id": "uber_eats.view_store",
+   "app_id": "uber_eats",
+   "name": "View Store",
+   "description": "View restaurant or grocery store details and menu.",
+   "capabilities": [
+    "view_store_details",
+    "view_store_rating",
+    "view_delivery_fee",
+    "view_estimated_delivery_time",
+    "view_promotions",
+    "browse_menu_categories",
+    "contact_restaurant",
+    "open_view_item"
+   ]
+  },
+  {
+   "facet_id": "youtube.browse_feed",
+   "app_id": "youtube",
+   "name": "Browse Feed",
+   "description": "Explore video recommendations and subscriptions",
+   "capabilities": [
+    "view_home_feed",
+    "view_subscriptions_feed",
+    "view_trending_feed",
+    "filter_by_topic",
+    "open_watch_video",
+    "open_search_content"
+   ]
+  },
+  {
+   "facet_id": "youtube.search_content",
+   "app_id": "youtube",
+   "name": "Search Content",
+   "description": "Find specific videos or channels and explore filtered results",
+   "capabilities": [
+    "enter_search_query",
+    "filter_search_results",
+    "view_search_autocomplete",
+    "view_search_results",
+    "sort_search_results",
+    "open_watch_video",
+    "open_view_channel"
+   ]
+  },
+  {
+   "facet_id": "youtube.watch_video",
+   "app_id": "youtube",
+   "name": "Watch Video",
+   "description": "Watch a video",
+   "capabilities": [
+    "view_video_content",
+    "play_pause",
+    "seek_video",
+    "skip_forward",
+    "skip_backward",
+    "replay",
+    "change_playback_speed",
+    "change_quality",
+    "toggle_captions",
+    "toggle_picture_in_picture",
+    "cast_to_device",
+    "control_volume",
+    "enter_exit_fullscreen",
+    "open_engage_with_video",
+    "open_view_video_info"
+   ]
+  },
+  {
+   "facet_id": "youtube.engage_with_video",
+   "app_id": "youtube",
+   "name": "Engage with Video",
+   "description": "Interact with a video through likes, comments, sharing, and channel actions",
+   "capabilities": [
+    "like_video",
+    "view_comments",
+    "write_comment",
+    "subscribe_to_channel",
+    "share_video",
+    "save_to_playlist",
+    "dislike_video"
+   ]
+  },
+  {
+   "facet_id": "youtube.view_channel",
+   "app_id": "youtube",
+   "name": "View Channel",
+   "description": "View a creator’s channel page, including videos, playlists, and channel information.",
+   "capabilities": [
+    "view_channel_videos",
+    "view_channel_playlists",
+    "view_channel_community_posts",
+    "view_channel_about",
+    "subscribe_to_channel",
+    "open_watch_video",
+    "view_channel_description",
+    "view_channel_subscriber_count"
+   ]
+  },
+  {
+   "facet_id": "youtube.manage_video_library",
+   "app_id": "youtube",
+   "name": "Manage Video Library",
+   "description": "View and organize saved videos, playlists, history, and downloads.",
+   "capabilities": [
+    "create_playlist",
+    "edit_playlist",
+    "delete_playlist",
+    "add_remove_videos",
+    "view_watch_later",
+    "view_history",
+    "manage_downloads",
+    "browse_saved_playlists",
+    "clear_history",
+    "open_watch_video"
+   ]
+  },
+  {
+   "facet_id": "youtube.open_section",
+   "app_id": "youtube",
+   "name": "Open Section",
+   "description": "Navigate to a primary section of the app, such as Browse Feed, Search Content, Browse Shorts, Create Content, and Manage Video Library",
+   "capabilities": [
+    "open_browse_feed",
+    "open_search_content",
+    "open_manage_video_library",
+    "open_browse_shorts",
+    "open_create_content"
+   ]
+  },
+  {
+   "facet_id": "youtube.browse_shorts",
+   "app_id": "youtube",
+   "name": "Browse Shorts",
+   "description": "Explore short-form vertical videos in a continuous swipe-based stream.",
+   "capabilities": [
+    "swipe_shorts",
+    "play_pause",
+    "mute_unmute",
+    "seek_video",
+    "view_video_content",
+    "open_view_video_info",
+    "open_engage_with_video",
+    "open_search_content"
+   ]
+  },
+  {
+   "facet_id": "youtube.view_video_info",
+   "app_id": "youtube",
+   "name": "View Video Info",
+   "description": "View a video's title, description, channel details, and other metadata associated with the video.",
+   "capabilities": [
+    "view_title",
+    "view_description",
+    "open_view_channel",
+    "view_channel_info"
+   ]
+  },
+  {
+   "facet_id": "youtube.create_content",
+   "app_id": "youtube",
+   "name": "Create Content",
+   "description": "Create and publish videos, shorts, livestreams, or community posts.",
+   "capabilities": [
+    "create_short",
+    "upload_video",
+    "go_live",
+    "create_post"
+   ]
+  },
+  {
+   "facet_id": "instagram.browse_feed",
+   "app_id": "instagram",
+   "name": "Browse Feed",
+   "description": "Scroll through a personalized stream of posts from followed accounts and recommended content.",
+   "capabilities": [
+    "view_feed_posts",
+    "view_content_caption",
+    "view_content_metadata",
+    "open_view_user_profile",
+    "open_engage_with_content",
+    "refresh_feed",
+    "set_feed_source",
+    "view_post_content",
+    "view_hashtags"
+   ]
+  },
+  {
+   "facet_id": "instagram.engage_with_content",
+   "app_id": "instagram",
+   "name": "Engage with Content",
+   "description": "Enables users to interact with individual posts and reels through liking, commenting, sharing, and saving.",
+   "capabilities": [
+    "share_content",
+    "save_content",
+    "comment_on_content",
+    "like_content",
+    "view_likes_list",
+    "view_all_comments",
+    "share_content_in_chat"
+   ]
+  },
+  {
+   "facet_id": "instagram.view_user_profile",
+   "app_id": "instagram",
+   "name": "View User Profile",
+   "description": "Displays a user's profile information, their posts, and options to interact with their account.",
+   "capabilities": [
+    "view_profile_details",
+    "view_user_posts",
+    "follow_unfollow_user",
+    "view_followers_following_lists",
+    "open_browse_message_conversations",
+    "open_view_post"
+   ]
+  },
+  {
+   "facet_id": "instagram.search_content",
+   "app_id": "instagram",
+   "name": "Search Content",
+   "description": "Allows users to find specific content, users, hashtags, or locations using a search query.",
+   "capabilities": [
+    "enter_search_query",
+    "view_search_suggestions",
+    "view_search_results",
+    "clear_search_query",
+    "view_recent_searches",
+    "open_view_post",
+    "open_view_user_profile"
+   ]
+  },
+  {
+   "facet_id": "instagram.browse_explore",
+   "app_id": "instagram",
+   "name": "Browse Explore",
+   "description": "Provides a personalized feed of recommended content for discovery, based on user interests and activity.",
+   "capabilities": [
+    "browse_grid_content",
+    "open_view_post",
+    "open_browse_reels"
+   ],
+   "legacy_ids": [
+    "instagram.browse_Explore"
+   ]
+  },
+  {
+   "facet_id": "instagram.browse_message_conversations",
+   "app_id": "instagram",
+   "name": "Browse Message Conversations",
+   "description": "View and navigate a list of message conversations.",
+   "capabilities": [
+    "view_message_list",
+    "open_engage_in_conversation",
+    "create_new_message",
+    "search_conversations"
+   ]
+  },
+  {
+   "facet_id": "instagram.create_post",
+   "app_id": "instagram",
+   "name": "Create Post",
+   "description": "Allows users to create and upload new photo or video posts to their feed.",
+   "capabilities": [
+    "edit_media",
+    "add_post_caption",
+    "tag_people",
+    "add_location",
+    "select_media_from_file",
+    "capture_new_media",
+    "upload_content"
+   ]
+  },
+  {
+   "facet_id": "instagram.create_story",
+   "app_id": "instagram",
+   "name": "Create Story",
+   "description": "Enables users to capture or select media, add creative elements, and share ephemeral stories.",
+   "capabilities": [
+    "capture_new_media",
+    "select_media_from_file",
+    "add_text_stickers_filters_to_story",
+    "add_location",
+    "tag_people",
+    "edit_media",
+    "upload_content"
+   ]
+  },
+  {
+   "facet_id": "instagram.browse_reels",
+   "app_id": "instagram",
+   "name": "Browse Reels",
+   "description": "Explore short-form videos in a full-screen, vertically swipeable, immersive stream.",
+   "capabilities": [
+    "play_pause_video",
+    "seek_video",
+    "open_engage_with_content",
+    "mute_unmute_audio",
+    "control_volume",
+    "view_video_content"
+   ]
+  },
+  {
+   "facet_id": "instagram.view_post",
+   "app_id": "instagram",
+   "name": "View Post",
+   "description": "View a single post in detail, including its media, caption, and associated metadata.",
+   "capabilities": [
+    "view_post_content",
+    "open_engage_with_content",
+    "open_view_user_profile",
+    "view_content_caption",
+    "view_content_metadata",
+    "open_view_story",
+    "view_hashtags"
+   ]
+  },
+  {
+   "facet_id": "instagram.view_story",
+   "app_id": "instagram",
+   "name": "View Story",
+   "description": "View a full-screen story, including its media and ephemeral content from an account.",
+   "capabilities": [
+    "swipe_to_next_story",
+    "view_story_content",
+    "tap_to_advance_story",
+    "open_engage_with_content"
+   ]
+  },
+  {
+   "facet_id": "instagram.engage_in_conversation",
+   "app_id": "instagram",
+   "name": "Engage in Conversation",
+   "description": "View and interact within a private message conversation.",
+   "capabilities": [
+    "read_messages",
+    "view_media_in_chat",
+    "send_text_message",
+    "send_photo_video_message",
+    "share_content_in_chat",
+    "send_reaction",
+    "open_call"
+   ]
+  },
+  {
+   "facet_id": "instagram.open_section",
+   "app_id": "instagram",
+   "name": "Open Section",
+   "description": "Navigate to a primary section of the app, such as Browse Feed, Search Content, Browse Reels, Create Post",
+   "capabilities": [
+    "open_browse_feed",
+    "open_search_content",
+    "open_browse_explore",
+    "open_create_post",
+    "open_create_story",
+    "open_view_story",
+    "open_browse_reels",
+    "open_browse_message_conversations",
+    "open_view_user_profile",
+    "open_browse_story_previews"
+   ]
+  },
+  {
+   "facet_id": "instagram.browse_story_previews",
+   "app_id": "instagram",
+   "name": "Browse Story Previews",
+   "description": "Browse the horizontal list of story previews from followed accounts and discover available stories.",
+   "capabilities": [
+    "open_view_story",
+    "view_story_unread_indicator",
+    "open_create_story"
+   ]
+  },
+  {
+   "facet_id": "instagram.call",
+   "app_id": "instagram",
+   "name": "Call",
+   "description": "Participate in a voice or video call with a contact or group.",
+   "capabilities": [
+    "end_call",
+    "mute_unmute_microphone",
+    "view_speaker",
+    "enable_disable_video",
+    "switch_camera",
+    "share_screen",
+    "view_call_duration"
+   ]
+  },
+  {
+   "facet_id": "slack.browse_workspaces",
+   "app_id": "slack",
+   "name": "Browse Workspace",
+   "description": "View, switch between, and manage their Slack workspaces, including accessing app-level preferences and help.",
+   "capabilities": [
+    "view_workspaces",
+    "switch_workspace",
+    "add_workspace",
+    "open_browse_channels",
+    "open_browse_direct_messages"
+   ],
+   "legacy_ids": [
+    "slack.browse_workspace"
+   ]
+  },
+  {
+   "facet_id": "slack.browse_channels",
+   "app_id": "slack",
+   "name": "Browse Channels",
+   "description": "View, navigate, and manage channels within the current workspace.",
+   "capabilities": [
+    "create_channel",
+    "view_threads",
+    "view_drafts_sent",
+    "view_channel_list",
+    "open_view_channel"
+   ]
+  },
+  {
+   "facet_id": "slack.browse_direct_messages",
+   "app_id": "slack",
+   "name": "Browse Direct Messages",
+   "description": "View, navigate, and initiate direct message conversations with individuals or groups.",
+   "capabilities": [
+    "view_dm_list",
+    "start_new_dm",
+    "open_view_channel"
+   ]
+  },
+  {
+   "facet_id": "slack.compose_message",
+   "app_id": "slack",
+   "name": "Compose Message",
+   "description": "Compose and send messages in channels or direct messages.",
+   "capabilities": [
+    "attach_file",
+    "mention_user",
+    "format_text",
+    "send_message",
+    "type_message"
+   ]
+  },
+  {
+   "facet_id": "slack.browse_activity",
+   "app_id": "slack",
+   "name": "Browse Activity",
+   "description": "View and filter activity notifications such as mentions and replies.",
+   "capabilities": [
+    "view_all_activity",
+    "view_mentions",
+    "clear_unreads"
+   ]
+  },
+  {
+   "facet_id": "slack.search_workspace",
+   "app_id": "slack",
+   "name": "Search Workspace",
+   "description": "Search across messages, channels, and files in the workspace.",
+   "capabilities": [
+    "enter_search_query",
+    "view_search_results",
+    "filter_search_results",
+    "jump_to_search_result",
+    "open_view_conversation",
+    "open_view_channel",
+    "open_engage_with_message"
+   ]
+  },
+  {
+   "facet_id": "slack.view_conversation",
+   "app_id": "slack",
+   "name": "View Conversation",
+   "description": "View a specific message conversation and its content.",
+   "capabilities": [
+    "read_message_content",
+    "view_message_replies",
+    "open_engage_with_message"
+   ]
+  },
+  {
+   "facet_id": "slack.open_section",
+   "app_id": "slack",
+   "name": "Open Section",
+   "description": "Navigate to a primary section of the app, such as Browse Workspace, Browse Channels, Browse Direct Messages, Search Workspace, View Channel, and Browse Activity",
+   "capabilities": [
+    "open_browse_workspaces",
+    "open_browse_channels",
+    "open_browse_direct_messages",
+    "open_browse_activity",
+    "open_search_workspace",
+    "open_view_channel"
+   ]
+  },
+  {
+   "facet_id": "slack.view_channel",
+   "app_id": "slack",
+   "name": "View Channel",
+   "description": "View messages and activity within a channel.",
+   "capabilities": [
+    "view_messages",
+    "view_channel_pins",
+    "open_view_conversation",
+    "open_engage_with_message",
+    "open_call"
+   ]
+  },
+  {
+   "facet_id": "slack.engage_with_message",
+   "app_id": "slack",
+   "name": "Engage with Message",
+   "description": "Interact with messages through replies, reactions, and sharing.",
+   "capabilities": [
+    "reply_to_message",
+    "share_message",
+    "react_to_message",
+    "open_compose_message"
+   ]
+  },
+  {
+   "facet_id": "slack.call",
+   "app_id": "slack",
+   "name": "Call",
+   "description": "Participate in a voice or video call with a contact or group.",
+   "capabilities": [
+    "mute_unmute_microphone",
+    "enable_disable_video",
+    "switch_camera",
+    "view_speaker",
+    "end_call",
+    "view_call_duration",
+    "share_screen"
+   ]
+  },
+  {
+   "facet_id": "messaging.browse_conversation_list",
+   "app_id": "messaging",
+   "name": "Browse Conversation List",
+   "description": "View and navigate through a list of message conversations.",
+   "capabilities": [
+    "read_summary",
+    "open_view_conversation",
+    "filter_conversations",
+    "start_new_message",
+    "create_new_group",
+    "view_conversation_list",
+    "open_manage_conversation_list"
+   ]
+  },
+  {
+   "facet_id": "messaging.search_messages",
+   "app_id": "messaging",
+   "name": "Search Messages",
+   "description": "Search across conversations and messages.",
+   "capabilities": [
+    "enter_search_query",
+    "view_search_results",
+    "clear_search_query",
+    "open_view_conversation"
+   ]
+  },
+  {
+   "facet_id": "messaging.compose_message",
+   "app_id": "messaging",
+   "name": "Compose Message",
+   "description": "Compose and send a message within a conversation.",
+   "capabilities": [
+    "type_text",
+    "send_message",
+    "insert_emoji",
+    "record_audio_message",
+    "open_select_attachment"
+   ]
+  },
+  {
+   "facet_id": "messaging.view_conversation",
+   "app_id": "messaging",
+   "name": "View Conversation",
+   "description": "View the full message history within a specific conversation.",
+   "capabilities": [
+    "read_messages",
+    "view_contact_info",
+    "open_call",
+    "open_engage_with_message",
+    "open_compose_message"
+   ]
+  },
+  {
+   "facet_id": "messaging.manage_conversation_list",
+   "app_id": "messaging",
+   "name": "Manage Conversation List",
+   "description": "Organize and modify conversations in the list, such as deleting or marking them.",
+   "capabilities": [
+    "delete_conversation",
+    "pin_conversation",
+    "mute_conversation",
+    "block_contact",
+    "leave_group",
+    "mark_as_read_unread"
+   ]
+  },
+  {
+   "facet_id": "messaging.call",
+   "app_id": "messaging",
+   "name": "Call",
+   "description": "Participate in a voice or video call with a contact or group.",
+   "capabilities": [
+    "mute_unmute_microphone",
+    "enable_disable_video",
+    "switch_camera",
+    "view_call_duration",
+    "end_call",
+    "view_speaker",
+    "share_screen"
+   ]
+  },
+  {
+   "facet_id": "messaging.select_attachment",
+   "app_id": "messaging",
+   "name": "Select Attachment",
+   "description": "Choose various types of media or content to attach to a message.",
+   "capabilities": [
+    "select_photo_video",
+    "select_sticker",
+    "send_apple_cash",
+    "select_audio"
+   ]
+  },
+  {
+   "facet_id": "messaging.open_section",
+   "app_id": "messaging",
+   "name": "Open Section",
+   "description": "Navigate to a primary section of the app, such as Browse Conversation List, Compose Message, and Search Messages.",
+   "capabilities": [
+    "open_browse_conversation_list",
+    "open_search_messages",
+    "open_compose_message"
+   ]
+  },
+  {
+   "facet_id": "messaging.engage_with_message",
+   "app_id": "messaging",
+   "name": "Engage with Message",
+   "description": "Interact with individual messages within a conversation.",
+   "capabilities": [
+    "react_to_message",
+    "reply_to_message",
+    "open_compose_message",
+    "open_engage_with_message"
+   ]
+  },
+  {
+   "facet_id": "notes.create_note",
+   "app_id": "notes",
+   "name": "Create Note",
+   "description": "Create a new note.",
+   "capabilities": [
+    "create_new_note",
+    "edit_text",
+    "format_text",
+    "add_drawing",
+    "undo_action",
+    "add_table",
+    "save_note_changes",
+    "add_checklist_item",
+    "insert_media",
+    "open_browse_notes",
+    "open_share_note"
+   ]
+  },
+  {
+   "facet_id": "notes.browse_notes",
+   "app_id": "notes",
+   "name": "Browse Notes",
+   "description": "View and navigate through a list of notes organized by folders or categories.",
+   "capabilities": [
+    "view_note_list",
+    "open_view_note",
+    "delete_note",
+    "pin_note",
+    "open_search_notes"
+   ]
+  },
+  {
+   "facet_id": "notes.view_note",
+   "app_id": "notes",
+   "name": "View Note",
+   "description": "View and modify existing note.",
+   "capabilities": [
+    "view_note_content",
+    "edit_text",
+    "insert_media",
+    "add_drawing",
+    "add_checklist_item",
+    "mark_checklist_item_done",
+    "format_text",
+    "undo_action",
+    "add_table",
+    "save_note_changes",
+    "open_create_note",
+    "open_browse_notes"
+   ]
+  },
+  {
+   "facet_id": "notes.search_notes",
+   "app_id": "notes",
+   "name": "Search Notes",
+   "description": "Search across notes by entering keywords or filtering content.",
+   "capabilities": [
+    "enter_search_query",
+    "view_search_results",
+    "clear_search_query",
+    "view_search_suggestions",
+    "open_view_note"
+   ]
+  },
+  {
+   "facet_id": "notes.share_note",
+   "app_id": "notes",
+   "name": "Share Note",
+   "description": "Share individual notes or entire folders with others.",
+   "capabilities": [
+    "share_note",
+    "add_collaborator"
+   ]
+  },
+  {
+   "facet_id": "notes.open_section",
+   "app_id": "notes",
+   "name": "Open Section",
+   "description": "Navigate to a primary section of the app, such as Browse Notes and Create Note.",
+   "capabilities": [
+    "open_browse_notes",
+    "open_search_notes",
+    "open_create_note"
+   ]
+  },
+  {
+   "facet_id": "netflix.browse_content",
+   "app_id": "netflix",
+   "name": "Browse Content",
+   "description": "Explore curated rows, categories, and personalized recommendations of movies and TV shows.",
+   "capabilities": [
+    "select_category",
+    "view_top_10",
+    "continue_watching",
+    "view_content_rows",
+    "open_view_content_details",
+    "open_manage_watchlist",
+    "open_watch_content"
+   ]
+  },
+  {
+   "facet_id": "netflix.search_content",
+   "app_id": "netflix",
+   "name": "Search Content",
+   "description": "Search for movies, TV shows, or categories within the Netflix library.",
+   "capabilities": [
+    "enter_search_query",
+    "clear_search_query",
+    "filter_results",
+    "view_search_results",
+    "open_view_content_details"
+   ]
+  },
+  {
+   "facet_id": "netflix.view_content_details",
+   "app_id": "netflix",
+   "name": "View Content Details",
+   "description": "Display comprehensive information about a selected movie, TV show, or live event.",
+   "capabilities": [
+    "read_synopsis",
+    "view_metadata",
+    "play_trailer",
+    "download_content",
+    "view_cast",
+    "add_to_watchlist",
+    "remove_from_watchlist",
+    "set_reminder",
+    "open_watch_content"
+   ]
+  },
+  {
+   "facet_id": "netflix.watch_content",
+   "app_id": "netflix",
+   "name": "Watch Content",
+   "description": "Watch and control playback of a movie or TV show.",
+   "capabilities": [
+    "play_pause",
+    "seek_timeline",
+    "skip_10s_back",
+    "skip_10s_forward",
+    "skip_next_episode",
+    "adjust_speed",
+    "select_audio_subtitles",
+    "adjust_brightness",
+    "lock_screen",
+    "adjust_volume",
+    "view_video_content",
+    "start_cast",
+    "stop_cast",
+    "select_device"
+   ]
+  },
+  {
+   "facet_id": "netflix.manage_watchlist",
+   "app_id": "netflix",
+   "name": "Manage Watchlist",
+   "description": "Manage saved titles for future viewing.",
+   "capabilities": [
+    "view_watchlist",
+    "remove_from_watchlist",
+    "add_to_watchlist"
+   ]
+  },
+  {
+   "facet_id": "netflix.manage_downloads",
+   "app_id": "netflix",
+   "name": "Manage Downloads",
+   "description": "View, play, and delete content downloaded for offline viewing.",
+   "capabilities": [
+    "view_downloaded_items",
+    "play_downloaded_item",
+    "delete_downloaded_item",
+    "pause_resume_download"
+   ]
+  },
+  {
+   "facet_id": "netflix.manage_account",
+   "app_id": "netflix",
+   "name": "Manage Account",
+   "description": "Manage profiles, preferences, and account settings.",
+   "capabilities": [
+    "view_profile",
+    "switch_profile",
+    "access_account_settings"
+   ]
+  },
+  {
+   "facet_id": "netflix.open_section",
+   "app_id": "netflix",
+   "name": "Open Section",
+   "description": "Navigate to a primary section of the app, such as Browse Content, Search Content.",
+   "capabilities": [
+    "open_browse_content",
+    "open_search_content",
+    "open_manage_watchlist",
+    "open_manage_downloads",
+    "open_manage_account"
+   ]
+  },
+  {
+   "facet_id": "notion.browse_pages",
+   "app_id": "notion",
+   "name": "Browse Pages",
+   "description": "Browse and navigate the workspace’s page hierarchy (recents, favorites, sidebar, nested pages).",
+   "capabilities": [
+    "browse_recent_pages",
+    "browse_favorite_pages",
+    "switch_workspace",
+    "browse_page_hierarchy",
+    "open_compose_page"
+   ]
+  },
+  {
+   "facet_id": "notion.compose_page",
+   "app_id": "notion",
+   "name": "Compose Page",
+   "description": "Create, view, and edit the contents of a page using blocks (text, headings, bullets, media, embeds).",
+   "capabilities": [
+    "edit_page_content",
+    "add_new_block",
+    "view_page_content",
+    "add_page_comment",
+    "delete_block",
+    "reorder_block",
+    "format_text",
+    "open_configure_page"
+   ]
+  },
+  {
+   "facet_id": "notion.search_workspace",
+   "app_id": "notion",
+   "name": "Search Workspace",
+   "description": "Search for content across their entire workspace and interact with an AI assistant.",
+   "capabilities": [
+    "enter_search_query",
+    "view_search_results",
+    "ask_ai_question",
+    "view_ai_response",
+    "open_compose_page"
+   ]
+  },
+  {
+   "facet_id": "notion.browse_notifications",
+   "app_id": "notion",
+   "name": "Browse Notifications",
+   "description": "View workspace updates and notifications and jump to relevant con",
+   "capabilities": [
+    "view_notification_list",
+    "dismiss_notification",
+    "open_compose_page"
+   ]
+  },
+  {
+   "facet_id": "notion.open_section",
+   "app_id": "notion",
+   "name": "Open Section",
+   "description": "Navigate to a primary section of the app, such as Browse Pages, Search Workspace, Browse Notifications, Compose Page",
+   "capabilities": [
+    "open_browse_pages",
+    "open_compose_page",
+    "open_search_workspace",
+    "open_browse_notifications"
+   ]
+  },
+  {
+   "facet_id": "notion.configure_page",
+   "app_id": "notion",
+   "name": "Configure Page",
+   "description": "Manage page-level settings and context actions (share, export, lock, properties, icon/cover).",
+   "capabilities": [
+    "add_change_page_icon",
+    "add_change_page_cover",
+    "share_page",
+    "lock_unlock_page",
+    "export_page",
+    "duplicate_page",
+    "move_page",
+    "view_page_updates_history",
+    "move_to_trash",
+    "open_compose_page"
+   ]
+  },
+  {
+   "facet_id": "duolingo.complete_lesson",
+   "app_id": "duolingo",
+   "name": "Complete Lesson",
+   "description": "Complete interactive lesson exercises to practice language skills.",
+   "capabilities": [
+    "check_answer",
+    "view_prompt",
+    "type_answer",
+    "open_view_lesson_progress",
+    "open_view_lesson_summary"
+   ]
+  },
+  {
+   "facet_id": "duolingo.view_lesson_progress",
+   "app_id": "duolingo",
+   "name": "View Lesson Progress",
+   "description": "View progress and remaining lives during an active lesson.",
+   "capabilities": [
+    "view_progress_bar",
+    "view_remaining_energy"
+   ]
+  },
+  {
+   "facet_id": "duolingo.view_lesson_summary",
+   "app_id": "duolingo",
+   "name": "View Lesson Summary",
+   "description": "View performance results after completing a lesson.",
+   "capabilities": [
+    "view_xp_gained",
+    "view_accuracy_score",
+    "view_time_taken",
+    "claim_xp_reward"
+   ]
+  },
+  {
+   "facet_id": "duolingo.view_profile",
+   "app_id": "duolingo",
+   "name": "View Profile",
+   "description": "View personal learning statistics and achievements.",
+   "capabilities": [
+    "view_league_rank",
+    "view_badges",
+    "view_current_streak",
+    "view_total_xp"
+   ]
+  },
+  {
+   "facet_id": "duolingo.browse_social_feed",
+   "app_id": "duolingo",
+   "name": "Browse Social Feed",
+   "description": "View activity and achievements from friends and other learners.",
+   "capabilities": [
+    "view_social_feed_items",
+    "celebrate_achievement",
+    "view_leaderboard"
+   ]
+  },
+  {
+   "facet_id": "duolingo.open_section",
+   "app_id": "duolingo",
+   "name": "Open Section",
+   "description": "Navigate between primary sections of the Duolingo app.",
+   "capabilities": [
+    "open_browse_learning_path",
+    "open_view_profile",
+    "open_browse_social_feed",
+    "open_complete_lesson"
+   ]
+  },
+  {
+   "facet_id": "duolingo.browse_learning_path",
+   "app_id": "duolingo",
+   "name": "Browse Learning Path",
+   "description": "Browse and select units and lessons within the course path.",
+   "capabilities": [
+    "view_course_map",
+    "select_unit",
+    "open_complete_lesson",
+    "view_unit_details"
+   ]
+  },
+  {
+   "facet_id": "zoom.browse_meetings",
+   "app_id": "zoom",
+   "name": "Browse Meetings",
+   "description": "View upcoming and past meetings and access meeting-related actions.",
+   "capabilities": [
+    "view_meetings_list",
+    "refresh_meetings_list",
+    "open_schedule_meeting",
+    "start_meeting_now",
+    "open_join_meeting"
+   ]
+  },
+  {
+   "facet_id": "zoom.join_meeting",
+   "app_id": "zoom",
+   "name": "Join Meeting",
+   "description": "Facilitates joining a meeting or event by entering an ID or email.",
+   "capabilities": [
+    "input_meeting_id",
+    "input_event_email",
+    "select_join_type",
+    "confirm_join",
+    "open_participate_in_meeting"
+   ]
+  },
+  {
+   "facet_id": "zoom.schedule_meeting",
+   "app_id": "zoom",
+   "name": "Schedule Meeting",
+   "description": "Create or modify a scheduled meeting and configure its settings.",
+   "capabilities": [
+    "set_meeting_topic",
+    "set_meeting_time_details",
+    "set_meeting_entry_details",
+    "save_scheduled_meeting",
+    "cancel_scheduling"
+   ]
+  },
+  {
+   "facet_id": "zoom.participate_in_meeting",
+   "app_id": "zoom",
+   "name": "Participate in Meeting",
+   "description": "Participate in an ongoing meeting and control audio, video, screen sharing, and interaction.",
+   "capabilities": [
+    "toggle_video_on",
+    "mute_unmute_audio",
+    "end_meeting",
+    "view_participants_list",
+    "view_participants_video",
+    "open_chat_in_meeting",
+    "send_emoji_reaction",
+    "invite_participants",
+    "view_shared_screen",
+    "share_screen"
+   ]
+  },
+  {
+   "facet_id": "zoom.chat_in_meeting",
+   "app_id": "zoom",
+   "name": "Chat in Meeting",
+   "description": "Enables text-based communication within an active meeting.",
+   "capabilities": [
+    "compose_send_message",
+    "read_chat_history"
+   ]
+  },
+  {
+   "facet_id": "zoom.open_section",
+   "app_id": "zoom",
+   "name": "Open Section",
+   "description": "Navigate between primary sections of the Zoom app.",
+   "capabilities": [
+    "open_browse_meetings",
+    "open_join_meeting",
+    "open_schedule_meeting"
+   ]
+  },
+  {
+   "facet_id": "files.browse_files",
+   "app_id": "files",
+   "name": "Browse Files",
+   "description": "Navigate storage locations and folders to view available files and directories.",
+   "capabilities": [
+    "navigate_folder",
+    "view_file_list",
+    "switch_view_mode",
+    "sort_files",
+    "select_location",
+    "view_location_list",
+    "open_view_file",
+    "open_manage_files"
+   ]
+  },
+  {
+   "facet_id": "files.search_files",
+   "app_id": "files",
+   "name": "Search Files",
+   "description": "Search for files and folders within the current location or across all locations.",
+   "capabilities": [
+    "enter_search_query",
+    "clear_search_query",
+    "view_search_results",
+    "open_view_file"
+   ]
+  },
+  {
+   "facet_id": "files.view_file",
+   "app_id": "files",
+   "name": "View File",
+   "description": "View the content of a selected file.",
+   "capabilities": [
+    "view_file_content",
+    "dismiss_viewer",
+    "zoom",
+    "view_file_metadata",
+    "open_annotate_file",
+    "open_manage_files",
+    "open_share_file"
+   ]
+  },
+  {
+   "facet_id": "files.manage_files",
+   "app_id": "files",
+   "name": "Manage Files",
+   "description": "Modify files or folders through renaming, moving, duplicating, or deleting.",
+   "capabilities": [
+    "select_files",
+    "move_file",
+    "duplicate_file",
+    "rename_file",
+    "delete_item"
+   ]
+  },
+  {
+   "facet_id": "files.share_file",
+   "app_id": "files",
+   "name": "Share File",
+   "description": "Share a file or folder with other applications or users.",
+   "capabilities": [
+    "share_file",
+    "export_file"
+   ]
+  },
+  {
+   "facet_id": "files.annotate_file",
+   "app_id": "files",
+   "name": "Annotate File",
+   "description": "Annotate and mark up a file’s content.",
+   "capabilities": [
+    "draw_markup",
+    "undo_redo",
+    "add_annotation"
+   ]
+  },
+  {
+   "facet_id": "files.open_section",
+   "app_id": "files",
+   "name": "Open Section",
+   "description": "Navigate to a primary section of the app, such as Browse Files",
+   "capabilities": [
+    "open_browse_files",
+    "open_search_files"
+   ]
+  },
+  {
+   "facet_id": "reminders.browse_task_lists",
+   "app_id": "reminders",
+   "name": "Browse Task Lists",
+   "description": "View and navigate task lists.",
+   "capabilities": [
+    "view_task_lists",
+    "open_view_task_list",
+    "open_search_tasks"
+   ]
+  },
+  {
+   "facet_id": "reminders.search_tasks",
+   "app_id": "reminders",
+   "name": "Search Tasks",
+   "description": "Search for tasks across all lists.",
+   "capabilities": [
+    "enter_search_query",
+    "clear_search_query",
+    "view_search_results"
+   ]
+  },
+  {
+   "facet_id": "reminders.compose_task",
+   "app_id": "reminders",
+   "name": "Compose Task",
+   "description": "Create a new task with optional details such as notes, due dates, or tags.",
+   "capabilities": [
+    "set_task_title",
+    "add_task_notes",
+    "set_details",
+    "assign_to_list",
+    "save_task",
+    "open_schedule_reminder",
+    "add_subtask",
+    "remove_subtask",
+    "delete_task"
+   ]
+  },
+  {
+   "facet_id": "reminders.open_section",
+   "app_id": "reminders",
+   "name": "Open Section",
+   "description": "Navigate to a primary section of the app, such as Browse Task Lists and Compose Task.",
+   "capabilities": [
+    "open_browse_task_lists",
+    "open_search_tasks",
+    "open_compose_task"
+   ]
+  },
+  {
+   "facet_id": "reminders.view_task_list",
+   "app_id": "reminders",
+   "name": "View Task List",
+   "description": "View the tasks contained within a selected list.",
+   "capabilities": [
+    "mark_task_complete",
+    "view_tasks",
+    "open_compose_task",
+    "open_search_tasks",
+    "view_due_date",
+    "view_due_time"
+   ]
+  },
+  {
+   "facet_id": "reminders.schedule_reminder",
+   "app_id": "reminders",
+   "name": "Schedule Reminder",
+   "description": "Set time- or location-based alerts and recurrence rules for a task.",
+   "capabilities": [
+    "set_due_date",
+    "set_location_trigger",
+    "set_recurrence",
+    "set_due_time",
+    "remove_schedule"
+   ]
+  },
+  {
+   "facet_id": "starbucks.browse_offers",
+   "app_id": "starbucks",
+   "name": "Browse Offers",
+   "description": "Browse and activate promotional offers and star-earning opportunities.",
+   "capabilities": [
+    "view_offer_list",
+    "view_offer_details",
+    "activate_offer",
+    "view_offer_progress",
+    "open_customize_item"
+   ]
+  },
+  {
+   "facet_id": "starbucks.browse_menu",
+   "app_id": "starbucks",
+   "name": "Browse Menu",
+   "description": "Browse drink and food categories and explore available menu items.",
+   "capabilities": [
+    "view_categories",
+    "view_items_in_category",
+    "view_featured_items",
+    "view_favorite_items",
+    "open_customize_item",
+    "view_previous_orders"
+   ]
+  },
+  {
+   "facet_id": "starbucks.customize_item",
+   "app_id": "starbucks",
+   "name": "Customize Item",
+   "description": "View item details and customize options before adding to an order.",
+   "capabilities": [
+    "view_item_info",
+    "add_to_order",
+    "customize_item",
+    "modify_item_quantity",
+    "open_manage_order"
+   ]
+  },
+  {
+   "facet_id": "starbucks.manage_order",
+   "app_id": "starbucks",
+   "name": "Manage Order",
+   "description": "Review and modify items in the current order before checkout.",
+   "capabilities": [
+    "view_cart_contents",
+    "modify_item_quantity",
+    "remove_item",
+    "proceed_to_checkout"
+   ]
+  },
+  {
+   "facet_id": "starbucks.search_menu",
+   "app_id": "starbucks",
+   "name": "Search Menu",
+   "description": "Search for menu items or stores by keyword.",
+   "capabilities": [
+    "enter_search_query",
+    "view_search_results",
+    "clear_search_query",
+    "open_customize_item"
+   ]
+  },
+  {
+   "facet_id": "starbucks.select_store_location",
+   "app_id": "starbucks",
+   "name": "Select Store Location",
+   "description": "Browse and select a store location for pickup or delivery.",
+   "capabilities": [
+    "view_map",
+    "view_store_list",
+    "filter_stores",
+    "select_store_for_order",
+    "view_store_details",
+    "toggle_pickup_delivery",
+    "open_customize_item",
+    "open_browse_menu"
+   ]
+  },
+  {
+   "facet_id": "starbucks.manage_rewards",
+   "app_id": "starbucks",
+   "name": "Manage Rewards",
+   "description": "View and manage Starbucks rewards, stars, and account balance.",
+   "capabilities": [
+    "view_star_balance",
+    "view_rewards_options",
+    "view_star_details",
+    "setup_auto_reload",
+    "display_qr_code"
+   ]
+  },
+  {
+   "facet_id": "starbucks.manage_gift_cards",
+   "app_id": "starbucks",
+   "name": "Manage Gift Cards",
+   "description": "View and manage Starbucks gift cards.",
+   "capabilities": [
+    "add_gift_card",
+    "send_egift",
+    "view_gift_cards"
+   ]
+  },
+  {
+   "facet_id": "starbucks.open_section",
+   "app_id": "starbucks",
+   "name": "Open Section",
+   "description": "Navigate between primary sections of the Starbucks app.",
+   "capabilities": [
+    "open_browse_offers",
+    "open_browse_menu",
+    "open_search_menu",
+    "open_select_store_location",
+    "open_manage_rewards",
+    "open_manage_gift_cards"
+   ]
+  },
+  {
+   "facet_id": "recipes.browse_recipes",
+   "app_id": "recipes",
+   "name": "Browse Recipes",
+   "description": "Browse recommended recipes and explore categories or curated collections.",
+   "capabilities": [
+    "view_recommendations",
+    "browse_by_category",
+    "view_featured_recipes",
+    "open_view_recipe",
+    "view_saved_recipes"
+   ]
+  },
+  {
+   "facet_id": "recipes.search_recipes",
+   "app_id": "recipes",
+   "name": "Search Recipes",
+   "description": "Search for recipes using keywords or ingredient filters.",
+   "capabilities": [
+    "enter_search_query",
+    "filter_search_results",
+    "view_search_results",
+    "open_view_recipe"
+   ]
+  },
+  {
+   "facet_id": "recipes.view_recipe",
+   "app_id": "recipes",
+   "name": "View Recipe",
+   "description": "View detailed information about a recipe, including ingredients and preparation steps.",
+   "capabilities": [
+    "view_ingredients",
+    "view_preparation_steps",
+    "adjust_serving_size",
+    "view_cooking_time",
+    "view_recipe_media",
+    "open_cook_recipe",
+    "save_recipe"
+   ]
+  },
+  {
+   "facet_id": "recipes.cook_recipe",
+   "app_id": "recipes",
+   "name": "Cook Recipe",
+   "description": "Follow a recipe in step-by-step cooking mode.",
+   "capabilities": [
+    "view_current_step",
+    "navigate_steps"
+   ]
+  },
+  {
+   "facet_id": "recipes.open_section",
+   "app_id": "recipes",
+   "name": "Open Section",
+   "description": "Navigate between primary sections of the Recipes app.",
+   "capabilities": [
+    "open_browse_recipes",
+    "open_search_recipes"
+   ]
+  },
+  {
+   "facet_id": "google_scholar.search_articles",
+   "app_id": "google_scholar",
+   "name": "Search Articles",
+   "description": "Search articles on Google Scholar",
+   "capabilities": [
+    "enter_search_query",
+    "view_search_results",
+    "filter_search_results",
+    "sort_search_results",
+    "open_view_article"
+   ]
+  },
+  {
+   "facet_id": "google_scholar.view_recommended_articles",
+   "app_id": "google_scholar",
+   "name": "View Recommended Articles",
+   "description": "View recommended articles based on interaction history.",
+   "capabilities": [
+    "view_recommended_articles",
+    "open_view_article"
+   ]
+  },
+  {
+   "facet_id": "google_scholar.view_article",
+   "app_id": "google_scholar",
+   "name": "View Article",
+   "description": "View an article's metadata including the title of the article, author list, and abstract, with a link to view the entire article content.",
+   "capabilities": [
+    "view_article_title",
+    "view_article_authors",
+    "open_view_article_content",
+    "view_article_abstract",
+    "view_article_content"
+   ]
+  },
+  {
+   "facet_id": "google_scholar.view_article_content",
+   "app_id": "google_scholar",
+   "name": "View Article Content",
+   "description": "View the content about the article.",
+   "capabilities": [
+    "view_article_content"
+   ]
+  },
+  {
+   "facet_id": "google_scholar.open_section",
+   "app_id": "google_scholar",
+   "name": "Open Section",
+   "description": "Navigate to the primary sections of Google Scholar such as Search Articles and View Recommended Articles.",
+   "capabilities": [
+    "open_search_articles",
+    "open_view_recommended_articles"
+   ]
+  },
+  {
+   "facet_id": "overleaf.browse_projects",
+   "app_id": "overleaf",
+   "name": "Browse Projects",
+   "description": "Browse and manage LaTeX projects in the project dashboard.",
+   "capabilities": [
+    "view_project_list",
+    "create_new_project",
+    "duplicate_project",
+    "delete_project",
+    "search_projects",
+    "open_edit_document",
+    "open_browse_projects",
+    "open_preview_document",
+    "open_manage_project_settings"
+   ]
+  },
+  {
+   "facet_id": "overleaf.preview_document",
+   "app_id": "overleaf",
+   "name": "Preview Document",
+   "description": "View the compiled PDF output of the current project.",
+   "capabilities": [
+    "view_pdf",
+    "zoom_pdf",
+    "jump_to_page"
+   ]
+  },
+  {
+   "facet_id": "overleaf.edit_document",
+   "app_id": "overleaf",
+   "name": "Edit Document",
+   "description": "Edit the source files of a LaTeX project, including writing, formatting, and managing files.",
+   "capabilities": [
+    "edit_source_code",
+    "add_new_file",
+    "rename_file",
+    "delete_file",
+    "upload_file",
+    "add_comment",
+    "resolve_comment",
+    "view_version_history",
+    "compile_project",
+    "open_manage_project_settings"
+   ]
+  },
+  {
+   "facet_id": "overleaf.manage_project_settings",
+   "app_id": "overleaf",
+   "name": "Manage Project Settings",
+   "description": "Configure project-level settings and sharing permissions.",
+   "capabilities": [
+    "share_project",
+    "manage_collaborators"
+   ]
+  },
+  {
+   "facet_id": "overleaf.open_section",
+   "app_id": "overleaf",
+   "name": "Open Section",
+   "description": "Navigate between primary sections of the Overleaf app.",
+   "capabilities": [
+    "open_browse_projects"
+   ]
+  },
+  {
+   "facet_id": "webtoon.browse_episode_list",
+   "app_id": "webtoon",
+   "name": "Browse Episode List",
+   "description": "View the latest episodes of a selected webtoon series.",
+   "capabilities": [
+    "view_episode_list",
+    "view_episode_thumbnail",
+    "open_view_episode",
+    "view_episode_metadata"
+   ]
+  },
+  {
+   "facet_id": "webtoon.view_episode",
+   "app_id": "webtoon",
+   "name": "View Episode",
+   "description": "View the content of a selected webtoon episode.",
+   "capabilities": [
+    "view_episode_content",
+    "open_view_episode_comments"
+   ]
+  },
+  {
+   "facet_id": "webtoon.view_episode_comments",
+   "app_id": "webtoon",
+   "name": "View Episode Comments",
+   "description": "View user comments associated with a specific episode.",
+   "capabilities": [
+    "view_comment_list",
+    "view_comment_replies"
+   ]
+  },
+  {
+   "facet_id": "webtoon.open_section",
+   "app_id": "webtoon",
+   "name": "Open Section",
+   "description": "Navigate between primary sections of the Webtoon app.",
+   "capabilities": [
+    "open_browse_episode_list"
+   ]
+  },
+  {
+   "facet_id": "thermometer.view_current_temperature",
+   "app_id": "thermometer",
+   "name": "View Current Temperature",
+   "description": "View the current temperature sensed by the termometer.",
+   "capabilities": [
+    "view_current_temperature"
+   ]
+  },
+  {
+   "facet_id": "thermometer.open_section",
+   "app_id": "thermometer",
+   "name": "Open Section",
+   "description": "Navigate to primary sections of Thermometer",
+   "capabilities": [
+    "open_view_current_temperature"
+   ]
+  },
+  {
+   "facet_id": "game.open_section",
+   "app_id": "game",
+   "name": "Open Section",
+   "description": "Navigate to the main game content",
+   "capabilities": [
+    "open_play_game"
+   ]
+  },
+  {
+   "facet_id": "game.play_game",
+   "app_id": "game",
+   "name": "Play Game",
+   "description": "Play game",
+   "capabilities": [
+    "play_game"
+   ]
+  },
+  {
+   "facet_id": "google_search.search",
+   "app_id": "google_search",
+   "name": "Search",
+   "description": "Search on Google",
+   "capabilities": [
+    "enter_search_query",
+    "view_search_results",
+    "filter_results",
+    "view_trending_searches"
+   ]
+  },
+  {
+   "facet_id": "google_search.open_section",
+   "app_id": "google_search",
+   "name": "Open Section",
+   "description": "Open main sections such as Search",
+   "capabilities": [
+    "open_search"
+   ]
+  },
+  {
+   "facet_id": "stock.open_section",
+   "app_id": "stock",
+   "name": "Open Section",
+   "description": "Navigate to main sections of the Stocks app.",
+   "capabilities": [
+    "open_view_stock_price",
+    "open_view_stock_list"
+   ]
+  },
+  {
+   "facet_id": "stock.view_stock_list",
+   "app_id": "stock",
+   "name": "View Stock List",
+   "description": "View the list of stocks of user's interests.",
+   "capabilities": [
+    "open_view_stock_price",
+    "view_stock_summary"
+   ]
+  },
+  {
+   "facet_id": "stock.view_stock_price",
+   "app_id": "stock",
+   "name": "View Stock Price",
+   "description": "View the current and real-time price information of a selected stock.",
+   "capabilities": [
+    "view_stock_price",
+    "view_price_chart",
+    "view_price_change",
+    "view_market_status"
+   ]
+  },
+  {
+   "facet_id": "health.start_activity_tracking",
+   "app_id": "health",
+   "name": "Start Activity Tracking",
+   "description": "Start and monitor a real-time activity tracking session such as walking, running, or cycling.",
+   "capabilities": [
+    "start_activity_tracking",
+    "select_activity_preset",
+    "view_realtime_activity_metrics",
+    "pause_resume_activity",
+    "stop_activity_tracking"
+   ]
+  },
+  {
+   "facet_id": "health.view_activity_history",
+   "app_id": "health",
+   "name": "View Activity History",
+   "description": "View previously recorded activity sessions.",
+   "capabilities": [
+    "view_activity_history",
+    "view_activity_details"
+   ]
+  },
+  {
+   "facet_id": "health.view_health_summary",
+   "app_id": "health",
+   "name": "View Health Summary",
+   "description": "View aggregated health metrics and activity summaries over time.",
+   "capabilities": [
+    "view_health_dashboard",
+    "view_daily_activity_summary",
+    "view_trend_charts",
+    "open_view_activity_history"
+   ]
+  },
+  {
+   "facet_id": "health.open_section",
+   "app_id": "health",
+   "name": "Open Section",
+   "description": "Navigate to primary sections of Health app.",
+   "capabilities": [
+    "open_start_activity_tracking",
+    "open_view_activity_history",
+    "open_view_health_summary"
+   ]
+  },
+  {
+   "facet_id": "linkedin.browse_feed",
+   "app_id": "linkedin",
+   "name": "Browse Feed",
+   "description": "View and browse posts, updates, and shared content from connections and followed pages.",
+   "capabilities": [
+    "view_feed_posts",
+    "open_view_post",
+    "open_view_profile"
+   ]
+  },
+  {
+   "facet_id": "linkedin.view_notifications",
+   "app_id": "linkedin",
+   "name": "View Notifications",
+   "description": "View notifications about activity such as mentions, reactions, connection requests, and job alerts.",
+   "capabilities": [
+    "view_notification_list",
+    "open_view_post"
+   ]
+  },
+  {
+   "facet_id": "linkedin.view_post",
+   "app_id": "linkedin",
+   "name": "View Post",
+   "description": "View a post in detail including its content, comments, and interactions.",
+   "capabilities": [
+    "view_post_content",
+    "view_post_comments",
+    "open_view_profile"
+   ]
+  },
+  {
+   "facet_id": "linkedin.search_content",
+   "app_id": "linkedin",
+   "name": "Search Content",
+   "description": "Search for people, companies, posts, or jobs on LinkedIn.",
+   "capabilities": [
+    "enter_search_query",
+    "view_search_results",
+    "filter_search_results",
+    "open_view_post"
+   ]
+  },
+  {
+   "facet_id": "linkedin.view_profile",
+   "app_id": "linkedin",
+   "name": "View Profile",
+   "description": "View a user or company profile including experience, posts, and connections.",
+   "capabilities": [
+    "view_profile_details",
+    "view_profile_posts",
+    "send_connection_request",
+    "send_message",
+    "open_view_post"
+   ]
+  },
+  {
+   "facet_id": "linkedin.open_section",
+   "app_id": "linkedin",
+   "name": "Open Section",
+   "description": "Navigate to primary sections of LinkedIn",
+   "capabilities": [
+    "open_view_notifications",
+    "open_browse_feed",
+    "open_search_content"
+   ]
+  },
+  {
+   "facet_id": "reddit.browse_feed",
+   "app_id": "reddit",
+   "name": "Browse Feed",
+   "description": "Browse posts from subscribed communities, recommended content, or selected subreddits.",
+   "capabilities": [
+    "view_post_list",
+    "open_view_post"
+   ]
+  },
+  {
+   "facet_id": "reddit.view_post",
+   "app_id": "reddit",
+   "name": "View Post",
+   "description": "View a post and its associated discussion thread.",
+   "capabilities": [
+    "view_post_content",
+    "view_comment_thread"
+   ]
+  },
+  {
+   "facet_id": "reddit.search_content",
+   "app_id": "reddit",
+   "name": "Search Content",
+   "description": "Search for posts, communities, or users across Reddit.",
+   "capabilities": [
+    "enter_search_query",
+    "view_search_result",
+    "open_view_post"
+   ]
+  },
+  {
+   "facet_id": "reddit.open_section",
+   "app_id": "reddit",
+   "name": "Open Section",
+   "description": "Navigate to primary sections of Reddit, such as Browse Feed and Search Content",
+   "capabilities": [
+    "open_browse_feed",
+    "open_search_content"
+   ]
+  },
+  {
+   "facet_id": "translate.translate_text",
+   "app_id": "translate",
+   "name": "Translate Text",
+   "description": "Enter text and view the translated output between selected languages.",
+   "capabilities": [
+    "edit_input_text",
+    "view_translation",
+    "select_source_language",
+    "select_target_language",
+    "switch_languages"
+   ]
+  },
+  {
+   "facet_id": "translate.open_section",
+   "app_id": "translate",
+   "name": "Open Section",
+   "description": "Navigate to the primary sections of the Translate app.",
+   "capabilities": [
+    "open_translate_text",
+    "open_camera_translation"
+   ]
+  },
+  {
+   "facet_id": "translate.camera_translation",
+   "app_id": "translate",
+   "name": "Camera Translation",
+   "description": "Translate text captured through the device camera.",
+   "capabilities": [
+    "capture_text_image",
+    "view_image_translation"
+   ]
+  },
+  {
+   "facet_id": "books.browse_library",
+   "app_id": "books",
+   "name": "Browse Library",
+   "description": "Browse the collection of books in the user's library.",
+   "capabilities": [
+    "view_book_list",
+    "open_read_book",
+    "sort_books",
+    "filter_books",
+    "open_discover_books"
+   ]
+  },
+  {
+   "facet_id": "books.read_book",
+   "app_id": "books",
+   "name": "Read Book",
+   "description": "Read the content of a selected ebook.",
+   "capabilities": [
+    "view_book_page",
+    "turn_page",
+    "adjust_text_settings",
+    "navigate_to_chapter"
+   ]
+  },
+  {
+   "facet_id": "books.discover_books",
+   "app_id": "books",
+   "name": "Discover Books",
+   "description": "Explore recommended or featured books in the store.",
+   "capabilities": [
+    "browse_recommended_books",
+    "view_book_details",
+    "open_discover_books",
+    "open_read_book"
+   ]
+  },
+  {
+   "facet_id": "books.manage_library",
+   "app_id": "books",
+   "name": "Manage Library",
+   "description": "Organize and manage books in the library.",
+   "capabilities": [
+    "download_book",
+    "remove_book",
+    "add_book_to_collection"
+   ]
+  },
+  {
+   "facet_id": "books.open_section",
+   "app_id": "books",
+   "name": "Open Section",
+   "description": "Navigate to primary sections of Books app such as Browse Library and Discover Books.",
+   "capabilities": [
+    "open_browse_library",
+    "open_manage_library",
+    "open_discover_books"
+   ]
+  },
+  {
+   "facet_id": "news.browse_news_feed",
+   "app_id": "news",
+   "name": "Browse News Feed",
+   "description": "Browse a feed of news headlines and featured stories from various sources and categories.",
+   "capabilities": [
+    "view_headline_list",
+    "open_read_article",
+    "switch_news_category",
+    "view_featured_stories"
+   ]
+  },
+  {
+   "facet_id": "news.read_article",
+   "app_id": "news",
+   "name": "Read Article",
+   "description": "Read the full content of a selected news article.",
+   "capabilities": [
+    "view_article_content",
+    "view_article_media",
+    "view_comments"
+   ]
+  },
+  {
+   "facet_id": "news.search_news",
+   "app_id": "news",
+   "name": "Search News",
+   "description": "Search for news articles using keywords or topics.",
+   "capabilities": [
+    "enter_search_query",
+    "view_search_results",
+    "filter_search_results",
+    "sort_search_results",
+    "open_read_article"
+   ]
+  },
+  {
+   "facet_id": "news.open_section",
+   "app_id": "news",
+   "name": "Open Section",
+   "description": "Navigate to primary sections of the News app.",
+   "capabilities": [
+    "open_browse_news_feed",
+    "open_search_news"
+   ]
+  },
+  {
+   "facet_id": "wallet.make_payment",
+   "app_id": "wallet",
+   "name": "Make Payment",
+   "description": "Use Apple Pay to make a payment with a selected card.",
+   "capabilities": [
+    "select_payment_card",
+    "confirm_payment",
+    "view_payment_status",
+    "view_selected_card"
+   ]
+  },
+  {
+   "facet_id": "wallet.view_balance",
+   "app_id": "wallet",
+   "name": "View Balance",
+   "description": "View details of a stored credit card, including balance and recent transactions.",
+   "capabilities": [
+    "view_current_balance",
+    "view_recent_transactions"
+   ]
+  },
+  {
+   "facet_id": "wallet.open_section",
+   "app_id": "wallet",
+   "name": "Open Section",
+   "description": "Navigate to primary sections of Wallet.",
+   "capabilities": [
+    "open_make_payment",
+    "open_view_balance"
+   ]
+  },
+  {
+   "facet_id": "contacts.browse_contacts",
+   "app_id": "contacts",
+   "name": "Browse Contacts",
+   "description": "Browse and navigate through the list of saved contacts.",
+   "capabilities": [
+    "view_contact_list",
+    "open_view_contact",
+    "open_create_contact"
+   ]
+  },
+  {
+   "facet_id": "contacts.view_contact",
+   "app_id": "contacts",
+   "name": "View Contact",
+   "description": "View the details of a selected contact.",
+   "capabilities": [
+    "view_contact_details",
+    "view_contact_phone",
+    "view_contact_email"
+   ]
+  },
+  {
+   "facet_id": "contacts.create_contact",
+   "app_id": "contacts",
+   "name": "Create Contact",
+   "description": "Create a new contact entry.",
+   "capabilities": [
+    "input_contact_details",
+    "save_contact"
+   ]
+  },
+  {
+   "facet_id": "contacts.search_contacts",
+   "app_id": "contacts",
+   "name": "Search Contacts",
+   "description": "Search for contacts by name or other attributes.",
+   "capabilities": [
+    "enter_search_query",
+    "view_search_results",
+    "open_view_contact"
+   ]
+  },
+  {
+   "facet_id": "contacts.open_section",
+   "app_id": "contacts",
+   "name": "Open Section",
+   "description": "Navigate to primary sections of Contacts.",
+   "capabilities": [
+    "open_browse_contacts",
+    "open_search_contacts",
+    "open_create_contact",
+    "open_view_recent_calls"
+   ]
+  },
+  {
+   "facet_id": "contacts.view_recent_calls",
+   "app_id": "contacts",
+   "name": "View Recent Calls",
+   "description": "View the recent call history.",
+   "capabilities": [
+    "view_recent_calls",
+    "open_view_contact"
+   ]
+  },
+  {
+   "facet_id": "venmo.browse_activity_feed",
+   "app_id": "venmo",
+   "name": "Browse Activity Feed",
+   "description": "Browse recent payment activity from friends and accounts.",
+   "capabilities": [
+    "view_payment_feed"
+   ]
+  },
+  {
+   "facet_id": "venmo.send_request_payment",
+   "app_id": "venmo",
+   "name": "Send / Request Payment",
+   "description": "Send or request money from another user.",
+   "capabilities": [
+    "select_recipient",
+    "enter_payment_amount",
+    "add_payment_note",
+    "confirm_payment",
+    "request_payment"
+   ]
+  },
+  {
+   "facet_id": "venmo.search_users",
+   "app_id": "venmo",
+   "name": "Search Users",
+   "description": "Search for other users to view their profile or send payments.",
+   "capabilities": [
+    "enter_search_query",
+    "view_user_search_results",
+    "open_send_request_payment"
+   ]
+  },
+  {
+   "facet_id": "venmo.view_account",
+   "app_id": "venmo",
+   "name": "View Account",
+   "description": "View the account balance, recent transactions, and personal payment profile.",
+   "capabilities": [
+    "view_account_balance",
+    "view_transaction_list",
+    "view_my_account_info"
+   ]
+  },
+  {
+   "facet_id": "venmo.open_section",
+   "app_id": "venmo",
+   "name": "Open Section",
+   "description": "Navigate to primary sections of Venmo.",
+   "capabilities": [
+    "open_browse_activity_feed",
+    "open_search_users",
+    "open_send_request_payment",
+    "open_view_account"
+   ]
+  },
+  {
+   "facet_id": "figma.browse_files",
+   "app_id": "figma",
+   "name": "Browse Files",
+   "description": "Browse and navigate design files within projects and workspaces.",
+   "capabilities": [
+    "view_file_list",
+    "create_new_file",
+    "search_files",
+    "open_browse_design",
+    "open_edit_design"
+   ]
+  },
+  {
+   "facet_id": "figma.edit_design",
+   "app_id": "figma",
+   "name": "Edit Design",
+   "description": "Create and modify design elements on the canvas using design tools.",
+   "capabilities": [
+    "select_element",
+    "add_shape",
+    "add_text",
+    "draw_vector",
+    "move_resize_element",
+    "delete_element",
+    "open_preview_prototype",
+    "view_current_design"
+   ]
+  },
+  {
+   "facet_id": "figma.browse_design",
+   "app_id": "figma",
+   "name": "Browse Design",
+   "description": "Browse pages, layers, and design elements within the design file.",
+   "capabilities": [
+    "view_layers",
+    "view_assets",
+    "view_pages",
+    "open_preview_prototype"
+   ]
+  },
+  {
+   "facet_id": "figma.preview_prototype",
+   "app_id": "figma",
+   "name": "Preview Prototype",
+   "description": "Preview the design or prototype flow.",
+   "capabilities": [
+    "preview_prototype",
+    "navigate_prototype"
+   ]
+  },
+  {
+   "facet_id": "figma.open_section",
+   "app_id": "figma",
+   "name": "Open Section",
+   "description": "Navigate to primary sections of Figma.",
+   "capabilities": [
+    "open_browse_files"
+   ]
+  },
+  {
+   "facet_id": "code_editor.browse_files",
+   "app_id": "code_editor",
+   "name": "Browse Files",
+   "description": "Browse and navigate files and folders within the project workspace.",
+   "capabilities": [
+    "view_file_tree",
+    "open_edit_code",
+    "create_file",
+    "rename_file",
+    "delete_file"
+   ]
+  },
+  {
+   "facet_id": "code_editor.edit_code",
+   "app_id": "code_editor",
+   "name": "Edit Code",
+   "description": "Write and modify source code in the editor.",
+   "capabilities": [
+    "view_code_content",
+    "edit_code",
+    "insert_code",
+    "delete_code"
+   ]
+  },
+  {
+   "facet_id": "code_editor.run_code",
+   "app_id": "code_editor",
+   "name": "Run Code",
+   "description": "Execute commands and run scripts in the integrated terminal.",
+   "capabilities": [
+    "enter_command",
+    "run_command",
+    "view_terminal_output",
+    "open_edit_code"
+   ]
+  },
+  {
+   "facet_id": "code_editor.open_section",
+   "app_id": "code_editor",
+   "name": "Open Section",
+   "description": "Navigate to primary sections of Code Editor.",
+   "capabilities": [
+    "open_browse_files",
+    "open_run_code"
+   ]
+  },
+  {
+   "facet_id": "facebook.browse_feed",
+   "app_id": "facebook",
+   "name": "Browse Feed",
+   "description": "Browse the home feed of posts, updates, and shared content from friends, pages, and groups.",
+   "capabilities": [
+    "view_feed_posts",
+    "open_view_post",
+    "open_view_user_profile"
+   ]
+  },
+  {
+   "facet_id": "facebook.view_post",
+   "app_id": "facebook",
+   "name": "View Post",
+   "description": "View a post in detail including its content and comments.",
+   "capabilities": [
+    "view_post_content",
+    "view_comment_thread",
+    "open_view_user_profile",
+    "open_engage_with_post"
+   ]
+  },
+  {
+   "facet_id": "facebook.engage_with_post",
+   "app_id": "facebook",
+   "name": "Engage with Post",
+   "description": "Interact with a post through reactions, comments, and sharing.",
+   "capabilities": [
+    "react_to_post",
+    "comment_on_post",
+    "share_post",
+    "save_post"
+   ]
+  },
+  {
+   "facet_id": "facebook.view_user_profile",
+   "app_id": "facebook",
+   "name": "View User Profile",
+   "description": "View a user's profile, posts, and personal information.",
+   "capabilities": [
+    "view_profile_photo",
+    "view_profile_details",
+    "view_user_posts",
+    "send_friend_request",
+    "send_message",
+    "open_view_post",
+    "open_view_story"
+   ]
+  },
+  {
+   "facet_id": "facebook.search_content",
+   "app_id": "facebook",
+   "name": "Search Content",
+   "description": "Search for people, pages, groups, or posts.",
+   "capabilities": [
+    "enter_search_query",
+    "view_search_results",
+    "open_view_post"
+   ]
+  },
+  {
+   "facet_id": "facebook.browse_stories",
+   "app_id": "facebook",
+   "name": "Browse Stories",
+   "description": "Browse and open story previews from friends, pages, and groups.",
+   "capabilities": [
+    "view_story_previews",
+    "open_view_story"
+   ]
+  },
+  {
+   "facet_id": "facebook.view_story",
+   "app_id": "facebook",
+   "name": "View Story",
+   "description": "View a full-screen story and navigate through its sequential content.",
+   "capabilities": [
+    "view_story_content",
+    "tap_to_advance_story",
+    "swipe_to_next_story",
+    "open_view_user_profile"
+   ]
+  },
+  {
+   "facet_id": "facebook.open_section",
+   "app_id": "facebook",
+   "name": "Open Section",
+   "description": "Navigate to primary sections of Facebook.",
+   "capabilities": [
+    "open_browse_feed",
+    "open_search_content",
+    "open_browse_stories",
+    "open_create_post",
+    "open_create_story"
+   ]
+  },
+  {
+   "facet_id": "facebook.create_post",
+   "app_id": "facebook",
+   "name": "Create Post",
+   "description": "Create and share a new post with text, photos, videos, or other attachments.",
+   "capabilities": [
+    "tag_people",
+    "add_location",
+    "share_post",
+    "edit_media",
+    "select_media_from_file",
+    "capture_new_media",
+    "upload_content"
+   ]
+  },
+  {
+   "facet_id": "facebook.create_story",
+   "app_id": "facebook",
+   "name": "Create Story",
+   "description": "Enables users to capture or select media, add creative elements, and share ephemeral stories.",
+   "capabilities": [
+    "edit_media",
+    "select_media_from_file",
+    "capture_new_media",
+    "add_text_stickers_filters_to_story",
+    "upload_content",
+    "tag_people",
+    "add_location"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "source": "gmail.browse_mailbox",
+   "target": "gmail.view_email_contents_actions",
+   "capability": "open_view_email_contents_actions",
+   "resolution": "exact"
+  },
+  {
+   "source": "gmail.search_mail",
+   "target": "gmail.view_email_contents_actions",
+   "capability": "open_view_email_contents_actions",
+   "resolution": "exact"
+  },
+  {
+   "source": "gmail.view_email_contents_actions",
+   "target": "gmail.compose_email",
+   "capability": "open_compose_email",
+   "resolution": "exact"
+  },
+  {
+   "source": "gmail.navigate_mailboxes_and_accounts",
+   "target": "gmail.browse_mailbox",
+   "capability": "open_browse_mailbox",
+   "resolution": "exact"
+  },
+  {
+   "source": "gmail.navigate_mailboxes_and_accounts",
+   "target": "gmail.browse_drafts",
+   "capability": "open_browse_drafts",
+   "resolution": "exact"
+  },
+  {
+   "source": "gmail.browse_drafts",
+   "target": "gmail.compose_email",
+   "capability": "open_compose_email",
+   "resolution": "exact"
+  },
+  {
+   "source": "gmail.open_section",
+   "target": "gmail.search_mail",
+   "capability": "open_search_mail",
+   "resolution": "exact"
+  },
+  {
+   "source": "gmail.open_section",
+   "target": "gmail.navigate_mailboxes_and_accounts",
+   "capability": "open_navigate_mailboxes_and_accounts",
+   "resolution": "exact"
+  },
+  {
+   "source": "gmail.open_section",
+   "target": "gmail.user_presence_status",
+   "capability": "open_user_presence_status",
+   "resolution": "exact"
+  },
+  {
+   "source": "gmail.open_section",
+   "target": "gmail.browse_mailbox",
+   "capability": "open_browse_mailbox",
+   "resolution": "exact"
+  },
+  {
+   "source": "gmail.open_section",
+   "target": "gmail.compose_email",
+   "capability": "open_compose_email",
+   "resolution": "exact"
+  },
+  {
+   "source": "spotify.browse_music",
+   "target": "spotify.view_playlist",
+   "capability": "open_view_playlist",
+   "resolution": "exact"
+  },
+  {
+   "source": "spotify.view_now_playing",
+   "target": "spotify.view_artist",
+   "capability": "open_view_artist",
+   "resolution": "exact"
+  },
+  {
+   "source": "spotify.view_now_playing",
+   "target": "spotify.view_album",
+   "capability": "open_view_album",
+   "resolution": "exact"
+  },
+  {
+   "source": "spotify.view_now_playing",
+   "target": "spotify.view_manage_queue",
+   "capability": "open_view_manage_queue",
+   "resolution": "exact"
+  },
+  {
+   "source": "spotify.view_now_playing",
+   "target": "spotify.control_volume_output",
+   "capability": "open_control_volume_output",
+   "resolution": "exact"
+  },
+  {
+   "source": "spotify.view_now_playing",
+   "target": "spotify.manage_track",
+   "capability": "open_manage_track",
+   "resolution": "exact"
+  },
+  {
+   "source": "spotify.manage_library",
+   "target": "spotify.view_playlist",
+   "capability": "open_view_playlist",
+   "resolution": "exact"
+  },
+  {
+   "source": "spotify.manage_library",
+   "target": "spotify.view_artist",
+   "capability": "open_view_artist",
+   "resolution": "exact"
+  },
+  {
+   "source": "spotify.manage_library",
+   "target": "spotify.view_album",
+   "capability": "open_view_album",
+   "resolution": "exact"
+  },
+  {
+   "source": "spotify.control_podcast_audiobook",
+   "target": "spotify.view_manage_queue",
+   "capability": "open_view_manage_queue",
+   "resolution": "exact"
+  },
+  {
+   "source": "spotify.control_podcast_audiobook",
+   "target": "spotify.control_volume_output",
+   "capability": "open_control_volume_output",
+   "resolution": "exact"
+  },
+  {
+   "source": "spotify.view_playlist",
+   "target": "spotify.manage_track",
+   "capability": "open_manage_track",
+   "resolution": "exact"
+  },
+  {
+   "source": "spotify.manage_track",
+   "target": "spotify.view_artist",
+   "capability": "open_view_artist",
+   "resolution": "exact"
+  },
+  {
+   "source": "spotify.manage_track",
+   "target": "spotify.view_album",
+   "capability": "open_view_album",
+   "resolution": "exact"
+  },
+  {
+   "source": "spotify.manage_track",
+   "target": "spotify.view_playlist",
+   "capability": "open_view_playlist",
+   "resolution": "exact"
+  },
+  {
+   "source": "spotify.view_artist",
+   "target": "spotify.view_album",
+   "capability": "open_view_album",
+   "resolution": "exact"
+  },
+  {
+   "source": "spotify.view_artist",
+   "target": "spotify.manage_track",
+   "capability": "open_manage_track",
+   "resolution": "exact"
+  },
+  {
+   "source": "spotify.view_album",
+   "target": "spotify.view_artist",
+   "capability": "open_view_artist",
+   "resolution": "exact"
+  },
+  {
+   "source": "spotify.view_album",
+   "target": "spotify.manage_track",
+   "capability": "open_manage_track",
+   "resolution": "exact"
+  },
+  {
+   "source": "spotify.browse_audiobooks",
+   "target": "spotify.view_audiobook",
+   "capability": "open_view_audiobook",
+   "resolution": "exact"
+  },
+  {
+   "source": "spotify.view_audiobook",
+   "target": "spotify.view_artist",
+   "capability": "open_view_artist",
+   "resolution": "exact"
+  },
+  {
+   "source": "spotify.open_section",
+   "target": "spotify.search_content",
+   "capability": "open_search_content",
+   "resolution": "exact"
+  },
+  {
+   "source": "spotify.open_section",
+   "target": "spotify.browse_music",
+   "capability": "open_browse_music",
+   "resolution": "exact"
+  },
+  {
+   "source": "spotify.open_section",
+   "target": "spotify.view_now_playing",
+   "capability": "open_view_now_playing",
+   "resolution": "exact"
+  },
+  {
+   "source": "spotify.open_section",
+   "target": "spotify.control_playback",
+   "capability": "open_control_playback",
+   "resolution": "exact"
+  },
+  {
+   "source": "spotify.open_section",
+   "target": "spotify.control_podcast_audiobook",
+   "capability": "open_control_podcast_audiobook",
+   "resolution": "exact"
+  },
+  {
+   "source": "spotify.open_section",
+   "target": "spotify.manage_library",
+   "capability": "open_manage_library",
+   "resolution": "exact"
+  },
+  {
+   "source": "spotify.open_section",
+   "target": "spotify.browse_audiobooks",
+   "capability": "open_browse_audiobooks",
+   "resolution": "exact"
+  },
+  {
+   "source": "google_calendar.view_calendar",
+   "target": "google_calendar.view_event_detail",
+   "capability": "open_view_event_detail",
+   "resolution": "exact"
+  },
+  {
+   "source": "google_calendar.view_calendar",
+   "target": "google_calendar.create_edit_event",
+   "capability": "open_create_edit_event",
+   "resolution": "exact"
+  },
+  {
+   "source": "google_calendar.view_calendar",
+   "target": "google_calendar.configure_calendar_visibility",
+   "capability": "open_configure_calendar_visibility",
+   "resolution": "exact"
+  },
+  {
+   "source": "google_calendar.view_event_detail",
+   "target": "google_calendar.create_edit_event",
+   "capability": "open_create_edit_event",
+   "resolution": "exact"
+  },
+  {
+   "source": "google_calendar.view_event_detail",
+   "target": "google_calendar.respond_to_invitation",
+   "capability": "open_respond_to_invitation",
+   "resolution": "exact"
+  },
+  {
+   "source": "google_calendar.create_edit_event",
+   "target": "google_calendar.schedule_find_time",
+   "capability": "open_schedule_find_time",
+   "resolution": "exact"
+  },
+  {
+   "source": "google_calendar.view_task_detail",
+   "target": "google_calendar.create_edit_task",
+   "capability": "open_create_edit_task",
+   "resolution": "exact"
+  },
+  {
+   "source": "google_calendar.open_section",
+   "target": "google_calendar.view_calendar",
+   "capability": "open_view_calendar",
+   "resolution": "exact"
+  },
+  {
+   "source": "google_calendar.open_section",
+   "target": "google_calendar.create_edit_task",
+   "capability": "open_create_edit_task",
+   "resolution": "exact"
+  },
+  {
+   "source": "google_calendar.open_section",
+   "target": "google_calendar.create_edit_event",
+   "capability": "open_create_edit_event",
+   "resolution": "exact"
+  },
+  {
+   "source": "google_calendar.open_section",
+   "target": "google_calendar.view_event_detail",
+   "capability": "open_view_event_detail",
+   "resolution": "exact"
+  },
+  {
+   "source": "google_calendar.open_section",
+   "target": "google_calendar.view_task_detail",
+   "capability": "open_view_task_detail",
+   "resolution": "exact"
+  },
+  {
+   "source": "google_maps.search_places",
+   "target": "google_maps.view_place",
+   "capability": "open_view_place",
+   "resolution": "exact"
+  },
+  {
+   "source": "google_maps.view_place",
+   "target": "google_maps.view_directions",
+   "capability": "open_view_directions",
+   "resolution": "exact"
+  },
+  {
+   "source": "google_maps.view_place",
+   "target": "google_maps.navigate_route",
+   "capability": "open_navigate_route",
+   "resolution": "exact"
+  },
+  {
+   "source": "google_maps.browse_saved_lists",
+   "target": "google_maps.view_saved_places",
+   "capability": "open_view_saved_places",
+   "resolution": "exact"
+  },
+  {
+   "source": "google_maps.browse_saved_lists",
+   "target": "google_maps.manage_saved_list",
+   "capability": "open_manage_saved_list",
+   "resolution": "exact"
+  },
+  {
+   "source": "google_maps.view_saved_places",
+   "target": "google_maps.view_place",
+   "capability": "open_view_place",
+   "resolution": "exact"
+  },
+  {
+   "source": "google_maps.view_saved_places",
+   "target": "google_maps.manage_saved_list",
+   "capability": "open_manage_saved_list",
+   "resolution": "exact"
+  },
+  {
+   "source": "google_maps.open_section",
+   "target": "google_maps.explore_map",
+   "capability": "open_explore_map",
+   "resolution": "exact"
+  },
+  {
+   "source": "google_maps.open_section",
+   "target": "google_maps.search_places",
+   "capability": "open_search_places",
+   "resolution": "exact"
+  },
+  {
+   "source": "google_maps.open_section",
+   "target": "google_maps.browse_saved_lists",
+   "capability": "open_browse_saved_lists",
+   "resolution": "exact"
+  },
+  {
+   "source": "google_maps.open_section",
+   "target": "google_maps.share_realtime_location",
+   "capability": "open_share_realtime_location",
+   "resolution": "exact"
+  },
+  {
+   "source": "amazon.browse_products",
+   "target": "amazon.view_product_detail",
+   "capability": "open_view_product_detail",
+   "resolution": "exact"
+  },
+  {
+   "source": "amazon.search_product",
+   "target": "amazon.view_product_detail",
+   "capability": "open_view_product_detail",
+   "resolution": "exact"
+  },
+  {
+   "source": "amazon.search_product",
+   "target": "amazon.checkout_purchase",
+   "capability": "open_checkout_purchase",
+   "resolution": "exact"
+  },
+  {
+   "source": "amazon.view_product_detail",
+   "target": "amazon.checkout_purchase",
+   "capability": "open_checkout_purchase",
+   "resolution": "exact"
+  },
+  {
+   "source": "amazon.view_product_detail",
+   "target": "amazon.manage_cart",
+   "capability": "open_manage_cart",
+   "resolution": "exact"
+  },
+  {
+   "source": "amazon.manage_cart",
+   "target": "amazon.checkout_purchase",
+   "capability": "open_checkout_purchase",
+   "resolution": "exact"
+  },
+  {
+   "source": "amazon.track_delivery",
+   "target": "amazon.view_product_detail",
+   "capability": "open_view_product_detail",
+   "resolution": "exact"
+  },
+  {
+   "source": "amazon.view_order_history_returns",
+   "target": "amazon.view_product_detail",
+   "capability": "open_view_product_detail",
+   "resolution": "exact"
+  },
+  {
+   "source": "amazon.open_section",
+   "target": "amazon.track_delivery",
+   "capability": "open_track_delivery",
+   "resolution": "exact"
+  },
+  {
+   "source": "amazon.open_section",
+   "target": "amazon.view_order_history_returns",
+   "capability": "open_view_order_history_returns",
+   "resolution": "exact"
+  },
+  {
+   "source": "amazon.open_section",
+   "target": "amazon.manage_cart",
+   "capability": "open_manage_cart",
+   "resolution": "exact"
+  },
+  {
+   "source": "amazon.open_section",
+   "target": "amazon.browse_products",
+   "capability": "open_browse_products",
+   "resolution": "exact"
+  },
+  {
+   "source": "amazon.open_section",
+   "target": "amazon.search_product",
+   "capability": "open_search_product",
+   "resolution": "exact"
+  },
+  {
+   "source": "clock.configure_alarm",
+   "target": "clock.respond_to_alarm",
+   "capability": "open_respond_to_alarm",
+   "resolution": "exact"
+  },
+  {
+   "source": "clock.manage_alarm_list",
+   "target": "clock.configure_alarm",
+   "capability": "open_configure_alarm",
+   "resolution": "exact"
+  },
+  {
+   "source": "clock.respond_to_alarm",
+   "target": "clock.manage_world_clock_list",
+   "capability": "open_manage_world_clock_list",
+   "resolution": "exact"
+  },
+  {
+   "source": "clock.monitor_timer_countdown",
+   "target": "clock.respond_to_timer",
+   "capability": "open_respond_to_timer",
+   "resolution": "exact"
+  },
+  {
+   "source": "clock.open_section",
+   "target": "clock.view_world_clock",
+   "capability": "open_view_world_clock",
+   "resolution": "exact"
+  },
+  {
+   "source": "clock.open_section",
+   "target": "clock.configure_alarm",
+   "capability": "open_configure_alarm",
+   "resolution": "exact"
+  },
+  {
+   "source": "clock.open_section",
+   "target": "clock.use_stopwatch",
+   "capability": "open_use_stopwatch",
+   "resolution": "exact"
+  },
+  {
+   "source": "clock.open_section",
+   "target": "clock.configure_timer",
+   "capability": "open_configure_timer",
+   "resolution": "exact"
+  },
+  {
+   "source": "clock.open_section",
+   "target": "clock.manage_alarm_list",
+   "capability": "open_manage_alarm_list",
+   "resolution": "exact"
+  },
+  {
+   "source": "clock.open_section",
+   "target": "clock.monitor_timer_countdown",
+   "capability": "open_monitor_timer_countdown",
+   "resolution": "exact"
+  },
+  {
+   "source": "calculator.view_recent_calculations",
+   "target": "calculator.perform_calculation",
+   "capability": "open_perform_calculation",
+   "resolution": "exact"
+  },
+  {
+   "source": "calculator.open_section",
+   "target": "calculator.perform_calculation",
+   "capability": "open_perform_calculation",
+   "resolution": "exact"
+  },
+  {
+   "source": "calculator.open_section",
+   "target": "calculator.view_recent_calculations",
+   "capability": "open_view_recent_calculations",
+   "resolution": "exact"
+  },
+  {
+   "source": "calculator.open_section",
+   "target": "calculator.convert_unit_currency",
+   "capability": "open_convert_unit_currency",
+   "resolution": "exact"
+  },
+  {
+   "source": "weather.view_current_weather",
+   "target": "weather.view_detailed_daily_forecast",
+   "capability": "open_view_detailed_daily_forecast",
+   "resolution": "exact"
+  },
+  {
+   "source": "weather.view_current_weather",
+   "target": "weather.view_extended_weather_metrics",
+   "capability": "open_view_extended_weather_metrics",
+   "resolution": "exact"
+  },
+  {
+   "source": "weather.view_detailed_daily_forecast",
+   "target": "weather.view_precipitation_map",
+   "capability": "open_view_precipitation_map",
+   "resolution": "exact"
+  },
+  {
+   "source": "weather.manage_saved_locations",
+   "target": "weather.view_current_weather",
+   "capability": "open_view_current_weather",
+   "resolution": "exact"
+  },
+  {
+   "source": "weather.open_section",
+   "target": "weather.view_current_weather",
+   "capability": "open_view_current_weather",
+   "resolution": "exact"
+  },
+  {
+   "source": "weather.open_section",
+   "target": "weather.manage_saved_locations",
+   "capability": "open_manage_saved_locations",
+   "resolution": "exact"
+  },
+  {
+   "source": "camera.capture_photo",
+   "target": "camera.scan_qr",
+   "capability": "open_scan_qr",
+   "resolution": "exact"
+  },
+  {
+   "source": "camera.capture_photo",
+   "target": "camera.configure_capture_parameters",
+   "capability": "open_configure_capture_parameters",
+   "resolution": "exact"
+  },
+  {
+   "source": "camera.capture_photo",
+   "target": "camera.select_capture_mode",
+   "capability": "open_select_capture_mode",
+   "resolution": "exact"
+  },
+  {
+   "source": "camera.record_video",
+   "target": "camera.select_capture_mode",
+   "capability": "open_select_capture_mode",
+   "resolution": "exact"
+  },
+  {
+   "source": "camera.record_video",
+   "target": "camera.configure_capture_parameters",
+   "capability": "open_configure_capture_parameters",
+   "resolution": "exact"
+  },
+  {
+   "source": "camera.open_section",
+   "target": "camera.capture_photo",
+   "capability": "open_capture_photo",
+   "resolution": "exact"
+  },
+  {
+   "source": "camera.open_section",
+   "target": "camera.record_video",
+   "capability": "open_record_video",
+   "resolution": "exact"
+  },
+  {
+   "source": "camera.open_section",
+   "target": "camera.browse_captured_media",
+   "capability": "open_browse_captured_media",
+   "resolution": "exact"
+  },
+  {
+   "source": "uber_eats.browse_stores",
+   "target": "uber_eats.view_store",
+   "capability": "open_view_store",
+   "resolution": "exact"
+  },
+  {
+   "source": "uber_eats.search_stores",
+   "target": "uber_eats.view_store",
+   "capability": "open_view_store",
+   "resolution": "exact"
+  },
+  {
+   "source": "uber_eats.manage_cart",
+   "target": "uber_eats.checkout_order",
+   "capability": "open_checkout_order",
+   "resolution": "exact"
+  },
+  {
+   "source": "uber_eats.checkout_order",
+   "target": "uber_eats.track_order",
+   "capability": "open_track_order",
+   "resolution": "exact"
+  },
+  {
+   "source": "uber_eats.open_section",
+   "target": "uber_eats.browse_stores",
+   "capability": "open_browse_stores",
+   "resolution": "exact"
+  },
+  {
+   "source": "uber_eats.open_section",
+   "target": "uber_eats.track_order",
+   "capability": "open_track_order",
+   "resolution": "exact"
+  },
+  {
+   "source": "uber_eats.open_section",
+   "target": "uber_eats.search_stores",
+   "capability": "open_search_stores",
+   "resolution": "exact"
+  },
+  {
+   "source": "uber_eats.open_section",
+   "target": "uber_eats.manage_cart",
+   "capability": "open_manage_cart",
+   "resolution": "exact"
+  },
+  {
+   "source": "uber_eats.open_section",
+   "target": "uber_eats.view_order_history_reorder",
+   "capability": "open_view_order_history_reorder",
+   "resolution": "exact"
+  },
+  {
+   "source": "uber_eats.view_store",
+   "target": "uber_eats.view_item",
+   "capability": "open_view_item",
+   "resolution": "exact"
+  },
+  {
+   "source": "youtube.browse_feed",
+   "target": "youtube.watch_video",
+   "capability": "open_watch_video",
+   "resolution": "exact"
+  },
+  {
+   "source": "youtube.browse_feed",
+   "target": "youtube.search_content",
+   "capability": "open_search_content",
+   "resolution": "exact"
+  },
+  {
+   "source": "youtube.search_content",
+   "target": "youtube.watch_video",
+   "capability": "open_watch_video",
+   "resolution": "exact"
+  },
+  {
+   "source": "youtube.search_content",
+   "target": "youtube.view_channel",
+   "capability": "open_view_channel",
+   "resolution": "exact"
+  },
+  {
+   "source": "youtube.watch_video",
+   "target": "youtube.engage_with_video",
+   "capability": "open_engage_with_video",
+   "resolution": "exact"
+  },
+  {
+   "source": "youtube.watch_video",
+   "target": "youtube.view_video_info",
+   "capability": "open_view_video_info",
+   "resolution": "exact"
+  },
+  {
+   "source": "youtube.view_channel",
+   "target": "youtube.watch_video",
+   "capability": "open_watch_video",
+   "resolution": "exact"
+  },
+  {
+   "source": "youtube.manage_video_library",
+   "target": "youtube.watch_video",
+   "capability": "open_watch_video",
+   "resolution": "exact"
+  },
+  {
+   "source": "youtube.open_section",
+   "target": "youtube.browse_feed",
+   "capability": "open_browse_feed",
+   "resolution": "exact"
+  },
+  {
+   "source": "youtube.open_section",
+   "target": "youtube.search_content",
+   "capability": "open_search_content",
+   "resolution": "exact"
+  },
+  {
+   "source": "youtube.open_section",
+   "target": "youtube.manage_video_library",
+   "capability": "open_manage_video_library",
+   "resolution": "exact"
+  },
+  {
+   "source": "youtube.open_section",
+   "target": "youtube.browse_shorts",
+   "capability": "open_browse_shorts",
+   "resolution": "exact"
+  },
+  {
+   "source": "youtube.open_section",
+   "target": "youtube.create_content",
+   "capability": "open_create_content",
+   "resolution": "exact"
+  },
+  {
+   "source": "youtube.browse_shorts",
+   "target": "youtube.view_video_info",
+   "capability": "open_view_video_info",
+   "resolution": "exact"
+  },
+  {
+   "source": "youtube.browse_shorts",
+   "target": "youtube.engage_with_video",
+   "capability": "open_engage_with_video",
+   "resolution": "exact"
+  },
+  {
+   "source": "youtube.browse_shorts",
+   "target": "youtube.search_content",
+   "capability": "open_search_content",
+   "resolution": "exact"
+  },
+  {
+   "source": "youtube.view_video_info",
+   "target": "youtube.view_channel",
+   "capability": "open_view_channel",
+   "resolution": "exact"
+  },
+  {
+   "source": "instagram.browse_feed",
+   "target": "instagram.view_user_profile",
+   "capability": "open_view_user_profile",
+   "resolution": "exact"
+  },
+  {
+   "source": "instagram.browse_feed",
+   "target": "instagram.engage_with_content",
+   "capability": "open_engage_with_content",
+   "resolution": "exact"
+  },
+  {
+   "source": "instagram.view_user_profile",
+   "target": "instagram.browse_message_conversations",
+   "capability": "open_browse_message_conversations",
+   "resolution": "exact"
+  },
+  {
+   "source": "instagram.view_user_profile",
+   "target": "instagram.view_post",
+   "capability": "open_view_post",
+   "resolution": "exact"
+  },
+  {
+   "source": "instagram.search_content",
+   "target": "instagram.view_post",
+   "capability": "open_view_post",
+   "resolution": "exact"
+  },
+  {
+   "source": "instagram.search_content",
+   "target": "instagram.view_user_profile",
+   "capability": "open_view_user_profile",
+   "resolution": "exact"
+  },
+  {
+   "source": "instagram.browse_explore",
+   "target": "instagram.view_post",
+   "capability": "open_view_post",
+   "resolution": "exact"
+  },
+  {
+   "source": "instagram.browse_explore",
+   "target": "instagram.browse_reels",
+   "capability": "open_browse_reels",
+   "resolution": "exact"
+  },
+  {
+   "source": "instagram.browse_message_conversations",
+   "target": "instagram.engage_in_conversation",
+   "capability": "open_engage_in_conversation",
+   "resolution": "exact"
+  },
+  {
+   "source": "instagram.browse_reels",
+   "target": "instagram.engage_with_content",
+   "capability": "open_engage_with_content",
+   "resolution": "exact"
+  },
+  {
+   "source": "instagram.view_post",
+   "target": "instagram.engage_with_content",
+   "capability": "open_engage_with_content",
+   "resolution": "exact"
+  },
+  {
+   "source": "instagram.view_post",
+   "target": "instagram.view_user_profile",
+   "capability": "open_view_user_profile",
+   "resolution": "exact"
+  },
+  {
+   "source": "instagram.view_post",
+   "target": "instagram.view_story",
+   "capability": "open_view_story",
+   "resolution": "exact"
+  },
+  {
+   "source": "instagram.view_story",
+   "target": "instagram.engage_with_content",
+   "capability": "open_engage_with_content",
+   "resolution": "exact"
+  },
+  {
+   "source": "instagram.engage_in_conversation",
+   "target": "instagram.call",
+   "capability": "open_call",
+   "resolution": "exact"
+  },
+  {
+   "source": "instagram.open_section",
+   "target": "instagram.browse_feed",
+   "capability": "open_browse_feed",
+   "resolution": "exact"
+  },
+  {
+   "source": "instagram.open_section",
+   "target": "instagram.search_content",
+   "capability": "open_search_content",
+   "resolution": "exact"
+  },
+  {
+   "source": "instagram.open_section",
+   "target": "instagram.browse_explore",
+   "capability": "open_browse_explore",
+   "resolution": "exact"
+  },
+  {
+   "source": "instagram.open_section",
+   "target": "instagram.create_post",
+   "capability": "open_create_post",
+   "resolution": "exact"
+  },
+  {
+   "source": "instagram.open_section",
+   "target": "instagram.create_story",
+   "capability": "open_create_story",
+   "resolution": "exact"
+  },
+  {
+   "source": "instagram.open_section",
+   "target": "instagram.view_story",
+   "capability": "open_view_story",
+   "resolution": "exact"
+  },
+  {
+   "source": "instagram.open_section",
+   "target": "instagram.browse_reels",
+   "capability": "open_browse_reels",
+   "resolution": "exact"
+  },
+  {
+   "source": "instagram.open_section",
+   "target": "instagram.browse_message_conversations",
+   "capability": "open_browse_message_conversations",
+   "resolution": "exact"
+  },
+  {
+   "source": "instagram.open_section",
+   "target": "instagram.view_user_profile",
+   "capability": "open_view_user_profile",
+   "resolution": "exact"
+  },
+  {
+   "source": "instagram.open_section",
+   "target": "instagram.browse_story_previews",
+   "capability": "open_browse_story_previews",
+   "resolution": "exact"
+  },
+  {
+   "source": "instagram.browse_story_previews",
+   "target": "instagram.view_story",
+   "capability": "open_view_story",
+   "resolution": "exact"
+  },
+  {
+   "source": "instagram.browse_story_previews",
+   "target": "instagram.create_story",
+   "capability": "open_create_story",
+   "resolution": "exact"
+  },
+  {
+   "source": "slack.browse_workspaces",
+   "target": "slack.browse_channels",
+   "capability": "open_browse_channels",
+   "resolution": "exact"
+  },
+  {
+   "source": "slack.browse_workspaces",
+   "target": "slack.browse_direct_messages",
+   "capability": "open_browse_direct_messages",
+   "resolution": "exact"
+  },
+  {
+   "source": "slack.browse_channels",
+   "target": "slack.view_channel",
+   "capability": "open_view_channel",
+   "resolution": "exact"
+  },
+  {
+   "source": "slack.browse_direct_messages",
+   "target": "slack.view_channel",
+   "capability": "open_view_channel",
+   "resolution": "exact"
+  },
+  {
+   "source": "slack.search_workspace",
+   "target": "slack.view_conversation",
+   "capability": "open_view_conversation",
+   "resolution": "exact"
+  },
+  {
+   "source": "slack.search_workspace",
+   "target": "slack.view_channel",
+   "capability": "open_view_channel",
+   "resolution": "exact"
+  },
+  {
+   "source": "slack.search_workspace",
+   "target": "slack.engage_with_message",
+   "capability": "open_engage_with_message",
+   "resolution": "exact"
+  },
+  {
+   "source": "slack.view_conversation",
+   "target": "slack.engage_with_message",
+   "capability": "open_engage_with_message",
+   "resolution": "exact"
+  },
+  {
+   "source": "slack.open_section",
+   "target": "slack.browse_workspaces",
+   "capability": "open_browse_workspaces",
+   "resolution": "exact"
+  },
+  {
+   "source": "slack.open_section",
+   "target": "slack.browse_channels",
+   "capability": "open_browse_channels",
+   "resolution": "exact"
+  },
+  {
+   "source": "slack.open_section",
+   "target": "slack.browse_direct_messages",
+   "capability": "open_browse_direct_messages",
+   "resolution": "exact"
+  },
+  {
+   "source": "slack.open_section",
+   "target": "slack.browse_activity",
+   "capability": "open_browse_activity",
+   "resolution": "exact"
+  },
+  {
+   "source": "slack.open_section",
+   "target": "slack.search_workspace",
+   "capability": "open_search_workspace",
+   "resolution": "exact"
+  },
+  {
+   "source": "slack.open_section",
+   "target": "slack.view_channel",
+   "capability": "open_view_channel",
+   "resolution": "exact"
+  },
+  {
+   "source": "slack.view_channel",
+   "target": "slack.view_conversation",
+   "capability": "open_view_conversation",
+   "resolution": "exact"
+  },
+  {
+   "source": "slack.view_channel",
+   "target": "slack.engage_with_message",
+   "capability": "open_engage_with_message",
+   "resolution": "exact"
+  },
+  {
+   "source": "slack.view_channel",
+   "target": "slack.call",
+   "capability": "open_call",
+   "resolution": "exact"
+  },
+  {
+   "source": "slack.engage_with_message",
+   "target": "slack.compose_message",
+   "capability": "open_compose_message",
+   "resolution": "exact"
+  },
+  {
+   "source": "messaging.browse_conversation_list",
+   "target": "messaging.view_conversation",
+   "capability": "open_view_conversation",
+   "resolution": "exact"
+  },
+  {
+   "source": "messaging.browse_conversation_list",
+   "target": "messaging.manage_conversation_list",
+   "capability": "open_manage_conversation_list",
+   "resolution": "exact"
+  },
+  {
+   "source": "messaging.search_messages",
+   "target": "messaging.view_conversation",
+   "capability": "open_view_conversation",
+   "resolution": "exact"
+  },
+  {
+   "source": "messaging.compose_message",
+   "target": "messaging.select_attachment",
+   "capability": "open_select_attachment",
+   "resolution": "exact"
+  },
+  {
+   "source": "messaging.view_conversation",
+   "target": "messaging.call",
+   "capability": "open_call",
+   "resolution": "exact"
+  },
+  {
+   "source": "messaging.view_conversation",
+   "target": "messaging.engage_with_message",
+   "capability": "open_engage_with_message",
+   "resolution": "exact"
+  },
+  {
+   "source": "messaging.view_conversation",
+   "target": "messaging.compose_message",
+   "capability": "open_compose_message",
+   "resolution": "exact"
+  },
+  {
+   "source": "messaging.open_section",
+   "target": "messaging.browse_conversation_list",
+   "capability": "open_browse_conversation_list",
+   "resolution": "exact"
+  },
+  {
+   "source": "messaging.open_section",
+   "target": "messaging.search_messages",
+   "capability": "open_search_messages",
+   "resolution": "exact"
+  },
+  {
+   "source": "messaging.open_section",
+   "target": "messaging.compose_message",
+   "capability": "open_compose_message",
+   "resolution": "exact"
+  },
+  {
+   "source": "messaging.engage_with_message",
+   "target": "messaging.compose_message",
+   "capability": "open_compose_message",
+   "resolution": "exact"
+  },
+  {
+   "source": "messaging.engage_with_message",
+   "target": "messaging.engage_with_message",
+   "capability": "open_engage_with_message",
+   "resolution": "exact"
+  },
+  {
+   "source": "notes.create_note",
+   "target": "notes.browse_notes",
+   "capability": "open_browse_notes",
+   "resolution": "exact"
+  },
+  {
+   "source": "notes.create_note",
+   "target": "notes.share_note",
+   "capability": "open_share_note",
+   "resolution": "exact"
+  },
+  {
+   "source": "notes.browse_notes",
+   "target": "notes.view_note",
+   "capability": "open_view_note",
+   "resolution": "exact"
+  },
+  {
+   "source": "notes.browse_notes",
+   "target": "notes.search_notes",
+   "capability": "open_search_notes",
+   "resolution": "exact"
+  },
+  {
+   "source": "notes.view_note",
+   "target": "notes.create_note",
+   "capability": "open_create_note",
+   "resolution": "exact"
+  },
+  {
+   "source": "notes.view_note",
+   "target": "notes.browse_notes",
+   "capability": "open_browse_notes",
+   "resolution": "exact"
+  },
+  {
+   "source": "notes.search_notes",
+   "target": "notes.view_note",
+   "capability": "open_view_note",
+   "resolution": "exact"
+  },
+  {
+   "source": "notes.open_section",
+   "target": "notes.browse_notes",
+   "capability": "open_browse_notes",
+   "resolution": "exact"
+  },
+  {
+   "source": "notes.open_section",
+   "target": "notes.search_notes",
+   "capability": "open_search_notes",
+   "resolution": "exact"
+  },
+  {
+   "source": "notes.open_section",
+   "target": "notes.create_note",
+   "capability": "open_create_note",
+   "resolution": "exact"
+  },
+  {
+   "source": "netflix.browse_content",
+   "target": "netflix.view_content_details",
+   "capability": "open_view_content_details",
+   "resolution": "exact"
+  },
+  {
+   "source": "netflix.browse_content",
+   "target": "netflix.manage_watchlist",
+   "capability": "open_manage_watchlist",
+   "resolution": "exact"
+  },
+  {
+   "source": "netflix.browse_content",
+   "target": "netflix.watch_content",
+   "capability": "open_watch_content",
+   "resolution": "exact"
+  },
+  {
+   "source": "netflix.search_content",
+   "target": "netflix.view_content_details",
+   "capability": "open_view_content_details",
+   "resolution": "exact"
+  },
+  {
+   "source": "netflix.view_content_details",
+   "target": "netflix.watch_content",
+   "capability": "open_watch_content",
+   "resolution": "exact"
+  },
+  {
+   "source": "netflix.open_section",
+   "target": "netflix.browse_content",
+   "capability": "open_browse_content",
+   "resolution": "exact"
+  },
+  {
+   "source": "netflix.open_section",
+   "target": "netflix.search_content",
+   "capability": "open_search_content",
+   "resolution": "exact"
+  },
+  {
+   "source": "netflix.open_section",
+   "target": "netflix.manage_watchlist",
+   "capability": "open_manage_watchlist",
+   "resolution": "exact"
+  },
+  {
+   "source": "netflix.open_section",
+   "target": "netflix.manage_downloads",
+   "capability": "open_manage_downloads",
+   "resolution": "exact"
+  },
+  {
+   "source": "netflix.open_section",
+   "target": "netflix.manage_account",
+   "capability": "open_manage_account",
+   "resolution": "exact"
+  },
+  {
+   "source": "notion.browse_pages",
+   "target": "notion.compose_page",
+   "capability": "open_compose_page",
+   "resolution": "exact"
+  },
+  {
+   "source": "notion.compose_page",
+   "target": "notion.configure_page",
+   "capability": "open_configure_page",
+   "resolution": "exact"
+  },
+  {
+   "source": "notion.search_workspace",
+   "target": "notion.compose_page",
+   "capability": "open_compose_page",
+   "resolution": "exact"
+  },
+  {
+   "source": "notion.browse_notifications",
+   "target": "notion.compose_page",
+   "capability": "open_compose_page",
+   "resolution": "exact"
+  },
+  {
+   "source": "notion.open_section",
+   "target": "notion.browse_pages",
+   "capability": "open_browse_pages",
+   "resolution": "exact"
+  },
+  {
+   "source": "notion.open_section",
+   "target": "notion.compose_page",
+   "capability": "open_compose_page",
+   "resolution": "exact"
+  },
+  {
+   "source": "notion.open_section",
+   "target": "notion.search_workspace",
+   "capability": "open_search_workspace",
+   "resolution": "exact"
+  },
+  {
+   "source": "notion.open_section",
+   "target": "notion.browse_notifications",
+   "capability": "open_browse_notifications",
+   "resolution": "exact"
+  },
+  {
+   "source": "notion.configure_page",
+   "target": "notion.compose_page",
+   "capability": "open_compose_page",
+   "resolution": "exact"
+  },
+  {
+   "source": "duolingo.complete_lesson",
+   "target": "duolingo.view_lesson_progress",
+   "capability": "open_view_lesson_progress",
+   "resolution": "exact"
+  },
+  {
+   "source": "duolingo.complete_lesson",
+   "target": "duolingo.view_lesson_summary",
+   "capability": "open_view_lesson_summary",
+   "resolution": "exact"
+  },
+  {
+   "source": "duolingo.open_section",
+   "target": "duolingo.browse_learning_path",
+   "capability": "open_browse_learning_path",
+   "resolution": "exact"
+  },
+  {
+   "source": "duolingo.open_section",
+   "target": "duolingo.view_profile",
+   "capability": "open_view_profile",
+   "resolution": "exact"
+  },
+  {
+   "source": "duolingo.open_section",
+   "target": "duolingo.browse_social_feed",
+   "capability": "open_browse_social_feed",
+   "resolution": "exact"
+  },
+  {
+   "source": "duolingo.open_section",
+   "target": "duolingo.complete_lesson",
+   "capability": "open_complete_lesson",
+   "resolution": "exact"
+  },
+  {
+   "source": "duolingo.browse_learning_path",
+   "target": "duolingo.complete_lesson",
+   "capability": "open_complete_lesson",
+   "resolution": "exact"
+  },
+  {
+   "source": "zoom.browse_meetings",
+   "target": "zoom.schedule_meeting",
+   "capability": "open_schedule_meeting",
+   "resolution": "exact"
+  },
+  {
+   "source": "zoom.browse_meetings",
+   "target": "zoom.join_meeting",
+   "capability": "open_join_meeting",
+   "resolution": "exact"
+  },
+  {
+   "source": "zoom.join_meeting",
+   "target": "zoom.participate_in_meeting",
+   "capability": "open_participate_in_meeting",
+   "resolution": "exact"
+  },
+  {
+   "source": "zoom.participate_in_meeting",
+   "target": "zoom.chat_in_meeting",
+   "capability": "open_chat_in_meeting",
+   "resolution": "exact"
+  },
+  {
+   "source": "zoom.open_section",
+   "target": "zoom.browse_meetings",
+   "capability": "open_browse_meetings",
+   "resolution": "exact"
+  },
+  {
+   "source": "zoom.open_section",
+   "target": "zoom.join_meeting",
+   "capability": "open_join_meeting",
+   "resolution": "exact"
+  },
+  {
+   "source": "zoom.open_section",
+   "target": "zoom.schedule_meeting",
+   "capability": "open_schedule_meeting",
+   "resolution": "exact"
+  },
+  {
+   "source": "files.browse_files",
+   "target": "files.view_file",
+   "capability": "open_view_file",
+   "resolution": "exact"
+  },
+  {
+   "source": "files.browse_files",
+   "target": "files.manage_files",
+   "capability": "open_manage_files",
+   "resolution": "exact"
+  },
+  {
+   "source": "files.search_files",
+   "target": "files.view_file",
+   "capability": "open_view_file",
+   "resolution": "exact"
+  },
+  {
+   "source": "files.view_file",
+   "target": "files.annotate_file",
+   "capability": "open_annotate_file",
+   "resolution": "exact"
+  },
+  {
+   "source": "files.view_file",
+   "target": "files.manage_files",
+   "capability": "open_manage_files",
+   "resolution": "exact"
+  },
+  {
+   "source": "files.view_file",
+   "target": "files.share_file",
+   "capability": "open_share_file",
+   "resolution": "exact"
+  },
+  {
+   "source": "files.open_section",
+   "target": "files.browse_files",
+   "capability": "open_browse_files",
+   "resolution": "exact"
+  },
+  {
+   "source": "files.open_section",
+   "target": "files.search_files",
+   "capability": "open_search_files",
+   "resolution": "exact"
+  },
+  {
+   "source": "reminders.browse_task_lists",
+   "target": "reminders.view_task_list",
+   "capability": "open_view_task_list",
+   "resolution": "exact"
+  },
+  {
+   "source": "reminders.browse_task_lists",
+   "target": "reminders.search_tasks",
+   "capability": "open_search_tasks",
+   "resolution": "exact"
+  },
+  {
+   "source": "reminders.compose_task",
+   "target": "reminders.schedule_reminder",
+   "capability": "open_schedule_reminder",
+   "resolution": "exact"
+  },
+  {
+   "source": "reminders.open_section",
+   "target": "reminders.browse_task_lists",
+   "capability": "open_browse_task_lists",
+   "resolution": "exact"
+  },
+  {
+   "source": "reminders.open_section",
+   "target": "reminders.search_tasks",
+   "capability": "open_search_tasks",
+   "resolution": "exact"
+  },
+  {
+   "source": "reminders.open_section",
+   "target": "reminders.compose_task",
+   "capability": "open_compose_task",
+   "resolution": "exact"
+  },
+  {
+   "source": "reminders.view_task_list",
+   "target": "reminders.compose_task",
+   "capability": "open_compose_task",
+   "resolution": "exact"
+  },
+  {
+   "source": "reminders.view_task_list",
+   "target": "reminders.search_tasks",
+   "capability": "open_search_tasks",
+   "resolution": "exact"
+  },
+  {
+   "source": "starbucks.browse_offers",
+   "target": "starbucks.customize_item",
+   "capability": "open_customize_item",
+   "resolution": "exact"
+  },
+  {
+   "source": "starbucks.browse_menu",
+   "target": "starbucks.customize_item",
+   "capability": "open_customize_item",
+   "resolution": "exact"
+  },
+  {
+   "source": "starbucks.customize_item",
+   "target": "starbucks.manage_order",
+   "capability": "open_manage_order",
+   "resolution": "exact"
+  },
+  {
+   "source": "starbucks.search_menu",
+   "target": "starbucks.customize_item",
+   "capability": "open_customize_item",
+   "resolution": "exact"
+  },
+  {
+   "source": "starbucks.select_store_location",
+   "target": "starbucks.customize_item",
+   "capability": "open_customize_item",
+   "resolution": "exact"
+  },
+  {
+   "source": "starbucks.select_store_location",
+   "target": "starbucks.browse_menu",
+   "capability": "open_browse_menu",
+   "resolution": "exact"
+  },
+  {
+   "source": "starbucks.open_section",
+   "target": "starbucks.browse_offers",
+   "capability": "open_browse_offers",
+   "resolution": "exact"
+  },
+  {
+   "source": "starbucks.open_section",
+   "target": "starbucks.browse_menu",
+   "capability": "open_browse_menu",
+   "resolution": "exact"
+  },
+  {
+   "source": "starbucks.open_section",
+   "target": "starbucks.search_menu",
+   "capability": "open_search_menu",
+   "resolution": "exact"
+  },
+  {
+   "source": "starbucks.open_section",
+   "target": "starbucks.select_store_location",
+   "capability": "open_select_store_location",
+   "resolution": "exact"
+  },
+  {
+   "source": "starbucks.open_section",
+   "target": "starbucks.manage_rewards",
+   "capability": "open_manage_rewards",
+   "resolution": "exact"
+  },
+  {
+   "source": "starbucks.open_section",
+   "target": "starbucks.manage_gift_cards",
+   "capability": "open_manage_gift_cards",
+   "resolution": "exact"
+  },
+  {
+   "source": "recipes.browse_recipes",
+   "target": "recipes.view_recipe",
+   "capability": "open_view_recipe",
+   "resolution": "exact"
+  },
+  {
+   "source": "recipes.search_recipes",
+   "target": "recipes.view_recipe",
+   "capability": "open_view_recipe",
+   "resolution": "exact"
+  },
+  {
+   "source": "recipes.view_recipe",
+   "target": "recipes.cook_recipe",
+   "capability": "open_cook_recipe",
+   "resolution": "exact"
+  },
+  {
+   "source": "recipes.open_section",
+   "target": "recipes.browse_recipes",
+   "capability": "open_browse_recipes",
+   "resolution": "exact"
+  },
+  {
+   "source": "recipes.open_section",
+   "target": "recipes.search_recipes",
+   "capability": "open_search_recipes",
+   "resolution": "exact"
+  },
+  {
+   "source": "google_scholar.search_articles",
+   "target": "google_scholar.view_article",
+   "capability": "open_view_article",
+   "resolution": "exact"
+  },
+  {
+   "source": "google_scholar.view_recommended_articles",
+   "target": "google_scholar.view_article",
+   "capability": "open_view_article",
+   "resolution": "exact"
+  },
+  {
+   "source": "google_scholar.view_article",
+   "target": "google_scholar.view_article_content",
+   "capability": "open_view_article_content",
+   "resolution": "exact"
+  },
+  {
+   "source": "google_scholar.open_section",
+   "target": "google_scholar.search_articles",
+   "capability": "open_search_articles",
+   "resolution": "exact"
+  },
+  {
+   "source": "google_scholar.open_section",
+   "target": "google_scholar.view_recommended_articles",
+   "capability": "open_view_recommended_articles",
+   "resolution": "exact"
+  },
+  {
+   "source": "overleaf.browse_projects",
+   "target": "overleaf.edit_document",
+   "capability": "open_edit_document",
+   "resolution": "exact"
+  },
+  {
+   "source": "overleaf.browse_projects",
+   "target": "overleaf.browse_projects",
+   "capability": "open_browse_projects",
+   "resolution": "exact"
+  },
+  {
+   "source": "overleaf.browse_projects",
+   "target": "overleaf.preview_document",
+   "capability": "open_preview_document",
+   "resolution": "exact"
+  },
+  {
+   "source": "overleaf.browse_projects",
+   "target": "overleaf.manage_project_settings",
+   "capability": "open_manage_project_settings",
+   "resolution": "exact"
+  },
+  {
+   "source": "overleaf.edit_document",
+   "target": "overleaf.manage_project_settings",
+   "capability": "open_manage_project_settings",
+   "resolution": "exact"
+  },
+  {
+   "source": "overleaf.open_section",
+   "target": "overleaf.browse_projects",
+   "capability": "open_browse_projects",
+   "resolution": "exact"
+  },
+  {
+   "source": "webtoon.browse_episode_list",
+   "target": "webtoon.view_episode",
+   "capability": "open_view_episode",
+   "resolution": "exact"
+  },
+  {
+   "source": "webtoon.view_episode",
+   "target": "webtoon.view_episode_comments",
+   "capability": "open_view_episode_comments",
+   "resolution": "exact"
+  },
+  {
+   "source": "webtoon.open_section",
+   "target": "webtoon.browse_episode_list",
+   "capability": "open_browse_episode_list",
+   "resolution": "exact"
+  },
+  {
+   "source": "thermometer.open_section",
+   "target": "thermometer.view_current_temperature",
+   "capability": "open_view_current_temperature",
+   "resolution": "exact"
+  },
+  {
+   "source": "game.open_section",
+   "target": "game.play_game",
+   "capability": "open_play_game",
+   "resolution": "exact"
+  },
+  {
+   "source": "google_search.open_section",
+   "target": "google_search.search",
+   "capability": "open_search",
+   "resolution": "exact"
+  },
+  {
+   "source": "stock.open_section",
+   "target": "stock.view_stock_price",
+   "capability": "open_view_stock_price",
+   "resolution": "exact"
+  },
+  {
+   "source": "stock.open_section",
+   "target": "stock.view_stock_list",
+   "capability": "open_view_stock_list",
+   "resolution": "exact"
+  },
+  {
+   "source": "stock.view_stock_list",
+   "target": "stock.view_stock_price",
+   "capability": "open_view_stock_price",
+   "resolution": "exact"
+  },
+  {
+   "source": "health.view_health_summary",
+   "target": "health.view_activity_history",
+   "capability": "open_view_activity_history",
+   "resolution": "exact"
+  },
+  {
+   "source": "health.open_section",
+   "target": "health.start_activity_tracking",
+   "capability": "open_start_activity_tracking",
+   "resolution": "exact"
+  },
+  {
+   "source": "health.open_section",
+   "target": "health.view_activity_history",
+   "capability": "open_view_activity_history",
+   "resolution": "exact"
+  },
+  {
+   "source": "health.open_section",
+   "target": "health.view_health_summary",
+   "capability": "open_view_health_summary",
+   "resolution": "exact"
+  },
+  {
+   "source": "linkedin.browse_feed",
+   "target": "linkedin.view_post",
+   "capability": "open_view_post",
+   "resolution": "exact"
+  },
+  {
+   "source": "linkedin.browse_feed",
+   "target": "linkedin.view_profile",
+   "capability": "open_view_profile",
+   "resolution": "exact"
+  },
+  {
+   "source": "linkedin.view_notifications",
+   "target": "linkedin.view_post",
+   "capability": "open_view_post",
+   "resolution": "exact"
+  },
+  {
+   "source": "linkedin.view_post",
+   "target": "linkedin.view_profile",
+   "capability": "open_view_profile",
+   "resolution": "exact"
+  },
+  {
+   "source": "linkedin.search_content",
+   "target": "linkedin.view_post",
+   "capability": "open_view_post",
+   "resolution": "exact"
+  },
+  {
+   "source": "linkedin.view_profile",
+   "target": "linkedin.view_post",
+   "capability": "open_view_post",
+   "resolution": "exact"
+  },
+  {
+   "source": "linkedin.open_section",
+   "target": "linkedin.view_notifications",
+   "capability": "open_view_notifications",
+   "resolution": "exact"
+  },
+  {
+   "source": "linkedin.open_section",
+   "target": "linkedin.browse_feed",
+   "capability": "open_browse_feed",
+   "resolution": "exact"
+  },
+  {
+   "source": "linkedin.open_section",
+   "target": "linkedin.search_content",
+   "capability": "open_search_content",
+   "resolution": "exact"
+  },
+  {
+   "source": "reddit.browse_feed",
+   "target": "reddit.view_post",
+   "capability": "open_view_post",
+   "resolution": "exact"
+  },
+  {
+   "source": "reddit.search_content",
+   "target": "reddit.view_post",
+   "capability": "open_view_post",
+   "resolution": "exact"
+  },
+  {
+   "source": "reddit.open_section",
+   "target": "reddit.browse_feed",
+   "capability": "open_browse_feed",
+   "resolution": "exact"
+  },
+  {
+   "source": "reddit.open_section",
+   "target": "reddit.search_content",
+   "capability": "open_search_content",
+   "resolution": "exact"
+  },
+  {
+   "source": "translate.open_section",
+   "target": "translate.translate_text",
+   "capability": "open_translate_text",
+   "resolution": "exact"
+  },
+  {
+   "source": "translate.open_section",
+   "target": "translate.camera_translation",
+   "capability": "open_camera_translation",
+   "resolution": "exact"
+  },
+  {
+   "source": "books.browse_library",
+   "target": "books.read_book",
+   "capability": "open_read_book",
+   "resolution": "exact"
+  },
+  {
+   "source": "books.browse_library",
+   "target": "books.discover_books",
+   "capability": "open_discover_books",
+   "resolution": "exact"
+  },
+  {
+   "source": "books.discover_books",
+   "target": "books.discover_books",
+   "capability": "open_discover_books",
+   "resolution": "exact"
+  },
+  {
+   "source": "books.discover_books",
+   "target": "books.read_book",
+   "capability": "open_read_book",
+   "resolution": "exact"
+  },
+  {
+   "source": "books.open_section",
+   "target": "books.browse_library",
+   "capability": "open_browse_library",
+   "resolution": "exact"
+  },
+  {
+   "source": "books.open_section",
+   "target": "books.manage_library",
+   "capability": "open_manage_library",
+   "resolution": "exact"
+  },
+  {
+   "source": "books.open_section",
+   "target": "books.discover_books",
+   "capability": "open_discover_books",
+   "resolution": "exact"
+  },
+  {
+   "source": "news.browse_news_feed",
+   "target": "news.read_article",
+   "capability": "open_read_article",
+   "resolution": "exact"
+  },
+  {
+   "source": "news.search_news",
+   "target": "news.read_article",
+   "capability": "open_read_article",
+   "resolution": "exact"
+  },
+  {
+   "source": "news.open_section",
+   "target": "news.browse_news_feed",
+   "capability": "open_browse_news_feed",
+   "resolution": "exact"
+  },
+  {
+   "source": "news.open_section",
+   "target": "news.search_news",
+   "capability": "open_search_news",
+   "resolution": "exact"
+  },
+  {
+   "source": "wallet.open_section",
+   "target": "wallet.make_payment",
+   "capability": "open_make_payment",
+   "resolution": "exact"
+  },
+  {
+   "source": "wallet.open_section",
+   "target": "wallet.view_balance",
+   "capability": "open_view_balance",
+   "resolution": "exact"
+  },
+  {
+   "source": "contacts.browse_contacts",
+   "target": "contacts.view_contact",
+   "capability": "open_view_contact",
+   "resolution": "exact"
+  },
+  {
+   "source": "contacts.browse_contacts",
+   "target": "contacts.create_contact",
+   "capability": "open_create_contact",
+   "resolution": "exact"
+  },
+  {
+   "source": "contacts.search_contacts",
+   "target": "contacts.view_contact",
+   "capability": "open_view_contact",
+   "resolution": "exact"
+  },
+  {
+   "source": "contacts.open_section",
+   "target": "contacts.browse_contacts",
+   "capability": "open_browse_contacts",
+   "resolution": "exact"
+  },
+  {
+   "source": "contacts.open_section",
+   "target": "contacts.search_contacts",
+   "capability": "open_search_contacts",
+   "resolution": "exact"
+  },
+  {
+   "source": "contacts.open_section",
+   "target": "contacts.create_contact",
+   "capability": "open_create_contact",
+   "resolution": "exact"
+  },
+  {
+   "source": "contacts.open_section",
+   "target": "contacts.view_recent_calls",
+   "capability": "open_view_recent_calls",
+   "resolution": "exact"
+  },
+  {
+   "source": "contacts.view_recent_calls",
+   "target": "contacts.view_contact",
+   "capability": "open_view_contact",
+   "resolution": "exact"
+  },
+  {
+   "source": "venmo.search_users",
+   "target": "venmo.send_request_payment",
+   "capability": "open_send_request_payment",
+   "resolution": "exact"
+  },
+  {
+   "source": "venmo.open_section",
+   "target": "venmo.browse_activity_feed",
+   "capability": "open_browse_activity_feed",
+   "resolution": "exact"
+  },
+  {
+   "source": "venmo.open_section",
+   "target": "venmo.search_users",
+   "capability": "open_search_users",
+   "resolution": "exact"
+  },
+  {
+   "source": "venmo.open_section",
+   "target": "venmo.send_request_payment",
+   "capability": "open_send_request_payment",
+   "resolution": "exact"
+  },
+  {
+   "source": "venmo.open_section",
+   "target": "venmo.view_account",
+   "capability": "open_view_account",
+   "resolution": "exact"
+  },
+  {
+   "source": "figma.browse_files",
+   "target": "figma.browse_design",
+   "capability": "open_browse_design",
+   "resolution": "exact"
+  },
+  {
+   "source": "figma.browse_files",
+   "target": "figma.edit_design",
+   "capability": "open_edit_design",
+   "resolution": "exact"
+  },
+  {
+   "source": "figma.edit_design",
+   "target": "figma.preview_prototype",
+   "capability": "open_preview_prototype",
+   "resolution": "exact"
+  },
+  {
+   "source": "figma.browse_design",
+   "target": "figma.preview_prototype",
+   "capability": "open_preview_prototype",
+   "resolution": "exact"
+  },
+  {
+   "source": "figma.open_section",
+   "target": "figma.browse_files",
+   "capability": "open_browse_files",
+   "resolution": "exact"
+  },
+  {
+   "source": "code_editor.browse_files",
+   "target": "code_editor.edit_code",
+   "capability": "open_edit_code",
+   "resolution": "exact"
+  },
+  {
+   "source": "code_editor.run_code",
+   "target": "code_editor.edit_code",
+   "capability": "open_edit_code",
+   "resolution": "exact"
+  },
+  {
+   "source": "code_editor.open_section",
+   "target": "code_editor.browse_files",
+   "capability": "open_browse_files",
+   "resolution": "exact"
+  },
+  {
+   "source": "code_editor.open_section",
+   "target": "code_editor.run_code",
+   "capability": "open_run_code",
+   "resolution": "exact"
+  },
+  {
+   "source": "facebook.browse_feed",
+   "target": "facebook.view_post",
+   "capability": "open_view_post",
+   "resolution": "exact"
+  },
+  {
+   "source": "facebook.browse_feed",
+   "target": "facebook.view_user_profile",
+   "capability": "open_view_user_profile",
+   "resolution": "exact"
+  },
+  {
+   "source": "facebook.view_post",
+   "target": "facebook.view_user_profile",
+   "capability": "open_view_user_profile",
+   "resolution": "exact"
+  },
+  {
+   "source": "facebook.view_post",
+   "target": "facebook.engage_with_post",
+   "capability": "open_engage_with_post",
+   "resolution": "exact"
+  },
+  {
+   "source": "facebook.view_user_profile",
+   "target": "facebook.view_post",
+   "capability": "open_view_post",
+   "resolution": "exact"
+  },
+  {
+   "source": "facebook.view_user_profile",
+   "target": "facebook.view_story",
+   "capability": "open_view_story",
+   "resolution": "exact"
+  },
+  {
+   "source": "facebook.search_content",
+   "target": "facebook.view_post",
+   "capability": "open_view_post",
+   "resolution": "exact"
+  },
+  {
+   "source": "facebook.browse_stories",
+   "target": "facebook.view_story",
+   "capability": "open_view_story",
+   "resolution": "exact"
+  },
+  {
+   "source": "facebook.view_story",
+   "target": "facebook.view_user_profile",
+   "capability": "open_view_user_profile",
+   "resolution": "exact"
+  },
+  {
+   "source": "facebook.open_section",
+   "target": "facebook.browse_feed",
+   "capability": "open_browse_feed",
+   "resolution": "exact"
+  },
+  {
+   "source": "facebook.open_section",
+   "target": "facebook.search_content",
+   "capability": "open_search_content",
+   "resolution": "exact"
+  },
+  {
+   "source": "facebook.open_section",
+   "target": "facebook.browse_stories",
+   "capability": "open_browse_stories",
+   "resolution": "exact"
+  },
+  {
+   "source": "facebook.open_section",
+   "target": "facebook.create_post",
+   "capability": "open_create_post",
+   "resolution": "exact"
+  },
+  {
+   "source": "facebook.open_section",
+   "target": "facebook.create_story",
+   "capability": "open_create_story",
+   "resolution": "exact"
+  }
+ ]
+}

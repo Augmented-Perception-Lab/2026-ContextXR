@@ -1,0 +1,29 @@
+{
+ "format": "contextxr.facet_db",
+ "format_version": "1.0",
+ "benchmark_version": "1.0.0",
+ "name": "toy",
+ "apps": [
+  {"app_id": "music", "app_name": "Music", "app_domain": "entertainment", "entry_facet_id": "music.open_section",
+   "capabilities": ["open_browse_music", "open_now_playing", "play_track", "view_title", "pause"]},
+  {"app_id": "recipes", "app_name": "Recipes", "app_domain": "food", "entry_facet_id": "recipes.open_section",
+   "capabilities": ["open_browse_recipes", "view_list", "open_view_recipe", "view_ingredients", "open_cook_recipe", "view_step"]}
+ ],
+ "facets": [
+  {"facet_id": "music.open_section", "app_id": "music", "name": "Open Section", "description": "Music home", "capabilities": ["open_browse_music", "open_now_playing"]},
+  {"facet_id": "music.browse_music", "app_id": "music", "name": "Browse Music", "description": "Browse tracks", "capabilities": ["play_track", "open_now_playing"]},
+  {"facet_id": "music.now_playing", "app_id": "music", "name": "Now Playing", "description": "Current track", "capabilities": ["view_title", "pause"]},
+  {"facet_id": "recipes.open_section", "app_id": "recipes", "name": "Open Section", "description": "Recipes home", "capabilities": ["open_browse_recipes"]},
+  {"facet_id": "recipes.browse_recipes", "app_id": "recipes", "name": "Browse Recipes", "description": "Recipe list", "capabilities": ["view_list", "open_view_recipe"]},
+  {"facet_id": "recipes.view_recipe", "app_id": "recipes", "name": "View Recipe", "description": "One recipe", "capabilities": ["view_ingredients", "open_cook_recipe"]},
+  {"facet_id": "recipes.cook_recipe", "app_id": "recipes", "name": "Cook Recipe", "description": "Step by step", "capabilities": ["view_step"]}
+ ],
+ "edges": [
+  {"source": "music.open_section", "target": "music.browse_music", "capability": "open_browse_music", "resolution": "exact"},
+  {"source": "music.open_section", "target": "music.now_playing", "capability": "open_now_playing", "resolution": "exact"},
+  {"source": "music.browse_music", "target": "music.now_playing", "capability": "open_now_playing", "resolution": "exact"},
+  {"source": "recipes.open_section", "target": "recipes.browse_recipes", "capability": "open_browse_recipes", "resolution": "exact"},
+  {"source": "recipes.browse_recipes", "target": "recipes.view_recipe", "capability": "open_view_recipe", "resolution": "exact"},
+  {"source": "recipes.view_recipe", "target": "recipes.cook_recipe", "capability": "open_cook_recipe", "resolution": "exact"}
+ ]
+}

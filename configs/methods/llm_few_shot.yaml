@@ -1,0 +1,19 @@
+# Few-shot LLM (paper §4.2.2, Appendix A), one method per transfer condition.
+# Initial facet suggestion uses every matching historical scenario as an example;
+# the paper's next facet runs used at most 3 (one per user first for task/environment conditions).
+name: few_shot_llm
+class: contextxr.methods.llm.LLMSuggester
+conditions: [user, task, environment, user+task, user+env, task+env]
+params:
+  model: gemini-3-flash-preview
+  temperature: 0.2
+  max_facets_per_tier: 0
+tasks:
+  initial:
+    params:
+      max_examples: null
+  next:
+    params:
+      max_examples: 3
+    protocol:
+      final_step_query: if_uncovered_capabilities

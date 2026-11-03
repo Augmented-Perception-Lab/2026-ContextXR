@@ -1,0 +1,12 @@
+# Navigation & search cost model used in the paper (Tables 1 and 2).
+# Loaded by contextxr.metrics.cost_model.DefaultCostModel.
+cost_model:
+  open_menu: 0.0               # c_open_menu, paid once per episode with at least one miss
+  app_page_size: 20            # apps per page of the app list
+  app_page_cost: 1.0           # c_app_scan(f) = ceil(position(app(f)) / 20) * 1.0
+  app_order: occurrence        # app list ordered by how often participants used each app, ties by name
+  facet_step_cost: 1.0         # c_facet_nav(f) = facets visited from the entry facet to f
+  count_entry_facet: true      #   ... counting the entry facet (Open Section) itself
+  suggest_scan_per_target: 0.5 # c_suggest_scan: 0.5 per target sought in the top-10 suggestions
+  adjust_per_hop: 1.0          # c_adjust(f) = hops from the surfaced same-app facet to f
+  adjust_directed: false       #   ... ignoring edge direction

@@ -1,0 +1,290 @@
+{
+  "app": "recipes",
+  "icon": "chef-hat",
+  "color": "#e8590c",
+  "facets": {
+    "recipes.open_section": {
+      "blocks": [
+        {
+          "type": "tabs",
+          "selected": 0,
+          "items": [
+            {
+              "cap": "open_browse_recipes",
+              "label": "Discover",
+              "icon": "compass"
+            },
+            {
+              "cap": "open_search_recipes",
+              "label": "Search",
+              "icon": "search"
+            }
+          ]
+        }
+      ]
+    },
+    "recipes.browse_recipes": {
+      "blocks": [
+        {
+          "type": "media",
+          "cap": "view_featured_recipes",
+          "kind": "photo",
+          "hue": 28,
+          "icon": "utensils",
+          "aspect": "wide",
+          "caption": "Featured · One-pan lemon chicken"
+        },
+        {
+          "type": "chips",
+          "cap": "browse_by_category",
+          "items": [
+            "Quick",
+            "Vegetarian",
+            "Pasta",
+            "Desserts"
+          ],
+          "selected": 0
+        },
+        {
+          "type": "cards",
+          "cap": "view_recommendations",
+          "label": "For you",
+          "items": [
+            {
+              "title": "Tomato Pasta",
+              "meta": "35 min",
+              "hue": 8
+            },
+            {
+              "title": "Miso Salmon",
+              "meta": "25 min",
+              "hue": 200
+            },
+            {
+              "title": "Shakshuka",
+              "meta": "30 min",
+              "hue": 20
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "cap": "view_saved_recipes",
+          "label": "Saved",
+          "style": "thumbs",
+          "items": [
+            {
+              "title": "Banana Bread",
+              "meta": "1 h 10 min",
+              "hue": 40
+            },
+            {
+              "title": "Chicken Tikka Masala",
+              "meta": "50 min",
+              "hue": 15
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "cap": "open_view_recipe",
+          "label": "Open Tomato Pasta"
+        }
+      ]
+    },
+    "recipes.search_recipes": {
+      "blocks": [
+        {
+          "type": "input",
+          "cap": "enter_search_query",
+          "icon": "search",
+          "value": "pasta"
+        },
+        {
+          "type": "chips",
+          "cap": "filter_search_results",
+          "items": [
+            "Under 30 min",
+            "Vegetarian",
+            "5 ingredients"
+          ],
+          "selected": [
+            0
+          ]
+        },
+        {
+          "type": "list",
+          "cap": "view_search_results",
+          "style": "thumbs",
+          "items": [
+            {
+              "title": "Tomato Pasta",
+              "meta": "35 min · 4.8 ★",
+              "hue": 8
+            },
+            {
+              "title": "Pesto Linguine",
+              "meta": "20 min · 4.6 ★",
+              "hue": 110
+            },
+            {
+              "title": "Carbonara",
+              "meta": "25 min · 4.7 ★",
+              "hue": 45
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "cap": "open_view_recipe",
+          "label": "View recipe"
+        }
+      ]
+    },
+    "recipes.view_recipe": {
+      "blocks": [
+        {
+          "type": "row",
+          "widths": [
+            1,
+            1.25
+          ],
+          "blocks": [
+            {
+              "type": "media",
+              "cap": "view_recipe_media",
+              "kind": "photo",
+              "hue": 12,
+              "icon": "utensils",
+              "aspect": "tall"
+            },
+            {
+              "type": "header",
+              "cap": "view_cooking_time",
+              "title": "Tomato Pasta",
+              "subtitle": "Prep 15 min · Cook 20 min"
+            }
+          ]
+        },
+        {
+          "type": "stepper",
+          "cap": "adjust_serving_size",
+          "label": "Servings",
+          "value": "4"
+        },
+        {
+          "type": "kv",
+          "cap": "view_ingredients",
+          "label": "Ingredients",
+          "items": [
+            [
+              "Spaghetti",
+              "400 g"
+            ],
+            [
+              "Crushed tomatoes",
+              "1 can"
+            ],
+            [
+              "Garlic cloves",
+              "2"
+            ],
+            [
+              "Parmesan & basil",
+              "80 g"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "cap": "view_preparation_steps",
+          "label": "Preparation",
+          "size": "sm",
+          "text": "Boil the spaghetti in salted water. Sauté garlic in olive oil, add the tomatoes and simmer for 10 minutes."
+        },
+        {
+          "type": "row",
+          "widths": [
+            1,
+            2.2
+          ],
+          "blocks": [
+            {
+              "type": "button",
+              "cap": "save_recipe",
+              "label": "Save",
+              "icon": "bookmark",
+              "style": "secondary"
+            },
+            {
+              "type": "button",
+              "cap": "open_cook_recipe",
+              "label": "Start Cooking",
+              "icon": "chevron-right"
+            }
+          ]
+        }
+      ]
+    },
+    "recipes.cook_recipe": {
+      "blocks": [
+        {
+          "type": "group",
+          "cap": "view_current_step",
+          "blocks": [
+            {
+              "type": "progress",
+              "label": "Tomato Pasta · Step 3 of 8",
+              "value": 0.375,
+              "display": "3/8"
+            },
+            {
+              "type": "header",
+              "title": "Sauté the aromatics"
+            },
+            {
+              "type": "text",
+              "size": "sm",
+              "text": "Heat olive oil over medium heat. Add the garlic and onion and cook until soft, 3–5 minutes."
+            },
+            {
+              "type": "kv",
+              "label": "For this step",
+              "items": [
+                [
+                  "Garlic cloves",
+                  "2"
+                ],
+                [
+                  "Small onion",
+                  "1"
+                ],
+                [
+                  "Olive oil",
+                  "2 tbsp"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "buttons",
+          "items": [
+            {
+              "cap": "navigate_steps",
+              "label": "Previous",
+              "icon": "chevron-left",
+              "style": "secondary"
+            },
+            {
+              "cap": "navigate_steps",
+              "label": "Next",
+              "icon": "chevron-right",
+              "style": "primary"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

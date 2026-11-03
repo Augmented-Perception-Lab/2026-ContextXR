@@ -1,0 +1,574 @@
+{
+  "app": "uber_eats",
+  "icon": "shopping-bag",
+  "color": "#06c167",
+  "facets": {
+    "uber_eats.open_section": {
+      "blocks": [
+        {
+          "type": "tabs",
+          "selected": 0,
+          "items": [
+            {
+              "cap": "open_browse_stores",
+              "label": "Home",
+              "icon": "house"
+            },
+            {
+              "cap": "open_search_stores",
+              "label": "Search",
+              "icon": "search"
+            },
+            {
+              "cap": "open_track_order",
+              "label": "Track",
+              "icon": "bike"
+            },
+            {
+              "cap": "open_manage_cart",
+              "label": "Cart",
+              "icon": "shopping-cart"
+            },
+            {
+              "cap": "open_view_order_history_reorder",
+              "label": "Orders",
+              "icon": "receipt"
+            }
+          ]
+        }
+      ]
+    },
+    "uber_eats.browse_stores": {
+      "blocks": [
+        {
+          "type": "notice",
+          "cap": "view_promotions",
+          "icon": "tag",
+          "tone": "green",
+          "title": "$5 off orders over $25",
+          "text": "Today only at 120+ local restaurants"
+        },
+        {
+          "type": "chips",
+          "cap": "browse_by_cuisine",
+          "items": [
+            "Thai",
+            "Pizza",
+            "Sushi",
+            "Burgers"
+          ],
+          "selected": 0
+        },
+        {
+          "type": "segmented",
+          "cap": "browse_by_delivery_time",
+          "items": [
+            "Any time",
+            "Under 20 min",
+            "Under 30 min"
+          ],
+          "selected": 2
+        },
+        {
+          "type": "list",
+          "cap": "view_store_list",
+          "style": "thumbs",
+          "items": [
+            {
+              "title": "Lotus Thai Kitchen",
+              "meta": "4.7 ★ · 25–35 min · $0.49 fee",
+              "hue": 30
+            },
+            {
+              "title": "Bangkok Street Eats",
+              "meta": "4.5 ★ · 20–30 min · $1.99 fee",
+              "hue": 10
+            },
+            {
+              "title": "Siam Noodle Bar",
+              "meta": "4.6 ★ · 25–40 min · Free delivery",
+              "hue": 50
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "cap": "open_view_store",
+          "label": "Open Lotus Thai Kitchen"
+        }
+      ]
+    },
+    "uber_eats.search_stores": {
+      "blocks": [
+        {
+          "type": "input",
+          "cap": "enter_search_query",
+          "icon": "search",
+          "value": "pad thai"
+        },
+        {
+          "type": "row",
+          "widths": [
+            2.2,
+            1
+          ],
+          "blocks": [
+            {
+              "type": "chips",
+              "cap": "filter_search_results",
+              "items": [
+                "4.5+ ★",
+                "Free delivery"
+              ],
+              "selected": [
+                0
+              ]
+            },
+            {
+              "type": "select",
+              "cap": "sort_search_results",
+              "label": "Sort",
+              "value": "Fastest"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "cap": "view_search_results",
+          "style": "thumbs",
+          "items": [
+            {
+              "title": "Lotus Thai Kitchen",
+              "meta": "Pad Thai with Shrimp · $16.49",
+              "trailing": "25 min",
+              "hue": 30
+            },
+            {
+              "title": "Siam Noodle Bar",
+              "meta": "Chicken Pad Thai · $14.99",
+              "trailing": "30 min",
+              "hue": 50
+            },
+            {
+              "title": "Bangkok Street Eats",
+              "meta": "Tofu Pad Thai · $13.50",
+              "trailing": "35 min",
+              "hue": 10
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "cap": "open_view_store",
+          "label": "View Lotus Thai Kitchen"
+        }
+      ]
+    },
+    "uber_eats.view_store": {
+      "blocks": [
+        {
+          "type": "header",
+          "cap": "view_store_details",
+          "title": "Lotus Thai Kitchen",
+          "subtitle": "Thai · Noodles · 0.8 mi · Open until 10 PM",
+          "thumb": {
+            "icon": "utensils",
+            "hue": 30
+          }
+        },
+        {
+          "type": "row",
+          "widths": [
+            1.3,
+            1,
+            1
+          ],
+          "blocks": [
+            {
+              "type": "rating",
+              "cap": "view_store_rating",
+              "value": 4.7,
+              "count": "2,100+"
+            },
+            {
+              "type": "stat",
+              "cap": "view_delivery_fee",
+              "value": "$0.49",
+              "label": "Delivery fee"
+            },
+            {
+              "type": "stat",
+              "cap": "view_estimated_delivery_time",
+              "value": "25–35",
+              "unit": "min",
+              "label": "Delivery"
+            }
+          ]
+        },
+        {
+          "type": "notice",
+          "cap": "view_promotions",
+          "icon": "tag",
+          "tone": "green",
+          "title": "Buy 1, get 1 free",
+          "text": "On Thai Iced Tea"
+        },
+        {
+          "type": "chips",
+          "cap": "browse_menu_categories",
+          "items": [
+            "Popular",
+            "Noodles",
+            "Curries",
+            "Drinks"
+          ],
+          "selected": 0
+        },
+        {
+          "type": "link",
+          "cap": "open_view_item",
+          "label": "Pad Thai with Shrimp",
+          "meta": "$16.49"
+        },
+        {
+          "type": "button",
+          "cap": "contact_restaurant",
+          "label": "Call restaurant",
+          "icon": "phone",
+          "style": "secondary"
+        }
+      ]
+    },
+    "uber_eats.view_item": {
+      "blocks": [
+        {
+          "type": "row",
+          "widths": [
+            1,
+            1.3
+          ],
+          "blocks": [
+            {
+              "type": "media",
+              "cap": "view_item_photo",
+              "kind": "photo",
+              "hue": 30,
+              "icon": "utensils",
+              "aspect": "square"
+            },
+            {
+              "type": "header",
+              "cap": "view_item_price",
+              "title": "Pad Thai with Shrimp",
+              "subtitle": "$16.49 · 820 Cal"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "cap": "view_item_description",
+          "size": "sm",
+          "muted": true,
+          "text": "Rice noodles stir-fried with shrimp, egg, tofu, bean sprouts and crushed peanuts in tamarind sauce."
+        },
+        {
+          "type": "chips",
+          "cap": "view_dietary_info",
+          "items": [
+            "Contains peanuts",
+            "Shellfish",
+            "Gluten-free option"
+          ]
+        },
+        {
+          "type": "list",
+          "cap": "customize_item",
+          "label": "Customize",
+          "style": "check",
+          "items": [
+            {
+              "title": "Spice level: Medium",
+              "done": true
+            },
+            {
+              "title": "Extra shrimp",
+              "trailing": "+$3.00"
+            }
+          ]
+        },
+        {
+          "type": "input",
+          "cap": "add_special_instructions",
+          "placeholder": "Add a note",
+          "value": "No bean sprouts, please"
+        },
+        {
+          "type": "button",
+          "cap": "add_item_to_cart",
+          "label": "Add 1 to cart · $16.49",
+          "icon": "shopping-cart"
+        }
+      ]
+    },
+    "uber_eats.manage_cart": {
+      "blocks": [
+        {
+          "type": "segmented",
+          "cap": "choose_delivery_or_pickup",
+          "items": [
+            "Delivery",
+            "Pickup"
+          ],
+          "selected": 0
+        },
+        {
+          "type": "select",
+          "cap": "select_delivery_address",
+          "label": "Deliver to",
+          "value": "412 Forbes Ave, Apt 3B"
+        },
+        {
+          "type": "row",
+          "widths": [
+            2.2,
+            1.3
+          ],
+          "blocks": [
+            {
+              "type": "stepper",
+              "cap": "adjust_quantity",
+              "label": "Pad Thai with Shrimp",
+              "value": "2"
+            },
+            {
+              "type": "button",
+              "cap": "remove_item",
+              "label": "Remove",
+              "icon": "trash-2",
+              "style": "ghost"
+            }
+          ]
+        },
+        {
+          "type": "input",
+          "cap": "apply_promo_code",
+          "icon": "ticket",
+          "placeholder": "Promo code",
+          "value": "SAVE5",
+          "trailing": "check"
+        },
+        {
+          "type": "kv",
+          "cap": "view_subtotal",
+          "items": [
+            [
+              "Subtotal",
+              "$32.98"
+            ],
+            [
+              "Promo SAVE5",
+              "−$5.00"
+            ]
+          ]
+        },
+        {
+          "type": "button",
+          "cap": "open_checkout_order",
+          "label": "Go to checkout",
+          "icon": "chevron-right"
+        }
+      ]
+    },
+    "uber_eats.checkout_order": {
+      "blocks": [
+        {
+          "type": "kv",
+          "cap": "review_order_summary",
+          "label": "Lotus Thai Kitchen",
+          "items": [
+            [
+              "2× Pad Thai with Shrimp",
+              "$32.98"
+            ],
+            [
+              "Promo SAVE5",
+              "−$5.00"
+            ],
+            [
+              "Fees",
+              "$3.79"
+            ]
+          ]
+        },
+        {
+          "type": "segmented",
+          "cap": "set_tip",
+          "label": "Tip",
+          "items": [
+            "15%",
+            "18%",
+            "20%",
+            "Other"
+          ],
+          "selected": 1
+        },
+        {
+          "type": "select",
+          "cap": "select_payment_method",
+          "label": "Payment",
+          "value": "Visa •••• 4242"
+        },
+        {
+          "type": "select",
+          "cap": "schedule_order",
+          "label": "Delivery time",
+          "value": "Now · 25–35 min"
+        },
+        {
+          "type": "button",
+          "cap": "place_order",
+          "label": "Place order · $37.71",
+          "style": "primary"
+        },
+        {
+          "type": "link",
+          "cap": "open_track_order",
+          "label": "Track order",
+          "icon": "bike"
+        }
+      ]
+    },
+    "uber_eats.track_order": {
+      "blocks": [
+        {
+          "type": "stat",
+          "cap": "view_eta",
+          "value": "12",
+          "unit": "min",
+          "label": "Arriving at 12:48 PM",
+          "icon": "clock"
+        },
+        {
+          "type": "progress",
+          "cap": "view_order_status",
+          "label": "Marco picked up your order",
+          "value": 0.75,
+          "display": "On the way"
+        },
+        {
+          "type": "map",
+          "cap": "view_driver_location",
+          "kind": "route",
+          "label": "Marco · Toyota Prius · 7KXP213"
+        },
+        {
+          "type": "buttons",
+          "items": [
+            {
+              "cap": "contact_driver",
+              "label": "Message Marco",
+              "icon": "message-circle",
+              "style": "primary"
+            },
+            {
+              "cap": "contact_restaurant",
+              "label": "Restaurant",
+              "icon": "phone",
+              "style": "secondary"
+            }
+          ]
+        }
+      ]
+    },
+    "uber_eats.view_order_history_reorder": {
+      "blocks": [
+        {
+          "type": "list",
+          "cap": "view_past_orders",
+          "style": "thumbs",
+          "items": [
+            {
+              "title": "Lotus Thai Kitchen",
+              "meta": "Oct 23 · 2 items · $37.71",
+              "hue": 30
+            },
+            {
+              "title": "Tony's Pizzeria",
+              "meta": "Oct 18 · 1 item · $27.40",
+              "hue": 5
+            },
+            {
+              "title": "Blue Fin Sushi",
+              "meta": "Oct 12 · 3 items · $44.15",
+              "hue": 200
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "widths": [
+            1,
+            1
+          ],
+          "blocks": [
+            {
+              "type": "group",
+              "cap": "rate_order",
+              "blocks": [
+                {
+                  "type": "text",
+                  "size": "sm",
+                  "muted": true,
+                  "text": "Rate your order"
+                },
+                {
+                  "type": "rating",
+                  "value": 4
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "cap": "rate_driver",
+              "blocks": [
+                {
+                  "type": "text",
+                  "size": "sm",
+                  "muted": true,
+                  "text": "Rate Marco"
+                },
+                {
+                  "type": "rating",
+                  "value": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "buttons",
+          "items": [
+            {
+              "cap": "reorder",
+              "label": "Reorder",
+              "icon": "rotate-ccw",
+              "style": "primary"
+            },
+            {
+              "cap": "report_issue",
+              "label": "Report",
+              "icon": "circle-alert",
+              "style": "secondary"
+            },
+            {
+              "cap": "request_refund",
+              "label": "Refund",
+              "icon": "receipt",
+              "style": "secondary"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

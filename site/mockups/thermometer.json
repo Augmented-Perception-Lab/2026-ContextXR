@@ -1,0 +1,17 @@
+{
+  "app": "thermometer",
+  "icon": "thermometer",
+  "color": "#f76707",
+  "facets": {
+    "thermometer.open_section": {
+      "blocks": [
+        {"type": "link", "cap": "open_view_current_temperature", "label": "Current temperature", "icon": "thermometer", "meta": "Living room"}
+      ]
+    },
+    "thermometer.view_current_temperature": {
+      "blocks": [
+        {"type": "stat", "cap": "view_current_temperature", "value": "21.4", "unit": "°C", "label": "Living room · now", "icon": "thermometer"}
+      ]
+    }
+  }
+}

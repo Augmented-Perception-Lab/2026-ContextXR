@@ -1,0 +1,68 @@
+{
+  "app": "figma",
+  "icon": "figma",
+  "color": "#a259ff",
+  "facets": {
+    "figma.open_section": {
+      "blocks": [
+        {"type": "link", "cap": "open_browse_files", "label": "Recents", "icon": "folder", "meta": "12 files"}
+      ]
+    },
+    "figma.browse_files": {
+      "blocks": [
+        {"type": "input", "cap": "search_files", "icon": "search", "placeholder": "Search files"},
+        {"type": "list", "cap": "view_file_list", "style": "thumbs", "items": [
+          {"title": "Onboarding v3", "meta": "Mobile App · edited 2 h ago", "hue": 270, "icon": "smartphone"},
+          {"title": "Design System 2.0", "meta": "Foundations · edited yesterday", "hue": 190, "icon": "component"},
+          {"title": "Checkout Flow", "meta": "Mobile App · edited Oct 20", "hue": 20, "icon": "shopping-cart"}
+        ]},
+        {"type": "button", "cap": "create_new_file", "label": "New design file", "icon": "plus", "style": "secondary"},
+        {"type": "link", "cap": "open_browse_design", "label": "Onboarding v3 · Pages & layers", "icon": "layers"},
+        {"type": "link", "cap": "open_edit_design", "label": "Open in editor", "icon": "pen-tool"}
+      ]
+    },
+    "figma.edit_design": {
+      "blocks": [
+        {"type": "controls", "items": [
+          {"cap": "select_element", "icon": "mouse-pointer-2", "label": "Move", "primary": true},
+          {"cap": "add_shape", "icon": "square", "label": "Rectangle"},
+          {"cap": "draw_vector", "icon": "pen-tool", "label": "Pen"},
+          {"cap": "add_text", "icon": "type", "label": "Text"},
+          {"cap": "delete_element", "icon": "trash-2", "label": "Delete"}
+        ]},
+        {"type": "media", "cap": "view_current_design", "kind": "doc", "aspect": "wide", "caption": "Onboarding v3 · Welcome · \"Get started\" button selected"},
+        {"type": "kv", "cap": "move_resize_element", "items": [["Position", "X 24 · Y 712"], ["Size", "W 327 · H 48"]]},
+        {"type": "button", "cap": "open_preview_prototype", "label": "Present", "icon": "play"}
+      ]
+    },
+    "figma.browse_design": {
+      "blocks": [
+        {"type": "list", "cap": "view_pages", "label": "Pages", "items": [
+          {"title": "Welcome", "icon": "file"},
+          {"title": "Sign up", "icon": "file"},
+          {"title": "Permissions", "icon": "file"}
+        ]},
+        {"type": "list", "cap": "view_layers", "label": "Layers", "items": [
+          {"title": "Welcome / iPhone 16", "icon": "frame"},
+          {"title": "Get started", "icon": "component"},
+          {"title": "Headline", "icon": "type"}
+        ]},
+        {"type": "grid", "cap": "view_assets", "label": "Assets", "cols": 3, "items": [
+          {"label": "Button", "icon": "rectangle-horizontal"},
+          {"label": "Input", "icon": "text-cursor-input"},
+          {"label": "Avatar", "icon": "circle-user"}
+        ]},
+        {"type": "button", "cap": "open_preview_prototype", "label": "Present", "icon": "play"}
+      ]
+    },
+    "figma.preview_prototype": {
+      "blocks": [
+        {"type": "media", "cap": "preview_prototype", "kind": "art", "hue": 270, "icon": "smartphone", "aspect": "wide", "caption": "Onboarding v3 · Welcome (1 of 6)"},
+        {"type": "buttons", "items": [
+          {"cap": "navigate_prototype", "label": "Back", "icon": "chevron-left", "style": "secondary"},
+          {"cap": "navigate_prototype", "label": "Next", "icon": "chevron-right", "style": "primary"}
+        ]}
+      ]
+    }
+  }
+}

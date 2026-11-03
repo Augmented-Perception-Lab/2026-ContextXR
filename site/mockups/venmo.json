@@ -1,0 +1,57 @@
+{
+  "app": "venmo",
+  "icon": "wallet",
+  "color": "#008cff",
+  "facets": {
+    "venmo.open_section": {
+      "blocks": [
+        {"type": "tabs", "selected": 0, "items": [
+          {"cap": "open_browse_activity_feed", "label": "Home", "icon": "house"},
+          {"cap": "open_search_users", "label": "Search", "icon": "search"},
+          {"cap": "open_send_request_payment", "label": "Pay/Request", "icon": "dollar-sign"},
+          {"cap": "open_view_account", "label": "Me", "icon": "user"}
+        ]}
+      ]
+    },
+    "venmo.browse_activity_feed": {
+      "blocks": [
+        {"type": "list", "cap": "view_payment_feed", "items": [
+          {"title": "Mina Park paid Hyun Cho", "meta": "Ramen night · 2 h", "avatar": true},
+          {"title": "Dev Patel paid Sam Lee", "meta": "Uber to the airport · 5 h", "avatar": true},
+          {"title": "Jess Wu charged Mina Park", "meta": "October rent + utilities · 1 d", "avatar": true}
+        ]}
+      ]
+    },
+    "venmo.send_request_payment": {
+      "blocks": [
+        {"type": "avatar", "cap": "select_recipient", "name": "Mina Park", "status": "@mina-park"},
+        {"type": "stat", "cap": "enter_payment_amount", "value": "$18.50"},
+        {"type": "input", "cap": "add_payment_note", "icon": "message-square", "value": "Ramen night"},
+        {"type": "buttons", "items": [
+          {"cap": "request_payment", "label": "Request", "style": "secondary"},
+          {"cap": "confirm_payment", "label": "Pay", "style": "primary"}
+        ]}
+      ]
+    },
+    "venmo.search_users": {
+      "blocks": [
+        {"type": "input", "cap": "enter_search_query", "icon": "search", "value": "mina"},
+        {"type": "list", "cap": "view_user_search_results", "items": [
+          {"title": "Mina Park", "meta": "@mina-park · 4 mutual friends", "avatar": true},
+          {"title": "Mina Okafor", "meta": "@minaok", "avatar": true}
+        ]},
+        {"type": "button", "cap": "open_send_request_payment", "label": "Pay or request Mina", "icon": "dollar-sign", "style": "primary"}
+      ]
+    },
+    "venmo.view_account": {
+      "blocks": [
+        {"type": "avatar", "cap": "view_my_account_info", "name": "Hyun Cho", "status": "@hyun-cho · Joined 2019"},
+        {"type": "stat", "cap": "view_account_balance", "value": "$248.10", "label": "Venmo balance"},
+        {"type": "list", "cap": "view_transaction_list", "label": "Transactions", "items": [
+          {"title": "Mina Park", "meta": "Ramen night · Today", "trailing": "+$18.50", "avatar": true},
+          {"title": "Jess Wu", "meta": "October rent + utilities · Oct 1", "trailing": "−$812.00", "avatar": true}
+        ]}
+      ]
+    }
+  }
+}

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Facet Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mockups.css">
+  <style>
+    .gal { max-width: 1400px; margin: 0 auto; padding: 32px 24px 64px; }
+    .gal h1 { margin: 0 0 6px; font-size: 32px; letter-spacing: -.02em; }
+    .gal > p { margin: 0 0 24px; color: var(--ink-2); }
+    .gal-app { margin: 36px 0 0; }
+    .gal-app h2 { display: flex; align-items: center; gap: 10px; margin: 0 0 14px; font-size: 20px; }
+    .gal-row { display: flex; flex-wrap: wrap; gap: 28px 22px; align-items: flex-start; }
+    .gal-item { width: 340px; }
+    .gal-item .chip.facet { position: static; margin-bottom: 8px; }
+    .gal-caps { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 10px; }
+    .gal-caps .chip { position: static; cursor: default; }
+    .gal-missing { width: 340px; height: 120px; border: 1px dashed var(--rule); border-radius: 16px; display: grid; place-items: center; color: var(--ink-3); font-size: 13px; }
+    #gal-filter { margin-bottom: 8px; }
+  </style>
+</head>
+<body>
+  <div class="gal">
+    <h1>Facet gallery</h1>
+    <p id="gal-stat"></p>
+    <label class="fg-search" id="gal-filter"><input id="gal-q" type="search" placeholder="Filter apps or facets" autocomplete="off"></label>
+    <div id="gal"></div>
+  </div>
+  <script src="data/minexrpp.js"></script>
+  <script src="data/mockups.js"></script>
+  <script src="js/mockups.js"></script>
+  <script>
+    (function () {
+      const D = window.MINEXRPP, root = document.getElementById("gal");
+      const byApp = new Map(D.apps.map((a) => [a.id, { ...a, facets: [] }]));
+      for (const f of D.facets) byApp.get(f.app).facets.push(f);
+      let have = 0;
+      for (const app of byApp.values()) {
+        const sec = document.createElement("section");
+        sec.className = "gal-app";
+        sec.dataset.q = (app.name + " " + app.facets.map((f) => f.name).join(" ")).toLowerCase();
+        const st = FacetMockup.appStyle(app.id);
+        sec.innerHTML = `<h2>${st ? `<span class="mk-appicon" style="--app:${st.color};width:26px;height:26px;border-radius:7px">${FacetMockup.icon(st.icon, 16)}</span>` : ""}${app.name}</h2><div class="gal-row"></div>`;
+        const row = sec.querySelector(".gal-row");
+        for (const f of app.facets) {
+          const item = document.createElement("div");
+          item.className = "gal-item";
+          item.innerHTML = `<span class="chip facet">${f.name}</span>`;
+          const mk = FacetMockup.render(f.id, { appName: app.name, facetName: f.id.endsWith("open_section") ? "Home" : "" });
+          if (mk) { have++; item.appendChild(mk); }
+          else item.insertAdjacentHTML("beforeend", `<div class="gal-missing">no spec yet</div>`);
+          const caps = document.createElement("div");
+          caps.className = "gal-caps";
+          caps.innerHTML = f.caps.map((c) => `<span class="chip cap${c.startsWith("open_") ? " nav" : ""}" data-c="${c}">${c}</span>`).join("");
+          item.appendChild(caps);
+          // Hovering a capability chip outlines its element in the mockup.
+          caps.addEventListener("pointerover", (e) => {
+            const c = e.target.dataset.c; if (!c || !mk) return;
+            mk.querySelectorAll("[data-cap]").forEach((el) => el.classList.toggle("hover", el.dataset.cap.split(" ").includes(c)));
+          });
+          caps.addEventListener("pointerout", () => mk && mk.querySelectorAll(".hover").forEach((el) => el.classList.remove("hover")));
+          row.appendChild(item);
+        }
+        root.appendChild(sec);
+      }
+      document.getElementById("gal-stat").textContent = `${have} of ${D.facets.length} facets have a mockup. Hover a capability to find its element.`;
+      document.getElementById("gal-q").addEventListener("input", (e) => {
+        const q = e.target.value.toLowerCase().trim();
+        for (const s of root.children) s.hidden = q && !s.dataset.q.includes(q);
+      });
+    })();
+  </script>
+</body>
+</html>

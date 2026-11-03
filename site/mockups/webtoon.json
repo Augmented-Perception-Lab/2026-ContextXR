@@ -1,0 +1,44 @@
+{
+  "app": "webtoon",
+  "icon": "book-image",
+  "color": "#00dc64",
+  "facets": {
+    "webtoon.open_section": {
+      "blocks": [
+        {"type": "link", "cap": "open_browse_episode_list", "label": "Lore Olympus · All episodes", "icon": "list"}
+      ]
+    },
+    "webtoon.browse_episode_list": {
+      "blocks": [
+        {"type": "row", "widths": [1, 1.6], "blocks": [
+          {"type": "media", "cap": "view_episode_thumbnail", "kind": "art", "hue": 290, "icon": "image", "aspect": "square"},
+          {"type": "header", "cap": "view_episode_metadata", "title": "Episode 268", "subtitle": "Oct 19, 2026 · ♥ 98.2K · 2.3K comments"}
+        ]},
+        {"type": "list", "cap": "view_episode_list", "label": "Lore Olympus · Episodes", "items": [
+          {"title": "Episode 268", "trailing": "Oct 19", "meta": "New"},
+          {"title": "Episode 267", "trailing": "Oct 12"},
+          {"title": "Episode 266", "trailing": "Oct 5"}
+        ]},
+        {"type": "button", "cap": "open_view_episode", "label": "Read Episode 268", "icon": "book-open", "style": "primary"}
+      ]
+    },
+    "webtoon.view_episode": {
+      "blocks": [
+        {"type": "media", "cap": "view_episode_content", "kind": "art", "hue": 290, "icon": "image", "aspect": "tall", "caption": "Lore Olympus · Episode 268"},
+        {"type": "link", "cap": "open_view_episode_comments", "label": "Comments", "icon": "message-square", "meta": "2,341"}
+      ]
+    },
+    "webtoon.view_episode_comments": {
+      "blocks": [
+        {"type": "list", "cap": "view_comment_list", "label": "Top comments · Ep. 268", "items": [
+          {"title": "nightowl_reads", "meta": "That last panel!! I need the next ep NOW", "trailing": "♥ 4.1K", "avatar": "N", "hue": 260},
+          {"title": "persephone.fan", "meta": "The color work this week is unreal", "trailing": "♥ 2.7K", "avatar": "P", "hue": 330}
+        ]},
+        {"type": "list", "cap": "view_comment_replies", "label": "Replies · 38", "items": [
+          {"title": "inkandpetals", "meta": "Same, refreshing every Sunday", "trailing": "♥ 312", "avatar": "I", "hue": 150},
+          {"title": "kronos_hater", "meta": "Waiting a week is torture", "trailing": "♥ 189", "avatar": "K", "hue": 20}
+        ]}
+      ]
+    }
+  }
+}

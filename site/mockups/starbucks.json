@@ -1,0 +1,130 @@
+{
+  "app": "starbucks",
+  "icon": "coffee",
+  "color": "#00704a",
+  "facets": {
+    "starbucks.open_section": {
+      "blocks": [
+        {"type": "tabs", "selected": 1, "items": [
+          {"cap": "open_browse_offers", "label": "Offers", "icon": "ticket-percent"},
+          {"cap": "open_browse_menu", "label": "Menu", "icon": "coffee"},
+          {"cap": "open_search_menu", "label": "Search", "icon": "search"},
+          {"cap": "open_select_store_location", "label": "Stores", "icon": "map-pin"},
+          {"cap": "open_manage_rewards", "label": "Stars", "icon": "star"},
+          {"cap": "open_manage_gift_cards", "label": "Cards", "icon": "credit-card"}
+        ]}
+      ]
+    },
+    "starbucks.browse_offers": {
+      "blocks": [
+        {"type": "list", "cap": "view_offer_list", "items": [
+          {"title": "50 Bonus Stars", "meta": "Buy 3 handcrafted drinks · ends Oct 31", "icon": "star"},
+          {"title": "Double Star Day", "meta": "Thursday only", "icon": "sparkles"},
+          {"title": "$2 off Pumpkin Spice Latte", "meta": "Expires in 3 days", "icon": "ticket-percent"}
+        ]},
+        {"type": "text", "cap": "view_offer_details", "label": "50 Bonus Stars", "size": "sm", "text": "Earn 50 bonus Stars when you buy 3 handcrafted drinks by Oct 31. Mobile orders count."},
+        {"type": "progress", "cap": "view_offer_progress", "label": "2 of 3 drinks", "value": 0.667, "display": "2/3"},
+        {"type": "row", "widths": [1, 1.4], "blocks": [
+          {"type": "button", "cap": "activate_offer", "label": "Activated", "icon": "check", "style": "secondary"},
+          {"type": "button", "cap": "open_customize_item", "label": "Order a drink", "icon": "chevron-right"}
+        ]}
+      ]
+    },
+    "starbucks.browse_menu": {
+      "blocks": [
+        {"type": "media", "cap": "view_featured_items", "kind": "photo", "hue": 28, "icon": "cup-soda", "aspect": "wide", "caption": "New · Pumpkin Cream Cold Brew"},
+        {"type": "chips", "cap": "view_categories", "items": ["Hot Coffee", "Cold Coffee", "Refreshers", "Bakery"], "selected": 1},
+        {"type": "list", "cap": "view_items_in_category", "style": "thumbs", "items": [
+          {"title": "Iced Shaken Espresso", "meta": "Brown sugar · oatmilk", "trailing": "$6.45", "hue": 30},
+          {"title": "Cold Brew", "meta": "Grande · 5 cal", "trailing": "$5.25", "hue": 25},
+          {"title": "Iced Caramel Macchiato", "meta": "Grande · 250 cal", "trailing": "$5.95", "hue": 38}
+        ]},
+        {"type": "cards", "cap": "view_favorite_items", "label": "Favorites", "items": [
+          {"title": "Iced Shaken Espresso", "meta": "Grande", "hue": 30},
+          {"title": "Butter Croissant", "meta": "Bakery", "hue": 42}
+        ]},
+        {"type": "list", "cap": "view_previous_orders", "label": "Previous orders", "items": [
+          {"title": "Iced Shaken Espresso + Croissant", "meta": "Yesterday · Market & 5th", "icon": "receipt"}
+        ]},
+        {"type": "link", "cap": "open_customize_item", "label": "Customize Iced Shaken Espresso"}
+      ]
+    },
+    "starbucks.customize_item": {
+      "blocks": [
+        {"type": "header", "cap": "view_item_info", "title": "Iced Shaken Espresso", "subtitle": "Brown sugar · oatmilk · 120 cal · $6.45", "thumb": {"icon": "cup-soda", "hue": 30}},
+        {"type": "group", "cap": "customize_item", "blocks": [
+          {"type": "segmented", "items": ["Tall", "Grande", "Venti"], "selected": 1},
+          {"type": "select", "label": "Milk", "value": "Oatmilk"},
+          {"type": "select", "label": "Espresso shots", "value": "3 · Blonde"}
+        ]},
+        {"type": "stepper", "cap": "modify_item_quantity", "label": "Quantity", "value": "1"},
+        {"type": "button", "cap": "add_to_order", "label": "Add to order · $6.45", "icon": "plus", "style": "primary"},
+        {"type": "link", "cap": "open_manage_order", "label": "Review order", "meta": "2 items"}
+      ]
+    },
+    "starbucks.manage_order": {
+      "blocks": [
+        {"type": "list", "cap": "view_cart_contents", "label": "Pickup · Market & 5th", "style": "thumbs", "items": [
+          {"title": "Iced Shaken Espresso", "meta": "Grande · oatmilk", "trailing": "$6.45", "hue": 30},
+          {"title": "Butter Croissant", "meta": "Warmed", "trailing": "$3.95", "hue": 42, "action": {"cap": "remove_item", "icon": "trash-2"}}
+        ]},
+        {"type": "stepper", "cap": "modify_item_quantity", "label": "Iced Shaken Espresso", "value": "1"},
+        {"type": "button", "cap": "proceed_to_checkout", "label": "Checkout · $10.40", "icon": "chevron-right", "style": "primary"}
+      ]
+    },
+    "starbucks.search_menu": {
+      "blocks": [
+        {"type": "row", "widths": [4, 1.3], "blocks": [
+          {"type": "input", "cap": "enter_search_query", "icon": "search", "value": "cold brew"},
+          {"type": "button", "cap": "clear_search_query", "label": "Clear", "icon": "x", "style": "ghost"}
+        ]},
+        {"type": "list", "cap": "view_search_results", "style": "thumbs", "items": [
+          {"title": "Cold Brew", "meta": "Grande · 5 cal", "trailing": "$5.25", "hue": 25},
+          {"title": "Pumpkin Cream Cold Brew", "meta": "Seasonal", "trailing": "$5.95", "hue": 28},
+          {"title": "Vanilla Sweet Cream Cold Brew", "meta": "110 cal", "trailing": "$5.75", "hue": 40}
+        ]},
+        {"type": "link", "cap": "open_customize_item", "label": "Customize Cold Brew"}
+      ]
+    },
+    "starbucks.select_store_location": {
+      "blocks": [
+        {"type": "segmented", "cap": "toggle_pickup_delivery", "items": ["Pickup", "Delivery"], "selected": 0},
+        {"type": "map", "cap": "view_map", "kind": "pins", "label": "3 stores nearby"},
+        {"type": "chips", "cap": "filter_stores", "items": ["Open now", "Drive-thru", "Mobile order"], "selected": [0, 2]},
+        {"type": "list", "cap": "view_store_list", "items": [
+          {"title": "Market & 5th", "meta": "0.2 mi · Open until 8 PM", "icon": "map-pin", "action": {"cap": "select_store_for_order", "icon": "circle-check"}},
+          {"title": "Union Square", "meta": "0.6 mi · Open until 9 PM", "icon": "map-pin"}
+        ]},
+        {"type": "kv", "cap": "view_store_details", "items": [["Address", "801 Market St"], ["Hours", "6 AM – 8 PM"], ["Wait", "~6 min"]]},
+        {"type": "buttons", "items": [
+          {"cap": "open_browse_menu", "label": "View menu", "icon": "coffee", "style": "secondary"},
+          {"cap": "open_customize_item", "label": "Reorder favorite", "icon": "rotate-ccw", "style": "secondary"}
+        ]}
+      ]
+    },
+    "starbucks.manage_rewards": {
+      "blocks": [
+        {"type": "stat", "cap": "view_star_balance", "value": "142", "unit": "★", "label": "Star balance", "icon": "star"},
+        {"type": "kv", "cap": "view_star_details", "items": [["Earned this month", "+64 ★"], ["Expiring Nov 30", "12 ★"]]},
+        {"type": "list", "cap": "view_rewards_options", "label": "Redeem", "items": [
+          {"title": "Brewed coffee or bakery item", "trailing": "100 ★", "icon": "croissant"},
+          {"title": "Handcrafted drink", "trailing": "200 ★", "icon": "cup-soda"}
+        ]},
+        {"type": "toggle", "cap": "setup_auto_reload", "label": "Auto reload", "on": true, "desc": "Add $25 when balance falls below $10"},
+        {"type": "button", "cap": "display_qr_code", "label": "Scan in store", "icon": "qr-code", "style": "primary"}
+      ]
+    },
+    "starbucks.manage_gift_cards": {
+      "blocks": [
+        {"type": "list", "cap": "view_gift_cards", "style": "thumbs", "items": [
+          {"title": "Starbucks Card ••• 4821", "meta": "Primary", "trailing": "$18.60", "hue": 150},
+          {"title": "Autumn Leaves eGift", "meta": "From Mom", "trailing": "$25.00", "hue": 25}
+        ]},
+        {"type": "buttons", "items": [
+          {"cap": "add_gift_card", "label": "Add card", "icon": "plus", "style": "secondary"},
+          {"cap": "send_egift", "label": "Send eGift", "icon": "gift", "style": "primary"}
+        ]}
+      ]
+    }
+  }
+}

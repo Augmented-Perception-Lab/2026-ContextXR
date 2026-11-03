@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+message: "If you use ContextXR or MineXR++, please cite the paper below."
+title: "ContextXR: A Benchmarking Framework for Context-aware XR Interfaces"
+version: 1.0.0
+license: Apache-2.0
+url: "https://augmented-perception.org/publications/2026-contextXR"
+repository-code: "https://github.com/Augmented-Perception-Lab/2026-ContextXR"
+doi: "10.1145/3830398.3830675"
+authors:
+  - {family-names: Cho, given-names: Hyunsung, affiliation: Carnegie Mellon University, orcid: "https://orcid.org/0000-0002-4521-2766"}
+  - {family-names: Yun, given-names: Sarah Yewon, affiliation: Carnegie Mellon University, orcid: "https://orcid.org/0009-0000-7471-7061"}
+  - {family-names: Sun, given-names: Nancy Ruonan, affiliation: Carnegie Mellon University, orcid: "https://orcid.org/0009-0007-9677-6055"}
+  - {family-names: Lafreniere, given-names: Ben, affiliation: "Reality Labs Research, Meta", orcid: "https://orcid.org/0000-0002-0546-0466"}
+  - {family-names: Parent, given-names: Mark, affiliation: "Reality Labs Research, Meta", orcid: "https://orcid.org/0009-0004-2361-3245"}
+  - {family-names: Todi, given-names: Kashyap, affiliation: "Reality Labs Research, Meta", orcid: "https://orcid.org/0000-0002-6174-2089"}
+  - {family-names: Jonker, given-names: Tanya R., affiliation: "Reality Labs Research, Meta", orcid: "https://orcid.org/0000-0001-8646-5076"}
+  - {family-names: Benko, given-names: Hrvoje, affiliation: "Reality Labs Research, Meta", orcid: "https://orcid.org/0000-0002-2059-3558"}
+  - {family-names: Wu, given-names: Tongshuang, affiliation: Carnegie Mellon University, orcid: "https://orcid.org/0000-0003-1630-0588"}
+  - {family-names: Lindlbauer, given-names: David, affiliation: Carnegie Mellon University, orcid: "https://orcid.org/0000-0002-0809-9696"}
+preferred-citation:
+  type: conference-paper
+  title: "A Benchmarking Framework for Context-aware XR Interfaces"
+  doi: "10.1145/3830398.3830675"
+  year: 2026
+  month: 11
+  start: 1
+  end: 16
+  publisher: {name: "Association for Computing Machinery", city: "New York", region: NY, country: US}
+  conference:
+    name: "The 39th Annual ACM Symposium on User Interface Software and Technology (UIST '26)"
+    city: Detroit
+    region: MI
+    country: US
+  collection-title: "Proceedings of the 39th Annual ACM Symposium on User Interface Software and Technology"
+  authors:
+    - {family-names: Cho, given-names: Hyunsung}
+    - {family-names: Yun, given-names: Sarah Yewon}
+    - {family-names: Sun, given-names: Nancy Ruonan}
+    - {family-names: Lafreniere, given-names: Ben}
+    - {family-names: Parent, given-names: Mark}
+    - {family-names: Todi, given-names: Kashyap}
+    - {family-names: Jonker, given-names: Tanya R.}
+    - {family-names: Benko, given-names: Hrvoje}
+    - {family-names: Wu, given-names: Tongshuang}
+    - {family-names: Lindlbauer, given-names: David}

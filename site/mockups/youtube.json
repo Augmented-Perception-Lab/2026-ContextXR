@@ -1,0 +1,173 @@
+{
+  "app": "youtube",
+  "icon": "youtube",
+  "color": "#ff0033",
+  "facets": {
+    "youtube.open_section": {
+      "blocks": [
+        {"type": "tabs", "selected": 0, "items": [
+          {"cap": "open_browse_feed", "label": "Home", "icon": "house"},
+          {"cap": "open_browse_shorts", "label": "Shorts", "icon": "zap"},
+          {"cap": "open_create_content", "label": "Create", "icon": "circle-plus"},
+          {"cap": "open_search_content", "label": "Search", "icon": "search"},
+          {"cap": "open_manage_video_library", "label": "You", "icon": "library"}
+        ]}
+      ]
+    },
+    "youtube.browse_feed": {
+      "blocks": [
+        {"type": "button", "cap": "open_search_content", "label": "Search YouTube", "icon": "search", "style": "ghost"},
+        {"type": "chips", "cap": "filter_by_topic", "items": ["All", "Cooking", "Music", "Tech"], "selected": 1},
+        {"type": "list", "cap": "view_home_feed", "style": "thumbs", "items": [
+          {"title": "Ramen from scratch in 1 hour", "meta": "Kitchen Lab · 412K views", "trailing": "18:42", "hue": 22, "icon": "play"},
+          {"title": "5 knife skills every cook needs", "meta": "Chef Ana · 1.1M views", "trailing": "11:05", "hue": 200, "icon": "play"}
+        ]},
+        {"type": "cards", "cap": "view_subscriptions_feed", "label": "Subscriptions", "items": [
+          {"title": "Pixel 11 review", "meta": "MKBHD · 3 h", "hue": 0},
+          {"title": "Tiny desk: Laufey", "meta": "NPR Music · 1 d", "hue": 32},
+          {"title": "Weekly vlog #84", "meta": "Mina Cooks · 2 d", "hue": 300}
+        ]},
+        {"type": "list", "cap": "view_trending_feed", "label": "Trending", "style": "numbered", "items": [
+          {"title": "World Series Game 4 highlights", "meta": "MLB · 6.2M views"},
+          {"title": "SpaceX Starship flight 12", "meta": "SpaceX · 4.8M views"}
+        ]},
+        {"type": "link", "cap": "open_watch_video", "label": "Play “Ramen from scratch”", "icon": "play", "meta": "18:42"}
+      ]
+    },
+    "youtube.search_content": {
+      "blocks": [
+        {"type": "input", "cap": "enter_search_query", "icon": "search", "value": "ramen recipe"},
+        {"type": "list", "cap": "view_search_autocomplete", "items": [
+          {"title": "ramen recipe easy", "icon": "search"},
+          {"title": "ramen recipe tonkotsu", "icon": "search"}
+        ]},
+        {"type": "row", "widths": [1.6, 1], "blocks": [
+          {"type": "chips", "cap": "filter_search_results", "items": ["Videos", "Under 20 min", "This week"], "selected": 0},
+          {"type": "select", "cap": "sort_search_results", "label": "Sort", "value": "Relevance"}
+        ]},
+        {"type": "list", "cap": "view_search_results", "style": "thumbs", "items": [
+          {"title": "Ramen from scratch in 1 hour", "meta": "Kitchen Lab · 412K views", "trailing": "18:42", "hue": 22, "icon": "play"},
+          {"title": "15-minute miso ramen", "meta": "Chef Ana · 890K views", "trailing": "9:31", "hue": 40, "icon": "play"}
+        ]},
+        {"type": "buttons", "items": [
+          {"cap": "open_watch_video", "label": "Watch", "icon": "play", "style": "primary"},
+          {"cap": "open_view_channel", "label": "Kitchen Lab", "icon": "tv", "style": "secondary"}
+        ]}
+      ]
+    },
+    "youtube.watch_video": {
+      "blocks": [
+        {"type": "media", "cap": "view_video_content", "kind": "video", "hue": 22, "aspect": "wide", "caption": "Ramen from scratch in 1 hour", "duration": "18:42"},
+        {"type": "player", "cap": "seek_video", "progress": 0.34, "elapsed": "6:21", "total": "18:42"},
+        {"type": "controls", "items": [
+          {"cap": "replay", "icon": "rotate-ccw", "label": "Replay"},
+          {"cap": "skip_backward", "icon": "rewind", "label": "−10 s"},
+          {"cap": "play_pause", "icon": "pause", "label": "Pause", "primary": true},
+          {"cap": "skip_forward", "icon": "fast-forward", "label": "+10 s"}
+        ]},
+        {"type": "controls", "items": [
+          {"cap": "toggle_captions", "icon": "captions", "label": "CC"},
+          {"cap": "toggle_picture_in_picture", "icon": "picture-in-picture-2", "label": "PiP"},
+          {"cap": "cast_to_device", "icon": "cast", "label": "Cast"},
+          {"cap": "enter_exit_fullscreen", "icon": "maximize", "label": "Full"}
+        ]},
+        {"type": "slider", "cap": "control_volume", "label": "Volume", "value": 0.7, "icon": "volume-2"},
+        {"type": "row", "blocks": [
+          {"type": "select", "cap": "change_playback_speed", "label": "Speed", "value": "1.25×"},
+          {"type": "select", "cap": "change_quality", "label": "Quality", "value": "1080p"}
+        ]},
+        {"type": "row", "blocks": [
+          {"type": "link", "cap": "open_view_video_info", "label": "Description"},
+          {"type": "link", "cap": "open_engage_with_video", "label": "Comments", "meta": "1.2K"}
+        ]}
+      ]
+    },
+    "youtube.engage_with_video": {
+      "blocks": [
+        {"type": "controls", "items": [
+          {"cap": "like_video", "icon": "thumbs-up", "label": "24K", "primary": true},
+          {"cap": "dislike_video", "icon": "thumbs-down", "label": "Dislike"},
+          {"cap": "share_video", "icon": "share-2", "label": "Share"},
+          {"cap": "save_to_playlist", "icon": "list-plus", "label": "Save"}
+        ]},
+        {"type": "button", "cap": "subscribe_to_channel", "label": "Subscribe to Kitchen Lab", "icon": "bell", "style": "primary"},
+        {"type": "list", "cap": "view_comments", "label": "Comments · 1.2K", "items": [
+          {"title": "Mina Park", "meta": "Finally a broth that doesn't take 12 hours", "avatar": true},
+          {"title": "Dev Patel", "meta": "The soft egg trick at 9:40 is genius", "avatar": true}
+        ]},
+        {"type": "input", "cap": "write_comment", "placeholder": "Add a comment…", "trailing": "send"}
+      ]
+    },
+    "youtube.view_channel": {
+      "blocks": [
+        {"type": "header", "cap": "view_channel_subscriber_count", "title": "Kitchen Lab", "subtitle": "@kitchenlab · 1.8M subscribers", "thumb": {"icon": "chef-hat", "hue": 22}},
+        {"type": "text", "cap": "view_channel_description", "size": "sm", "muted": true, "text": "Weeknight recipes from a tiny Brooklyn kitchen. New videos every Thursday."},
+        {"type": "button", "cap": "subscribe_to_channel", "label": "Subscribe", "icon": "bell", "style": "primary"},
+        {"type": "tabs", "selected": 0, "items": [
+          {"cap": "view_channel_videos", "label": "Videos", "icon": "play"},
+          {"cap": "view_channel_playlists", "label": "Playlists", "icon": "list-video"},
+          {"cap": "view_channel_community_posts", "label": "Posts", "icon": "message-square"},
+          {"cap": "view_channel_about", "label": "About", "icon": "info"}
+        ]},
+        {"type": "link", "cap": "open_watch_video", "label": "Ramen from scratch in 1 hour", "icon": "play", "meta": "18:42"}
+      ]
+    },
+    "youtube.manage_video_library": {
+      "blocks": [
+        {"type": "list", "cap": "view_history", "label": "History", "style": "thumbs", "items": [
+          {"title": "Ramen from scratch in 1 hour", "meta": "Kitchen Lab · 6:21 left", "hue": 22, "icon": "play"},
+          {"title": "lofi beats to study to", "meta": "Lofi Girl · Live", "hue": 280, "icon": "play"}
+        ]},
+        {"type": "button", "cap": "clear_history", "label": "Clear watch history", "icon": "trash-2", "style": "ghost"},
+        {"type": "list", "cap": "view_watch_later", "label": "Watch later", "items": [
+          {"title": "5 knife skills every cook needs", "meta": "Chef Ana · 11:05", "icon": "clock", "action": {"cap": "add_remove_videos", "icon": "list-minus"}}
+        ]},
+        {"type": "list", "cap": "browse_saved_playlists", "label": "Playlists", "items": [
+          {"title": "Weeknight dinners", "meta": "14 videos", "icon": "list-video", "action": {"cap": "edit_playlist", "icon": "pencil"}},
+          {"title": "Morning stretch", "meta": "6 videos", "icon": "list-video", "action": {"cap": "delete_playlist", "icon": "trash-2"}}
+        ]},
+        {"type": "link", "cap": "manage_downloads", "label": "Downloads", "icon": "download", "meta": "3 videos · 420 MB"},
+        {"type": "buttons", "items": [
+          {"cap": "create_playlist", "label": "New playlist", "icon": "plus", "style": "secondary"},
+          {"cap": "open_watch_video", "label": "Play all", "icon": "play", "style": "primary"}
+        ]}
+      ]
+    },
+    "youtube.browse_shorts": {
+      "blocks": [
+        {"type": "button", "cap": "open_search_content", "label": "Search Shorts", "icon": "search", "style": "ghost"},
+        {"type": "media", "cap": "view_video_content", "kind": "video", "hue": 40, "aspect": "tall", "caption": "The 6:30 jammy egg trick"},
+        {"type": "player", "cap": "seek_video", "progress": 0.45, "elapsed": "0:27", "total": "0:58"},
+        {"type": "controls", "items": [
+          {"cap": "play_pause", "icon": "pause", "label": "Pause", "primary": true},
+          {"cap": "mute_unmute", "icon": "volume-x", "label": "Unmute"},
+          {"cap": "swipe_shorts", "icon": "chevrons-up", "label": "Next"}
+        ]},
+        {"type": "row", "widths": [1.4, 1], "blocks": [
+          {"type": "link", "cap": "open_view_video_info", "label": "Kitchen Lab", "meta": "Info"},
+          {"type": "link", "cap": "open_engage_with_video", "label": "Comments", "meta": "4.1K"}
+        ]}
+      ]
+    },
+    "youtube.view_video_info": {
+      "blocks": [
+        {"type": "header", "cap": "view_title", "title": "Ramen from scratch in 1 hour", "subtitle": "412K views · 2 days ago"},
+        {"type": "text", "cap": "view_description", "size": "sm", "text": "Shoyu broth, hand-pulled noodles and a 6:30 jammy egg — all in one hour. Recipe card linked below."},
+        {"type": "avatar", "cap": "view_channel_info", "name": "Kitchen Lab", "status": "1.8M subscribers · 214 videos", "hue": 22},
+        {"type": "link", "cap": "open_view_channel", "label": "View channel"}
+      ]
+    },
+    "youtube.create_content": {
+      "blocks": [
+        {"type": "buttons", "items": [
+          {"cap": "create_short", "label": "Create a Short", "icon": "zap", "style": "primary"},
+          {"cap": "upload_video", "label": "Upload video", "icon": "upload", "style": "secondary"}
+        ]},
+        {"type": "buttons", "items": [
+          {"cap": "go_live", "label": "Go live", "icon": "radio", "style": "secondary"},
+          {"cap": "create_post", "label": "Create post", "icon": "square-pen", "style": "secondary"}
+        ]}
+      ]
+    }
+  }
+}

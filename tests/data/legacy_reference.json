@@ -1,0 +1,2001 @@
+{
+ "source": "legacy python/ pipeline (static_support_common.load_static_support_resources, interaction_cost_dashboard.compute_manual_interaction_cost_results)",
+ "facet_renames": {
+  "clock.mange_alarm_list": "clock.manage_alarm_list",
+  "clock.responsd_to_alarm": "clock.respond_to_alarm",
+  "uber_eats.track_oder": "uber_eats.track_order",
+  "instagram.browse_Explore": "instagram.browse_explore",
+  "gmail.view_email_content_actions": "gmail.view_email_contents_actions",
+  "gmail.navigate_mailboxes_accounts": "gmail.navigate_mailboxes_and_accounts",
+  "amazon.checkout": "amazon.checkout_purchase",
+  "camera.select_mode": "camera.select_capture_mode",
+  "uber_eats.view_order_history": "uber_eats.view_order_history_reorder",
+  "slack.browse_workspace": "slack.browse_workspaces"
+ },
+ "targets": {
+  "P002_Livingroom_Readingbook": {
+   "books.read_book": "primary",
+   "clock.view_world_clock": "ambient",
+   "google_search.open_section": "primary",
+   "spotify.control_volume_output": "ambient",
+   "spotify.view_audiobook": "ambient",
+   "spotify.view_now_playing": "ambient",
+   "spotify.view_playlist": "ambient",
+   "translate.open_section": "primary",
+   "translate.translate_text": "primary"
+  },
+  "P003_Kitchen_CookingSolo": {
+   "clock.respond_to_alarm": "ambient",
+   "gmail.browse_mailbox": "peripheral",
+   "gmail.open_section": "peripheral",
+   "google_calendar.open_section": "peripheral",
+   "google_calendar.view_calendar": "peripheral",
+   "recipes.view_recipe": "primary",
+   "youtube.watch_video": "primary"
+  },
+  "P003_livingroom_socialize": {
+   "clock.view_world_clock": "peripheral",
+   "google_calendar.open_section": "peripheral",
+   "google_calendar.view_calendar": "peripheral",
+   "news.browse_news_feed": "peripheral",
+   "weather.view_current_weather": "ambient"
+  },
+  "P003_livingroom_workonlaptop": {
+   "gmail.browse_mailbox": "peripheral",
+   "gmail.open_section": "peripheral",
+   "google_calendar.open_section": "peripheral",
+   "google_calendar.view_calendar": "ambient",
+   "slack.browse_channels": "peripheral",
+   "slack.browse_direct_messages": "peripheral",
+   "slack.open_section": "peripheral",
+   "spotify.control_playback": "ambient",
+   "spotify.view_now_playing": "ambient"
+  },
+  "P004_coffeeshop_buyingadrink": {
+   "calculator.perform_calculation": "primary",
+   "venmo.view_account": "peripheral",
+   "wallet.make_payment": "primary"
+  },
+  "P004_coffeeshop_reading": {
+   "books.open_section": "ambient",
+   "google_search.open_section": "peripheral",
+   "google_search.search": "peripheral",
+   "spotify.open_section": "ambient"
+  },
+  "P004_coffeeshop_workonlaptop": {
+   "files.open_section": "peripheral",
+   "files.search_files": "primary",
+   "gmail.navigate_mailboxes_and_accounts": "primary",
+   "gmail.open_section": "primary",
+   "google_calendar.open_section": "primary",
+   "google_calendar.view_calendar": "primary",
+   "google_search.open_section": "primary",
+   "notion.open_section": "peripheral",
+   "slack.browse_channels": "peripheral",
+   "slack.browse_workspaces": "primary",
+   "slack.open_section": "primary",
+   "spotify.open_section": "primary",
+   "spotify.search_content": "primary",
+   "spotify.view_now_playing": "primary",
+   "weather.view_current_weather": "primary"
+  },
+  "P004_livingroom_hangingoutwithfriends": {
+   "camera.capture_photo": "peripheral",
+   "camera.open_section": "peripheral",
+   "clock.manage_world_clock_list": "ambient",
+   "clock.view_world_clock": "ambient",
+   "contacts.browse_contacts": "peripheral",
+   "contacts.open_section": "peripheral",
+   "contacts.search_contacts": "peripheral",
+   "google_maps.explore_map": "peripheral",
+   "google_maps.open_section": "peripheral",
+   "google_maps.search_places": "peripheral",
+   "venmo.open_section": "peripheral",
+   "weather.view_current_weather": "peripheral"
+  },
+  "P005_Livingroom_Watchingshow": {
+   "clock.view_world_clock": "peripheral",
+   "google_search.open_section": "peripheral",
+   "google_search.search": "peripheral",
+   "instagram.browse_reels": "peripheral",
+   "instagram.open_section": "primary",
+   "messaging.browse_conversation_list": "peripheral",
+   "netflix.browse_content": "primary",
+   "netflix.watch_content": "primary"
+  },
+  "P005_Office_Planningfordinner": {
+   "clock.view_world_clock": "ambient",
+   "google_maps.explore_map": "primary",
+   "google_maps.view_directions": "peripheral",
+   "google_maps.view_place": "primary",
+   "messaging.browse_conversation_list": "peripheral",
+   "messaging.open_section": "peripheral",
+   "messaging.search_messages": "peripheral",
+   "uber_eats.browse_stores": "primary",
+   "uber_eats.open_section": "primary"
+  },
+  "P005_Office_Work": {
+   "gmail.compose_email": "primary",
+   "instagram.open_section": "peripheral",
+   "messaging.browse_conversation_list": "peripheral",
+   "slack.browse_activity": "peripheral",
+   "slack.browse_channels": "peripheral",
+   "slack.open_section": "peripheral",
+   "spotify.control_volume_output": "ambient",
+   "spotify.view_now_playing": "ambient"
+  },
+  "P005_coffeeshop_Doingwork": {
+   "code_editor.edit_code": "primary",
+   "code_editor.run_code": "primary",
+   "figma.browse_design": "primary",
+   "figma.edit_design": "primary",
+   "messaging.browse_conversation_list": "primary",
+   "notes.view_note": "primary",
+   "spotify.control_volume_output": "ambient",
+   "spotify.view_now_playing": "ambient"
+  },
+  "P005_coffeeshop_reading": {
+   "clock.view_world_clock": "ambient",
+   "google_calendar.open_section": "peripheral",
+   "google_calendar.view_calendar": "peripheral",
+   "spotify.control_volume_output": "ambient",
+   "spotify.view_now_playing": "ambient"
+  },
+  "P006_Office_Scrollingonphone": {
+   "instagram.browse_message_conversations": "primary",
+   "instagram.open_section": "primary",
+   "instagram.view_user_profile": "primary",
+   "spotify.control_playback": "ambient",
+   "spotify.control_volume_output": "ambient",
+   "spotify.open_section": "ambient",
+   "spotify.view_now_playing": "ambient",
+   "zoom.chat_in_meeting": "primary",
+   "zoom.participate_in_meeting": "primary"
+  },
+  "P007_Coffeeshop_Scrollingonphone": {
+   "amazon.open_section": "primary",
+   "amazon.view_product_detail": "primary",
+   "instagram.browse_feed": "primary",
+   "instagram.open_section": "primary"
+  },
+  "P008_Coffeeshop_Drinkingcoffee": {
+   "facebook.browse_stories": "peripheral",
+   "facebook.open_section": "peripheral",
+   "instagram.browse_story_previews": "peripheral",
+   "instagram.open_section": "peripheral",
+   "starbucks.browse_menu": "primary",
+   "starbucks.open_section": "primary",
+   "starbucks.select_store_location": "primary",
+   "wallet.make_payment": "peripheral"
+  },
+  "P008_Coffeeshop_Working": {
+   "gmail.open_section": "peripheral",
+   "gmail.search_mail": "peripheral",
+   "notion.browse_pages": "peripheral",
+   "notion.compose_page": "peripheral",
+   "notion.open_section": "peripheral",
+   "starbucks.browse_menu": "peripheral",
+   "starbucks.open_section": "peripheral",
+   "starbucks.select_store_location": "peripheral",
+   "wallet.make_payment": "peripheral"
+  },
+  "P008_Livingroom_Chatting": {
+   "google_search.open_section": "peripheral",
+   "google_search.search": "peripheral",
+   "spotify.open_section": "peripheral",
+   "uber_eats.browse_stores": "peripheral",
+   "venmo.browse_activity_feed": "peripheral",
+   "venmo.open_section": "peripheral"
+  },
+  "P008_Livingroom_Chilling": {
+   "books.read_book": "peripheral",
+   "contacts.view_recent_calls": "peripheral",
+   "facebook.browse_feed": "peripheral",
+   "gmail.browse_mailbox": "peripheral",
+   "gmail.open_section": "peripheral",
+   "gmail.search_mail": "peripheral",
+   "google_calendar.open_section": "peripheral",
+   "google_calendar.view_calendar": "peripheral",
+   "instagram.browse_story_previews": "peripheral",
+   "instagram.open_section": "peripheral",
+   "linkedin.view_post": "peripheral"
+  },
+  "P009_Kitchen_CookingSolo": {
+   "clock.configure_timer": "peripheral",
+   "clock.monitor_timer_countdown": "peripheral",
+   "clock.view_world_clock": "peripheral",
+   "recipes.view_recipe": "primary",
+   "spotify.control_playback": "peripheral",
+   "spotify.view_now_playing": "peripheral",
+   "youtube.watch_video": "primary"
+  },
+  "P009_Office_Work": {
+   "books.read_book": "peripheral",
+   "clock.configure_timer": "peripheral",
+   "notes.create_note": "primary",
+   "notes.view_note": "primary",
+   "notion.compose_page": "primary"
+  },
+  "P009_Office_Zoomcall": {
+   "files.browse_files": "primary",
+   "files.open_section": "primary",
+   "files.search_files": "primary",
+   "gmail.browse_mailbox": "primary",
+   "gmail.view_email_contents_actions": "primary",
+   "notes.view_note": "primary"
+  },
+  "P010_Coffeeshop_Lookingforlunch": {
+   "google_calendar.open_section": "primary",
+   "google_calendar.view_calendar": "primary",
+   "google_maps.explore_map": "primary",
+   "google_maps.search_places": "primary",
+   "uber_eats.open_section": "primary",
+   "weather.view_current_weather": "primary"
+  },
+  "P010_Coffeeshop_Working": {
+   "gmail.browse_mailbox": "primary",
+   "gmail.open_section": "primary",
+   "google_calendar.open_section": "primary",
+   "google_calendar.view_calendar": "primary",
+   "messaging.open_section": "peripheral",
+   "reminders.open_section": "primary",
+   "reminders.view_task_list": "primary",
+   "slack.browse_channels": "primary",
+   "slack.browse_direct_messages": "primary",
+   "slack.browse_workspaces": "primary",
+   "slack.open_section": "primary",
+   "slack.view_channel": "primary",
+   "slack.view_conversation": "primary",
+   "spotify.open_section": "ambient"
+  },
+  "P010_Livingroom_Studying": {
+   "books.open_section": "ambient",
+   "files.open_section": "ambient",
+   "google_calendar.open_section": "ambient",
+   "google_scholar.open_section": "ambient",
+   "google_search.open_section": "ambient",
+   "messaging.open_section": "ambient",
+   "notes.open_section": "ambient",
+   "notion.open_section": "ambient",
+   "reminders.open_section": "ambient"
+  },
+  "P010_Livingroom_Workingout": {
+   "health.open_section": "ambient",
+   "youtube.watch_video": "primary"
+  },
+  "P011_Coffeeshop_Browsinginternet": {
+   "amazon.browse_products": "peripheral",
+   "facebook.browse_feed": "peripheral",
+   "facebook.open_section": "peripheral",
+   "facebook.view_post": "peripheral",
+   "google_maps.view_directions": "primary",
+   "instagram.browse_message_conversations": "primary",
+   "instagram.open_section": "peripheral",
+   "messaging.browse_conversation_list": "peripheral",
+   "messaging.open_section": "primary",
+   "messaging.search_messages": "primary",
+   "messaging.view_conversation": "peripheral",
+   "translate.translate_text": "peripheral",
+   "uber_eats.checkout_order": "peripheral",
+   "uber_eats.view_store": "peripheral",
+   "wallet.open_section": "ambient"
+  },
+  "P011_Livingroom_Reading": {
+   "books.browse_library": "primary",
+   "books.open_section": "primary",
+   "google_maps.explore_map": "ambient",
+   "google_search.open_section": "peripheral",
+   "google_search.search": "peripheral",
+   "recipes.browse_recipes": "peripheral",
+   "weather.view_current_weather": "ambient"
+  },
+  "P012_Coffeeshop_Talkingwithfriends": {
+   "camera.browse_captured_media": "peripheral",
+   "game.open_section": "ambient",
+   "spotify.control_volume_output": "ambient",
+   "spotify.view_now_playing": "ambient",
+   "youtube.browse_feed": "ambient",
+   "youtube.open_section": "ambient"
+  },
+  "P012_Coffeeshop_Watchingtv": {
+   "instagram.browse_feed": "primary",
+   "instagram.open_section": "primary",
+   "messaging.open_section": "ambient",
+   "netflix.open_section": "primary",
+   "youtube.browse_feed": "primary",
+   "youtube.open_section": "primary"
+  },
+  "P012_Office_Eating": {
+   "camera.capture_photo": "peripheral",
+   "camera.open_section": "peripheral",
+   "camera.select_capture_mode": "peripheral",
+   "google_maps.explore_map": "peripheral",
+   "instagram.open_section": "primary",
+   "instagram.search_content": "primary",
+   "uber_eats.browse_stores": "primary",
+   "uber_eats.open_section": "primary",
+   "uber_eats.search_stores": "primary"
+  },
+  "P012_Office_Work": {
+   "files.browse_files": "primary",
+   "files.open_section": "primary",
+   "files.search_files": "primary",
+   "gmail.navigate_mailboxes_and_accounts": "peripheral",
+   "gmail.open_section": "peripheral",
+   "google_calendar.open_section": "peripheral",
+   "google_calendar.view_calendar": "peripheral",
+   "messaging.open_section": "peripheral",
+   "notion.browse_pages": "primary",
+   "notion.open_section": "primary",
+   "reminders.browse_task_lists": "primary",
+   "slack.open_section": "peripheral",
+   "spotify.control_volume_output": "peripheral",
+   "spotify.view_now_playing": "peripheral"
+  },
+  "P013_Kitchen_CookingSolo": {
+   "google_search.open_section": "ambient",
+   "messaging.open_section": "ambient",
+   "spotify.open_section": "ambient",
+   "youtube.open_section": "ambient"
+  },
+  "P013_Kitchen_Figuringoutnexttask": {
+   "google_calendar.open_section": "primary",
+   "google_calendar.view_calendar": "primary",
+   "google_search.open_section": "ambient",
+   "slack.open_section": "primary"
+  },
+  "P013_Livingroom_Watchingmoviewithfriends": {
+   "google_search.open_section": "ambient",
+   "google_search.search": "ambient",
+   "netflix.browse_content": "primary",
+   "netflix.open_section": "primary",
+   "netflix.search_content": "primary",
+   "netflix.view_content_details": "primary",
+   "youtube.browse_feed": "primary",
+   "youtube.browse_shorts": "primary",
+   "youtube.open_section": "primary",
+   "youtube.search_content": "primary"
+  },
+  "P013_Livingroom_Work": {
+   "gmail.browse_drafts": "primary",
+   "gmail.open_section": "primary",
+   "google_search.open_section": "ambient",
+   "google_search.search": "ambient",
+   "spotify.open_section": "peripheral",
+   "spotify.search_content": "peripheral",
+   "youtube.browse_shorts": "peripheral",
+   "youtube.open_section": "peripheral"
+  },
+  "P014_Coffeeshop_Chatwithfriend": {
+   "google_search.search": "peripheral",
+   "messaging.browse_conversation_list": "peripheral",
+   "messaging.compose_message": "peripheral",
+   "messaging.view_conversation": "peripheral",
+   "starbucks.browse_offers": "peripheral",
+   "youtube.browse_feed": "peripheral",
+   "youtube.open_section": "peripheral"
+  },
+  "P014_Coffeeshop_Studying": {
+   "duolingo.complete_lesson": "peripheral",
+   "google_calendar.open_section": "peripheral",
+   "google_calendar.view_calendar": "peripheral",
+   "notes.create_note": "primary",
+   "reminders.view_task_list": "peripheral"
+  },
+  "P014_Livingroom_Playgames": {
+   "game.play_game": "primary",
+   "google_search.open_section": "peripheral",
+   "google_search.search": "peripheral",
+   "youtube.view_video_info": "primary",
+   "youtube.watch_video": "primary"
+  },
+  "P014_Livingroom_Watchingvideos": {
+   "messaging.compose_message": "primary",
+   "messaging.view_conversation": "primary",
+   "youtube.engage_with_video": "primary",
+   "youtube.watch_video": "primary"
+  },
+  "P015_Coffeeshop_Browsinginternet": {
+   "gmail.browse_mailbox": "peripheral",
+   "gmail.open_section": "peripheral",
+   "gmail.search_mail": "peripheral",
+   "google_search.open_section": "primary",
+   "google_search.search": "primary",
+   "linkedin.browse_feed": "primary",
+   "linkedin.open_section": "primary",
+   "linkedin.search_content": "primary",
+   "reddit.browse_feed": "primary",
+   "stock.view_stock_list": "primary",
+   "stock.view_stock_price": "primary",
+   "youtube.browse_feed": "primary",
+   "youtube.open_section": "primary",
+   "youtube.watch_video": "primary"
+  },
+  "P015_Coffeeshop_Readingpaper": {
+   "gmail.browse_mailbox": "peripheral",
+   "gmail.open_section": "peripheral",
+   "gmail.search_mail": "peripheral",
+   "google_search.search": "primary",
+   "notes.view_note": "primary"
+  },
+  "P015_Livingroom_Chilling": {
+   "netflix.view_content_details": "primary",
+   "netflix.watch_content": "primary"
+  },
+  "P015_Livingroom_Dailyroutine": {
+   "duolingo.open_section": "ambient",
+   "gmail.browse_mailbox": "primary",
+   "gmail.open_section": "primary",
+   "google_calendar.open_section": "primary",
+   "google_calendar.view_calendar": "primary",
+   "google_maps.open_section": "ambient",
+   "weather.view_current_weather": "ambient"
+  },
+  "P016_Livingroom_Playingboardgame": {
+   "camera.open_section": "ambient",
+   "contacts.open_section": "ambient",
+   "google_maps.open_section": "ambient",
+   "messaging.open_section": "ambient",
+   "thermometer.open_section": "ambient",
+   "uber_eats.open_section": "ambient"
+  },
+  "P016_Livingroom_Watchingtv": {
+   "clock.open_section": "ambient",
+   "gmail.open_section": "ambient",
+   "messaging.open_section": "ambient",
+   "reddit.open_section": "ambient",
+   "uber_eats.open_section": "ambient"
+  },
+  "P016_Office_Playingpcgames": {
+   "gmail.open_section": "ambient",
+   "messaging.open_section": "ambient",
+   "thermometer.open_section": "ambient"
+  },
+  "P016_Office_Work": {
+   "gmail.open_section": "ambient",
+   "google_calendar.open_section": "peripheral",
+   "google_search.open_section": "ambient",
+   "messaging.open_section": "ambient",
+   "reddit.open_section": "ambient",
+   "slack.open_section": "ambient",
+   "spotify.open_section": "ambient",
+   "stock.open_section": "ambient",
+   "uber_eats.open_section": "ambient",
+   "zoom.open_section": "ambient"
+  },
+  "P017_Coffeeshop_Browsing": {
+   "gmail.browse_mailbox": "primary",
+   "instagram.browse_explore": "primary",
+   "instagram.browse_story_previews": "primary",
+   "instagram.open_section": "primary",
+   "messaging.browse_conversation_list": "primary",
+   "messaging.search_messages": "primary",
+   "youtube.browse_feed": "primary",
+   "youtube.open_section": "primary"
+  },
+  "P017_Coffeeshop_Wheretogonext": {
+   "facebook.browse_feed": "primary",
+   "google_maps.view_directions": "primary"
+  },
+  "P017_Office_Browsing": {
+   "instagram.browse_explore": "primary",
+   "instagram.browse_story_previews": "primary",
+   "instagram.open_section": "primary",
+   "linkedin.browse_feed": "primary",
+   "linkedin.open_section": "primary",
+   "linkedin.search_content": "primary",
+   "youtube.browse_feed": "primary"
+  },
+  "P017_Office_Work": {
+   "gmail.browse_mailbox": "primary",
+   "gmail.open_section": "primary",
+   "gmail.view_email_contents_actions": "primary",
+   "notion.browse_pages": "primary",
+   "overleaf.edit_document": "primary",
+   "overleaf.preview_document": "primary",
+   "slack.browse_channels": "peripheral"
+  },
+  "P018_Livingroom_Workout": {
+   "spotify.control_volume_output": "ambient",
+   "spotify.open_section": "ambient",
+   "youtube.browse_feed": "primary",
+   "youtube.manage_video_library": "primary",
+   "youtube.open_section": "primary"
+  },
+  "P018_Office_ReadingPaper": {
+   "books.browse_library": "primary",
+   "notes.open_section": "peripheral"
+  },
+  "P018_Office_Shopping": {
+   "amazon.browse_products": "primary",
+   "amazon.open_section": "primary",
+   "amazon.search_product": "primary",
+   "amazon.view_product_detail": "primary"
+  },
+  "P018_livingroom_Chilling": {
+   "gmail.browse_mailbox": "peripheral",
+   "gmail.open_section": "peripheral",
+   "gmail.search_mail": "peripheral",
+   "instagram.browse_feed": "primary",
+   "instagram.browse_story_previews": "primary",
+   "instagram.open_section": "primary",
+   "messaging.browse_conversation_list": "primary",
+   "messaging.open_section": "primary",
+   "messaging.search_messages": "primary",
+   "youtube.browse_feed": "peripheral",
+   "youtube.open_section": "peripheral"
+  },
+  "P019_Coffeeshop_Leaving": {
+   "google_maps.view_directions": "primary",
+   "weather.view_current_weather": "primary"
+  },
+  "P019_Coffeeshop_Shopping": {
+   "amazon.open_section": "primary",
+   "amazon.search_product": "primary",
+   "messaging.browse_conversation_list": "primary",
+   "messaging.open_section": "primary",
+   "messaging.search_messages": "primary"
+  },
+  "P019_Office_Entertaining": {
+   "spotify.open_section": "ambient",
+   "youtube.browse_feed": "primary",
+   "youtube.view_video_info": "primary",
+   "youtube.watch_video": "primary"
+  },
+  "P019_Office_Work": {
+   "google_calendar.open_section": "peripheral",
+   "google_calendar.view_calendar": "peripheral",
+   "google_scholar.open_section": "primary",
+   "google_scholar.view_recommended_articles": "primary",
+   "notion.browse_pages": "primary",
+   "notion.compose_page": "primary",
+   "notion.open_section": "primary"
+  },
+  "P01_CoffeeShop_CasualChat": {
+   "spotify.control_playback": "ambient",
+   "spotify.view_audiobook": "ambient",
+   "spotify.view_now_playing": "ambient",
+   "spotify.view_playlist": "ambient"
+  },
+  "P01_CoffeeShop_ChatWithFriends": {
+   "google_maps.navigate_route": "peripheral",
+   "google_maps.open_section": "peripheral",
+   "google_maps.view_directions": "peripheral",
+   "google_maps.view_place": "peripheral",
+   "spotify.view_audiobook": "ambient",
+   "spotify.view_now_playing": "ambient",
+   "spotify.view_playlist": "ambient"
+  },
+  "P01_CoffeeShop_WorkingAlone": {
+   "google_scholar.search_articles": "primary",
+   "netflix.view_content_details": "peripheral",
+   "overleaf.edit_document": "primary",
+   "overleaf.preview_document": "primary",
+   "spotify.control_playback": "ambient",
+   "spotify.view_audiobook": "ambient",
+   "spotify.view_now_playing": "ambient",
+   "spotify.view_playlist": "ambient"
+  },
+  "P01_LivingRoom_Dining": {
+   "instagram.browse_explore": "primary",
+   "instagram.browse_story_previews": "primary",
+   "instagram.open_section": "primary",
+   "netflix.watch_content": "primary",
+   "spotify.control_playback": "ambient",
+   "spotify.view_audiobook": "ambient",
+   "spotify.view_now_playing": "ambient",
+   "spotify.view_playlist": "ambient",
+   "webtoon.browse_episode_list": "primary",
+   "webtoon.view_episode_comments": "primary"
+  },
+  "P01_LivingRoom_Relaxing": {
+   "instagram.browse_story_previews": "primary",
+   "instagram.open_section": "primary",
+   "netflix.browse_content": "primary",
+   "netflix.view_content_details": "primary",
+   "netflix.watch_content": "primary",
+   "webtoon.browse_episode_list": "primary",
+   "webtoon.view_episode_comments": "primary"
+  },
+  "P020_Livingroom_PlayiPhone": {
+   "gmail.browse_mailbox": "peripheral",
+   "gmail.open_section": "peripheral",
+   "google_calendar.open_section": "peripheral",
+   "google_calendar.view_calendar": "peripheral",
+   "google_maps.explore_map": "peripheral",
+   "google_maps.open_section": "peripheral",
+   "google_maps.search_places": "peripheral",
+   "instagram.browse_feed": "primary",
+   "instagram.browse_story_previews": "primary",
+   "instagram.open_section": "primary",
+   "messaging.browse_conversation_list": "primary",
+   "youtube.browse_feed": "primary",
+   "youtube.open_section": "primary"
+  },
+  "P020_Office_Work": {
+   "camera.browse_captured_media": "peripheral",
+   "files.browse_files": "primary",
+   "files.open_section": "primary",
+   "files.search_files": "primary",
+   "gmail.browse_mailbox": "primary",
+   "gmail.open_section": "primary",
+   "google_calendar.open_section": "primary",
+   "google_calendar.view_calendar": "primary",
+   "google_search.search": "primary",
+   "spotify.view_now_playing": "ambient"
+  },
+  "P021_Coffeeshop_Readpaper": {
+   "google_scholar.search_articles": "peripheral",
+   "notes.create_note": "peripheral"
+  },
+  "P021_Coffeeshop_Remotemeeting": {
+   "figma.edit_design": "primary",
+   "google_calendar.open_section": "primary",
+   "google_calendar.view_calendar": "primary",
+   "zoom.participate_in_meeting": "primary"
+  },
+  "P021_Kitchen_CookingInstruction": {
+   "messaging.call": "peripheral",
+   "messaging.compose_message": "peripheral",
+   "messaging.select_attachment": "peripheral"
+  },
+  "P021_Kitchen_MorningRoutine": {
+   "spotify.control_volume_output": "ambient",
+   "spotify.open_section": "ambient",
+   "spotify.view_manage_queue": "ambient",
+   "spotify.view_now_playing": "ambient"
+  },
+  "P022_Coffeeshop_Chatwithfriend": {
+   "messaging.browse_conversation_list": "primary",
+   "messaging.open_section": "primary",
+   "messaging.search_messages": "primary",
+   "messaging.view_conversation": "primary"
+  },
+  "P022_Coffeeshop_Remotework": {
+   "gmail.browse_mailbox": "primary",
+   "gmail.view_email_contents_actions": "primary",
+   "google_calendar.open_section": "primary",
+   "google_calendar.view_calendar": "primary",
+   "zoom.open_section": "primary"
+  },
+  "P022_Kitchen_Eating": {
+   "news.read_article": "peripheral",
+   "youtube.watch_video": "ambient"
+  },
+  "P022_Kitchen_MorningRoutine": {
+   "recipes.view_recipe": "primary",
+   "youtube.watch_video": "primary"
+  },
+  "P02_Kitchen_CookingWithFriends": {
+   "clock.use_stopwatch": "peripheral",
+   "notes.view_note": "ambient",
+   "recipes.cook_recipe": "primary",
+   "recipes.view_recipe": "primary",
+   "slack.engage_with_message": "peripheral",
+   "slack.view_conversation": "peripheral",
+   "spotify.view_playlist": "ambient",
+   "thermometer.view_current_temperature": "ambient",
+   "weather.view_current_weather": "ambient"
+  },
+  "P02_Kitchen_MakingCoffee": {
+   "notes.view_note": "ambient",
+   "recipes.cook_recipe": "primary",
+   "recipes.view_recipe": "primary",
+   "spotify.view_playlist": "peripheral",
+   "weather.view_current_weather": "ambient"
+  },
+  "P02_Office_Discussion": {
+   "code_editor.edit_code": "peripheral",
+   "code_editor.run_code": "peripheral",
+   "files.view_file": "primary",
+   "gmail.browse_mailbox": "primary",
+   "slack.engage_with_message": "peripheral",
+   "slack.view_conversation": "peripheral",
+   "uber_eats.track_order": "peripheral",
+   "zoom.participate_in_meeting": "primary"
+  },
+  "P02_Office_FocusWork": {
+   "code_editor.edit_code": "primary",
+   "code_editor.run_code": "primary",
+   "files.view_file": "primary",
+   "notes.view_note": "primary"
+  },
+  "P03_Kitchen_CoffeeMaking": {
+   "amazon.view_product_detail": "peripheral",
+   "youtube.browse_shorts": "peripheral",
+   "youtube.open_section": "peripheral"
+  },
+  "P03_Kitchen_Cooking": {
+   "clock.configure_timer": "primary",
+   "clock.monitor_timer_countdown": "primary",
+   "game.open_section": "peripheral",
+   "spotify.view_audiobook": "ambient",
+   "spotify.view_playlist": "ambient",
+   "uber_eats.browse_stores": "ambient",
+   "uber_eats.view_store": "ambient",
+   "youtube.view_video_info": "primary",
+   "youtube.watch_video": "primary"
+  },
+  "P03_Office_CasualChat": {
+   "amazon.view_product_detail": "peripheral",
+   "clock.respond_to_alarm": "ambient",
+   "google_calendar.view_calendar": "ambient",
+   "zoom.participate_in_meeting": "primary"
+  },
+  "P03_Office_WorkingAlone": {
+   "amazon.view_product_detail": "peripheral",
+   "code_editor.edit_code": "primary",
+   "gmail.browse_mailbox": "peripheral",
+   "google_maps.view_directions": "peripheral",
+   "google_scholar.open_section": "primary",
+   "notion.compose_page": "primary",
+   "reminders.view_task_list": "ambient",
+   "starbucks.browse_menu": "peripheral",
+   "starbucks.open_section": "peripheral"
+  },
+  "P04_Kitchen_BakingWithFriends": {
+   "amazon.open_section": "ambient",
+   "messaging.compose_message": "peripheral",
+   "messaging.engage_with_message": "peripheral",
+   "messaging.open_section": "peripheral",
+   "messaging.view_conversation": "peripheral",
+   "recipes.cook_recipe": "primary",
+   "recipes.view_recipe": "primary",
+   "spotify.view_audiobook": "ambient",
+   "spotify.view_now_playing": "ambient",
+   "uber_eats.open_section": "ambient",
+   "youtube.watch_video": "primary"
+  },
+  "P04_Kitchen_Morning": {
+   "clock.monitor_timer_countdown": "ambient",
+   "gmail.browse_mailbox": "peripheral",
+   "gmail.open_section": "peripheral",
+   "notes.view_note": "ambient",
+   "recipes.cook_recipe": "primary",
+   "spotify.view_audiobook": "ambient",
+   "spotify.view_now_playing": "ambient",
+   "uber_eats.open_section": "ambient",
+   "weather.view_current_weather": "primary",
+   "weather.view_detailed_daily_forecast": "primary"
+  },
+  "P04_LivingRoom_Relaxing": {
+   "amazon.open_section": "primary",
+   "amazon.search_product": "primary",
+   "amazon.view_product_detail": "primary",
+   "instagram.browse_story_previews": "primary",
+   "instagram.open_section": "primary",
+   "instagram.search_content": "primary",
+   "spotify.view_audiobook": "ambient",
+   "spotify.view_now_playing": "ambient",
+   "uber_eats.open_section": "ambient",
+   "uber_eats.view_store": "ambient"
+  },
+  "P04_LivingRoom_Workout": {
+   "spotify.view_audiobook": "ambient",
+   "spotify.view_now_playing": "ambient",
+   "uber_eats.open_section": "ambient",
+   "youtube.open_section": "peripheral",
+   "youtube.view_video_info": "primary",
+   "youtube.watch_video": "primary"
+  },
+  "P05_Kitchen_Cooking": {
+   "google_search.open_section": "primary",
+   "instagram.open_section": "primary",
+   "instagram.search_content": "primary",
+   "messaging.browse_conversation_list": "peripheral",
+   "slack.open_section": "ambient"
+  },
+  "P05_Kitchen_Morning": {
+   "clock.open_section": "ambient",
+   "google_calendar.open_section": "primary",
+   "google_calendar.view_calendar": "primary",
+   "weather.view_current_weather": "primary"
+  },
+  "P05_Office_CasualChat": {
+   "files.browse_files": "ambient",
+   "files.open_section": "ambient",
+   "messaging.open_section": "ambient",
+   "notes.create_note": "primary",
+   "notes.open_section": "primary",
+   "slack.open_section": "ambient",
+   "youtube.watch_video": "ambient",
+   "zoom.browse_meetings": "ambient",
+   "zoom.open_section": "ambient"
+  },
+  "P05_Office_WorkingAlone": {
+   "gmail.browse_mailbox": "peripheral",
+   "gmail.open_section": "peripheral",
+   "notes.create_note": "primary",
+   "slack.open_section": "ambient",
+   "zoom.browse_meetings": "ambient",
+   "zoom.open_section": "ambient"
+  },
+  "P06_Kitchen_Cooking": {
+   "duolingo.complete_lesson": "ambient",
+   "recipes.view_recipe": "primary"
+  },
+  "P06_Kitchen_Morning": {
+   "duolingo.complete_lesson": "ambient",
+   "gmail.open_section": "peripheral",
+   "google_maps.navigate_route": "primary",
+   "google_maps.view_directions": "primary",
+   "google_maps.view_place": "primary",
+   "slack.browse_activity": "peripheral",
+   "spotify.open_section": "primary",
+   "weather.view_current_weather": "primary"
+  },
+  "P06_LivingRoom_Relaxing": {
+   "camera.browse_captured_media": "ambient"
+  },
+  "P06_LivingRoom_Working": {
+   "camera.browse_captured_media": "ambient",
+   "duolingo.complete_lesson": "peripheral",
+   "files.view_file": "primary",
+   "google_calendar.open_section": "peripheral",
+   "google_calendar.view_calendar": "peripheral"
+  },
+  "P07_Kitchen_Cooking": {
+   "calculator.convert_unit_currency": "peripheral",
+   "clock.monitor_timer_countdown": "peripheral",
+   "notes.view_note": "ambient",
+   "recipes.cook_recipe": "primary",
+   "recipes.view_recipe": "primary",
+   "reminders.view_task_list": "ambient",
+   "spotify.view_now_playing": "ambient"
+  },
+  "P07_LivingRoom_Working": {
+   "google_calendar.open_section": "peripheral",
+   "google_calendar.view_calendar": "peripheral",
+   "google_maps.view_directions": "peripheral",
+   "news.read_article": "ambient",
+   "notes.view_note": "ambient",
+   "reminders.browse_task_lists": "ambient",
+   "reminders.open_section": "ambient",
+   "reminders.view_task_list": "ambient",
+   "weather.view_current_weather": "ambient",
+   "zoom.participate_in_meeting": "ambient"
+  },
+  "P08_CoffeeShop_WorkingAlone": {
+   "game.play_game": "ambient",
+   "reminders.browse_task_lists": "peripheral",
+   "reminders.open_section": "ambient",
+   "reminders.view_task_list": "peripheral",
+   "slack.engage_with_message": "peripheral",
+   "slack.view_conversation": "peripheral",
+   "spotify.open_section": "ambient",
+   "spotify.search_content": "ambient",
+   "spotify.view_now_playing": "ambient"
+  },
+  "P08_CoffeeShop_WorkingWithFriend": {
+   "game.play_game": "ambient",
+   "reminders.browse_task_lists": "peripheral",
+   "reminders.open_section": "ambient",
+   "reminders.view_task_list": "peripheral",
+   "slack.engage_with_message": "peripheral",
+   "slack.view_conversation": "peripheral",
+   "spotify.open_section": "ambient",
+   "spotify.search_content": "ambient",
+   "spotify.view_now_playing": "ambient"
+  },
+  "P08_LivingRoom_WatchingVideo": {
+   "camera.browse_captured_media": "ambient",
+   "clock.configure_timer": "peripheral",
+   "clock.monitor_timer_countdown": "peripheral",
+   "game.play_game": "ambient",
+   "spotify.view_now_playing": "ambient",
+   "stock.view_stock_price": "peripheral",
+   "youtube.view_video_info": "primary",
+   "youtube.watch_video": "primary"
+  },
+  "P08_LivingRoom_Workout": {
+   "camera.browse_captured_media": "ambient",
+   "clock.use_stopwatch": "peripheral",
+   "health.start_activity_tracking": "primary",
+   "spotify.view_now_playing": "ambient",
+   "youtube.view_video_info": "primary"
+  },
+  "P09_CoffeeShop_HangoutWithFriend": {
+   "google_maps.navigate_route": "ambient",
+   "google_maps.view_directions": "ambient",
+   "instagram.open_section": "primary",
+   "messaging.browse_conversation_list": "peripheral",
+   "spotify.view_now_playing": "ambient"
+  },
+  "P09_CoffeeShop_WorkingWithFriends": {
+   "google_calendar.open_section": "primary",
+   "google_calendar.view_calendar": "primary",
+   "linkedin.browse_feed": "primary",
+   "linkedin.open_section": "primary",
+   "linkedin.view_notifications": "primary",
+   "notion.compose_page": "primary",
+   "reminders.view_task_list": "primary",
+   "slack.compose_message": "primary",
+   "slack.open_section": "primary",
+   "slack.view_channel": "primary",
+   "spotify.view_now_playing": "ambient"
+  },
+  "P09_Office_FocusWork": {
+   "google_calendar.open_section": "primary",
+   "google_calendar.view_calendar": "primary",
+   "linkedin.view_notifications": "primary",
+   "notion.compose_page": "primary",
+   "slack.compose_message": "primary",
+   "slack.open_section": "primary",
+   "slack.view_channel": "primary",
+   "spotify.view_now_playing": "ambient"
+  },
+  "P09_Office_InPersonMeeting": {
+   "figma.browse_files": "peripheral",
+   "figma.edit_design": "peripheral",
+   "figma.preview_prototype": "peripheral",
+   "notion.compose_page": "primary"
+  },
+  "P10_CoffeeShop_CasualChat": {
+   "instagram.open_section": "primary",
+   "starbucks.browse_menu": "ambient"
+  },
+  "P10_CoffeeShop_Working": {
+   "gmail.browse_mailbox": "peripheral",
+   "messaging.browse_conversation_list": "peripheral",
+   "reminders.view_task_list": "peripheral",
+   "slack.browse_channels": "peripheral",
+   "slack.open_section": "peripheral",
+   "slack.view_channel": "peripheral"
+  },
+  "P10_Office_RemoteMeeting": {
+   "gmail.browse_mailbox": "peripheral",
+   "messaging.browse_conversation_list": "peripheral",
+   "reddit.browse_feed": "peripheral",
+   "reminders.view_task_list": "peripheral",
+   "slack.browse_channels": "peripheral",
+   "slack.open_section": "peripheral",
+   "slack.view_channel": "peripheral",
+   "spotify.view_now_playing": "ambient",
+   "zoom.participate_in_meeting": "primary"
+  },
+  "P10_Office_WorkingAlone": {
+   "gmail.browse_mailbox": "peripheral",
+   "messaging.browse_conversation_list": "peripheral",
+   "reddit.browse_feed": "peripheral",
+   "reminders.view_task_list": "peripheral",
+   "slack.browse_direct_messages": "primary",
+   "slack.open_section": "primary",
+   "slack.view_conversation": "primary"
+  }
+ },
+ "contexts": {
+  "P002_Livingroom_Readingbook": [
+   "P002",
+   "Readingbook",
+   "Livingroom"
+  ],
+  "P003_Kitchen_CookingSolo": [
+   "P003",
+   "CookingSolo",
+   "Kitchen"
+  ],
+  "P003_livingroom_socialize": [
+   "P003",
+   "socialize",
+   "livingroom"
+  ],
+  "P003_livingroom_workonlaptop": [
+   "P003",
+   "workonlaptop",
+   "livingroom"
+  ],
+  "P004_coffeeshop_buyingadrink": [
+   "P004",
+   "buyingadrink",
+   "coffeeshop"
+  ],
+  "P004_coffeeshop_reading": [
+   "P004",
+   "reading",
+   "coffeeshop"
+  ],
+  "P004_coffeeshop_workonlaptop": [
+   "P004",
+   "workonlaptop",
+   "coffeeshop"
+  ],
+  "P004_livingroom_hangingoutwithfriends": [
+   "P004",
+   "hangingoutwithfriends",
+   "livingroom"
+  ],
+  "P005_Livingroom_Watchingshow": [
+   "P005",
+   "Watchingshow",
+   "Livingroom"
+  ],
+  "P005_Office_Planningfordinner": [
+   "P005",
+   "Planningfordinner",
+   "Office"
+  ],
+  "P005_Office_Work": [
+   "P005",
+   "Work",
+   "Office"
+  ],
+  "P005_coffeeshop_Doingwork": [
+   "P005",
+   "Doingwork",
+   "coffeeshop"
+  ],
+  "P005_coffeeshop_reading": [
+   "P005",
+   "reading",
+   "coffeeshop"
+  ],
+  "P006_Office_Scrollingonphone": [
+   "P006",
+   "Scrollingonphone",
+   "Office"
+  ],
+  "P007_Coffeeshop_Scrollingonphone": [
+   "P007",
+   "Scrollingonphone",
+   "Coffeeshop"
+  ],
+  "P008_Coffeeshop_Drinkingcoffee": [
+   "P008",
+   "Drinkingcoffee",
+   "Coffeeshop"
+  ],
+  "P008_Coffeeshop_Working": [
+   "P008",
+   "Working",
+   "Coffeeshop"
+  ],
+  "P008_Livingroom_Chatting": [
+   "P008",
+   "Chatting",
+   "Livingroom"
+  ],
+  "P008_Livingroom_Chilling": [
+   "P008",
+   "Chilling",
+   "Livingroom"
+  ],
+  "P009_Kitchen_CookingSolo": [
+   "P009",
+   "CookingSolo",
+   "Kitchen"
+  ],
+  "P009_Office_Work": [
+   "P009",
+   "Work",
+   "Office"
+  ],
+  "P009_Office_Zoomcall": [
+   "P009",
+   "Zoomcall",
+   "Office"
+  ],
+  "P010_Coffeeshop_Lookingforlunch": [
+   "P010",
+   "Lookingforlunch",
+   "Coffeeshop"
+  ],
+  "P010_Coffeeshop_Working": [
+   "P010",
+   "Working",
+   "Coffeeshop"
+  ],
+  "P010_Livingroom_Studying": [
+   "P010",
+   "Studying",
+   "Livingroom"
+  ],
+  "P010_Livingroom_Workingout": [
+   "P010",
+   "Workingout",
+   "Livingroom"
+  ],
+  "P011_Coffeeshop_Browsinginternet": [
+   "P011",
+   "Browsinginternet",
+   "Coffeeshop"
+  ],
+  "P011_Livingroom_Reading": [
+   "P011",
+   "Reading",
+   "Livingroom"
+  ],
+  "P012_Coffeeshop_Talkingwithfriends": [
+   "P012",
+   "Talkingwithfriends",
+   "Coffeeshop"
+  ],
+  "P012_Coffeeshop_Watchingtv": [
+   "P012",
+   "Watchingtv",
+   "Coffeeshop"
+  ],
+  "P012_Office_Eating": [
+   "P012",
+   "Eating",
+   "Office"
+  ],
+  "P012_Office_Work": [
+   "P012",
+   "Work",
+   "Office"
+  ],
+  "P013_Kitchen_CookingSolo": [
+   "P013",
+   "CookingSolo",
+   "Kitchen"
+  ],
+  "P013_Kitchen_Figuringoutnexttask": [
+   "P013",
+   "Figuringoutnexttask",
+   "Kitchen"
+  ],
+  "P013_Livingroom_Watchingmoviewithfriends": [
+   "P013",
+   "Watchingmoviewithfriends",
+   "Livingroom"
+  ],
+  "P013_Livingroom_Work": [
+   "P013",
+   "Work",
+   "Livingroom"
+  ],
+  "P014_Coffeeshop_Chatwithfriend": [
+   "P014",
+   "Chatwithfriend",
+   "Coffeeshop"
+  ],
+  "P014_Coffeeshop_Studying": [
+   "P014",
+   "Studying",
+   "Coffeeshop"
+  ],
+  "P014_Livingroom_Playgames": [
+   "P014",
+   "Playgames",
+   "Livingroom"
+  ],
+  "P014_Livingroom_Watchingvideos": [
+   "P014",
+   "Watchingvideos",
+   "Livingroom"
+  ],
+  "P015_Coffeeshop_Browsinginternet": [
+   "P015",
+   "Browsinginternet",
+   "Coffeeshop"
+  ],
+  "P015_Coffeeshop_Readingpaper": [
+   "P015",
+   "Readingpaper",
+   "Coffeeshop"
+  ],
+  "P015_Livingroom_Chilling": [
+   "P015",
+   "Chilling",
+   "Livingroom"
+  ],
+  "P015_Livingroom_Dailyroutine": [
+   "P015",
+   "Dailyroutine",
+   "Livingroom"
+  ],
+  "P016_Livingroom_Playingboardgame": [
+   "P016",
+   "Playingboardgame",
+   "Livingroom"
+  ],
+  "P016_Livingroom_Watchingtv": [
+   "P016",
+   "Watchingtv",
+   "Livingroom"
+  ],
+  "P016_Office_Playingpcgames": [
+   "P016",
+   "Playingpcgames",
+   "Office"
+  ],
+  "P016_Office_Work": [
+   "P016",
+   "Work",
+   "Office"
+  ],
+  "P017_Coffeeshop_Browsing": [
+   "P017",
+   "Browsing",
+   "Coffeeshop"
+  ],
+  "P017_Coffeeshop_Wheretogonext": [
+   "P017",
+   "Wheretogonext",
+   "Coffeeshop"
+  ],
+  "P017_Office_Browsing": [
+   "P017",
+   "Browsing",
+   "Office"
+  ],
+  "P017_Office_Work": [
+   "P017",
+   "Work",
+   "Office"
+  ],
+  "P018_Livingroom_Workout": [
+   "P018",
+   "Workout",
+   "Livingroom"
+  ],
+  "P018_Office_ReadingPaper": [
+   "P018",
+   "ReadingPaper",
+   "Office"
+  ],
+  "P018_Office_Shopping": [
+   "P018",
+   "Shopping",
+   "Office"
+  ],
+  "P018_livingroom_Chilling": [
+   "P018",
+   "Chilling",
+   "livingroom"
+  ],
+  "P019_Coffeeshop_Leaving": [
+   "P019",
+   "Leaving",
+   "Coffeeshop"
+  ],
+  "P019_Coffeeshop_Shopping": [
+   "P019",
+   "Shopping",
+   "Coffeeshop"
+  ],
+  "P019_Office_Entertaining": [
+   "P019",
+   "Entertaining",
+   "Office"
+  ],
+  "P019_Office_Work": [
+   "P019",
+   "Work",
+   "Office"
+  ],
+  "P01_CoffeeShop_CasualChat": [
+   "P01",
+   "CasualChat",
+   "CoffeeShop"
+  ],
+  "P01_CoffeeShop_ChatWithFriends": [
+   "P01",
+   "ChatWithFriends",
+   "CoffeeShop"
+  ],
+  "P01_CoffeeShop_WorkingAlone": [
+   "P01",
+   "WorkingAlone",
+   "CoffeeShop"
+  ],
+  "P01_LivingRoom_Dining": [
+   "P01",
+   "Dining",
+   "LivingRoom"
+  ],
+  "P01_LivingRoom_Relaxing": [
+   "P01",
+   "Relaxing",
+   "LivingRoom"
+  ],
+  "P020_Livingroom_PlayiPhone": [
+   "P020",
+   "PlayiPhone",
+   "Livingroom"
+  ],
+  "P020_Office_Work": [
+   "P020",
+   "Work",
+   "Office"
+  ],
+  "P021_Coffeeshop_Readpaper": [
+   "P021",
+   "Readpaper",
+   "Coffeeshop"
+  ],
+  "P021_Coffeeshop_Remotemeeting": [
+   "P021",
+   "Remotemeeting",
+   "Coffeeshop"
+  ],
+  "P021_Kitchen_CookingInstruction": [
+   "P021",
+   "CookingInstruction",
+   "Kitchen"
+  ],
+  "P021_Kitchen_MorningRoutine": [
+   "P021",
+   "MorningRoutine",
+   "Kitchen"
+  ],
+  "P022_Coffeeshop_Chatwithfriend": [
+   "P022",
+   "Chatwithfriend",
+   "Coffeeshop"
+  ],
+  "P022_Coffeeshop_Remotework": [
+   "P022",
+   "Remotework",
+   "Coffeeshop"
+  ],
+  "P022_Kitchen_Eating": [
+   "P022",
+   "Eating",
+   "Kitchen"
+  ],
+  "P022_Kitchen_MorningRoutine": [
+   "P022",
+   "MorningRoutine",
+   "Kitchen"
+  ],
+  "P02_Kitchen_CookingWithFriends": [
+   "P02",
+   "CookingWithFriends",
+   "Kitchen"
+  ],
+  "P02_Kitchen_MakingCoffee": [
+   "P02",
+   "MakingCoffee",
+   "Kitchen"
+  ],
+  "P02_Office_Discussion": [
+   "P02",
+   "Discussion",
+   "Office"
+  ],
+  "P02_Office_FocusWork": [
+   "P02",
+   "FocusWork",
+   "Office"
+  ],
+  "P03_Kitchen_CoffeeMaking": [
+   "P03",
+   "CoffeeMaking",
+   "Kitchen"
+  ],
+  "P03_Kitchen_Cooking": [
+   "P03",
+   "Cooking",
+   "Kitchen"
+  ],
+  "P03_Office_CasualChat": [
+   "P03",
+   "CasualChat",
+   "Office"
+  ],
+  "P03_Office_WorkingAlone": [
+   "P03",
+   "WorkingAlone",
+   "Office"
+  ],
+  "P04_Kitchen_BakingWithFriends": [
+   "P04",
+   "BakingWithFriends",
+   "Kitchen"
+  ],
+  "P04_Kitchen_Morning": [
+   "P04",
+   "Morning",
+   "Kitchen"
+  ],
+  "P04_LivingRoom_Relaxing": [
+   "P04",
+   "Relaxing",
+   "LivingRoom"
+  ],
+  "P04_LivingRoom_Workout": [
+   "P04",
+   "Workout",
+   "LivingRoom"
+  ],
+  "P05_Kitchen_Cooking": [
+   "P05",
+   "Cooking",
+   "Kitchen"
+  ],
+  "P05_Kitchen_Morning": [
+   "P05",
+   "Morning",
+   "Kitchen"
+  ],
+  "P05_Office_CasualChat": [
+   "P05",
+   "CasualChat",
+   "Office"
+  ],
+  "P05_Office_WorkingAlone": [
+   "P05",
+   "WorkingAlone",
+   "Office"
+  ],
+  "P06_Kitchen_Cooking": [
+   "P06",
+   "Cooking",
+   "Kitchen"
+  ],
+  "P06_Kitchen_Morning": [
+   "P06",
+   "Morning",
+   "Kitchen"
+  ],
+  "P06_LivingRoom_Relaxing": [
+   "P06",
+   "Relaxing",
+   "LivingRoom"
+  ],
+  "P06_LivingRoom_Working": [
+   "P06",
+   "Working",
+   "LivingRoom"
+  ],
+  "P07_Kitchen_Cooking": [
+   "P07",
+   "Cooking",
+   "Kitchen"
+  ],
+  "P07_LivingRoom_Working": [
+   "P07",
+   "Working",
+   "LivingRoom"
+  ],
+  "P08_CoffeeShop_WorkingAlone": [
+   "P08",
+   "WorkingAlone",
+   "CoffeeShop"
+  ],
+  "P08_CoffeeShop_WorkingWithFriend": [
+   "P08",
+   "WorkingWithFriend",
+   "CoffeeShop"
+  ],
+  "P08_LivingRoom_WatchingVideo": [
+   "P08",
+   "WatchingVideo",
+   "LivingRoom"
+  ],
+  "P08_LivingRoom_Workout": [
+   "P08",
+   "Workout",
+   "LivingRoom"
+  ],
+  "P09_CoffeeShop_HangoutWithFriend": [
+   "P09",
+   "HangoutWithFriend",
+   "CoffeeShop"
+  ],
+  "P09_CoffeeShop_WorkingWithFriends": [
+   "P09",
+   "WorkingWithFriends",
+   "CoffeeShop"
+  ],
+  "P09_Office_FocusWork": [
+   "P09",
+   "FocusWork",
+   "Office"
+  ],
+  "P09_Office_InPersonMeeting": [
+   "P09",
+   "InPersonMeeting",
+   "Office"
+  ],
+  "P10_CoffeeShop_CasualChat": [
+   "P10",
+   "CasualChat",
+   "CoffeeShop"
+  ],
+  "P10_CoffeeShop_Working": [
+   "P10",
+   "Working",
+   "CoffeeShop"
+  ],
+  "P10_Office_RemoteMeeting": [
+   "P10",
+   "RemoteMeeting",
+   "Office"
+  ],
+  "P10_Office_WorkingAlone": [
+   "P10",
+   "WorkingAlone",
+   "Office"
+  ]
+ },
+ "entry_path_nodes": {
+  "amazon.browse_products": 2,
+  "amazon.checkout_purchase": 3,
+  "amazon.manage_cart": 2,
+  "amazon.open_section": 1,
+  "amazon.search_product": 2,
+  "amazon.track_delivery": 2,
+  "amazon.view_order_history_returns": 2,
+  "amazon.view_product_detail": 3,
+  "books.browse_library": 2,
+  "books.discover_books": 2,
+  "books.manage_library": 2,
+  "books.open_section": 1,
+  "books.read_book": 3,
+  "calculator.convert_unit_currency": 2,
+  "calculator.open_section": 1,
+  "calculator.perform_calculation": 2,
+  "calculator.view_recent_calculations": 2,
+  "camera.browse_captured_media": 2,
+  "camera.capture_photo": 2,
+  "camera.configure_capture_parameters": 3,
+  "camera.open_section": 1,
+  "camera.record_video": 2,
+  "camera.scan_qr": 3,
+  "camera.select_capture_mode": 3,
+  "clock.configure_alarm": 2,
+  "clock.configure_timer": 2,
+  "clock.manage_alarm_list": 2,
+  "clock.manage_world_clock_list": 4,
+  "clock.monitor_timer_countdown": 2,
+  "clock.open_section": 1,
+  "clock.respond_to_alarm": 3,
+  "clock.respond_to_timer": 3,
+  "clock.use_stopwatch": 2,
+  "clock.view_world_clock": 2,
+  "code_editor.browse_files": 2,
+  "code_editor.edit_code": 3,
+  "code_editor.open_section": 1,
+  "code_editor.run_code": 2,
+  "contacts.browse_contacts": 2,
+  "contacts.create_contact": 2,
+  "contacts.open_section": 1,
+  "contacts.search_contacts": 2,
+  "contacts.view_contact": 3,
+  "contacts.view_recent_calls": 2,
+  "duolingo.browse_learning_path": 2,
+  "duolingo.browse_social_feed": 2,
+  "duolingo.complete_lesson": 2,
+  "duolingo.open_section": 1,
+  "duolingo.view_lesson_progress": 3,
+  "duolingo.view_lesson_summary": 3,
+  "duolingo.view_profile": 2,
+  "facebook.browse_feed": 2,
+  "facebook.browse_stories": 2,
+  "facebook.create_post": 2,
+  "facebook.create_story": 2,
+  "facebook.engage_with_post": 4,
+  "facebook.open_section": 1,
+  "facebook.search_content": 2,
+  "facebook.view_post": 3,
+  "facebook.view_story": 3,
+  "facebook.view_user_profile": 3,
+  "figma.browse_design": 3,
+  "figma.browse_files": 2,
+  "figma.edit_design": 3,
+  "figma.open_section": 1,
+  "figma.preview_prototype": 4,
+  "files.annotate_file": 4,
+  "files.browse_files": 2,
+  "files.manage_files": 3,
+  "files.open_section": 1,
+  "files.search_files": 2,
+  "files.share_file": 4,
+  "files.view_file": 3,
+  "game.open_section": 1,
+  "game.play_game": 2,
+  "gmail.browse_drafts": 3,
+  "gmail.browse_mailbox": 2,
+  "gmail.compose_email": 2,
+  "gmail.navigate_mailboxes_and_accounts": 2,
+  "gmail.open_section": 1,
+  "gmail.search_mail": 2,
+  "gmail.user_presence_status": 2,
+  "gmail.view_email_contents_actions": 3,
+  "google_calendar.configure_calendar_visibility": 3,
+  "google_calendar.create_edit_event": 2,
+  "google_calendar.create_edit_task": 2,
+  "google_calendar.open_section": 1,
+  "google_calendar.respond_to_invitation": 3,
+  "google_calendar.schedule_find_time": 3,
+  "google_calendar.view_calendar": 2,
+  "google_calendar.view_event_detail": 2,
+  "google_calendar.view_task_detail": 2,
+  "google_maps.browse_saved_lists": 2,
+  "google_maps.explore_map": 2,
+  "google_maps.manage_saved_list": 3,
+  "google_maps.navigate_route": 4,
+  "google_maps.open_section": 1,
+  "google_maps.search_places": 2,
+  "google_maps.share_realtime_location": 2,
+  "google_maps.view_directions": 4,
+  "google_maps.view_place": 3,
+  "google_maps.view_saved_places": 3,
+  "google_scholar.open_section": 1,
+  "google_scholar.search_articles": 2,
+  "google_scholar.view_article": 3,
+  "google_scholar.view_article_content": 4,
+  "google_scholar.view_recommended_articles": 2,
+  "google_search.open_section": 1,
+  "google_search.search": 2,
+  "health.open_section": 1,
+  "health.start_activity_tracking": 2,
+  "health.view_activity_history": 2,
+  "health.view_health_summary": 2,
+  "instagram.browse_explore": 2,
+  "instagram.browse_feed": 2,
+  "instagram.browse_message_conversations": 2,
+  "instagram.browse_reels": 2,
+  "instagram.browse_story_previews": 2,
+  "instagram.call": 4,
+  "instagram.create_post": 2,
+  "instagram.create_story": 2,
+  "instagram.engage_in_conversation": 3,
+  "instagram.engage_with_content": 3,
+  "instagram.open_section": 1,
+  "instagram.search_content": 2,
+  "instagram.view_post": 3,
+  "instagram.view_story": 2,
+  "instagram.view_user_profile": 2,
+  "linkedin.browse_feed": 2,
+  "linkedin.open_section": 1,
+  "linkedin.search_content": 2,
+  "linkedin.view_notifications": 2,
+  "linkedin.view_post": 3,
+  "linkedin.view_profile": 3,
+  "messaging.browse_conversation_list": 2,
+  "messaging.call": 4,
+  "messaging.compose_message": 2,
+  "messaging.engage_with_message": 4,
+  "messaging.manage_conversation_list": 3,
+  "messaging.open_section": 1,
+  "messaging.search_messages": 2,
+  "messaging.select_attachment": 3,
+  "messaging.view_conversation": 3,
+  "netflix.browse_content": 2,
+  "netflix.manage_account": 2,
+  "netflix.manage_downloads": 2,
+  "netflix.manage_watchlist": 2,
+  "netflix.open_section": 1,
+  "netflix.search_content": 2,
+  "netflix.view_content_details": 3,
+  "netflix.watch_content": 3,
+  "news.browse_news_feed": 2,
+  "news.open_section": 1,
+  "news.read_article": 3,
+  "news.search_news": 2,
+  "notes.browse_notes": 2,
+  "notes.create_note": 2,
+  "notes.open_section": 1,
+  "notes.search_notes": 2,
+  "notes.share_note": 3,
+  "notes.view_note": 3,
+  "notion.browse_notifications": 2,
+  "notion.browse_pages": 2,
+  "notion.compose_page": 2,
+  "notion.configure_page": 3,
+  "notion.open_section": 1,
+  "notion.search_workspace": 2,
+  "overleaf.browse_projects": 2,
+  "overleaf.edit_document": 3,
+  "overleaf.manage_project_settings": 3,
+  "overleaf.open_section": 1,
+  "overleaf.preview_document": 3,
+  "recipes.browse_recipes": 2,
+  "recipes.cook_recipe": 4,
+  "recipes.open_section": 1,
+  "recipes.search_recipes": 2,
+  "recipes.view_recipe": 3,
+  "reddit.browse_feed": 2,
+  "reddit.open_section": 1,
+  "reddit.search_content": 2,
+  "reddit.view_post": 3,
+  "reminders.browse_task_lists": 2,
+  "reminders.compose_task": 2,
+  "reminders.open_section": 1,
+  "reminders.schedule_reminder": 3,
+  "reminders.search_tasks": 2,
+  "reminders.view_task_list": 3,
+  "slack.browse_activity": 2,
+  "slack.browse_channels": 2,
+  "slack.browse_direct_messages": 2,
+  "slack.browse_workspaces": 2,
+  "slack.call": 3,
+  "slack.compose_message": 4,
+  "slack.engage_with_message": 3,
+  "slack.open_section": 1,
+  "slack.search_workspace": 2,
+  "slack.view_channel": 2,
+  "slack.view_conversation": 3,
+  "spotify.browse_audiobooks": 2,
+  "spotify.browse_music": 2,
+  "spotify.control_playback": 2,
+  "spotify.control_podcast_audiobook": 2,
+  "spotify.control_volume_output": 3,
+  "spotify.manage_library": 2,
+  "spotify.manage_track": 3,
+  "spotify.open_section": 1,
+  "spotify.search_content": 2,
+  "spotify.view_album": 3,
+  "spotify.view_artist": 3,
+  "spotify.view_audiobook": 3,
+  "spotify.view_manage_queue": 3,
+  "spotify.view_now_playing": 2,
+  "spotify.view_playlist": 3,
+  "starbucks.browse_menu": 2,
+  "starbucks.browse_offers": 2,
+  "starbucks.customize_item": 3,
+  "starbucks.manage_gift_cards": 2,
+  "starbucks.manage_order": 4,
+  "starbucks.manage_rewards": 2,
+  "starbucks.open_section": 1,
+  "starbucks.search_menu": 2,
+  "starbucks.select_store_location": 2,
+  "stock.open_section": 1,
+  "stock.view_stock_list": 2,
+  "stock.view_stock_price": 2,
+  "thermometer.open_section": 1,
+  "thermometer.view_current_temperature": 2,
+  "translate.camera_translation": 2,
+  "translate.open_section": 1,
+  "translate.translate_text": 2,
+  "uber_eats.browse_stores": 2,
+  "uber_eats.checkout_order": 3,
+  "uber_eats.manage_cart": 2,
+  "uber_eats.open_section": 1,
+  "uber_eats.search_stores": 2,
+  "uber_eats.track_order": 2,
+  "uber_eats.view_item": 4,
+  "uber_eats.view_order_history_reorder": 2,
+  "uber_eats.view_store": 3,
+  "venmo.browse_activity_feed": 2,
+  "venmo.open_section": 1,
+  "venmo.search_users": 2,
+  "venmo.send_request_payment": 2,
+  "venmo.view_account": 2,
+  "wallet.make_payment": 2,
+  "wallet.open_section": 1,
+  "wallet.view_balance": 2,
+  "weather.manage_saved_locations": 2,
+  "weather.open_section": 1,
+  "weather.view_current_weather": 2,
+  "weather.view_detailed_daily_forecast": 3,
+  "weather.view_extended_weather_metrics": 3,
+  "weather.view_precipitation_map": 4,
+  "webtoon.browse_episode_list": 2,
+  "webtoon.open_section": 1,
+  "webtoon.view_episode": 3,
+  "webtoon.view_episode_comments": 4,
+  "youtube.browse_feed": 2,
+  "youtube.browse_shorts": 2,
+  "youtube.create_content": 2,
+  "youtube.engage_with_video": 3,
+  "youtube.manage_video_library": 2,
+  "youtube.open_section": 1,
+  "youtube.search_content": 2,
+  "youtube.view_channel": 3,
+  "youtube.view_video_info": 3,
+  "youtube.watch_video": 3,
+  "zoom.browse_meetings": 2,
+  "zoom.chat_in_meeting": 4,
+  "zoom.join_meeting": 2,
+  "zoom.open_section": 1,
+  "zoom.participate_in_meeting": 3,
+  "zoom.schedule_meeting": 2
+ },
+ "app_library": [
+  {
+   "app_id": "spotify",
+   "position": 1,
+   "count": 64
+  },
+  {
+   "app_id": "messaging",
+   "position": 2,
+   "count": 45
+  },
+  {
+   "app_id": "youtube",
+   "position": 3,
+   "count": 44
+  },
+  {
+   "app_id": "instagram",
+   "position": 4,
+   "count": 38
+  },
+  {
+   "app_id": "gmail",
+   "position": 5,
+   "count": 36
+  },
+  {
+   "app_id": "slack",
+   "position": 6,
+   "count": 32
+  },
+  {
+   "app_id": "uber_eats",
+   "position": 7,
+   "count": 29
+  },
+  {
+   "app_id": "recipes",
+   "position": 8,
+   "count": 28
+  },
+  {
+   "app_id": "google_calendar",
+   "position": 9,
+   "count": 27
+  },
+  {
+   "app_id": "amazon",
+   "position": 10,
+   "count": 25
+  },
+  {
+   "app_id": "reminders",
+   "position": 11,
+   "count": 24
+  },
+  {
+   "app_id": "clock",
+   "position": 12,
+   "count": 22
+  },
+  {
+   "app_id": "notes",
+   "position": 13,
+   "count": 22
+  },
+  {
+   "app_id": "google_maps",
+   "position": 14,
+   "count": 21
+  },
+  {
+   "app_id": "google_search",
+   "position": 15,
+   "count": 21
+  },
+  {
+   "app_id": "notion",
+   "position": 16,
+   "count": 18
+  },
+  {
+   "app_id": "netflix",
+   "position": 17,
+   "count": 17
+  },
+  {
+   "app_id": "files",
+   "position": 18,
+   "count": 16
+  },
+  {
+   "app_id": "books",
+   "position": 19,
+   "count": 14
+  },
+  {
+   "app_id": "weather",
+   "position": 20,
+   "count": 14
+  },
+  {
+   "app_id": "zoom",
+   "position": 21,
+   "count": 13
+  },
+  {
+   "app_id": "google_scholar",
+   "position": 22,
+   "count": 12
+  },
+  {
+   "app_id": "camera",
+   "position": 23,
+   "count": 11
+  },
+  {
+   "app_id": "duolingo",
+   "position": 24,
+   "count": 10
+  },
+  {
+   "app_id": "game",
+   "position": 25,
+   "count": 7
+  },
+  {
+   "app_id": "starbucks",
+   "position": 26,
+   "count": 7
+  },
+  {
+   "app_id": "linkedin",
+   "position": 27,
+   "count": 6
+  },
+  {
+   "app_id": "wallet",
+   "position": 28,
+   "count": 6
+  },
+  {
+   "app_id": "code_editor",
+   "position": 29,
+   "count": 5
+  },
+  {
+   "app_id": "facebook",
+   "position": 30,
+   "count": 5
+  },
+  {
+   "app_id": "reddit",
+   "position": 31,
+   "count": 5
+  },
+  {
+   "app_id": "figma",
+   "position": 32,
+   "count": 4
+  },
+  {
+   "app_id": "health",
+   "position": 33,
+   "count": 4
+  },
+  {
+   "app_id": "news",
+   "position": 34,
+   "count": 4
+  },
+  {
+   "app_id": "overleaf",
+   "position": 35,
+   "count": 4
+  },
+  {
+   "app_id": "stock",
+   "position": 36,
+   "count": 4
+  },
+  {
+   "app_id": "venmo",
+   "position": 37,
+   "count": 4
+  },
+  {
+   "app_id": "webtoon",
+   "position": 38,
+   "count": 4
+  },
+  {
+   "app_id": "contacts",
+   "position": 39,
+   "count": 3
+  },
+  {
+   "app_id": "thermometer",
+   "position": 40,
+   "count": 3
+  },
+  {
+   "app_id": "calculator",
+   "position": 41,
+   "count": 2
+  },
+  {
+   "app_id": "translate",
+   "position": 42,
+   "count": 2
+  }
+ ],
+ "training_events": 680
+}

@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://augmented-perception.org/contextxr/facet_db.schema.json",
+  "title": "ContextXR facet database",
+  "description": "Apps, their functional facets and capabilities, and the facet graph (paper §3.1).",
+  "type": "object",
+  "required": ["format", "format_version", "apps", "facets", "edges"],
+  "properties": {
+    "format": {"const": "contextxr.facet_db"},
+    "format_version": {"type": "string", "pattern": "^1\\.[0-9]+$"},
+    "benchmark_version": {"type": "string"},
+    "name": {"type": "string"},
+    "description": {"type": "string"},
+    "apps": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["app_id", "app_name", "entry_facet_id", "capabilities"],
+        "properties": {
+          "app_id": {"$ref": "#/$defs/identifier"},
+          "app_name": {"type": "string", "minLength": 1},
+          "app_domain": {"type": "string"},
+          "entry_facet_id": {"$ref": "#/$defs/facet_id"},
+          "capabilities": {"type": "array", "items": {"$ref": "#/$defs/identifier"}, "uniqueItems": true}
+        },
+        "additionalProperties": false
+      }
+    },
+    "facets": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["facet_id", "app_id", "name", "capabilities"],
+        "properties": {
+          "facet_id": {"$ref": "#/$defs/facet_id"},
+          "app_id": {"$ref": "#/$defs/identifier"},
+          "name": {"type": "string", "minLength": 1},
+          "description": {"type": "string"},
+          "capabilities": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/identifier"}},
+          "legacy_ids": {"type": "array", "items": {"type": "string"}, "description": "Earlier ids of this facet (e.g. those used in the paper's prompts)."}
+        },
+        "additionalProperties": false
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source", "target", "capability"],
+        "properties": {
+          "source": {"$ref": "#/$defs/facet_id"},
+          "target": {"$ref": "#/$defs/facet_id"},
+          "capability": {"type": "string", "pattern": "^open_"},
+          "resolution": {"enum": ["exact", "lowercase", "compact", "heuristic", "fuzzy", "manual"]}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "identifier": {"type": "string", "pattern": "^[a-z0-9_]+$"},
+    "facet_id": {"type": "string", "pattern": "^[a-z0-9_]+\\.[a-z0-9_]+$"}
+  }
+}

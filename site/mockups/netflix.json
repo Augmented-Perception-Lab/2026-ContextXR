@@ -1,0 +1,125 @@
+{
+  "app": "netflix",
+  "icon": "clapperboard",
+  "color": "#e50914",
+  "facets": {
+    "netflix.open_section": {
+      "blocks": [
+        {"type": "tabs", "selected": 0, "items": [
+          {"cap": "open_browse_content", "label": "Home", "icon": "house"},
+          {"cap": "open_search_content", "label": "Search", "icon": "search"},
+          {"cap": "open_manage_watchlist", "label": "My List", "icon": "list"},
+          {"cap": "open_manage_downloads", "label": "Downloads", "icon": "download"},
+          {"cap": "open_manage_account", "label": "My Netflix", "icon": "user"}
+        ]}
+      ]
+    },
+    "netflix.browse_content": {
+      "blocks": [
+        {"type": "chips", "cap": "select_category", "items": ["TV Shows", "Movies", "Categories"], "selected": 0},
+        {"type": "progress", "cap": "continue_watching", "label": "Continue Watching · Stranger Things S5:E3", "value": 0.42, "display": "38 min left"},
+        {"type": "cards", "cap": "view_content_rows", "label": "Trending Now", "items": [
+          {"title": "Wednesday", "meta": "Season 2", "hue": 270},
+          {"title": "Glass Onion", "meta": "Movie", "hue": 200},
+          {"title": "The Night Agent", "meta": "Season 2", "hue": 220}
+        ]},
+        {"type": "list", "cap": "view_top_10", "label": "Top 10 in the U.S. Today", "style": "numbered", "items": [
+          {"title": "Stranger Things", "meta": "TV Show · Sci-Fi"},
+          {"title": "Wednesday", "meta": "TV Show · Comedy"},
+          {"title": "Squid Game", "meta": "TV Show · Thriller"}
+        ]},
+        {"type": "buttons", "items": [
+          {"cap": "open_watch_content", "label": "Play", "icon": "play", "style": "primary"},
+          {"cap": "open_view_content_details", "label": "Info", "icon": "info", "style": "secondary"},
+          {"cap": "open_manage_watchlist", "label": "My List", "icon": "list", "style": "secondary"}
+        ]}
+      ]
+    },
+    "netflix.search_content": {
+      "blocks": [
+        {"type": "input", "caps": ["enter_search_query", "clear_search_query"], "icon": "search", "value": "stranger", "trailing": "x"},
+        {"type": "chips", "cap": "filter_results", "items": ["All", "TV Shows", "Movies", "Games"], "selected": 1},
+        {"type": "list", "cap": "view_search_results", "style": "thumbs", "items": [
+          {"title": "Stranger Things", "meta": "TV Show · 5 Seasons", "hue": 0},
+          {"title": "Stranger Things: Tales From '85", "meta": "Animated Series", "hue": 20},
+          {"title": "Beyond Stranger Things", "meta": "Talk Show", "hue": 340}
+        ]},
+        {"type": "link", "cap": "open_view_content_details", "label": "Stranger Things", "meta": "Details"}
+      ]
+    },
+    "netflix.view_content_details": {
+      "blocks": [
+        {"type": "media", "cap": "play_trailer", "kind": "video", "hue": 0, "aspect": "wide", "caption": "Trailer · Season 5", "duration": "2:31"},
+        {"type": "header", "cap": "view_metadata", "title": "Stranger Things", "subtitle": "2016 · TV-14 · 5 Seasons · Sci-Fi TV"},
+        {"type": "button", "cap": "open_watch_content", "label": "Play S5:E1", "icon": "play", "style": "primary"},
+        {"type": "text", "cap": "read_synopsis", "size": "sm", "text": "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl."},
+        {"type": "text", "cap": "view_cast", "size": "sm", "muted": true, "text": "Starring: Winona Ryder, David Harbour, Millie Bobby Brown"},
+        {"type": "controls", "items": [
+          {"cap": "add_to_watchlist", "icon": "plus", "label": "My List"},
+          {"cap": "remove_from_watchlist", "icon": "x", "label": "Remove"},
+          {"cap": "download_content", "icon": "download", "label": "Download"},
+          {"cap": "set_reminder", "icon": "bell", "label": "Remind Me"}
+        ]}
+      ]
+    },
+    "netflix.watch_content": {
+      "blocks": [
+        {"type": "media", "cap": "view_video_content", "kind": "video", "hue": 0, "aspect": "wide", "caption": "Stranger Things · S5:E3"},
+        {"type": "player", "cap": "seek_timeline", "progress": 0.42, "elapsed": "27:41", "total": "1:05:52"},
+        {"type": "controls", "items": [
+          {"cap": "skip_10s_back", "icon": "rotate-ccw", "label": "10s"},
+          {"cap": "play_pause", "icon": "pause", "primary": true},
+          {"cap": "skip_10s_forward", "icon": "rotate-cw", "label": "10s"},
+          {"cap": "skip_next_episode", "icon": "skip-forward", "label": "Next Ep."}
+        ]},
+        {"type": "row", "blocks": [
+          {"type": "slider", "cap": "adjust_volume", "label": "Volume", "value": 0.65, "icon": "volume-2"},
+          {"type": "slider", "cap": "adjust_brightness", "label": "Brightness", "value": 0.8, "icon": "sun"}
+        ]},
+        {"type": "row", "widths": [1, 1.6], "blocks": [
+          {"type": "select", "cap": "adjust_speed", "label": "Speed", "value": "1x"},
+          {"type": "select", "cap": "select_audio_subtitles", "label": "Audio & Subtitles", "value": "English [CC]"}
+        ]},
+        {"type": "select", "cap": "select_device", "label": "Cast to", "value": "Living Room TV"},
+        {"type": "buttons", "items": [
+          {"cap": "start_cast", "label": "Cast", "icon": "cast", "style": "primary"},
+          {"cap": "stop_cast", "label": "Stop", "icon": "x", "style": "secondary"},
+          {"cap": "lock_screen", "label": "Lock", "icon": "lock", "style": "secondary"}
+        ]}
+      ]
+    },
+    "netflix.manage_watchlist": {
+      "blocks": [
+        {"type": "list", "cap": "view_watchlist", "label": "My List", "style": "thumbs", "items": [
+          {"title": "Wednesday", "meta": "Season 2 · 8 episodes", "hue": 270},
+          {"title": "Glass Onion", "meta": "Movie · 2h 19m", "hue": 200},
+          {"title": "The Night Agent", "meta": "Season 2 · 10 episodes", "hue": 220}
+        ]},
+        {"type": "buttons", "label": "Selected · Wednesday", "items": [
+          {"cap": "add_to_watchlist", "label": "Add", "icon": "plus", "style": "secondary"},
+          {"cap": "remove_from_watchlist", "label": "Remove", "icon": "trash-2", "style": "danger"}
+        ]}
+      ]
+    },
+    "netflix.manage_downloads": {
+      "blocks": [
+        {"type": "list", "cap": "view_downloaded_items", "style": "thumbs", "items": [
+          {"title": "Stranger Things · S5:E1", "meta": "1.2 GB · 1h 8m", "hue": 0, "action": {"cap": "play_downloaded_item", "icon": "play"}},
+          {"title": "Glass Onion", "meta": "Downloading · 64%", "hue": 200, "action": {"cap": "pause_resume_download", "icon": "pause"}}
+        ]},
+        {"type": "button", "cap": "delete_downloaded_item", "label": "Delete S5:E1", "icon": "trash-2", "style": "ghost"}
+      ]
+    },
+    "netflix.manage_account": {
+      "blocks": [
+        {"type": "avatar", "cap": "view_profile", "name": "Hyun", "status": "Premium plan · 4 screens", "hue": 210},
+        {"type": "grid", "cap": "switch_profile", "label": "Switch Profiles", "cols": 3, "items": [
+          {"label": "Hyun", "icon": "user", "hue": 210},
+          {"label": "Mina", "icon": "user", "hue": 330},
+          {"label": "Kids", "icon": "smile", "hue": 45}
+        ]},
+        {"type": "link", "cap": "access_account_settings", "label": "Account settings", "icon": "settings"}
+      ]
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "app": "contacts",
+  "icon": "contact",
+  "color": "#5c7cfa",
+  "facets": {
+    "contacts.open_section": {
+      "blocks": [
+        {"type": "tabs", "selected": 1, "items": [
+          {"cap": "open_view_recent_calls", "label": "Recents", "icon": "clock"},
+          {"cap": "open_browse_contacts", "label": "Contacts", "icon": "users"},
+          {"cap": "open_search_contacts", "label": "Search", "icon": "search"},
+          {"cap": "open_create_contact", "label": "New", "icon": "user-plus"}
+        ]}
+      ]
+    },
+    "contacts.browse_contacts": {
+      "blocks": [
+        {"type": "list", "cap": "view_contact_list", "items": [
+          {"title": "Alex Chen", "meta": "Mobile", "avatar": "AC", "hue": 30},
+          {"title": "Mina Park", "meta": "Figma", "avatar": "MP", "hue": 200},
+          {"title": "Priya Shah", "meta": "CMU", "avatar": "PS", "hue": 280},
+          {"title": "Sam Rivera", "meta": "Mobile", "avatar": "SR", "hue": 140}
+        ]},
+        {"type": "row", "widths": [1.6, 1], "blocks": [
+          {"type": "link", "cap": "open_view_contact", "label": "Mina Park", "meta": "Details"},
+          {"type": "button", "cap": "open_create_contact", "label": "New", "icon": "user-plus", "style": "secondary"}
+        ]}
+      ]
+    },
+    "contacts.view_contact": {
+      "blocks": [
+        {"type": "group", "cap": "view_contact_details", "blocks": [
+          {"type": "header", "title": "Mina Park", "subtitle": "Product Designer · Figma", "thumb": {"icon": "user", "hue": 200}},
+          {"type": "kv", "items": [["Birthday", "March 14"], ["Address", "Shadyside, Pittsburgh"]]}
+        ]},
+        {"type": "kv", "cap": "view_contact_phone", "items": [["mobile", "(412) 555-0148"]]},
+        {"type": "kv", "cap": "view_contact_email", "items": [["work", "mina.park@example.com"]]}
+      ]
+    },
+    "contacts.create_contact": {
+      "blocks": [
+        {"type": "group", "cap": "input_contact_details", "blocks": [
+          {"type": "input", "placeholder": "Name", "value": "Jordan Lee", "icon": "user"},
+          {"type": "input", "placeholder": "Phone", "value": "(412) 555-0193", "icon": "phone"},
+          {"type": "input", "placeholder": "Email", "icon": "mail"}
+        ]},
+        {"type": "button", "cap": "save_contact", "label": "Save", "style": "primary"}
+      ]
+    },
+    "contacts.search_contacts": {
+      "blocks": [
+        {"type": "input", "cap": "enter_search_query", "icon": "search", "value": "mi"},
+        {"type": "list", "cap": "view_search_results", "items": [
+          {"title": "Mina Park", "meta": "Figma", "avatar": "MP", "hue": 200},
+          {"title": "Mike Rossi", "meta": "Mobile", "avatar": "MR", "hue": 10}
+        ]},
+        {"type": "link", "cap": "open_view_contact", "label": "Mina Park", "meta": "Details"}
+      ]
+    },
+    "contacts.view_recent_calls": {
+      "blocks": [
+        {"type": "list", "cap": "view_recent_calls", "items": [
+          {"title": "Mina Park", "meta": "Outgoing · 4:12", "trailing": "9:20 AM", "icon": "phone-outgoing"},
+          {"title": "Alex Chen", "meta": "Missed", "trailing": "Yesterday", "icon": "phone-missed"},
+          {"title": "Mom", "meta": "Incoming · 18:05", "trailing": "Tue", "icon": "phone-incoming"}
+        ]},
+        {"type": "link", "cap": "open_view_contact", "label": "Mina Park", "icon": "info", "meta": "Contact info"}
+      ]
+    }
+  }
+}

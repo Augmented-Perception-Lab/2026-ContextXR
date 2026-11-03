@@ -1,0 +1,59 @@
+{
+  "app": "calculator",
+  "icon": "calculator",
+  "color": "#ff9500",
+  "facets": {
+    "calculator.open_section": {
+      "blocks": [
+        {"type": "tabs", "selected": 0, "items": [
+          {"cap": "open_perform_calculation", "label": "Calculator", "icon": "calculator"},
+          {"cap": "open_view_recent_calculations", "label": "History", "icon": "history"},
+          {"cap": "open_convert_unit_currency", "label": "Convert", "icon": "arrow-left-right"}
+        ]}
+      ]
+    },
+    "calculator.perform_calculation": {
+      "blocks": [
+        {"type": "stat", "cap": "view_current_result", "value": "1,284.48", "label": "12 × (48 + 59.04)"},
+        {"type": "keypad",
+         "caps": ["apply_trigonometric_function", "apply_logarithm", "apply_square_root", "apply_exponents",
+                  "clear", "toggle_sign", "convert_to_percentage", "divide",
+                  "enter_number", "multiply", "subtract", "add",
+                  "put_parentheses", "add_decimal", "calculate_result"],
+         "keys": ["sin", "log", "√", "xʸ",
+                  "C", "±", "%", "÷",
+                  "7", "8", "9", "×",
+                  "4", "5", "6", "−",
+                  "1", "2", "3", "+",
+                  "( )", "0", ".", "="]}
+      ]
+    },
+    "calculator.view_recent_calculations": {
+      "blocks": [
+        {"type": "list", "cap": "view_recent_calculations", "items": [
+          {"title": "12 × (48 + 59.04)", "trailing": "1,284.48", "meta": "Today"},
+          {"title": "86.40 × 18%", "trailing": "15.55", "meta": "Today"},
+          {"title": "2,450 ÷ 3", "trailing": "816.67", "meta": "Yesterday"}
+        ]},
+        {"type": "buttons", "items": [
+          {"cap": "reuse_previous_result", "label": "Use 1,284.48", "icon": "corner-down-left", "style": "secondary"},
+          {"cap": "clear_history", "label": "Clear", "icon": "trash-2", "style": "danger"}
+        ]},
+        {"type": "link", "cap": "open_perform_calculation", "label": "Back to Calculator", "icon": "calculator"}
+      ]
+    },
+    "calculator.convert_unit_currency": {
+      "blocks": [
+        {"type": "group", "cap": "set_conversion_unit", "blocks": [
+          {"type": "select", "label": "From", "value": "US Dollar (USD)"},
+          {"type": "select", "label": "To", "value": "Korean Won (KRW)"}
+        ]},
+        {"type": "input", "cap": "enter_number", "icon": "dollar-sign", "value": "120.00"},
+        {"type": "controls", "items": [
+          {"cap": "switch_conversion_units", "icon": "arrow-up-down", "label": "Swap"}
+        ]},
+        {"type": "stat", "cap": "view_converted_result", "value": "165,840", "unit": "KRW", "label": "1 USD = 1,382 KRW"}
+      ]
+    }
+  }
+}

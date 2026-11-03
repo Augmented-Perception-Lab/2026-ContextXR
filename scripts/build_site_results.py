@@ -1,0 +1,126 @@
+#!/usr/bin/env python3
+"""Export initial-facet-suggestion results of the paper's methods for the project website.
+
+    python scripts/build_site_results.py [--out site/data/results.js]
+
+Replays every method from the LLM cache (no API key). For each scenario it keeps the
+suggestions, the hit / adjustment / miss outcome of every target with its cost terms
+(docs/results_format.md), and, for LLM methods, the model's summary, per-suggestion
+reason, tier and confidence, and the few-shot example scenarios in the prompt.
+Writes a JS file that sets `window.MINEXRPP_RESULTS`.
+"""
+
+import argparse
+import json
+import re
+from pathlib import Path
+
+from contextxr import evaluate, load_minexrpp
+from contextxr.data.loader import load_folds
+from contextxr.metrics.cost_model import DefaultCostModel
+from contextxr.methods.llm_cache import default_cache_dir
+from contextxr.methods.registry import build_method, paper_methods
+
+from build_site_data import site_text
+
+ROOT = Path(__file__).resolve().parent.parent
+
+LABELS = {
+    "popularity": "Global popularity",
+    "relational": "Relational retrieval",
+    "zero_shot_llm": "Zero-shot LLM",
+    "few_shot_llm[user]": "Few-shot LLM · User",
+    "few_shot_llm[task]": "Few-shot LLM · Task",
+    "few_shot_llm[environment]": "Few-shot LLM · Env",
+    "few_shot_llm[user+task]": "Few-shot LLM · User+Task",
+    "few_shot_llm[user+env]": "Few-shot LLM · User+Env",
+    "few_shot_llm[task+env]": "Few-shot LLM · Task+Env",
+}
+CACHE_FILES = {
+    "zero_shot_llm": "zero_shot",
+    **{f"few_shot_llm[{c}]": c for c in ["user", "task", "environment", "user+task", "user+env", "task+env"]},
+}
+
+
+def llm_details(name: str, catalog) -> dict:
+    """scenario_id -> {summary, examples, reasons: {facet_id: [reason, tier, confidence]}}."""
+    out = {}
+    for path in sorted(Path(default_cache_dir()).glob(f"*/initial/{CACHE_FILES[name]}.jsonl")):
+        for line in path.read_text(encoding="utf-8").splitlines():
+            rec = json.loads(line)
+            try:
+                body = json.loads(rec["response"]["text"])
+            except (TypeError, KeyError, json.JSONDecodeError):
+                continue
+            reasons = {}
+            for r in body.get("recommendations", []):
+                fid = catalog.canonical_id(str(r.get("facet_id", "")))
+                reasons.setdefault(fid, [site_text(r.get("reason", "")), r.get("tier", ""), r.get("confidence")])
+            out[rec["key"]["scenario_id"]] = {
+                "summary": site_text(body.get("summary", "")),
+                "examples": re.findall(r"scenario=(\S+)", rec.get("user_prompt", "")),
+                "reasons": reasons,
+            }
+    return out
+
+
+def compact_target(t: dict) -> list:
+    # [facet_id, outcome, source_facet_id, hops, app_scan, facet_nav, adjust]
+    return [t["facet_id"], t["outcome"], t["source_facet_id"], t["hops"], t["app_scan"], t["facet_nav"], t["adjust"]]
+
+
+def main() -> None:
+    p = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    p.add_argument("--out", type=Path, default=ROOT / "site" / "data" / "results.js")
+    args = p.parse_args()
+
+    ds = load_minexrpp()
+    cost_model = DefaultCostModel().bind(ds)
+    methods = []
+    for name in paper_methods():
+        method, protocol = build_method(name, task="initial", dataset=ds)
+        res = evaluate(method, "initial", ds, **protocol)
+        details = llm_details(name, ds.catalog) if name in CACHE_FILES else {}
+        scenarios = {}
+        for r in res.records:
+            sid = r["scenario_id"]
+            if not r.get("evaluated", True):
+                scenarios[sid] = {"skip": r.get("skip_reason", "skipped")}
+                continue
+            entry = {
+                "suggestions": r["suggestions"][:10],
+                "targets": [compact_target(t) for t in r["hsm"]["targets"]],
+                "cost": [r["cost"]["manual"], r["cost"]["suggest"], r["cost"]["suggest_scan"]],
+            }
+            if sid in details:
+                d = details[sid]
+                entry["summary"] = d["summary"]
+                entry["examples"] = d["examples"]
+                entry["reasons"] = {f: d["reasons"][f] for f in entry["suggestions"] if f in d["reasons"]}
+            scenarios[sid] = entry
+        s = res.summary
+        methods.append({
+            "id": name,
+            "label": LABELS.get(name, name),
+            "summary": {k: s.get(k) for k in ["n_evaluated", "manual_cost", "suggest_cost", "cost_reduction_pct", "recall", "f1", "hit"]},
+            "scenarios": scenarios,
+        })
+        print(f"{name:28s} {s['suggest_cost']:.2f} ({s['cost_reduction_pct']:+.1f}%)")
+
+    payload = {
+        "task": "initial",
+        "folds": load_folds(),
+        "appPositions": cost_model.app_positions,
+        "costParams": cost_model.describe(),
+        "methods": methods,
+    }
+    args.out.parent.mkdir(parents=True, exist_ok=True)
+    args.out.write_text(
+        "// Generated by scripts/build_site_results.py. Do not edit.\n"
+        f"window.MINEXRPP_RESULTS = {json.dumps(payload, separators=(',', ':'))};\n"
+    )
+    print(f"wrote {args.out}")
+
+
+if __name__ == "__main__":
+    main()

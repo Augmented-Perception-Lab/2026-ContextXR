@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://augmented-perception.org/contextxr/events.schema.json",
+  "title": "ContextXR events table row",
+  "description": "One row of events.csv: an element (widget) a participant placed in a scenario, with the capabilities it exposes (paper §3.2, Fig. 3). Rows are validated one at a time after CSV parsing; `capabilities` is a JSON object string.",
+  "type": "object",
+  "required": ["scenario_id", "participant_id", "task", "environment", "widget_id", "capabilities"],
+  "properties": {
+    "scenario_id": {"type": "string", "minLength": 1},
+    "participant_id": {"type": "string", "minLength": 1},
+    "task": {"type": "string", "minLength": 1},
+    "environment": {"type": "string", "minLength": 1},
+    "widget_id": {"type": "string", "minLength": 1},
+    "app_id": {"type": "string", "pattern": "^([a-z0-9_]+)?$"},
+    "facet_id": {"type": "string", "pattern": "^([a-z0-9_]+\\.[a-z0-9_]+)?$"},
+    "capabilities": {"type": "string", "description": "JSON object mapping `app.capability` to a relevance tier (primary | peripheral | ambient)."},
+    "widget_desc": {"type": "string"},
+    "screen_desc": {"type": "string"}
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "capability_tiers": {
+      "type": "object",
+      "propertyNames": {"pattern": "^[a-z0-9_]+\\.[a-z0-9_]+$"},
+      "additionalProperties": {"enum": ["primary", "peripheral", "secondary", "ambient"]}
+    }
+  }
+}

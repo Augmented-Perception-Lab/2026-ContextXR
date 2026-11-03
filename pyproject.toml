@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "contextxr"
+version = "1.0.0"
+description = "ContextXR: a benchmarking framework for context-aware XR interfaces (UIST '26)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+dependencies = [
+    "jsonschema>=4.0",
+    "numpy>=1.24",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+embed = ["sentence-transformers>=2.2,<7", "scikit-learn>=1.3"]
+llm = ["google-genai>=0.2"]
+dev = ["pytest>=7.4", "nbmake>=1.5", "nbclient>=0.10", "ipykernel>=6", "ruff>=0.5"]
+
+[project.scripts]
+contextxr = "contextxr.cli:main"
+
+[tool.setuptools]
+# The benchmark data, protocol configs and LLM cache live at the repository root and are
+# bundled into the wheel as the resource package `contextxr_assets` (see contextxr/paths.py).
+packages = [
+    "contextxr", "contextxr.data", "contextxr.methods", "contextxr.methods._ranker",
+    "contextxr.metrics", "contextxr.tasks",
+    "contextxr_assets.data", "contextxr_assets.configs", "contextxr_assets.cache",
+]
+
+[tool.setuptools.package-dir]
+"contextxr_assets.data" = "data"
+"contextxr_assets.configs" = "configs"
+"contextxr_assets.cache" = "cache"
+
+[tool.setuptools.package-data]
+"contextxr.data" = ["schemas/*.json"]
+"contextxr.methods" = ["prompts/*.txt", "prompts/*.md"]
+"contextxr_assets.data" = ["**/*.json", "**/*.csv"]
+"contextxr_assets.configs" = ["**/*.yaml", "**/*.json"]
+"contextxr_assets.cache" = ["**/*.jsonl", "**/*.txt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

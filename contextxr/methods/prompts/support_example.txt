@@ -1,0 +1,6 @@
+Example {index}: scenario={scenario_key}
+  User: {participant_id}
+  Task: {task_id}
+  Environment: {environment_id}
+  Used facets:
+{facet_lines}

@@ -1,0 +1,181 @@
+{
+ "description": "Outputs of the paper's research code (python/ at cb5ca5b + uncommitted working tree), rerun 2026-10-03 before refactoring. Popularity, relational retrieval and lift recomputed; LLM rows re-aggregated from the saved paper-run outputs (no API calls). Costs are per-scenario means.",
+ "commands": [
+  "($PY scripts/analyze_ground_truth_variance.py --output-dir <scratch>/lift --task-policy merged --no-console > <scratch>/lift.log 2>&1; echo LIFT_DONE $? >> <scratch>/status) &",
+  "($PY scripts/eval_context_facet_ranker.py --variants global_popularity,exact_embeddings --modes TEU --cv-folds 5 --seed 42 --split-unit scenario --output-json <scratch>/cf_eval.json --dashboard-output-json <scratch>/cf_dash.json > <scratch>/cf.log 2>&1 && $PY scripts/static_support_interaction_cost_dashboard.py --evaluation-results-json <scratch>/cf_dash.json --output-dir <scratch>/cf_static >> <scratch>/cf.log 2>&1; echo CF_DONE $? >> <scratch>/status) &",
+  "($PY scripts/eval_context_facet_ranker_human_in_the_loop.py --variants global_popularity,exact_embeddings_prior_schema --modes TEU --cv-folds 5 --seed 42 --top-k 10 --output-dir <scratch>/cf_hitl > <scratch>/cfh.log 2>&1 && $PY scripts/hitl_interaction_cost_dashboard.py --hitl-eval-json $(ls <scratch>/cf_hitl/hitl_context_facet_eval_2*.json | grep -v -e rows -e summary -e traces | head -1) --output-dir <scratch>/cf_hitl_dash --no-replay-traces >> <scratch>/cfh.log 2>&1; echo CFH_DONE $? >> <scratch>/status) &",
+  "($PY scripts/static_support_interaction_cost_dashboard.py --cold-start-results-json $R/static_support_eval_20260322_120448_corrected_ground_truth.json --warm-start-results-json $R/static_support_eval_20260322_164757-warmstart.json --output-dir <scratch>/llm_static > <scratch>/llms.log 2>&1; echo LLMS_DONE $? >> <scratch>/status) &",
+  "($PY scripts/hitl_interaction_cost_dashboard.py --hitl-eval-json $R/human_in_the_loop/hitl_eval_20260329_175808.json --output-dir <scratch>/llm_hitl --no-replay-traces > <scratch>/llmh.log 2>&1; echo LLMH_DONE $? >> <scratch>/status) &"
+ ],
+ "figure4": {
+  "counts": {
+   "user": 47,
+   "task": 14,
+   "environment": 12,
+   "mixed": 8,
+   "none": 20
+  },
+  "books.browse_library": [
+   0.0,
+   12.907895,
+   0.0
+  ],
+  "duolingo.complete_lesson": [
+   18.987097,
+   0.0,
+   0.657507
+  ],
+  "netflix.browse_content": [
+   0.0,
+   0.0,
+   3.94504
+  ],
+  "reminders.browse_task_lists": [
+   12.658065,
+   12.907895,
+   1.315013
+  ]
+ },
+ "table1": {
+  "few_shot_llm[user]": {
+   "cost": 16.32547169811321,
+   "manual": 21.09433962264151,
+   "recall": 0.3384,
+   "f1": 0.2551,
+   "hit": 0.8302,
+   "n": 106
+  },
+  "few_shot_llm[user+env]": {
+   "cost": 15.52659574468085,
+   "manual": 20.074468085106382,
+   "recall": 0.3191,
+   "f1": 0.2292,
+   "hit": 0.8617,
+   "n": 94
+  },
+  "few_shot_llm[environment]": {
+   "cost": 17.069444444444443,
+   "manual": 21.02777777777778,
+   "recall": 0.2875,
+   "f1": 0.2064,
+   "hit": 0.8704,
+   "n": 108
+  },
+  "zero_shot_llm": {
+   "cost": 17.655963302752294,
+   "manual": 21.201834862385322,
+   "recall": 0.2277,
+   "f1": 0.1683,
+   "hit": 0.7615,
+   "n": 109
+  },
+  "few_shot_llm[task]": {
+   "cost": 18.4125,
+   "manual": 21.9,
+   "recall": 0.2744,
+   "f1": 0.2175,
+   "hit": 0.825,
+   "n": 40
+  },
+  "few_shot_llm[task+env]": {
+   "cost": 19.54255319148936,
+   "manual": 22.361702127659573,
+   "recall": 0.2223,
+   "f1": 0.1778,
+   "hit": 0.7021,
+   "n": 47
+  },
+  "few_shot_llm[user+task]": {
+   "cost": 15.25,
+   "manual": 22.0,
+   "recall": 0.4643,
+   "f1": 0.3987,
+   "hit": 1.0,
+   "n": 2
+  },
+  "relational": {
+   "cost": 18.389908256880734,
+   "manual": 21.201834862385322,
+   "recall": 0.2594,
+   "f1": 0.1934,
+   "hit": 0.7982,
+   "n": 109
+  },
+  "popularity": {
+   "cost": 19.84862385321101,
+   "manual": 21.201834862385322,
+   "recall": 0.167,
+   "f1": 0.1323,
+   "hit": 0.6881,
+   "n": 109
+  }
+ },
+ "table2": {
+  "manual": {
+   "cost": 21.192660550458715
+  },
+  "zero_shot_llm": {
+   "cost": 15.995412844036696,
+   "recall": 0.20530527953697678,
+   "f1": 0.10170090022872133,
+   "hit": 0.48817347280650036,
+   "n": 109
+  },
+  "few_shot_llm[environment]": {
+   "cost": 15.821100917431192,
+   "recall": 0.2087046189959378,
+   "f1": 0.1037559143443203,
+   "hit": 0.4917035563824555,
+   "n": 109
+  },
+  "few_shot_llm[task]": {
+   "cost": 19.21559633027523,
+   "recall": 0.07850980277877066,
+   "f1": 0.043834641103035595,
+   "hit": 0.1882699868938401,
+   "n": 109
+  },
+  "few_shot_llm[task+env]": {
+   "cost": 19.298165137614678,
+   "recall": 0.08951621761520845,
+   "f1": 0.04592623237618651,
+   "hit": 0.20509948766829503,
+   "n": 109
+  },
+  "few_shot_llm[user]": {
+   "cost": 14.610091743119266,
+   "recall": 0.2851770535427875,
+   "f1": 0.1472122683012706,
+   "hit": 0.5742185566726852,
+   "n": 109
+  },
+  "few_shot_llm[user+env]": {
+   "cost": 15.8348623853211,
+   "recall": 0.25720798732740247,
+   "f1": 0.12244059505606524,
+   "hit": 0.4943761004540821,
+   "n": 109
+  },
+  "few_shot_llm[user+task]": {
+   "cost": 20.977064220183486,
+   "recall": 0.006594367991845056,
+   "f1": 0.004177293577981652,
+   "hit": 0.01401630988786952,
+   "n": 109
+  },
+  "relational": {
+   "cost": 15.70183486238532,
+   "recall": 0.35539845758471905,
+   "f1": 0.16195960054980696,
+   "hit": 0.6867789957239498,
+   "n": 109
+  },
+  "popularity": {
+   "cost": 18.701834862385322,
+   "recall": 0.16787165874645232,
+   "f1": 0.08947518471334985,
+   "hit": 0.4660306818563699,
+   "n": 109
+  }
+ }
+}

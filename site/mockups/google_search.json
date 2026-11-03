@@ -1,0 +1,75 @@
+{
+  "app": "google_search",
+  "icon": "search",
+  "color": "#4285f4",
+  "facets": {
+    "google_search.open_section": {
+      "blocks": [
+        {
+          "type": "link",
+          "cap": "open_search",
+          "label": "Search Google",
+          "icon": "search"
+        }
+      ]
+    },
+    "google_search.search": {
+      "blocks": [
+        {
+          "type": "input",
+          "cap": "enter_search_query",
+          "icon": "search",
+          "value": "hiking trails near pittsburgh",
+          "trailing": "mic"
+        },
+        {
+          "type": "chips",
+          "cap": "filter_results",
+          "items": [
+            "All",
+            "Images",
+            "Maps",
+            "News"
+          ],
+          "selected": 0
+        },
+        {
+          "type": "list",
+          "cap": "view_search_results",
+          "items": [
+            {
+              "title": "10 Best Hikes Near Pittsburgh",
+              "meta": "alltrails.com · 4.7 ★ · 1,240 reviews",
+              "icon": "globe"
+            },
+            {
+              "title": "Ohiopyle State Park – Trails",
+              "meta": "pa.gov · 79 miles of hiking trails",
+              "icon": "globe"
+            },
+            {
+              "title": "Frick Park Hiking Guide",
+              "meta": "pittsburghparks.org",
+              "icon": "globe"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "cap": "view_trending_searches",
+          "label": "Trending",
+          "items": [
+            {
+              "title": "steelers score",
+              "icon": "trending-up"
+            },
+            {
+              "title": "fall foliage forecast",
+              "icon": "trending-up"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

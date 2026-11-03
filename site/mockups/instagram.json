@@ -1,0 +1,241 @@
+{
+  "app": "instagram",
+  "icon": "instagram",
+  "color": "#e1306c",
+  "facets": {
+    "instagram.open_section": {
+      "blocks": [
+        {"type": "buttons", "label": "Stories", "items": [
+          {"cap": "open_browse_story_previews", "label": "All stories", "icon": "circle-dashed", "style": "secondary"},
+          {"cap": "open_view_story", "label": "maya.chen", "icon": "circle-play", "style": "secondary"},
+          {"cap": "open_create_story", "label": "Add story", "icon": "circle-plus", "style": "secondary"}
+        ]},
+        {"type": "buttons", "items": [
+          {"cap": "open_browse_explore", "label": "Explore", "icon": "compass", "style": "secondary"},
+          {"cap": "open_browse_message_conversations", "label": "Messages", "icon": "send", "style": "secondary"}
+        ]},
+        {"type": "tabs", "selected": 0, "items": [
+          {"cap": "open_browse_feed", "label": "Home", "icon": "house"},
+          {"cap": "open_search_content", "label": "Search", "icon": "search"},
+          {"cap": "open_create_post", "label": "Post", "icon": "square-plus"},
+          {"cap": "open_browse_reels", "label": "Reels", "icon": "clapperboard"},
+          {"cap": "open_view_user_profile", "label": "Profile", "icon": "circle-user"}
+        ]}
+      ]
+    },
+    "instagram.browse_feed": {
+      "blocks": [
+        {"type": "row", "widths": [3, 1], "blocks": [
+          {"type": "segmented", "cap": "set_feed_source", "items": ["For you", "Following"], "selected": 1},
+          {"type": "controls", "items": [{"cap": "refresh_feed", "icon": "refresh-cw", "label": "Refresh"}]}
+        ]},
+        {"type": "header", "cap": "view_content_metadata", "title": "maya.chen", "subtitle": "Big Sur, California · 2h · 1,284 likes", "thumb": {"icon": "user", "hue": 330}},
+        {"type": "media", "cap": "view_post_content", "kind": "photo", "hue": 28, "icon": "sunset", "aspect": "wide"},
+        {"type": "text", "cap": "view_content_caption", "size": "sm", "text": "Golden hour on Highway 1. Worth every hairpin turn 🌅"},
+        {"type": "chips", "cap": "view_hashtags", "items": ["#bigsur", "#goldenhour", "#roadtrip"]},
+        {"type": "list", "cap": "view_feed_posts", "label": "Up next", "style": "thumbs", "items": [
+          {"title": "jordan.eats", "meta": "15-min tonkotsu ramen · 4h", "hue": 30},
+          {"title": "natgeo", "meta": "Northern lights over Tromsø · 6h", "hue": 150}
+        ]},
+        {"type": "buttons", "items": [
+          {"cap": "open_view_user_profile", "label": "View profile", "icon": "circle-user", "style": "secondary"},
+          {"cap": "open_engage_with_content", "label": "Like & comment", "icon": "heart", "style": "secondary"}
+        ]}
+      ]
+    },
+    "instagram.engage_with_content": {
+      "blocks": [
+        {"type": "controls", "items": [
+          {"cap": "like_content", "icon": "heart", "label": "Like", "primary": true},
+          {"cap": "share_content_in_chat", "icon": "send", "label": "Send"},
+          {"cap": "share_content", "icon": "share-2", "label": "Share"},
+          {"cap": "save_content", "icon": "bookmark", "label": "Save"}
+        ]},
+        {"type": "text", "cap": "view_likes_list", "size": "sm", "text": "Liked by jordan.eats and 1,283 others"},
+        {"type": "list", "cap": "view_all_comments", "label": "Comments", "items": [
+          {"title": "jordan.eats", "meta": "Need this drive in my life 😍", "avatar": "J", "hue": 30},
+          {"title": "lena.k", "meta": "Which turnout is this?", "avatar": "L", "hue": 200},
+          {"title": "sam_hikes", "meta": "McWay Falls is 10 min away!", "avatar": "S", "hue": 120}
+        ]},
+        {"type": "input", "cap": "comment_on_content", "placeholder": "Add a comment for maya.chen…", "trailing": "smile"}
+      ]
+    },
+    "instagram.view_user_profile": {
+      "blocks": [
+        {"type": "header", "cap": "view_profile_details", "title": "maya.chen", "subtitle": "Maya Chen · Photographer in SF · she/her", "thumb": {"icon": "user", "hue": 330}},
+        {"type": "kv", "cap": "view_followers_following_lists", "items": [["Followers", "12.4K"], ["Following", "538"]]},
+        {"type": "buttons", "items": [
+          {"cap": "follow_unfollow_user", "label": "Following", "icon": "user-check", "style": "secondary"},
+          {"cap": "open_browse_message_conversations", "label": "Message", "icon": "send", "style": "secondary"}
+        ]},
+        {"type": "grid", "cap": "view_user_posts", "cols": 3, "items": [
+          {"label": "Big Sur", "icon": "sunset", "hue": 28},
+          {"label": "Muir Woods", "icon": "trees", "hue": 120},
+          {"label": "Ocean Beach", "icon": "waves", "hue": 200}
+        ]},
+        {"type": "link", "cap": "open_view_post", "label": "Open Big Sur post"}
+      ]
+    },
+    "instagram.search_content": {
+      "blocks": [
+        {"type": "row", "widths": [4, 1.3], "blocks": [
+          {"type": "input", "cap": "enter_search_query", "icon": "search", "value": "big sur"},
+          {"type": "button", "cap": "clear_search_query", "label": "Clear", "icon": "x", "style": "ghost"}
+        ]},
+        {"type": "chips", "cap": "view_search_suggestions", "items": ["big sur camping", "big sur bakery", "bixby bridge"]},
+        {"type": "list", "cap": "view_search_results", "style": "thumbs", "items": [
+          {"title": "#bigsur", "meta": "2.1M posts", "hue": 28},
+          {"title": "Big Sur, California", "meta": "Place", "hue": 160},
+          {"title": "bigsur.photos", "meta": "48.2K followers", "hue": 200}
+        ]},
+        {"type": "list", "cap": "view_recent_searches", "label": "Recent", "items": [
+          {"title": "jordan.eats", "icon": "clock"},
+          {"title": "#goldenhour", "icon": "clock"}
+        ]},
+        {"type": "buttons", "items": [
+          {"cap": "open_view_user_profile", "label": "bigsur.photos", "icon": "circle-user", "style": "secondary"},
+          {"cap": "open_view_post", "label": "Top post", "icon": "image", "style": "secondary"}
+        ]}
+      ]
+    },
+    "instagram.browse_explore": {
+      "blocks": [
+        {"type": "grid", "cap": "browse_grid_content", "cols": 3, "items": [
+          {"label": "Ramen", "icon": "soup", "hue": 30},
+          {"label": "Tromsø", "icon": "mountain-snow", "hue": 150},
+          {"label": "Bouldering", "icon": "mountain", "hue": 15},
+          {"label": "Latte art", "icon": "coffee", "hue": 35},
+          {"label": "Big Sur", "icon": "sunset", "hue": 28},
+          {"label": "Corgis", "icon": "dog", "hue": 45}
+        ]},
+        {"type": "row", "widths": [1, 1], "blocks": [
+          {"type": "link", "cap": "open_view_post", "label": "Open post"},
+          {"type": "link", "cap": "open_browse_reels", "label": "Watch Reels", "icon": "clapperboard"}
+        ]}
+      ]
+    },
+    "instagram.browse_message_conversations": {
+      "blocks": [
+        {"type": "row", "widths": [4, 1], "blocks": [
+          {"type": "input", "cap": "search_conversations", "icon": "search", "placeholder": "Search messages"},
+          {"type": "controls", "items": [{"cap": "create_new_message", "icon": "square-pen", "label": "New"}]}
+        ]},
+        {"type": "list", "cap": "view_message_list", "items": [
+          {"title": "jordan.eats", "meta": "Sent a photo · 5m", "avatar": "J", "hue": 30, "trailing": "•"},
+          {"title": "maya.chen", "meta": "haha that drive was wild · 1h", "avatar": "M", "hue": 330},
+          {"title": "Climbing crew", "meta": "lena.k: Thursday 7pm? · 3h", "avatar": "C", "hue": 15}
+        ]},
+        {"type": "link", "cap": "open_engage_in_conversation", "label": "Open chat with jordan.eats"}
+      ]
+    },
+    "instagram.create_post": {
+      "blocks": [
+        {"type": "media", "cap": "select_media_from_file", "kind": "photo", "hue": 28, "icon": "sunset", "aspect": "wide", "caption": "Recents · 1 selected"},
+        {"type": "chips", "cap": "edit_media", "label": "Filter", "items": ["Normal", "Clarendon", "Juno", "Lark"], "selected": 1},
+        {"type": "input", "cap": "add_post_caption", "multiline": true, "value": "Golden hour on Highway 1 🌅 #bigsur"},
+        {"type": "select", "cap": "tag_people", "label": "Tag people", "value": "jordan.eats"},
+        {"type": "select", "cap": "add_location", "label": "Location", "value": "Big Sur, California"},
+        {"type": "row", "widths": [1, 1.6], "blocks": [
+          {"type": "button", "cap": "capture_new_media", "label": "Camera", "icon": "camera", "style": "secondary"},
+          {"type": "button", "cap": "upload_content", "label": "Share", "icon": "send", "style": "primary"}
+        ]}
+      ]
+    },
+    "instagram.create_story": {
+      "blocks": [
+        {"type": "media", "cap": "capture_new_media", "kind": "camera", "hue": 35, "aspect": "square", "caption": "Tap to shoot · hold for video"},
+        {"type": "controls", "items": [
+          {"cap": "add_text_stickers_filters_to_story", "icon": "sticker", "label": "Aa · Stickers"},
+          {"cap": "edit_media", "icon": "wand-sparkles", "label": "Effects"},
+          {"cap": "add_location", "icon": "map-pin", "label": "Location"},
+          {"cap": "tag_people", "icon": "at-sign", "label": "Mention"},
+          {"cap": "select_media_from_file", "icon": "images", "label": "Gallery"}
+        ]},
+        {"type": "button", "cap": "upload_content", "label": "Your story", "icon": "circle-plus", "style": "primary"}
+      ]
+    },
+    "instagram.browse_reels": {
+      "blocks": [
+        {"type": "media", "cap": "view_video_content", "kind": "video", "hue": 30, "icon": "soup", "aspect": "wide", "caption": "jordan.eats · 15-min tonkotsu ramen 🍜", "duration": "0:42"},
+        {"type": "player", "cap": "seek_video", "progress": 0.4, "elapsed": "0:17", "total": "0:42"},
+        {"type": "row", "widths": [1, 1.4], "blocks": [
+          {"type": "controls", "items": [
+            {"cap": "play_pause_video", "icon": "pause", "label": "Pause", "primary": true},
+            {"cap": "mute_unmute_audio", "icon": "volume-2", "label": "Mute"}
+          ]},
+          {"type": "slider", "cap": "control_volume", "label": "Volume", "value": 0.6, "icon": "volume-1"}
+        ]},
+        {"type": "button", "cap": "open_engage_with_content", "label": "Like · 8.9K comments", "icon": "heart", "style": "secondary"}
+      ]
+    },
+    "instagram.view_post": {
+      "blocks": [
+        {"type": "header", "cap": "view_content_metadata", "title": "maya.chen", "subtitle": "Big Sur, California · 2h · 1,284 likes", "thumb": {"icon": "user", "hue": 330}},
+        {"type": "media", "cap": "view_post_content", "kind": "photo", "hue": 28, "icon": "sunset", "aspect": "wide"},
+        {"type": "text", "cap": "view_content_caption", "size": "sm", "text": "Golden hour on Highway 1. Worth every hairpin turn 🌅"},
+        {"type": "chips", "cap": "view_hashtags", "items": ["#bigsur", "#goldenhour", "#roadtrip"]},
+        {"type": "buttons", "items": [
+          {"cap": "open_engage_with_content", "label": "Like", "icon": "heart", "style": "secondary"},
+          {"cap": "open_view_user_profile", "label": "Profile", "icon": "circle-user", "style": "secondary"},
+          {"cap": "open_view_story", "label": "Story", "icon": "circle-play", "style": "secondary"}
+        ]}
+      ]
+    },
+    "instagram.view_story": {
+      "blocks": [
+        {"type": "group", "cap": "view_story_content", "blocks": [
+          {"type": "progress", "label": "maya.chen · 3h", "value": 0.45, "display": "2/4"},
+          {"type": "media", "kind": "photo", "hue": 200, "icon": "waves", "aspect": "wide", "caption": "Morning swim at Ocean Beach 🥶"}
+        ]},
+        {"type": "controls", "items": [
+          {"cap": "tap_to_advance_story", "icon": "chevron-right", "label": "Next"},
+          {"cap": "swipe_to_next_story", "icon": "chevrons-right", "label": "jordan.eats"}
+        ]},
+        {"type": "button", "cap": "open_engage_with_content", "label": "Like & reply", "icon": "heart", "style": "secondary"}
+      ]
+    },
+    "instagram.engage_in_conversation": {
+      "blocks": [
+        {"type": "chat", "cap": "read_messages", "items": [
+          {"from": "them", "name": "jordan.eats", "text": "Made the ramen from my reel last night"},
+          {"from": "me", "text": "No way, how was the broth?"},
+          {"from": "them", "name": "jordan.eats", "text": "12 hours of simmering. Worth it."}
+        ]},
+        {"type": "media", "cap": "view_media_in_chat", "kind": "photo", "hue": 30, "icon": "soup", "aspect": "wide", "caption": "jordan.eats sent a photo"},
+        {"type": "controls", "items": [
+          {"cap": "send_photo_video_message", "icon": "image", "label": "Photo"},
+          {"cap": "share_content_in_chat", "icon": "share-2", "label": "Share post"},
+          {"cap": "send_reaction", "icon": "heart", "label": "React"},
+          {"cap": "open_call", "icon": "video", "label": "Call"}
+        ]},
+        {"type": "input", "cap": "send_text_message", "placeholder": "Message…", "trailing": "send"}
+      ]
+    },
+    "instagram.browse_story_previews": {
+      "blocks": [
+        {"type": "cards", "cap": "view_story_unread_indicator", "items": [
+          {"title": "maya.chen", "meta": "New", "hue": 330, "icon": "user"},
+          {"title": "jordan.eats", "meta": "New", "hue": 30, "icon": "user"},
+          {"title": "natgeo", "meta": "Seen", "hue": 150, "icon": "user"}
+        ]},
+        {"type": "buttons", "items": [
+          {"cap": "open_create_story", "label": "Your story", "icon": "circle-plus", "style": "secondary"},
+          {"cap": "open_view_story", "label": "Watch maya.chen", "icon": "circle-play", "style": "secondary"}
+        ]}
+      ]
+    },
+    "instagram.call": {
+      "blocks": [
+        {"type": "media", "cap": "view_speaker", "kind": "camera", "hue": 30, "icon": "user", "aspect": "wide", "caption": "jordan.eats"},
+        {"type": "badge", "cap": "view_call_duration", "label": "Video call · 12:47", "tone": "green"},
+        {"type": "controls", "items": [
+          {"cap": "mute_unmute_microphone", "icon": "mic-off", "label": "Mute"},
+          {"cap": "enable_disable_video", "icon": "video", "label": "Video"},
+          {"cap": "switch_camera", "icon": "switch-camera", "label": "Flip"},
+          {"cap": "share_screen", "icon": "screen-share", "label": "Share"},
+          {"cap": "end_call", "icon": "phone-off", "label": "End", "primary": true}
+        ]}
+      ]
+    }
+  }
+}

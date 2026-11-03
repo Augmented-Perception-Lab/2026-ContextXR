@@ -1,0 +1,95 @@
+{
+  "app": "notes",
+  "icon": "notebook-pen",
+  "color": "#e0a800",
+  "facets": {
+    "notes.open_section": {
+      "blocks": [
+        {"type": "tabs", "selected": 0, "items": [
+          {"cap": "open_browse_notes", "label": "Notes", "icon": "notebook"},
+          {"cap": "open_search_notes", "label": "Search", "icon": "search"},
+          {"cap": "open_create_note", "label": "New note", "icon": "square-pen"}
+        ]}
+      ]
+    },
+    "notes.browse_notes": {
+      "blocks": [
+        {"type": "button", "cap": "open_search_notes", "label": "Search notes", "icon": "search", "style": "ghost"},
+        {"type": "link", "cap": "open_view_note", "label": "Kyoto packing list", "icon": "pin", "meta": "9:20 AM"},
+        {"type": "list", "cap": "view_note_list", "items": [
+          {"title": "Grocery run", "meta": "Yesterday · Oat milk, eggs, miso", "icon": "file-text", "action": {"cap": "pin_note", "icon": "pin"}},
+          {"title": "1:1 talking points", "meta": "Mon · Offsite budget, Q4 OKRs", "icon": "file-text", "action": {"cap": "delete_note", "icon": "trash-2"}},
+          {"title": "Book club — Nov pick", "meta": "Oct 18 · Tomorrow, and Tomorrow…", "icon": "file-text"}
+        ]}
+      ]
+    },
+    "notes.create_note": {
+      "blocks": [
+        {"type": "row", "blocks": [
+          {"type": "link", "cap": "open_browse_notes", "label": "All notes", "icon": "chevron-left"},
+          {"type": "button", "cap": "open_share_note", "label": "Share", "icon": "share", "style": "ghost"}
+        ]},
+        {"type": "input", "cap": "edit_text", "multiline": true, "value": "Kyoto weekend\nBook ryokan · Buy JR pass · Fushimi Inari at sunrise"},
+        {"type": "controls", "items": [
+          {"cap": "undo_action", "icon": "undo-2"},
+          {"cap": "format_text", "icon": "type"},
+          {"cap": "add_checklist_item", "icon": "list-todo"},
+          {"cap": "add_table", "icon": "table"},
+          {"cap": "insert_media", "icon": "image"},
+          {"cap": "add_drawing", "icon": "pen-tool"}
+        ]},
+        {"type": "buttons", "items": [
+          {"cap": "create_new_note", "label": "New note", "icon": "square-pen", "style": "secondary"},
+          {"cap": "save_note_changes", "label": "Done", "style": "primary"}
+        ]}
+      ]
+    },
+    "notes.view_note": {
+      "blocks": [
+        {"type": "header", "cap": "view_note_content", "title": "Kyoto packing list", "subtitle": "Edited today, 9:20 AM"},
+        {"type": "input", "cap": "edit_text", "multiline": true, "value": "Flight Fri 7:40 AM. Pack light — laundry at the ryokan."},
+        {"type": "list", "cap": "mark_checklist_item_done", "style": "check", "items": [
+          {"title": "Passport", "done": true},
+          {"title": "JR pass voucher", "done": true},
+          {"title": "Rain jacket"},
+          {"title": "Power adapter (Type A)"}
+        ]},
+        {"type": "controls", "items": [
+          {"cap": "undo_action", "icon": "undo-2"},
+          {"cap": "format_text", "icon": "type"},
+          {"cap": "add_checklist_item", "icon": "list-todo"},
+          {"cap": "add_table", "icon": "table"},
+          {"cap": "insert_media", "icon": "image"},
+          {"cap": "add_drawing", "icon": "pen-tool"}
+        ]},
+        {"type": "buttons", "items": [
+          {"cap": "open_browse_notes", "label": "Notes", "icon": "chevron-left", "style": "ghost"},
+          {"cap": "open_create_note", "label": "New", "icon": "square-pen", "style": "secondary"},
+          {"cap": "save_note_changes", "label": "Done", "style": "primary"}
+        ]}
+      ]
+    },
+    "notes.search_notes": {
+      "blocks": [
+        {"type": "row", "widths": [5, 1], "blocks": [
+          {"type": "input", "cap": "enter_search_query", "icon": "search", "value": "kyoto"},
+          {"type": "controls", "items": [
+            {"cap": "clear_search_query", "icon": "x"}
+          ]}
+        ]},
+        {"type": "chips", "cap": "view_search_suggestions", "items": ["kyoto ryokan", "kyoto budget", "kyoto food"]},
+        {"type": "list", "cap": "view_search_results", "items": [
+          {"title": "Kyoto packing list", "meta": "Today · Passport, JR pass voucher…", "icon": "file-text"},
+          {"title": "Japan trip budget", "meta": "Oct 2 · Kyoto ryokan ¥38,000…", "icon": "file-text"}
+        ]},
+        {"type": "link", "cap": "open_view_note", "label": "Open Kyoto packing list"}
+      ]
+    },
+    "notes.share_note": {
+      "blocks": [
+        {"type": "input", "cap": "add_collaborator", "icon": "user-plus", "value": "Mina Park"},
+        {"type": "button", "cap": "share_note", "label": "Share “Kyoto packing list”", "icon": "share", "style": "primary"}
+      ]
+    }
+  }
+}

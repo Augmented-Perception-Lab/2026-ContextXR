@@ -1,0 +1,285 @@
+{
+  "app": "linkedin",
+  "icon": "briefcase",
+  "color": "#0a66c2",
+  "facets": {
+    "linkedin.open_section": {
+      "blocks": [
+        {
+          "type": "tabs",
+          "selected": 0,
+          "items": [
+            {
+              "cap": "open_browse_feed",
+              "label": "Home",
+              "icon": "house"
+            },
+            {
+              "cap": "open_search_content",
+              "label": "Search",
+              "icon": "search"
+            },
+            {
+              "cap": "open_view_notifications",
+              "label": "Notifications",
+              "icon": "bell"
+            }
+          ]
+        }
+      ]
+    },
+    "linkedin.browse_feed": {
+      "blocks": [
+        {
+          "type": "list",
+          "cap": "view_feed_posts",
+          "items": [
+            {
+              "title": "Maya Chen · 2h",
+              "meta": "Thrilled to share our paper on adaptive XR interfaces was accepted to CHI 2027! 🎉",
+              "trailing": "248 👍",
+              "avatar": true,
+              "hue": 200
+            },
+            {
+              "title": "Lumen Labs · 5h",
+              "meta": "We're hiring a Senior Product Designer in Pittsburgh.",
+              "trailing": "96 👍",
+              "avatar": true,
+              "hue": 265
+            },
+            {
+              "title": "Raj Patel · 1d",
+              "meta": "5 lessons from shipping our first visionOS app",
+              "trailing": "1.2K 👍",
+              "avatar": true,
+              "hue": 30
+            }
+          ]
+        },
+        {
+          "type": "buttons",
+          "items": [
+            {
+              "cap": "open_view_post",
+              "label": "View post",
+              "icon": "file-text",
+              "style": "secondary"
+            },
+            {
+              "cap": "open_view_profile",
+              "label": "Maya's profile",
+              "icon": "user",
+              "style": "secondary"
+            }
+          ]
+        }
+      ]
+    },
+    "linkedin.view_notifications": {
+      "blocks": [
+        {
+          "type": "list",
+          "cap": "view_notification_list",
+          "items": [
+            {
+              "title": "Maya Chen mentioned you in a post",
+              "meta": "\"…with @you and the HCII team\"",
+              "trailing": "2h",
+              "avatar": true,
+              "hue": 200
+            },
+            {
+              "title": "Raj Patel and 34 others reacted",
+              "meta": "Your post: Hiring summer interns",
+              "trailing": "5h",
+              "avatar": true,
+              "hue": 30
+            },
+            {
+              "title": "Job alert: UX Researcher",
+              "meta": "8 new jobs in Pittsburgh, PA",
+              "trailing": "1d",
+              "icon": "briefcase"
+            },
+            {
+              "title": "Elena Ruiz wants to connect",
+              "meta": "Design Lead at Lumen Labs",
+              "trailing": "1d",
+              "avatar": true,
+              "hue": 340
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "cap": "open_view_post",
+          "label": "View Maya's post"
+        }
+      ]
+    },
+    "linkedin.view_post": {
+      "blocks": [
+        {
+          "type": "group",
+          "cap": "view_post_content",
+          "blocks": [
+            {
+              "type": "header",
+              "title": "Maya Chen",
+              "subtitle": "UX Researcher at Lumen Labs · 2h",
+              "thumb": {
+                "icon": "user",
+                "hue": 200
+              }
+            },
+            {
+              "type": "text",
+              "size": "sm",
+              "text": "Thrilled to share that our paper on adaptive XR interfaces was accepted to CHI 2027! Huge thanks to my co-authors. 🎉"
+            },
+            {
+              "type": "media",
+              "kind": "photo",
+              "hue": 200,
+              "icon": "file-text",
+              "aspect": "wide",
+              "caption": "Adaptive Interfaces for Everyday XR"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "cap": "view_post_comments",
+          "label": "Comments",
+          "items": [
+            {
+              "title": "Raj Patel",
+              "meta": "Congrats Maya! Can't wait to read it.",
+              "avatar": true,
+              "hue": 30
+            },
+            {
+              "title": "Elena Ruiz",
+              "meta": "Well deserved — see you in Barcelona!",
+              "avatar": true,
+              "hue": 340
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "cap": "open_view_profile",
+          "label": "View Maya Chen's profile",
+          "icon": "user"
+        }
+      ]
+    },
+    "linkedin.search_content": {
+      "blocks": [
+        {
+          "type": "input",
+          "cap": "enter_search_query",
+          "icon": "search",
+          "value": "spatial computing"
+        },
+        {
+          "type": "chips",
+          "cap": "filter_search_results",
+          "items": [
+            "People",
+            "Posts",
+            "Jobs",
+            "Companies"
+          ],
+          "selected": 1
+        },
+        {
+          "type": "list",
+          "cap": "view_search_results",
+          "items": [
+            {
+              "title": "Raj Patel",
+              "meta": "5 lessons from shipping our first visionOS app",
+              "trailing": "1d",
+              "avatar": true,
+              "hue": 30
+            },
+            {
+              "title": "Maya Chen",
+              "meta": "Our CHI paper on adaptive XR interfaces",
+              "trailing": "2h",
+              "avatar": true,
+              "hue": 200
+            },
+            {
+              "title": "Lumen Labs",
+              "meta": "Spatial computing is coming to the workplace",
+              "trailing": "3d",
+              "avatar": true,
+              "hue": 265
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "cap": "open_view_post",
+          "label": "Open Raj's post"
+        }
+      ]
+    },
+    "linkedin.view_profile": {
+      "blocks": [
+        {
+          "type": "header",
+          "cap": "view_profile_details",
+          "title": "Maya Chen",
+          "subtitle": "UX Researcher at Lumen Labs · Pittsburgh, PA · 500+ connections",
+          "thumb": {
+            "icon": "user",
+            "hue": 200
+          }
+        },
+        {
+          "type": "buttons",
+          "items": [
+            {
+              "cap": "send_connection_request",
+              "label": "Connect",
+              "icon": "user-plus",
+              "style": "primary"
+            },
+            {
+              "cap": "send_message",
+              "label": "Message",
+              "icon": "send",
+              "style": "secondary"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "cap": "view_profile_posts",
+          "label": "Activity",
+          "items": [
+            {
+              "title": "Our CHI paper on adaptive XR interfaces",
+              "meta": "2h · 248 reactions",
+              "icon": "file-text"
+            },
+            {
+              "title": "Recap: 3 months of diary studies in VR",
+              "meta": "3w · 512 reactions",
+              "icon": "file-text"
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "cap": "open_view_post",
+          "label": "Show latest post"
+        }
+      ]
+    }
+  }
+}

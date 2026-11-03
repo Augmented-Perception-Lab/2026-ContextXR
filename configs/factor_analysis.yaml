@@ -1,0 +1,57 @@
+# Context factor analysis (paper §4.1, Fig. 4). Loaded by ContextFactorAnalysis.from_config().
+# Facets placed in fewer than min_occurrences scenarios are skipped; a facet is 'mixed' when its top
+# lift is less than dominance_ratio times the second. Before comparing contexts, environment spellings
+# are case-normalized and raw MineXR task labels are merged with task_aliases (46 rules, the table
+# used for Fig. 4). Matching ignores case and non-alphanumeric characters.
+min_occurrences: 2
+dominance_ratio: 1.2
+environment_aliases:
+  coffeeshop: CoffeeShop
+  livingroom: LivingRoom
+task_aliases:
+  Browsinginternet: Browsing
+  Chatting: CasualChat
+  Chatwithfriend: CasualChat
+  ChatWithFriends: CasualChat
+  Talkingwithfriends: CasualChat
+  hangingoutwithfriends: CasualChat
+  socialize: CasualChat
+  Discussion: WorkDiscussion
+  InPersonMeeting: WorkDiscussion
+  Morning: MorningRoutine
+  CoffeeMaking: MorningRoutine
+  Drinkingcoffee: MorningRoutine
+  Cookbreakfast: MorningRoutine
+  Cookegg: MorningRoutine
+  Cooking: Cooking
+  CookingWithFriends: Cooking
+  Teachcooking: Cooking
+  BakingWithFriends: Cooking
+  Eatbreakfast: Eating
+  Dining: Eating
+  Readingbook: Reading
+  Readingpaper: Reading
+  Readpaper: Reading
+  Watchingvideos: WatchingVideo
+  Watchingtv: WatchingVideo
+  Watchingshow: WatchingVideo
+  Playgames: PlayingGame
+  Playingboardgame: PlayingGame
+  PlayiPhone: Browsing
+  Socialnetworking: Browsing
+  Working: Work
+  Doingwork: Work
+  WorkingAlone: Work
+  WorkingWithFriend: Work
+  WorkingWithFriends: Work
+  workonlaptop: Work
+  FocusWork: Work
+  Writingpaper: Work
+  Writingonworddoc: Work
+  Writingemail: Work
+  Studying: Study
+  Remotework: RemoteWork
+  RemoteMeeting: RemoteWork
+  Wheretogonext: Transition
+  Leaving: Transition
+  Workout: Workout

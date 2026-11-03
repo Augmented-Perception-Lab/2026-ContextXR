@@ -1,0 +1,4 @@
+# Global popularity (paper §4.2.2): context-agnostic ranking by placement frequency in the training folds.
+name: popularity
+class: contextxr.methods.popularity.GlobalPopularity
+params: {}

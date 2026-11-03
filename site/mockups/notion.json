@@ -1,0 +1,103 @@
+{
+  "app": "notion",
+  "icon": "notebook-pen",
+  "color": "#37352f",
+  "facets": {
+    "notion.open_section": {
+      "blocks": [
+        {"type": "tabs", "selected": 0, "items": [
+          {"cap": "open_browse_pages", "label": "Home", "icon": "house"},
+          {"cap": "open_search_workspace", "label": "Search", "icon": "search"},
+          {"cap": "open_browse_notifications", "label": "Inbox", "icon": "inbox"},
+          {"cap": "open_compose_page", "label": "New page", "icon": "square-pen"}
+        ]}
+      ]
+    },
+    "notion.browse_pages": {
+      "blocks": [
+        {"type": "select", "cap": "switch_workspace", "label": "Workspace", "value": "CMU HCI Lab"},
+        {"type": "list", "cap": "browse_recent_pages", "label": "Recents", "items": [
+          {"title": "Weekly Sync · Oct 23", "meta": "Edited 5 min ago", "icon": "file-text"},
+          {"title": "Pilot Study Notes", "meta": "Edited yesterday", "icon": "file-text"}
+        ]},
+        {"type": "list", "cap": "browse_favorite_pages", "label": "Favorites", "items": [
+          {"title": "CHI 2027 Paper Plan", "icon": "star"},
+          {"title": "Reading List", "icon": "star"}
+        ]},
+        {"type": "list", "cap": "browse_page_hierarchy", "label": "Teamspace", "items": [
+          {"title": "Projects", "icon": "chevron-down"},
+          {"title": "ContextXR", "meta": "4 pages", "icon": "chevron-right"},
+          {"title": "Lab Wiki", "meta": "12 pages", "icon": "chevron-right"}
+        ]},
+        {"type": "link", "cap": "open_compose_page", "label": "New page", "icon": "square-pen"}
+      ]
+    },
+    "notion.compose_page": {
+      "blocks": [
+        {"type": "group", "cap": "view_page_content", "blocks": [
+          {"type": "header", "title": "Weekly Sync · Oct 23", "subtitle": "Mina, Alex, Hyunsung", "thumb": {"icon": "calendar-days", "hue": 210}},
+          {"type": "text", "size": "sm", "text": "Pilot study wrapped up with 8 participants. Main issue: panels too small at 2 m."}
+        ]},
+        {"type": "list", "cap": "reorder_block", "label": "Blocks", "items": [
+          {"title": "Agenda", "meta": "Heading", "icon": "grip-vertical"},
+          {"title": "Pilot results", "meta": "Toggle list", "icon": "grip-vertical", "action": {"cap": "delete_block", "icon": "trash-2"}},
+          {"title": "Next steps", "meta": "To-do list", "icon": "grip-vertical"}
+        ]},
+        {"type": "input", "cap": "edit_page_content", "multiline": true, "value": "Next steps: scale panel text to 1.5× and rerun with 12 people|"},
+        {"type": "controls", "items": [
+          {"cap": "format_text", "icon": "bold", "label": "Bold"},
+          {"cap": "format_text", "icon": "italic", "label": "Italic"},
+          {"cap": "format_text", "icon": "strikethrough", "label": "Strike"},
+          {"cap": "format_text", "icon": "code", "label": "Code"}
+        ]},
+        {"type": "input", "cap": "add_new_block", "icon": "plus", "placeholder": "Type '/' for commands"},
+        {"type": "input", "cap": "add_page_comment", "icon": "message-square", "placeholder": "Add a comment…"},
+        {"type": "link", "cap": "open_configure_page", "label": "Page settings", "icon": "ellipsis"}
+      ]
+    },
+    "notion.search_workspace": {
+      "blocks": [
+        {"type": "input", "cap": "enter_search_query", "icon": "search", "value": "pilot study"},
+        {"type": "list", "cap": "view_search_results", "items": [
+          {"title": "Pilot Study Notes", "meta": "Projects / ContextXR", "icon": "file-text"},
+          {"title": "Weekly Sync · Oct 23", "meta": "Meetings", "icon": "file-text"}
+        ]},
+        {"type": "input", "cap": "ask_ai_question", "icon": "sparkles", "value": "Summarize the pilot results", "trailing": "arrow-up"},
+        {"type": "text", "cap": "view_ai_response", "size": "sm",
+         "text": "8 participants finished all tasks. Most found panels too small at 2 m; average SUS was 74."},
+        {"type": "link", "cap": "open_compose_page", "label": "Open Pilot Study Notes"}
+      ]
+    },
+    "notion.browse_notifications": {
+      "blocks": [
+        {"type": "list", "cap": "view_notification_list", "items": [
+          {"title": "Mina mentioned you", "meta": "Weekly Sync · 5 min ago", "avatar": "MP", "hue": 200, "action": {"cap": "dismiss_notification", "icon": "archive"}},
+          {"title": "Alex commented", "meta": "\"Can we add a 3 m condition?\" · 1 h", "avatar": "AC", "hue": 30},
+          {"title": "You were invited", "meta": "CHI 2027 Paper Plan · Mon", "avatar": "PS", "hue": 280}
+        ]},
+        {"type": "link", "cap": "open_compose_page", "label": "Open Weekly Sync"}
+      ]
+    },
+    "notion.configure_page": {
+      "blocks": [
+        {"type": "buttons", "items": [
+          {"cap": "add_change_page_icon", "label": "Change icon", "icon": "smile", "style": "secondary"},
+          {"cap": "add_change_page_cover", "label": "Change cover", "icon": "image", "style": "secondary"}
+        ]},
+        {"type": "button", "cap": "share_page", "label": "Share", "icon": "user-plus"},
+        {"type": "toggle", "cap": "lock_unlock_page", "label": "Lock page", "on": false, "desc": "Prevent accidental edits"},
+        {"type": "buttons", "items": [
+          {"cap": "duplicate_page", "label": "Duplicate", "icon": "copy", "style": "ghost"},
+          {"cap": "move_page", "label": "Move to", "icon": "folder-input", "style": "ghost"},
+          {"cap": "export_page", "label": "Export", "icon": "download", "style": "ghost"}
+        ]},
+        {"type": "list", "cap": "view_page_updates_history", "label": "Updates", "items": [
+          {"title": "Mina edited Next steps", "meta": "5 min ago", "avatar": "MP", "hue": 200},
+          {"title": "You created the page", "meta": "Today, 9:02 AM", "avatar": "HC", "hue": 140}
+        ]},
+        {"type": "button", "cap": "move_to_trash", "label": "Move to trash", "icon": "trash-2", "style": "danger"},
+        {"type": "link", "cap": "open_compose_page", "label": "Back to Weekly Sync"}
+      ]
+    }
+  }
+}

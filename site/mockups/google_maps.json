@@ -1,0 +1,171 @@
+{
+  "app": "google_maps",
+  "icon": "map",
+  "color": "#1a73e8",
+  "facets": {
+    "google_maps.open_section": {
+      "blocks": [
+        {"type": "tabs", "selected": 0, "items": [
+          {"cap": "open_explore_map", "label": "Explore", "icon": "compass"},
+          {"cap": "open_search_places", "label": "Search", "icon": "search"},
+          {"cap": "open_browse_saved_lists", "label": "Saved", "icon": "bookmark"},
+          {"cap": "open_share_realtime_location", "label": "Sharing", "icon": "user-round"}
+        ]}
+      ]
+    },
+    "google_maps.explore_map": {
+      "blocks": [
+        {"type": "map", "caps": ["pan_map", "select_region"], "kind": "area", "label": "Strip District · Pittsburgh"},
+        {"type": "controls", "items": [
+          {"cap": "zoom_map", "icon": "zoom-in", "label": "Zoom in"},
+          {"cap": "zoom_map", "icon": "zoom-out", "label": "Zoom out"},
+          {"cap": "toggle_map_layer", "icon": "layers", "label": "Layers"},
+          {"cap": "recenter_to_location", "icon": "locate-fixed", "label": "My location", "primary": true}
+        ]},
+        {"type": "list", "cap": "view_saved_places", "label": "Saved nearby", "items": [
+          {"title": "Gaucho Parrilla Argentina", "meta": "Steakhouse · 0.3 mi", "icon": "utensils"},
+          {"title": "La Prima Espresso", "meta": "Coffee shop · 0.4 mi", "icon": "coffee"}
+        ]}
+      ]
+    },
+    "google_maps.search_places": {
+      "blocks": [
+        {"type": "input", "cap": "enter_search_query", "icon": "search", "value": "coffee"},
+        {"type": "list", "cap": "view_search_autocomplete", "items": [
+          {"title": "coffee near me", "icon": "search"},
+          {"title": "coffee shops open now", "icon": "search"}
+        ]},
+        {"type": "chips", "cap": "search_category", "items": ["Restaurants", "Coffee", "Groceries", "Gas"], "selected": 1},
+        {"type": "chips", "cap": "filter_search_results", "items": ["Open now", "Rated 4.5+", "Within 1 mi"], "selected": [0]},
+        {"type": "list", "cap": "view_search_results", "style": "thumbs", "items": [
+          {"title": "La Prima Espresso", "meta": "4.7 ★ · $ · Open until 6 PM", "trailing": "0.4 mi", "hue": 28},
+          {"title": "Commonplace Coffee", "meta": "4.6 ★ · $ · Open until 5 PM", "trailing": "0.7 mi", "hue": 35}
+        ]},
+        {"type": "link", "cap": "open_view_place", "label": "La Prima Espresso", "icon": "map-pin", "meta": "View place"}
+      ]
+    },
+    "google_maps.view_place": {
+      "blocks": [
+        {"type": "row", "widths": [1, 1.3], "blocks": [
+          {"type": "media", "cap": "view_photos", "kind": "photo", "hue": 14, "icon": "image", "aspect": "square", "caption": "218 photos"},
+          {"type": "header", "cap": "view_place_details", "title": "Gaucho Parrilla Argentina", "subtitle": "Steakhouse · 1607 Penn Ave"}
+        ]},
+        {"type": "row", "blocks": [
+          {"type": "rating", "cap": "view_reviews", "value": 4.7, "count": "3,412"},
+          {"type": "badge", "cap": "view_price_level", "label": "$$", "tone": "gray"},
+          {"type": "badge", "cap": "view_open_hours", "label": "Open · Closes 9 PM", "tone": "green"}
+        ]},
+        {"type": "chart", "cap": "view_busy_times", "kind": "bars", "label": "Popular times · Usually busy at 7 PM", "values": [2, 3, 5, 6, 4, 3, 5, 8, 10, 9, 6, 3]},
+        {"type": "controls", "items": [
+          {"cap": "call_place", "icon": "phone", "label": "Call"},
+          {"cap": "view_menu", "icon": "utensils", "label": "Menu"},
+          {"cap": "save_place", "icon": "bookmark", "label": "Save"},
+          {"cap": "share_place", "icon": "share-2", "label": "Share"}
+        ]},
+        {"type": "buttons", "items": [
+          {"cap": "open_view_directions", "label": "Directions", "icon": "route", "style": "primary"},
+          {"cap": "open_navigate_route", "label": "Start", "icon": "navigation", "style": "secondary"},
+          {"cap": "reserve_table", "label": "Reserve", "icon": "utensils", "style": "secondary"}
+        ]}
+      ]
+    },
+    "google_maps.navigate_route": {
+      "blocks": [
+        {"type": "notice", "cap": "view_next_turn", "title": "Turn right onto Liberty Ave", "text": "in 400 ft", "icon": "corner-up-right", "tone": "green"},
+        {"type": "chips", "cap": "view_lane_guidance", "label": "Lanes", "items": ["↰", "↑", "↑", "↱"], "selected": [3]},
+        {"type": "map", "cap": "toggle_route_overview", "kind": "route", "label": "Route overview · 4.2 mi"},
+        {"type": "notice", "cap": "view_hazard_alerts", "title": "Stalled vehicle ahead", "text": "Right lane blocked · 0.8 mi", "icon": "triangle-alert", "tone": "amber"},
+        {"type": "row", "widths": [1.4, 1], "blocks": [
+          {"type": "stat", "cap": "view_eta", "value": "6:58", "unit": "PM", "label": "14 min · 4.2 mi"},
+          {"type": "stat", "cap": "view_speed", "value": "28", "unit": "mph", "label": "Speed"}
+        ]},
+        {"type": "controls", "items": [
+          {"cap": "mute_unmute_voice", "icon": "volume-2", "label": "Voice"},
+          {"cap": "report_incident", "icon": "triangle-alert", "label": "Report"},
+          {"cap": "reroute", "icon": "route", "label": "Reroute"}
+        ]},
+        {"type": "buttons", "items": [
+          {"cap": "start_navigation", "label": "Start", "icon": "navigation", "style": "primary"},
+          {"cap": "stop_navigation", "label": "Exit", "icon": "x", "style": "danger"}
+        ]}
+      ]
+    },
+    "google_maps.view_directions": {
+      "blocks": [
+        {"type": "input", "cap": "set_origin", "icon": "circle-dot", "value": "Your location"},
+        {"type": "input", "cap": "set_destination", "icon": "map-pin", "value": "Gaucho Parrilla Argentina"},
+        {"type": "button", "cap": "add_stops", "label": "Add stop", "icon": "plus", "style": "ghost"},
+        {"type": "tabs", "selected": 1, "items": [
+          {"cap": "set_driving_mode", "label": "14 min", "icon": "car"},
+          {"cap": "set_transit_mode", "label": "22 min", "icon": "bus"},
+          {"cap": "set_walking_mode", "label": "48 min", "icon": "footprints"},
+          {"cap": "set_bike_mode", "label": "19 min", "icon": "bike"}
+        ]},
+        {"type": "select", "cap": "select_arrival_time", "label": "Arrive by", "value": "7:00 PM"},
+        {"type": "list", "cap": "view_route_options", "items": [
+          {"title": "54 · 22 min", "meta": "Leaves 6:31 PM · 3 min walk", "icon": "bus"},
+          {"title": "88 · 27 min", "meta": "Leaves 6:28 PM · 6 min walk", "icon": "bus"}
+        ]},
+        {"type": "row", "widths": [2, 1], "blocks": [
+          {"type": "kv", "cap": "view_transit_schedule", "items": [["54 · Forbes & Craig", "6:31 · 6:46 · 7:01"]]},
+          {"type": "badge", "cap": "view_fare_estimate", "label": "Fare $2.75", "tone": "blue"}
+        ]},
+        {"type": "list", "cap": "view_route_detail", "style": "numbered", "items": [
+          {"title": "Walk to Forbes Ave & Craig St", "meta": "3 min"},
+          {"title": "Ride 54 toward South Side", "meta": "9 stops · 16 min"},
+          {"title": "Walk to 1607 Penn Ave", "meta": "3 min"}
+        ]}
+      ]
+    },
+    "google_maps.manage_saved_list": {
+      "blocks": [
+        {"type": "input", "cap": "add_place_to_list", "icon": "map-pin-plus", "placeholder": "Add a place", "value": "Primanti Bros."},
+        {"type": "list", "cap": "remove_saved_place", "label": "Pittsburgh Eats · 3 places", "items": [
+          {"title": "Gaucho Parrilla Argentina", "meta": "Steakhouse", "trailing": "Remove", "icon": "utensils"},
+          {"title": "La Prima Espresso", "meta": "Coffee shop", "trailing": "Remove", "icon": "coffee"},
+          {"title": "Pamela's Diner", "meta": "Breakfast", "trailing": "Remove", "icon": "utensils"}
+        ]},
+        {"type": "buttons", "items": [
+          {"cap": "invite_collaborators", "label": "Invite", "icon": "user-plus", "style": "secondary"},
+          {"cap": "share_list", "label": "Share", "icon": "share-2", "style": "secondary"},
+          {"cap": "create_list", "label": "New list", "icon": "plus", "style": "primary"}
+        ]}
+      ]
+    },
+    "google_maps.share_realtime_location": {
+      "blocks": [
+        {"type": "group", "cap": "share_realtime_location", "blocks": [
+          {"type": "map", "kind": "pins", "label": "You · Strip District"},
+          {"type": "avatar", "name": "Mina Park", "status": "Can see your location · until 8:00 PM", "hue": 330}
+        ]},
+        {"type": "button", "cap": "share_eta", "label": "Share trip progress · ETA 6:58 PM", "icon": "clock", "style": "secondary"}
+      ]
+    },
+    "google_maps.browse_saved_lists": {
+      "blocks": [
+        {"type": "list", "cap": "view_saved_lists", "items": [
+          {"title": "Favorites", "meta": "Private · 12 places", "icon": "heart"},
+          {"title": "Want to go", "meta": "Private · 8 places", "icon": "flag"},
+          {"title": "Pittsburgh Eats", "meta": "Shared · 3 places", "icon": "utensils"}
+        ]},
+        {"type": "row", "widths": [2, 1], "blocks": [
+          {"type": "link", "cap": "open_view_saved_places", "label": "Open Pittsburgh Eats"},
+          {"type": "button", "cap": "open_manage_saved_list", "label": "Edit", "icon": "pencil", "style": "secondary"}
+        ]}
+      ]
+    },
+    "google_maps.view_saved_places": {
+      "blocks": [
+        {"type": "list", "cap": "view_saved_places", "label": "Pittsburgh Eats", "style": "thumbs", "items": [
+          {"title": "Gaucho Parrilla Argentina", "meta": "4.7 ★ · Steakhouse · $$", "hue": 14},
+          {"title": "La Prima Espresso", "meta": "4.7 ★ · Coffee · $", "hue": 28},
+          {"title": "Pamela's Diner", "meta": "4.5 ★ · Breakfast · $", "hue": 45}
+        ]},
+        {"type": "row", "widths": [2, 1], "blocks": [
+          {"type": "link", "cap": "open_view_place", "label": "Gaucho Parrilla Argentina"},
+          {"type": "button", "cap": "open_manage_saved_list", "label": "Edit list", "icon": "pencil", "style": "secondary"}
+        ]}
+      ]
+    }
+  }
+}

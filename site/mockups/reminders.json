@@ -1,0 +1,87 @@
+{
+  "app": "reminders",
+  "icon": "list-checks",
+  "color": "#007aff",
+  "facets": {
+    "reminders.open_section": {
+      "blocks": [
+        {"type": "tabs", "selected": 0, "items": [
+          {"cap": "open_browse_task_lists", "label": "Lists", "icon": "list"},
+          {"cap": "open_search_tasks", "label": "Search", "icon": "search"},
+          {"cap": "open_compose_task", "label": "New", "icon": "circle-plus"}
+        ]}
+      ]
+    },
+    "reminders.browse_task_lists": {
+      "blocks": [
+        {"type": "button", "cap": "open_search_tasks", "label": "Search reminders", "icon": "search", "style": "ghost"},
+        {"type": "list", "cap": "view_task_lists", "items": [
+          {"title": "Today", "icon": "calendar", "trailing": "4"},
+          {"title": "Errands", "icon": "list", "trailing": "3"},
+          {"title": "Groceries", "icon": "shopping-cart", "trailing": "7"},
+          {"title": "Work", "icon": "briefcase", "trailing": "5"}
+        ]},
+        {"type": "link", "cap": "open_view_task_list", "label": "Open Errands", "meta": "3"}
+      ]
+    },
+    "reminders.view_task_list": {
+      "blocks": [
+        {"type": "list", "cap": "view_tasks", "style": "check", "items": [
+          {"title": "Renew passport", "meta": "Fri, Oct 31 · 5:00 PM", "action": {"cap": "mark_task_complete", "icon": "circle-check"}},
+          {"title": "Pick up dry cleaning", "meta": "Today · 6:00 PM"},
+          {"title": "Return library books", "done": true}
+        ]},
+        {"type": "row", "blocks": [
+          {"type": "stat", "cap": "view_due_date", "value": "Oct 31", "label": "Due Fri", "icon": "calendar"},
+          {"type": "stat", "cap": "view_due_time", "value": "5:00", "unit": "PM", "label": "Due time", "icon": "clock"}
+        ]},
+        {"type": "buttons", "items": [
+          {"cap": "open_compose_task", "label": "New reminder", "icon": "plus", "style": "secondary"},
+          {"cap": "open_search_tasks", "label": "Search", "icon": "search", "style": "ghost"}
+        ]}
+      ]
+    },
+    "reminders.search_tasks": {
+      "blocks": [
+        {"type": "row", "widths": [5, 1], "blocks": [
+          {"type": "input", "cap": "enter_search_query", "icon": "search", "value": "passport"},
+          {"type": "controls", "items": [
+            {"cap": "clear_search_query", "icon": "x"}
+          ]}
+        ]},
+        {"type": "list", "cap": "view_search_results", "style": "check", "items": [
+          {"title": "Renew passport", "meta": "Errands · Fri, Oct 31"},
+          {"title": "Passport photos", "meta": "Errands · Today"}
+        ]}
+      ]
+    },
+    "reminders.compose_task": {
+      "blocks": [
+        {"type": "input", "cap": "set_task_title", "value": "Renew passport"},
+        {"type": "input", "cap": "add_task_notes", "multiline": true, "value": "Bring old passport + 2 photos. Form DS-82."},
+        {"type": "select", "cap": "assign_to_list", "label": "List", "value": "Errands"},
+        {"type": "kv", "cap": "set_details", "label": "Details", "items": [["Priority", "High"], ["Tags", "#travel"], ["Flag", "On"]]},
+        {"type": "link", "cap": "open_schedule_reminder", "label": "Date & time", "icon": "calendar", "meta": "Fri, Oct 31"},
+        {"type": "list", "cap": "add_subtask", "label": "Subtasks", "style": "check", "items": [
+          {"title": "Get photos taken", "done": true},
+          {"title": "Fill out DS-82", "action": {"cap": "remove_subtask", "icon": "x"}}
+        ]},
+        {"type": "buttons", "items": [
+          {"cap": "delete_task", "label": "Delete", "icon": "trash-2", "style": "danger"},
+          {"cap": "save_task", "label": "Save", "style": "primary"}
+        ]}
+      ]
+    },
+    "reminders.schedule_reminder": {
+      "blocks": [
+        {"type": "row", "blocks": [
+          {"type": "select", "cap": "set_due_date", "label": "Date", "value": "Fri, Oct 31"},
+          {"type": "select", "cap": "set_due_time", "label": "Time", "value": "5:00 PM"}
+        ]},
+        {"type": "select", "cap": "set_recurrence", "label": "Repeat", "value": "Never"},
+        {"type": "map", "cap": "set_location_trigger", "kind": "area", "label": "When arriving · Post Office, Forbes Ave"},
+        {"type": "button", "cap": "remove_schedule", "label": "Remove date & alerts", "icon": "bell-off", "style": "ghost"}
+      ]
+    }
+  }
+}

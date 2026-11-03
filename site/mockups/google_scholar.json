@@ -1,0 +1,57 @@
+{
+  "app": "google_scholar",
+  "icon": "graduation-cap",
+  "color": "#4285f4",
+  "facets": {
+    "google_scholar.open_section": {
+      "blocks": [
+        {"type": "tabs", "selected": 0, "items": [
+          {"cap": "open_search_articles", "label": "Search", "icon": "search"},
+          {"cap": "open_view_recommended_articles", "label": "Recommended", "icon": "sparkles"}
+        ]}
+      ]
+    },
+    "google_scholar.search_articles": {
+      "blocks": [
+        {"type": "input", "cap": "enter_search_query", "icon": "search", "value": "adaptive mixed reality interfaces"},
+        {"type": "row", "widths": [1.6, 1], "blocks": [
+          {"type": "chips", "cap": "filter_search_results", "items": ["Since 2025", "Since 2022", "Reviews"], "selected": 1},
+          {"type": "segmented", "cap": "sort_search_results", "items": ["Relevance", "Date"], "selected": 0}
+        ]},
+        {"type": "list", "cap": "view_search_results", "items": [
+          {"title": "MineXR: Mining Personalized Extended Reality Interfaces", "meta": "H Cho, Y Yan, K Todi… · CHI 2024 · Cited by 41", "icon": "file-text"},
+          {"title": "Context-Aware Online Adaptation of Mixed Reality Interfaces", "meta": "D Lindlbauer, A Feit, O Hilliges · UIST 2019 · Cited by 260", "icon": "file-text"},
+          {"title": "SemanticAdapt: Optimization-based Adaptation of MR Layouts", "meta": "Y Cheng, Y Yan, X Yi… · UIST 2021 · Cited by 98", "icon": "file-text"}
+        ]},
+        {"type": "link", "cap": "open_view_article", "label": "Open MineXR", "meta": "[PDF] acm.org"}
+      ]
+    },
+    "google_scholar.view_recommended_articles": {
+      "blocks": [
+        {"type": "list", "cap": "view_recommended_articles", "label": "Based on your library", "items": [
+          {"title": "Interaction Cost of Spatial App Launchers in XR", "meta": "CHI 2026 · 2 weeks ago", "icon": "file-text"},
+          {"title": "LLM-Driven Context Prediction for Wearable UIs", "meta": "arXiv · 4 days ago", "icon": "file-text"},
+          {"title": "Glanceable Widgets for Everyday AR", "meta": "IEEE VR 2026 · 1 week ago", "icon": "file-text"}
+        ]},
+        {"type": "link", "cap": "open_view_article", "label": "Read the first recommendation"}
+      ]
+    },
+    "google_scholar.view_article": {
+      "blocks": [
+        {"type": "header", "cap": "view_article_title", "title": "MineXR: Mining Personalized Extended Reality Interfaces", "subtitle": "CHI 2024 · Cited by 41"},
+        {"type": "text", "cap": "view_article_authors", "size": "sm", "muted": true, "text": "H Cho, Y Yan, K Todi, M Parent, M Smith, TR Jonker, H Benko, D Lindlbauer"},
+        {"type": "text", "cap": "view_article_abstract", "label": "Abstract", "size": "sm", "text": "Extended Reality allows users to customize UIs as they like… We present MineXR, a design mining workflow and data analysis platform for collecting and analyzing personalized XR user interaction and experience data."},
+        {"type": "media", "cap": "view_article_content", "kind": "doc", "icon": "file-text", "aspect": "wide", "caption": "Full text · 17 pages"},
+        {"type": "link", "cap": "open_view_article_content", "label": "[PDF] dl.acm.org", "icon": "file-text"}
+      ]
+    },
+    "google_scholar.view_article_content": {
+      "blocks": [
+        {"type": "group", "cap": "view_article_content", "blocks": [
+          {"type": "media", "kind": "doc", "icon": "file-text", "aspect": "wide", "caption": "MineXR · CHI 2024 · page 1 of 17"},
+          {"type": "text", "label": "1 Introduction", "size": "sm", "text": "Extended Reality (XR) devices let users place virtual content anywhere around them. Yet how people would arrange their XR interfaces in everyday contexts remains largely unknown."}
+        ]}
+      ]
+    }
+  }
+}

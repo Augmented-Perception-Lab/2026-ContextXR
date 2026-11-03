@@ -1,0 +1,47 @@
+# Secrets
+.env
+*.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Raw MineXR media must never be committed (images, screenshots, scans, video)
+*.png
+*.jpg
+*.jpeg
+*.JPG
+*.heic
+*.HEIC
+*.gif
+*.webp
+*.mp4
+*.mov
+*.obj
+*.ply
+*.glb
+*.usdz
+*.zip
+
+# Run outputs
+results/
+runs/
+
+# Local-only: stock reference images and browser-test screenshots
+graphics-samples/
+.playwright-mcp/

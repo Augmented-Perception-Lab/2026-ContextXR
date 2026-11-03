@@ -1,0 +1,248 @@
+{
+  "app": "health",
+  "icon": "heart-pulse",
+  "color": "#ff2d55",
+  "facets": {
+    "health.open_section": {
+      "blocks": [
+        {
+          "type": "tabs",
+          "selected": 0,
+          "items": [
+            {
+              "cap": "open_view_health_summary",
+              "label": "Summary",
+              "icon": "heart"
+            },
+            {
+              "cap": "open_start_activity_tracking",
+              "label": "Workout",
+              "icon": "activity"
+            },
+            {
+              "cap": "open_view_activity_history",
+              "label": "History",
+              "icon": "history"
+            }
+          ]
+        }
+      ]
+    },
+    "health.start_activity_tracking": {
+      "blocks": [
+        {
+          "type": "grid",
+          "cap": "select_activity_preset",
+          "cols": 4,
+          "items": [
+            {
+              "label": "Walk",
+              "icon": "footprints",
+              "hue": 140
+            },
+            {
+              "label": "Run",
+              "icon": "activity",
+              "hue": 350
+            },
+            {
+              "label": "Cycle",
+              "icon": "bike",
+              "hue": 30
+            },
+            {
+              "label": "Hike",
+              "icon": "mountain",
+              "hue": 100
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "cap": "view_realtime_activity_metrics",
+          "blocks": [
+            {
+              "type": "timer",
+              "display": "24:18",
+              "label": "Outdoor Run"
+            },
+            {
+              "type": "kv",
+              "items": [
+                [
+                  "Distance",
+                  "3.12 mi"
+                ],
+                [
+                  "Pace",
+                  "7'47\"/mi"
+                ],
+                [
+                  "Heart rate",
+                  "152 bpm"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "controls",
+          "items": [
+            {
+              "cap": "start_activity_tracking",
+              "icon": "play",
+              "label": "Start"
+            },
+            {
+              "cap": "pause_resume_activity",
+              "icon": "pause",
+              "label": "Pause",
+              "primary": true
+            },
+            {
+              "cap": "stop_activity_tracking",
+              "icon": "square",
+              "label": "End"
+            }
+          ]
+        }
+      ]
+    },
+    "health.view_activity_history": {
+      "blocks": [
+        {
+          "type": "list",
+          "cap": "view_activity_history",
+          "items": [
+            {
+              "title": "Outdoor Run",
+              "meta": "Today · 3.12 mi",
+              "trailing": "24:18",
+              "icon": "activity"
+            },
+            {
+              "title": "Outdoor Cycle",
+              "meta": "Oct 21 · 11.4 mi",
+              "trailing": "48:02",
+              "icon": "bike"
+            },
+            {
+              "title": "Outdoor Walk",
+              "meta": "Oct 20 · 1.8 mi",
+              "trailing": "36:40",
+              "icon": "footprints"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "cap": "view_activity_details",
+          "blocks": [
+            {
+              "type": "chart",
+              "kind": "line",
+              "label": "Outdoor Run · Heart rate",
+              "values": [
+                118,
+                134,
+                146,
+                151,
+                155,
+                149,
+                158,
+                162,
+                152
+              ]
+            },
+            {
+              "type": "kv",
+              "items": [
+                [
+                  "Avg pace",
+                  "7'47\"/mi"
+                ],
+                [
+                  "Avg heart rate",
+                  "152 bpm"
+                ],
+                [
+                  "Active calories",
+                  "318 kcal"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "health.view_health_summary": {
+      "blocks": [
+        {
+          "type": "list",
+          "cap": "view_health_dashboard",
+          "items": [
+            {
+              "title": "Steps",
+              "icon": "footprints",
+              "trailing": "8,432"
+            },
+            {
+              "title": "Resting heart rate",
+              "icon": "heart",
+              "trailing": "62 bpm"
+            },
+            {
+              "title": "Sleep",
+              "icon": "moon",
+              "trailing": "7h 12m"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "cap": "view_daily_activity_summary",
+          "blocks": [
+            {
+              "type": "progress",
+              "label": "Move",
+              "value": 0.7,
+              "display": "420/600 kcal"
+            },
+            {
+              "type": "progress",
+              "label": "Exercise",
+              "value": 0.93,
+              "display": "28/30 min"
+            },
+            {
+              "type": "progress",
+              "label": "Stand",
+              "value": 0.75,
+              "display": "9/12 hr"
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "cap": "view_trend_charts",
+          "kind": "bars",
+          "label": "Steps · last 7 days",
+          "values": [
+            6200,
+            9100,
+            7400,
+            10300,
+            5800,
+            11200,
+            8432
+          ]
+        },
+        {
+          "type": "link",
+          "cap": "open_view_activity_history",
+          "label": "Show all workouts"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,497 @@
+{
+  "app": "facebook",
+  "icon": "thumbs-up",
+  "color": "#1877f2",
+  "facets": {
+    "facebook.open_section": {
+      "blocks": [
+        {
+          "type": "tabs",
+          "selected": 0,
+          "items": [
+            {
+              "cap": "open_browse_feed",
+              "label": "Home",
+              "icon": "house"
+            },
+            {
+              "cap": "open_browse_stories",
+              "label": "Stories",
+              "icon": "circle-play"
+            },
+            {
+              "cap": "open_search_content",
+              "label": "Search",
+              "icon": "search"
+            },
+            {
+              "cap": "open_create_post",
+              "label": "Post",
+              "icon": "square-plus"
+            },
+            {
+              "cap": "open_create_story",
+              "label": "Story",
+              "icon": "camera"
+            }
+          ]
+        }
+      ]
+    },
+    "facebook.browse_feed": {
+      "blocks": [
+        {
+          "type": "group",
+          "cap": "view_feed_posts",
+          "blocks": [
+            {
+              "type": "header",
+              "title": "Jordan Lee",
+              "subtitle": "Yesterday at 7:42 PM · Pittsburgh",
+              "thumb": {
+                "icon": "user",
+                "hue": 25
+              }
+            },
+            {
+              "type": "text",
+              "size": "sm",
+              "text": "Sunset from Mt. Washington never gets old 🌅"
+            },
+            {
+              "type": "media",
+              "kind": "photo",
+              "hue": 25,
+              "icon": "sunset",
+              "aspect": "wide",
+              "caption": "👍❤️ 86 · 12 comments"
+            }
+          ]
+        },
+        {
+          "type": "buttons",
+          "items": [
+            {
+              "cap": "open_view_post",
+              "label": "View post",
+              "icon": "message-circle",
+              "style": "secondary"
+            },
+            {
+              "cap": "open_view_user_profile",
+              "label": "Jordan's profile",
+              "icon": "user",
+              "style": "secondary"
+            }
+          ]
+        }
+      ]
+    },
+    "facebook.view_post": {
+      "blocks": [
+        {
+          "type": "group",
+          "cap": "view_post_content",
+          "blocks": [
+            {
+              "type": "header",
+              "title": "Jordan Lee",
+              "subtitle": "Yesterday at 7:42 PM · Pittsburgh",
+              "thumb": {
+                "icon": "user",
+                "hue": 25
+              }
+            },
+            {
+              "type": "text",
+              "size": "sm",
+              "text": "Sunset from Mt. Washington never gets old 🌅"
+            },
+            {
+              "type": "media",
+              "kind": "photo",
+              "hue": 25,
+              "icon": "sunset",
+              "aspect": "wide"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "cap": "view_comment_thread",
+          "label": "12 comments",
+          "items": [
+            {
+              "title": "Sam Ortiz",
+              "meta": "Gorgeous! Did you take the Incline up?",
+              "avatar": true,
+              "hue": 160
+            },
+            {
+              "title": "Jordan Lee",
+              "meta": "Yep, right before closing 😄",
+              "avatar": true,
+              "hue": 25
+            }
+          ]
+        },
+        {
+          "type": "buttons",
+          "items": [
+            {
+              "cap": "open_view_user_profile",
+              "label": "Jordan Lee",
+              "icon": "user",
+              "style": "secondary"
+            },
+            {
+              "cap": "open_engage_with_post",
+              "label": "Like & comment",
+              "icon": "thumbs-up",
+              "style": "secondary"
+            }
+          ]
+        }
+      ]
+    },
+    "facebook.engage_with_post": {
+      "blocks": [
+        {
+          "type": "buttons",
+          "items": [
+            {
+              "cap": "react_to_post",
+              "label": "Like",
+              "icon": "thumbs-up",
+              "style": "secondary"
+            },
+            {
+              "cap": "share_post",
+              "label": "Share",
+              "icon": "share-2",
+              "style": "secondary"
+            },
+            {
+              "cap": "save_post",
+              "label": "Save",
+              "icon": "bookmark",
+              "style": "secondary"
+            }
+          ]
+        },
+        {
+          "type": "input",
+          "cap": "comment_on_post",
+          "placeholder": "Write a comment…",
+          "value": "Stunning shot, Jordan!",
+          "trailing": "send-horizontal"
+        }
+      ]
+    },
+    "facebook.view_user_profile": {
+      "blocks": [
+        {
+          "type": "row",
+          "widths": [
+            1,
+            1.6
+          ],
+          "blocks": [
+            {
+              "type": "media",
+              "cap": "view_profile_photo",
+              "kind": "photo",
+              "hue": 25,
+              "icon": "user",
+              "aspect": "square"
+            },
+            {
+              "type": "header",
+              "cap": "view_profile_details",
+              "title": "Jordan Lee",
+              "subtitle": "Lives in Pittsburgh · Studied at Pitt · 342 friends"
+            }
+          ]
+        },
+        {
+          "type": "buttons",
+          "items": [
+            {
+              "cap": "send_friend_request",
+              "label": "Add friend",
+              "icon": "user-plus",
+              "style": "primary"
+            },
+            {
+              "cap": "send_message",
+              "label": "Message",
+              "icon": "message-circle",
+              "style": "secondary"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "cap": "view_user_posts",
+          "label": "Posts",
+          "style": "thumbs",
+          "items": [
+            {
+              "title": "Sunset from Mt. Washington never gets old",
+              "meta": "Yesterday · 86 reactions",
+              "hue": 25
+            },
+            {
+              "title": "First 10K done! 🏃",
+              "meta": "Oct 12 · 140 reactions",
+              "hue": 120
+            }
+          ]
+        },
+        {
+          "type": "buttons",
+          "items": [
+            {
+              "cap": "open_view_post",
+              "label": "Open post",
+              "icon": "chevron-right",
+              "style": "secondary"
+            },
+            {
+              "cap": "open_view_story",
+              "label": "View story",
+              "icon": "circle-play",
+              "style": "secondary"
+            }
+          ]
+        }
+      ]
+    },
+    "facebook.search_content": {
+      "blocks": [
+        {
+          "type": "input",
+          "cap": "enter_search_query",
+          "icon": "search",
+          "value": "pittsburgh hiking"
+        },
+        {
+          "type": "list",
+          "cap": "view_search_results",
+          "items": [
+            {
+              "title": "Pittsburgh Hiking Club",
+              "meta": "Group · 12K members · 5 posts a day",
+              "avatar": true,
+              "hue": 120
+            },
+            {
+              "title": "Jordan Lee",
+              "meta": "Post · Ohiopyle loop this weekend, who's in?",
+              "avatar": true,
+              "hue": 25
+            },
+            {
+              "title": "Frick Park",
+              "meta": "Page · Park · 4.8 ★",
+              "avatar": true,
+              "hue": 90
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "cap": "open_view_post",
+          "label": "Open Jordan's post"
+        }
+      ]
+    },
+    "facebook.browse_stories": {
+      "blocks": [
+        {
+          "type": "cards",
+          "cap": "view_story_previews",
+          "items": [
+            {
+              "title": "Jordan Lee",
+              "meta": "2h",
+              "hue": 25
+            },
+            {
+              "title": "Sam Ortiz",
+              "meta": "5h",
+              "hue": 160
+            },
+            {
+              "title": "PNC Park",
+              "meta": "8h",
+              "hue": 45
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "cap": "open_view_story",
+          "label": "View Jordan's story"
+        }
+      ]
+    },
+    "facebook.view_story": {
+      "blocks": [
+        {
+          "type": "link",
+          "cap": "open_view_user_profile",
+          "label": "Jordan Lee",
+          "icon": "user",
+          "meta": "2h"
+        },
+        {
+          "type": "media",
+          "cap": "view_story_content",
+          "kind": "photo",
+          "hue": 25,
+          "icon": "sunset",
+          "aspect": "tall",
+          "caption": "Golden hour on the Incline 🚡"
+        },
+        {
+          "type": "controls",
+          "items": [
+            {
+              "cap": "tap_to_advance_story",
+              "icon": "chevron-left",
+              "label": "Back"
+            },
+            {
+              "cap": "tap_to_advance_story",
+              "icon": "chevron-right",
+              "label": "Next"
+            },
+            {
+              "cap": "swipe_to_next_story",
+              "icon": "chevrons-right",
+              "label": "Next friend",
+              "primary": true
+            }
+          ]
+        }
+      ]
+    },
+    "facebook.create_post": {
+      "blocks": [
+        {
+          "type": "group",
+          "cap": "upload_content",
+          "blocks": [
+            {
+              "type": "media",
+              "kind": "photo",
+              "hue": 25,
+              "icon": "image",
+              "aspect": "wide",
+              "caption": "2 photos · Mt. Washington"
+            },
+            {
+              "type": "progress",
+              "label": "Uploading 2 photos",
+              "value": 0.65,
+              "display": "65%"
+            }
+          ]
+        },
+        {
+          "type": "controls",
+          "items": [
+            {
+              "cap": "select_media_from_file",
+              "icon": "image",
+              "label": "Photo"
+            },
+            {
+              "cap": "capture_new_media",
+              "icon": "camera",
+              "label": "Camera"
+            },
+            {
+              "cap": "edit_media",
+              "icon": "wand-sparkles",
+              "label": "Edit"
+            },
+            {
+              "cap": "tag_people",
+              "icon": "user-plus",
+              "label": "Tag"
+            },
+            {
+              "cap": "add_location",
+              "icon": "map-pin",
+              "label": "Check in"
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "cap": "share_post",
+          "label": "Post",
+          "style": "primary"
+        }
+      ]
+    },
+    "facebook.create_story": {
+      "blocks": [
+        {
+          "type": "media",
+          "cap": "capture_new_media",
+          "kind": "camera",
+          "hue": 200,
+          "aspect": "tall",
+          "caption": "Tap to take a photo, hold for video"
+        },
+        {
+          "type": "chips",
+          "cap": "add_text_stickers_filters_to_story",
+          "items": [
+            "Aa Text",
+            "Stickers",
+            "Filters"
+          ],
+          "selected": [
+            0
+          ]
+        },
+        {
+          "type": "controls",
+          "items": [
+            {
+              "cap": "select_media_from_file",
+              "icon": "images",
+              "label": "Gallery"
+            },
+            {
+              "cap": "edit_media",
+              "icon": "crop",
+              "label": "Edit"
+            },
+            {
+              "cap": "tag_people",
+              "icon": "user-plus",
+              "label": "Tag"
+            },
+            {
+              "cap": "add_location",
+              "icon": "map-pin",
+              "label": "Location"
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "cap": "upload_content",
+          "label": "Share to story",
+          "icon": "send",
+          "style": "primary"
+        }
+      ]
+    }
+  }
+}

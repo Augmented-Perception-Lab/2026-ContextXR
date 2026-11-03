@@ -1,0 +1,304 @@
+{
+  "app": "spotify",
+  "icon": "audio-lines",
+  "color": "#1db954",
+  "facets": {
+    "spotify.open_section": {
+      "blocks": [
+        {"type": "tabs", "selected": 0, "items": [
+          {"cap": "open_browse_music", "label": "Home", "icon": "house"},
+          {"cap": "open_search_content", "label": "Search", "icon": "search"},
+          {"cap": "open_manage_library", "label": "Library", "icon": "library"},
+          {"cap": "open_browse_audiobooks", "label": "Audiobooks", "icon": "book-open"},
+          {"cap": "open_view_now_playing", "label": "Now Playing", "icon": "disc-3"},
+          {"cap": "open_control_playback", "label": "Player", "icon": "circle-play"},
+          {"cap": "open_control_podcast_audiobook", "label": "Podcasts", "icon": "podcast"}
+        ]}
+      ]
+    },
+    "spotify.browse_music": {
+      "blocks": [
+        {"type": "chips", "cap": "explore_genres", "items": ["Pop", "Hip-Hop", "Indie", "Jazz"], "selected": 0},
+        {"type": "cards", "cap": "view_recommendations", "label": "Made for you", "items": [
+          {"title": "Daily Mix 1", "meta": "The Weeknd, Dua Lipa", "hue": 330},
+          {"title": "Discover Weekly", "meta": "New picks", "hue": 150},
+          {"title": "Release Radar", "meta": "Fridays", "hue": 200}
+        ]},
+        {"type": "list", "cap": "view_new_releases", "label": "New releases", "style": "thumbs", "items": [
+          {"title": "Hurry Up Tomorrow", "meta": "Album · The Weeknd", "hue": 0},
+          {"title": "Short n' Sweet", "meta": "Album · Sabrina Carpenter", "hue": 210}
+        ]},
+        {"type": "list", "cap": "view_charts", "label": "Top 50 · Global", "style": "numbered", "items": [
+          {"title": "Die With A Smile", "meta": "Lady Gaga, Bruno Mars"},
+          {"title": "Espresso", "meta": "Sabrina Carpenter"},
+          {"title": "Blinding Lights", "meta": "The Weeknd"}
+        ]},
+        {"type": "cards", "cap": "view_curated_playlists", "label": "Spotify playlists", "items": [
+          {"title": "Today's Top Hits", "meta": "34M saves", "hue": 140},
+          {"title": "Chill Vibes", "meta": "Lo-fi & soul", "hue": 260},
+          {"title": "RapCaviar", "meta": "Hip-hop", "hue": 20}
+        ]},
+        {"type": "link", "cap": "open_view_playlist", "label": "Open Today's Top Hits"}
+      ]
+    },
+    "spotify.search_content": {
+      "blocks": [
+        {"type": "input", "cap": "enter_search_query", "icon": "search", "value": "blind"},
+        {"type": "list", "cap": "view_search_autocompletion", "items": [
+          {"title": "blinding lights", "icon": "search"},
+          {"title": "blinding lights remix", "icon": "search"}
+        ]},
+        {"type": "chips", "cap": "filter_search_results_by_type", "items": ["Songs", "Artists", "Albums", "Podcasts"], "selected": 0},
+        {"type": "list", "cap": "view_search_results", "style": "thumbs", "items": [
+          {"title": "Blinding Lights", "meta": "Song · The Weeknd", "hue": 0},
+          {"title": "Blind", "meta": "Song · SZA", "hue": 30},
+          {"title": "Blinding Lights (Remix)", "meta": "Song · The Weeknd, Rosalía", "hue": 340}
+        ]},
+        {"type": "list", "cap": "view_recent_searches", "label": "Recent searches", "items": [
+          {"title": "Sabrina Carpenter", "meta": "Artist", "icon": "history", "action": {"cap": "delete_recent_search_result", "icon": "x"}},
+          {"title": "lofi beats", "meta": "Search", "icon": "history"}
+        ]}
+      ]
+    },
+    "spotify.control_playback": {
+      "blocks": [
+        {"type": "player", "caps": ["view_track_progress", "seek"], "progress": 0.38, "elapsed": "1:15", "total": "3:20"},
+        {"type": "controls", "items": [
+          {"cap": "shuffle_toggle", "icon": "shuffle", "label": "Shuffle"},
+          {"cap": "skip_previous", "icon": "skip-back", "label": "Previous"},
+          {"cap": "play", "icon": "play", "label": "Play", "primary": true},
+          {"cap": "pause", "icon": "pause", "label": "Pause"},
+          {"cap": "skip_next", "icon": "skip-forward", "label": "Next"},
+          {"cap": "repeat_toggle", "icon": "repeat", "label": "Repeat"}
+        ]}
+      ]
+    },
+    "spotify.view_now_playing": {
+      "blocks": [
+        {"type": "row", "widths": [1.4, 1], "blocks": [
+          {"type": "media", "cap": "view_album_art", "kind": "art", "hue": 0, "icon": "disc-3", "aspect": "square"},
+          {"type": "media", "cap": "view_track_animation", "kind": "video", "hue": 340, "aspect": "tall", "caption": "Canvas"}
+        ]},
+        {"type": "header", "cap": "view_title_artist", "title": "Blinding Lights", "subtitle": "The Weeknd"},
+        {"type": "controls", "items": [
+          {"cap": "save_unsave", "icon": "heart", "label": "Liked"},
+          {"cap": "hide_in_playlist", "icon": "circle-minus", "label": "Hide"},
+          {"cap": "share_track", "icon": "share-2", "label": "Share"},
+          {"cap": "open_manage_track", "icon": "ellipsis", "label": "More"}
+        ]},
+        {"type": "player", "cap": "view_track_progress", "progress": 0.38, "elapsed": "1:15", "total": "3:20"},
+        {"type": "text", "cap": "view_lyrics", "label": "Lyrics", "size": "sm",
+         "text": "I've been tryna call, I've been on my own for long enough…"},
+        {"type": "kv", "cap": "view_credits", "label": "Credits", "items": [
+          ["Performed by", "The Weeknd"], ["Written by", "Max Martin, Oscar Holter"]
+        ]},
+        {"type": "row", "blocks": [
+          {"type": "link", "cap": "open_view_artist", "label": "The Weeknd", "meta": "Artist"},
+          {"type": "link", "cap": "open_view_album", "label": "After Hours", "meta": "Album"}
+        ]},
+        {"type": "row", "blocks": [
+          {"type": "button", "cap": "open_view_manage_queue", "label": "Queue", "icon": "list-music", "style": "ghost"},
+          {"type": "button", "cap": "open_control_volume_output", "label": "Devices", "icon": "speaker", "style": "ghost"}
+        ]}
+      ]
+    },
+    "spotify.control_volume_output": {
+      "blocks": [
+        {"type": "slider", "cap": "adjust_volume", "label": "Volume", "value": 0.65, "icon": "volume-2", "display": "65%"},
+        {"type": "list", "cap": "select_output_device", "label": "Select a device", "items": [
+          {"title": "Quest 3", "meta": "Listening on", "icon": "headset", "trailing": "✓"},
+          {"title": "Living Room", "meta": "Sonos Era 100", "icon": "speaker"},
+          {"title": "AirPods Pro", "meta": "Bluetooth", "icon": "headphones"}
+        ]},
+        {"type": "button", "cap": "connect_to_speaker", "label": "Connect to a speaker", "icon": "cast", "style": "secondary"},
+        {"type": "slider", "cap": "crossfade_setting", "label": "Crossfade", "value": 0.5, "display": "6 s"},
+        {"type": "select", "cap": "equalizer", "label": "Equalizer", "value": "Bass Booster"}
+      ]
+    },
+    "spotify.manage_library": {
+      "blocks": [
+        {"type": "chips", "cap": "filter_library", "items": ["Playlists", "Artists", "Albums", "Podcasts"], "selected": 0},
+        {"type": "row", "widths": [1.3, 1], "blocks": [
+          {"type": "select", "cap": "sort_library", "label": "Sort", "value": "Recents"},
+          {"type": "button", "cap": "create_playlist", "label": "New playlist", "icon": "plus", "style": "secondary"}
+        ]},
+        {"type": "link", "cap": "open_view_playlist", "label": "Late Night Drive", "meta": "Playlist · 42 songs"},
+        {"type": "link", "cap": "open_view_artist", "label": "The Weeknd", "meta": "Artist"},
+        {"type": "link", "cap": "open_view_album", "label": "After Hours", "meta": "Album"},
+        {"type": "buttons", "items": [
+          {"cap": "save_unsave", "label": "Saved", "icon": "circle-check", "style": "secondary"},
+          {"cap": "edit_playlist", "label": "Edit", "icon": "pencil", "style": "secondary"},
+          {"cap": "delete_playlist", "label": "Delete", "icon": "trash-2", "style": "danger"}
+        ]},
+        {"type": "cards", "cap": "view_curated_playlists", "label": "Made for you", "items": [
+          {"title": "Daily Mix 1", "meta": "The Weeknd", "hue": 330},
+          {"title": "Discover Weekly", "meta": "Mondays", "hue": 150},
+          {"title": "On Repeat", "meta": "Your favorites", "hue": 280}
+        ]}
+      ]
+    },
+    "spotify.control_podcast_audiobook": {
+      "blocks": [
+        {"type": "player", "caps": ["view_track_progress", "seek"], "progress": 0.46, "elapsed": "18:40", "total": "41:02"},
+        {"type": "controls", "items": [
+          {"cap": "skip_previous", "icon": "skip-back", "label": "Previous"},
+          {"cap": "play", "icon": "play", "label": "Play", "primary": true},
+          {"cap": "pause", "icon": "pause", "label": "Pause"},
+          {"cap": "skip_next", "icon": "skip-forward", "label": "Next"}
+        ]},
+        {"type": "row", "blocks": [
+          {"type": "select", "cap": "adjust_playback_speed", "label": "Speed", "value": "1.5×"},
+          {"type": "select", "cap": "set_sleep_timer", "label": "Sleep timer", "value": "30 min"}
+        ]},
+        {"type": "row", "blocks": [
+          {"type": "button", "cap": "open_view_manage_queue", "label": "Queue", "icon": "list-music", "style": "ghost"},
+          {"type": "button", "cap": "open_control_volume_output", "label": "Devices", "icon": "speaker", "style": "ghost"}
+        ]}
+      ]
+    },
+    "spotify.view_manage_queue": {
+      "blocks": [
+        {"type": "list", "caps": ["view_queue", "reorder_queue"], "label": "Next in queue", "items": [
+          {"title": "Save Your Tears", "meta": "The Weeknd", "icon": "grip-vertical", "action": {"cap": "remove_from_queue", "icon": "circle-minus"}},
+          {"title": "Levitating", "meta": "Dua Lipa", "icon": "grip-vertical"},
+          {"title": "Espresso", "meta": "Sabrina Carpenter", "icon": "grip-vertical"}
+        ]},
+        {"type": "row", "blocks": [
+          {"type": "button", "cap": "add_to_queue", "label": "Add songs", "icon": "list-plus", "style": "secondary"},
+          {"type": "button", "cap": "clear_queue", "label": "Clear queue", "style": "ghost"}
+        ]},
+        {"type": "controls", "items": [
+          {"cap": "play", "icon": "play", "label": "Play", "primary": true},
+          {"cap": "pause", "icon": "pause", "label": "Pause"}
+        ]}
+      ]
+    },
+    "spotify.view_playlist": {
+      "blocks": [
+        {"type": "header", "cap": "view_playlist_title", "title": "Late Night Drive", "subtitle": "Hyunsung · 42 songs, 2 h 38 min", "thumb": {"icon": "car", "hue": 260}},
+        {"type": "text", "cap": "view_playlist_description", "size": "sm", "muted": true, "text": "Neon synths and slow-burn R&B for the ride home."},
+        {"type": "controls", "items": [
+          {"cap": "save_collection", "icon": "circle-plus", "label": "Save"},
+          {"cap": "share_collection", "icon": "share-2", "label": "Share"},
+          {"cap": "shuffle_collection", "icon": "shuffle", "label": "Shuffle"},
+          {"cap": "play_collection", "icon": "play", "label": "Play", "primary": true}
+        ]},
+        {"type": "list", "cap": "view_playlist_tracks", "style": "thumbs", "items": [
+          {"title": "Blinding Lights", "meta": "The Weeknd", "hue": 0, "action": {"cap": "open_manage_track", "icon": "ellipsis"}},
+          {"title": "Midnight City", "meta": "M83", "hue": 230},
+          {"title": "Nightcall", "meta": "Kavinsky", "hue": 300}
+        ]}
+      ]
+    },
+    "spotify.manage_track": {
+      "blocks": [
+        {"type": "controls", "items": [
+          {"cap": "add_to_liked_songs", "icon": "heart", "label": "Like"},
+          {"cap": "add_to_playlist", "icon": "list-plus", "label": "Playlist"},
+          {"cap": "add_to_queue", "icon": "list-end", "label": "Queue"},
+          {"cap": "hide_in_playlist", "icon": "circle-minus", "label": "Hide"},
+          {"cap": "share_track", "icon": "share-2", "label": "Share"}
+        ]},
+        {"type": "kv", "cap": "view_song_credits", "label": "Credits · Blinding Lights", "items": [
+          ["Performed by", "The Weeknd"], ["Produced by", "Max Martin"]
+        ]},
+        {"type": "link", "cap": "open_view_artist", "label": "Go to artist", "icon": "user", "meta": "The Weeknd"},
+        {"type": "link", "cap": "open_view_album", "label": "Go to album", "icon": "disc-3", "meta": "After Hours"},
+        {"type": "link", "cap": "open_view_playlist", "label": "Go to playlist", "icon": "list-music", "meta": "Late Night Drive"}
+      ]
+    },
+    "spotify.view_artist": {
+      "blocks": [
+        {"type": "group", "cap": "view_artist_bio", "blocks": [
+          {"type": "header", "title": "The Weeknd", "subtitle": "108.9M monthly listeners", "thumb": {"icon": "mic-vocal", "hue": 0}},
+          {"type": "text", "size": "sm", "muted": true, "text": "Toronto-born singer and producer behind After Hours and Dawn FM."}
+        ]},
+        {"type": "row", "widths": [1, 2], "blocks": [
+          {"type": "button", "cap": "follow_unfollow_artist", "label": "Following", "style": "secondary"},
+          {"type": "controls", "items": [
+            {"cap": "save_collection", "icon": "circle-plus", "label": "Save"},
+            {"cap": "share_artist", "icon": "share-2", "label": "Share"},
+            {"cap": "block_artist", "icon": "ban", "label": "Don't play"},
+            {"cap": "shuffle_collection", "icon": "shuffle", "label": "Shuffle"},
+            {"cap": "play_collection", "icon": "play", "label": "Play", "primary": true}
+          ]}
+        ]},
+        {"type": "list", "cap": "view_track_list", "label": "Popular", "style": "numbered", "items": [
+          {"title": "Blinding Lights", "meta": "4.8B plays", "action": {"cap": "open_manage_track", "icon": "ellipsis"}},
+          {"title": "Starboy", "meta": "3.9B plays", "action": {"cap": "add_to_playlist", "icon": "circle-plus"}},
+          {"title": "Save Your Tears", "meta": "2.7B plays"}
+        ]},
+        {"type": "cards", "cap": "view_artist_discography", "label": "Discography", "items": [
+          {"title": "After Hours", "meta": "2020", "hue": 0},
+          {"title": "Dawn FM", "meta": "2022", "hue": 190},
+          {"title": "Starboy", "meta": "2016", "hue": 50}
+        ]},
+        {"type": "link", "cap": "open_view_album", "label": "Hurry Up Tomorrow", "meta": "Latest release"},
+        {"type": "media", "cap": "view_music_videos", "kind": "video", "hue": 350, "aspect": "wide", "caption": "Blinding Lights (Official Video)", "duration": "4:22"},
+        {"type": "list", "cap": "view_event_list", "label": "On tour", "items": [
+          {"title": "Acrisure Stadium, Pittsburgh", "meta": "Sat, Nov 8 · 7:30 PM", "icon": "ticket"}
+        ]},
+        {"type": "cards", "cap": "view_related_artists", "label": "Fans also like", "items": [
+          {"title": "Dua Lipa", "meta": "Artist", "hue": 300},
+          {"title": "Doja Cat", "meta": "Artist", "hue": 330},
+          {"title": "Daft Punk", "meta": "Artist", "hue": 45}
+        ]}
+      ]
+    },
+    "spotify.view_album": {
+      "blocks": [
+        {"type": "link", "cap": "open_view_artist", "label": "The Weeknd", "icon": "user", "meta": "After Hours · 2020"},
+        {"type": "controls", "items": [
+          {"cap": "save_collection", "icon": "circle-plus", "label": "Save"},
+          {"cap": "add_to_playlist", "icon": "list-plus", "label": "Add to playlist"},
+          {"cap": "shuffle_collection", "icon": "shuffle", "label": "Shuffle"},
+          {"cap": "play_collection", "icon": "play", "label": "Play", "primary": true}
+        ]},
+        {"type": "list", "cap": "view_track_list", "style": "numbered", "items": [
+          {"title": "Alone Again", "meta": "4:10"},
+          {"title": "Blinding Lights", "meta": "3:20", "action": {"cap": "open_manage_track", "icon": "ellipsis"}},
+          {"title": "In Your Eyes", "meta": "3:57"},
+          {"title": "Save Your Tears", "meta": "3:35"}
+        ]}
+      ]
+    },
+    "spotify.browse_audiobooks": {
+      "blocks": [
+        {"type": "chips", "cap": "explore_genres", "items": ["Sci-fi", "Self-help", "Mystery", "Biography"], "selected": 0},
+        {"type": "cards", "cap": "view_new_releases", "label": "New releases", "items": [
+          {"title": "Onyx Storm", "meta": "Rebecca Yarros", "hue": 270},
+          {"title": "The Women", "meta": "Kristin Hannah", "hue": 30},
+          {"title": "James", "meta": "Percival Everett", "hue": 200}
+        ]},
+        {"type": "list", "cap": "view_charts", "label": "Top audiobooks", "style": "numbered", "items": [
+          {"title": "Atomic Habits", "meta": "James Clear"},
+          {"title": "Project Hail Mary", "meta": "Andy Weir"},
+          {"title": "Dune", "meta": "Frank Herbert"}
+        ]},
+        {"type": "list", "cap": "view_recommendations", "label": "Picked for you", "style": "thumbs", "items": [
+          {"title": "The Martian", "meta": "Andy Weir · 10 h 53 min", "hue": 15},
+          {"title": "Recursion", "meta": "Blake Crouch · 10 h 47 min", "hue": 190}
+        ]},
+        {"type": "link", "cap": "open_view_audiobook", "label": "Open Project Hail Mary"}
+      ]
+    },
+    "spotify.view_audiobook": {
+      "blocks": [
+        {"type": "header", "cap": "view_audiobook_metadata", "title": "Project Hail Mary", "subtitle": "Read by Ray Porter · 16 h 10 min", "thumb": {"icon": "rocket", "hue": 40}},
+        {"type": "link", "cap": "open_view_artist", "label": "Andy Weir", "icon": "user", "meta": "Author"},
+        {"type": "progress", "cap": "see_audiobook_progress", "label": "6 h 12 min left", "value": 0.62, "display": "62%"},
+        {"type": "controls", "items": [
+          {"cap": "save_collection", "icon": "circle-plus", "label": "Save"},
+          {"cap": "share_collection", "icon": "share-2", "label": "Share"},
+          {"cap": "play_collection", "icon": "play", "label": "Resume", "primary": true}
+        ]},
+        {"type": "select", "cap": "view_chapters", "label": "Chapters", "value": "12 of 32 · Astrophage"},
+        {"type": "list", "cap": "view_track_list", "items": [
+          {"title": "Chapter 12", "meta": "38 min · In progress", "action": {"cap": "play_track", "icon": "circle-play"}},
+          {"title": "Chapter 13", "meta": "41 min", "action": {"cap": "share_track", "icon": "share-2"}},
+          {"title": "Chapter 14", "meta": "35 min"}
+        ]}
+      ]
+    }
+  }
+}

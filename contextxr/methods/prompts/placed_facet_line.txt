@@ -1,0 +1,1 @@
+{index}. facet_id={facet_id}; app={app_name}; facet_name={facet_name}; relevance={relevance}

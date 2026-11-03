@@ -1,0 +1,7 @@
+# Relational retrieval (paper §4.2.2): context-conditioned statistics over the entity-relation schema
+# with Sentence-BERT soft transfer over task/environment labels. Requires the [embed] extra.
+# With use_history, placed facets steer next facet suggestion (no effect on initial suggestion).
+name: relational
+class: contextxr.methods.relational.RelationalRetrieval
+params:
+  use_history: true

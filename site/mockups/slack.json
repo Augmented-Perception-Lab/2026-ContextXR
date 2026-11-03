@@ -1,0 +1,583 @@
+{
+  "app": "slack",
+  "icon": "hash",
+  "color": "#4a154b",
+  "facets": {
+    "slack.open_section": {
+      "blocks": [
+        {
+          "type": "tabs",
+          "selected": 1,
+          "items": [
+            {
+              "cap": "open_browse_workspaces",
+              "label": "Teams",
+              "icon": "building-2"
+            },
+            {
+              "cap": "open_browse_channels",
+              "label": "Home",
+              "icon": "house"
+            },
+            {
+              "cap": "open_browse_direct_messages",
+              "label": "DMs",
+              "icon": "message-circle"
+            },
+            {
+              "cap": "open_browse_activity",
+              "label": "Activity",
+              "icon": "bell"
+            },
+            {
+              "cap": "open_search_workspace",
+              "label": "Search",
+              "icon": "search"
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "cap": "open_view_channel",
+          "label": "Jump to #design-review",
+          "icon": "hash"
+        }
+      ]
+    },
+    "slack.browse_workspaces": {
+      "blocks": [
+        {
+          "type": "list",
+          "cap": "view_workspaces",
+          "items": [
+            {
+              "title": "Acme Design",
+              "meta": "acme-design.slack.com",
+              "avatar": true,
+              "hue": 280,
+              "trailing": "Current"
+            },
+            {
+              "title": "CMU HCII",
+              "meta": "cmu-hcii.slack.com · 3 new",
+              "avatar": true,
+              "hue": 0,
+              "action": {
+                "cap": "switch_workspace",
+                "icon": "arrow-right-left"
+              }
+            },
+            {
+              "title": "Pittsburgh Climbers",
+              "meta": "pghclimb.slack.com",
+              "avatar": true,
+              "hue": 140
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "cap": "add_workspace",
+          "label": "Add a workspace",
+          "icon": "plus",
+          "style": "ghost"
+        },
+        {
+          "type": "buttons",
+          "items": [
+            {
+              "cap": "open_browse_channels",
+              "label": "Channels",
+              "icon": "hash",
+              "style": "secondary"
+            },
+            {
+              "cap": "open_browse_direct_messages",
+              "label": "Direct messages",
+              "icon": "message-circle",
+              "style": "secondary"
+            }
+          ]
+        }
+      ]
+    },
+    "slack.browse_channels": {
+      "blocks": [
+        {
+          "type": "row",
+          "widths": [
+            1,
+            1
+          ],
+          "blocks": [
+            {
+              "type": "link",
+              "cap": "view_threads",
+              "label": "Threads",
+              "icon": "messages-square",
+              "meta": "3 new"
+            },
+            {
+              "type": "link",
+              "cap": "view_drafts_sent",
+              "label": "Drafts & sent",
+              "icon": "send"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "cap": "view_channel_list",
+          "label": "Channels",
+          "items": [
+            {
+              "title": "# design-review",
+              "icon": "hash",
+              "trailing": "4"
+            },
+            {
+              "title": "# general",
+              "icon": "hash"
+            },
+            {
+              "title": "# launch-q4",
+              "icon": "hash",
+              "trailing": "12"
+            },
+            {
+              "title": "# random",
+              "icon": "hash"
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "widths": [
+            1,
+            1.3
+          ],
+          "blocks": [
+            {
+              "type": "button",
+              "cap": "create_channel",
+              "label": "Add channel",
+              "icon": "plus",
+              "style": "ghost"
+            },
+            {
+              "type": "button",
+              "cap": "open_view_channel",
+              "label": "Open #design-review",
+              "icon": "chevron-right"
+            }
+          ]
+        }
+      ]
+    },
+    "slack.browse_direct_messages": {
+      "blocks": [
+        {
+          "type": "list",
+          "cap": "view_dm_list",
+          "items": [
+            {
+              "title": "Priya Shah",
+              "meta": "Can you look at the onboarding mocks?",
+              "trailing": "10:42",
+              "avatar": true,
+              "hue": 330
+            },
+            {
+              "title": "Daniel Kim",
+              "meta": "You: Sounds good, ship it",
+              "trailing": "9:15",
+              "avatar": true,
+              "hue": 210
+            },
+            {
+              "title": "Priya, Daniel, Alex",
+              "meta": "Alex: Lunch at 12:30?",
+              "trailing": "Tue",
+              "avatar": true,
+              "hue": 40
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "widths": [
+            1,
+            1.2
+          ],
+          "blocks": [
+            {
+              "type": "button",
+              "cap": "start_new_dm",
+              "label": "New message",
+              "icon": "square-pen",
+              "style": "secondary"
+            },
+            {
+              "type": "button",
+              "cap": "open_view_channel",
+              "label": "Open chat with Priya",
+              "icon": "chevron-right"
+            }
+          ]
+        }
+      ]
+    },
+    "slack.compose_message": {
+      "blocks": [
+        {
+          "type": "input",
+          "cap": "type_message",
+          "multiline": true,
+          "placeholder": "Message #design-review",
+          "value": "@Priya Shah the new onboarding mocks are up — feedback by Friday?"
+        },
+        {
+          "type": "controls",
+          "items": [
+            {
+              "cap": "format_text",
+              "icon": "bold",
+              "label": "Bold"
+            },
+            {
+              "cap": "format_text",
+              "icon": "italic",
+              "label": "Italic"
+            },
+            {
+              "cap": "mention_user",
+              "icon": "at-sign",
+              "label": "Mention"
+            },
+            {
+              "cap": "attach_file",
+              "icon": "paperclip",
+              "label": "Attach"
+            },
+            {
+              "cap": "send_message",
+              "icon": "send-horizontal",
+              "label": "Send",
+              "primary": true
+            }
+          ]
+        }
+      ]
+    },
+    "slack.browse_activity": {
+      "blocks": [
+        {
+          "type": "link",
+          "cap": "view_mentions",
+          "label": "Mentions",
+          "icon": "at-sign",
+          "meta": "2 new"
+        },
+        {
+          "type": "list",
+          "cap": "view_all_activity",
+          "label": "All activity",
+          "items": [
+            {
+              "title": "Priya Shah mentioned you",
+              "meta": "#design-review · Feedback by Friday?",
+              "trailing": "10:42",
+              "avatar": true,
+              "hue": 330
+            },
+            {
+              "title": "Daniel Kim replied to your thread",
+              "meta": "#launch-q4 · Moved QA to Thursday",
+              "trailing": "9:58",
+              "avatar": true,
+              "hue": 210
+            },
+            {
+              "title": "Alex Rivera reacted 🎉",
+              "meta": "#general · Welcome to the team!",
+              "trailing": "Tue",
+              "avatar": true,
+              "hue": 40
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "cap": "clear_unreads",
+          "label": "Mark all as read",
+          "icon": "check-check",
+          "style": "ghost"
+        }
+      ]
+    },
+    "slack.search_workspace": {
+      "blocks": [
+        {
+          "type": "input",
+          "cap": "enter_search_query",
+          "icon": "search",
+          "value": "onboarding mocks"
+        },
+        {
+          "type": "chips",
+          "cap": "filter_search_results",
+          "items": [
+            "Messages",
+            "Files",
+            "Channels",
+            "People"
+          ],
+          "selected": 0
+        },
+        {
+          "type": "list",
+          "cap": "view_search_results",
+          "items": [
+            {
+              "title": "Priya Shah in #design-review",
+              "meta": "New onboarding mocks are in Figma…",
+              "trailing": "Today",
+              "avatar": true,
+              "hue": 330,
+              "action": {
+                "cap": "jump_to_search_result",
+                "icon": "arrow-up-right"
+              }
+            },
+            {
+              "title": "Daniel Kim in #launch-q4",
+              "meta": "Onboarding mocks signed off by PM",
+              "trailing": "Oct 19",
+              "avatar": true,
+              "hue": 210
+            }
+          ]
+        },
+        {
+          "type": "buttons",
+          "items": [
+            {
+              "cap": "open_view_conversation",
+              "label": "Thread",
+              "icon": "messages-square",
+              "style": "secondary"
+            },
+            {
+              "cap": "open_view_channel",
+              "label": "Channel",
+              "icon": "hash",
+              "style": "secondary"
+            },
+            {
+              "cap": "open_engage_with_message",
+              "label": "Reply",
+              "icon": "reply",
+              "style": "secondary"
+            }
+          ]
+        }
+      ]
+    },
+    "slack.view_channel": {
+      "blocks": [
+        {
+          "type": "row",
+          "widths": [
+            1.3,
+            1
+          ],
+          "blocks": [
+            {
+              "type": "link",
+              "cap": "view_channel_pins",
+              "label": "3 pinned",
+              "icon": "pin"
+            },
+            {
+              "type": "button",
+              "cap": "open_call",
+              "label": "Huddle",
+              "icon": "headphones",
+              "style": "secondary"
+            }
+          ]
+        },
+        {
+          "type": "chat",
+          "cap": "view_messages",
+          "items": [
+            {
+              "from": "them",
+              "name": "Priya Shah",
+              "text": "New onboarding mocks are up in Figma 🎨"
+            },
+            {
+              "from": "them",
+              "name": "Daniel Kim",
+              "text": "Love the progress dots on step 2"
+            },
+            {
+              "from": "me",
+              "text": "Will review after standup"
+            }
+          ]
+        },
+        {
+          "type": "buttons",
+          "items": [
+            {
+              "cap": "open_view_conversation",
+              "label": "View thread",
+              "icon": "messages-square",
+              "style": "secondary"
+            },
+            {
+              "cap": "open_engage_with_message",
+              "label": "React",
+              "icon": "smile-plus",
+              "style": "secondary"
+            }
+          ]
+        }
+      ]
+    },
+    "slack.view_conversation": {
+      "blocks": [
+        {
+          "type": "chat",
+          "cap": "read_message_content",
+          "items": [
+            {
+              "from": "them",
+              "name": "Priya Shah",
+              "text": "New onboarding mocks are up in Figma — feedback by Friday? 🙏"
+            }
+          ]
+        },
+        {
+          "type": "chat",
+          "cap": "view_message_replies",
+          "label": "3 replies",
+          "items": [
+            {
+              "from": "them",
+              "name": "Daniel Kim",
+              "text": "Love the progress dots on step 2"
+            },
+            {
+              "from": "me",
+              "text": "Left two comments on the sign-up screen"
+            },
+            {
+              "from": "them",
+              "name": "Priya Shah",
+              "text": "Thanks! Updating now"
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "cap": "open_engage_with_message",
+          "label": "Reply in thread",
+          "icon": "reply"
+        }
+      ]
+    },
+    "slack.engage_with_message": {
+      "blocks": [
+        {
+          "type": "chips",
+          "cap": "react_to_message",
+          "items": [
+            "👍 4",
+            "🎉 2",
+            "👀 1",
+            "+"
+          ],
+          "selected": [
+            0
+          ]
+        },
+        {
+          "type": "input",
+          "cap": "reply_to_message",
+          "placeholder": "Reply…",
+          "value": "Looks great — left two comments",
+          "trailing": "send-horizontal"
+        },
+        {
+          "type": "buttons",
+          "items": [
+            {
+              "cap": "share_message",
+              "label": "Share",
+              "icon": "forward",
+              "style": "secondary"
+            },
+            {
+              "cap": "open_compose_message",
+              "label": "New message",
+              "icon": "square-pen",
+              "style": "secondary"
+            }
+          ]
+        }
+      ]
+    },
+    "slack.call": {
+      "blocks": [
+        {
+          "type": "media",
+          "cap": "view_speaker",
+          "kind": "video",
+          "hue": 330,
+          "icon": "user",
+          "aspect": "wide",
+          "caption": "Priya Shah · speaking"
+        },
+        {
+          "type": "timer",
+          "cap": "view_call_duration",
+          "display": "12:47",
+          "label": "Huddle in #design-review"
+        },
+        {
+          "type": "controls",
+          "items": [
+            {
+              "cap": "mute_unmute_microphone",
+              "icon": "mic-off",
+              "label": "Mute"
+            },
+            {
+              "cap": "enable_disable_video",
+              "icon": "video",
+              "label": "Video"
+            },
+            {
+              "cap": "switch_camera",
+              "icon": "switch-camera",
+              "label": "Flip"
+            },
+            {
+              "cap": "share_screen",
+              "icon": "screen-share",
+              "label": "Share"
+            },
+            {
+              "cap": "end_call",
+              "icon": "phone-off",
+              "label": "Leave",
+              "primary": true
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
